@@ -14,6 +14,9 @@ extern void CableMeta_GestionarEventosMeta_mEA0F3304A8B6865AA4A8EAA69B6CE778D81A
 extern void CableMeta_IntentarConectar_m7B2CE6B1DDF014B8B764B1A0B2774D7CA5BFFA24 (void);
 extern void CableMeta_ResetearPosicion_m1AF094A2E12EF93432905FCCFE3BFA5EB497151E (void);
 extern void CableMeta__ctor_mC89F32F748579FAC02B1EDF37939BFCB2862B8E8 (void);
+extern void DestroyBlocks_OnTriggerEnter_m8372CD0E0A373808EF96FC9F506669050D4DF14B (void);
+extern void DestroyBlocks_Creator_m70D69798E57144582457B378F24BA730193DA681 (void);
+extern void DestroyBlocks__ctor_m7F6B6DDD301945045F4C6E2BDAF195E5181802EE (void);
 extern void SpawnerBloques_Start_mD634E03B43C798298721926B06864593955F2D83 (void);
 extern void SpawnerBloques_Spawn_mE0EBD94255FB4C40C68386B4C68EE25ED14C1975 (void);
 extern void SpawnerBloques__ctor_mD104B3211FDC95DF9691E5AC21532B5C0E48EDB8 (void);
@@ -22,7 +25,7 @@ extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
 extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[15] = 
+static Il2CppMethodPointer s_methodPointers[18] = 
 {
 	CableMeta_Start_m5FBC2CF88D6EA954DC1750892781074816268BD7,
 	CableMeta_OnDestroy_mE73E02CBE0FE08C19BE7CE61DCE9C3C33B813B67,
@@ -31,6 +34,9 @@ static Il2CppMethodPointer s_methodPointers[15] =
 	CableMeta_IntentarConectar_m7B2CE6B1DDF014B8B764B1A0B2774D7CA5BFFA24,
 	CableMeta_ResetearPosicion_m1AF094A2E12EF93432905FCCFE3BFA5EB497151E,
 	CableMeta__ctor_mC89F32F748579FAC02B1EDF37939BFCB2862B8E8,
+	DestroyBlocks_OnTriggerEnter_m8372CD0E0A373808EF96FC9F506669050D4DF14B,
+	DestroyBlocks_Creator_m70D69798E57144582457B378F24BA730193DA681,
+	DestroyBlocks__ctor_m7F6B6DDD301945045F4C6E2BDAF195E5181802EE,
 	SpawnerBloques_Start_mD634E03B43C798298721926B06864593955F2D83,
 	SpawnerBloques_Spawn_mE0EBD94255FB4C40C68386B4C68EE25ED14C1975,
 	SpawnerBloques__ctor_mD104B3211FDC95DF9691E5AC21532B5C0E48EDB8,
@@ -40,7 +46,7 @@ static Il2CppMethodPointer s_methodPointers[15] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[15] = 
+static const int32_t s_InvokerIndices[18] = 
 {
 	20175,
 	20175,
@@ -48,6 +54,9 @@ static const int32_t s_InvokerIndices[15] =
 	15449,
 	20175,
 	20175,
+	20175,
+	15418,
+	13418,
 	20175,
 	20175,
 	20175,
@@ -62,7 +71,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	15,
+	18,
 	s_methodPointers,
 	0,
 	NULL,
