@@ -6,10 +6,32 @@ public class DestroyBlocks : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag(tagDelBloque) || other.GetComponentInParent<CableMeta>() != null)
+        CableMeta cable = other.GetComponentInParent<CableMeta>();
+        if(cable == null) cable = other.GetComponentInParent<CableMeta>();
+
+        if (other.CompareTag(tagDelBloque) || cable != null)
         {
-            GameObject deleteObject = Creator(other.gameObject);
-            
+            GameObject deleteObject;
+
+            if(cable != null)
+            {
+                deleteObject = cable.bloqueOrigenPadre.gameObject;
+                cable.ResetearPosicion();
+            }
+            else
+            {
+                deleteObject = Creator(other.gameObject);
+            }
+
+            CableMeta[] allCables = FindObjectsOfType<CableMeta>();
+            foreach(CableMeta c in allCables)
+            {
+                if (c.transform.IsChildOf(deleteObject.transform))
+                {
+                    c.ResetearPosicion();
+                }
+            }
+
             Destroy(deleteObject);
         }
     }

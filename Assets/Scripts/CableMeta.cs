@@ -35,6 +35,23 @@ public class CableMeta : MonoBehaviour
     {
         if (grabbableMeta != null)
             grabbableMeta.WhenPointerEventRaised -= GestionarEventosMeta;
+
+        foreach (Transform hijo in GetComponentsInChildren<Transform>())
+        {
+            if(hijo.CompareTag(tagEntrada))
+            {
+                CableMeta enchufeConectado = hijo.GetComponentInChildren<CableMeta>();
+                if(enchufeConectado != null)
+                {
+                    enchufeConectado.ResetearPosicion();
+                }
+            }
+        }
+
+        if(puertoDestino != null)
+        {
+            ResetearPosicion();
+        }
     }
 
     void Update()
@@ -92,11 +109,12 @@ public class CableMeta : MonoBehaviour
         }
     }
 
-    void ResetearPosicion()
+    public void ResetearPosicion()
     {
         transform.SetParent(bloqueOrigenPadre);
         transform.localPosition = posicionOriginal;
         transform.localRotation = rotacionOriginal;
         puertoDestino = null;
     }
+
 }
