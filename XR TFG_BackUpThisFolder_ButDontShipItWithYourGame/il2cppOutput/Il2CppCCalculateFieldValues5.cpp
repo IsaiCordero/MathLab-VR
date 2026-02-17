@@ -6848,7 +6848,7 @@ struct CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F  : public MonoBehavio
 };
 struct DestroyBlocks_tEA192E4222A6A0955977A6AFDABBA6A863412A15  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	String_t* ___tagDelBloque;
+	String_t* ___tagBlock;
 };
 struct EnvironmentDepthManager_t66B25129AB8791DEB056A5AFAB14151358AAA631  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -9046,7 +9046,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable15689[9] =
 	static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___lineRenderer)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___grabbableMeta)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___salidaFijaDelBloque)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___distanciaConexion)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___tagEntrada)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___bloqueOrigenPadre)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___posicionOriginal)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___rotacionOriginal)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___puertoDestino)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable15690[1] = 
 {
-	static_cast<int32_t>(offsetof(DestroyBlocks_tEA192E4222A6A0955977A6AFDABBA6A863412A15, ___tagDelBloque)),};
+	static_cast<int32_t>(offsetof(DestroyBlocks_tEA192E4222A6A0955977A6AFDABBA6A863412A15, ___tagBlock)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable15691[2] = 
 {
 	static_cast<int32_t>(offsetof(SpawnerBloques_t6D685A5883FCF13C26A30A910CF9D65892396B47, ___prefabBloque)),static_cast<int32_t>(offsetof(SpawnerBloques_t6D685A5883FCF13C26A30A910CF9D65892396B47, ___grabbableBoton)),};

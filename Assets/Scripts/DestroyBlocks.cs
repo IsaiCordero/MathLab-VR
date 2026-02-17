@@ -2,46 +2,47 @@ using UnityEngine;
 
 public class DestroyBlocks : MonoBehaviour
 {
-    public string tagDelBloque = "Block"; 
+    public string tagBlock = "Block"; 
 
     private void OnTriggerEnter(Collider other)
     {
-        CableMeta cable = other.GetComponentInParent<CableMeta>();
-        if(cable == null) cable = other.GetComponentInParent<CableMeta>();
+        GameObject deleteBlock = OriginalBlock(other.gameObject);
 
-        if (other.CompareTag(tagDelBloque) || cable != null)
+        if (deleteBlock != null)
         {
-            GameObject deleteObject;
-
-            if(cable != null)
+            CableMeta[] allCables = Object.FindObjectsOfType<CableMeta>();
+            
+            foreach (CableMeta cable in allCables)
             {
-                deleteObject = cable.bloqueOrigenPadre.gameObject;
-                cable.ResetearPosicion();
-            }
-            else
-            {
-                deleteObject = Creator(other.gameObject);
-            }
-
-            CableMeta[] allCables = FindObjectsOfType<CableMeta>();
-            foreach(CableMeta c in allCables)
-            {
-                if (c.transform.IsChildOf(deleteObject.transform))
+                if (cable.bloqueOrigenPadre == deleteBlock.transform)
                 {
-                    c.ResetearPosicion();
+                    cable.ResetearPosicion();
+                }
+
+                if (cable.transform.IsChildOf(deleteBlock.transform))
+                {
+                    cable.ResetearPosicion();
                 }
             }
 
-            Destroy(deleteObject);
+            Destroy(deleteBlock);
         }
     }
 
-    private GameObject Creator(GameObject obj)
+    private GameObject OriginalBlock(GameObject obj)
     {
-        if (obj.transform.parent == null) return obj;
-        
-        if (obj.GetComponent<CableMeta>() != null) return obj;
+        if (obj.CompareTag(tagBlock)) return obj;
 
-        return Creator(obj.transform.parent.gameObject);
+        Transform actual = obj.transform;
+        while (actual.parent != null)
+        {
+            if (actual.parent.CompareTag(tagBlock)) return actual.parent.gameObject;
+            actual = actual.parent;
+        }
+        
+        CableMeta script = obj.GetComponentInParent<CableMeta>();
+        if (script != null) return script.bloqueOrigenPadre.gameObject;
+
+        return null;
     }
 }
