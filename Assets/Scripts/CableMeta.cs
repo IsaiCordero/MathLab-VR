@@ -3,118 +3,118 @@ using Oculus.Interaction;
 
 public class CableMeta : MonoBehaviour
 {
-    [Header("Componentes")]
+    [Header("Components")]
     public LineRenderer lineRenderer;
     public Grabbable grabbableMeta; 
     
-    [Header("Configuración")]
-    public Transform salidaFijaDelBloque; 
-    public float distanciaConexion = 0.1f;
-    public string tagEntrada = "PuertoEntrada"; 
+    [Header("Configuration")]
+    public Transform blockOutPut; 
+    public float distConn = 0.1f;
+    public string tagIn = "InPut"; 
 
-    [Header("Referencias de Jerarquía")]
-    public Transform bloqueOrigenPadre; 
-    private Vector3 posicionOriginal;
-    private Quaternion rotacionOriginal;
-    private Transform puertoDestino = null;
+    [Header("References")]
+    public Transform blockOriginal; 
+    private Vector3 positionOriginal;
+    private Quaternion rotationOriginal;
+    private Transform destinyPort = null;
 
     void Start()
     {
-        if (bloqueOrigenPadre == null)
+        if (blockOriginal == null)
         {
-            bloqueOrigenPadre = transform.root; 
+            blockOriginal = transform.root; 
         }
 
-        posicionOriginal = transform.localPosition;
-        rotacionOriginal = transform.localRotation;
+        positionOriginal = transform.localPosition;
+        rotationOriginal = transform.localRotation;
 
-        grabbableMeta.WhenPointerEventRaised += GestionarEventosMeta;
+        grabbableMeta.WhenPointerEventRaised += EventsMeta;
     }
 
     private void OnDestroy()
     {
         if (grabbableMeta != null)
-            grabbableMeta.WhenPointerEventRaised -= GestionarEventosMeta;
+            grabbableMeta.WhenPointerEventRaised -= EventsMeta;
 
-        foreach (Transform hijo in GetComponentsInChildren<Transform>())
+        foreach (Transform child in GetComponentsInChildren<Transform>())
         {
-            if(hijo.CompareTag(tagEntrada))
+            if(child.CompareTag(tagIn))
             {
-                CableMeta enchufeConectado = hijo.GetComponentInChildren<CableMeta>();
-                if(enchufeConectado != null)
+                CableMeta plugConnected = child.GetComponentInChildren<CableMeta>();
+                if(plugConnected != null)
                 {
-                    enchufeConectado.ResetearPosicion();
+                    plugConnected.ResetPosition();
                 }
             }
         }
 
-        if(puertoDestino != null)
+        if(destinyPort != null)
         {
-            ResetearPosicion();
+            ResetPosition();
         }
     }
 
     void Update()
     {
-        if (salidaFijaDelBloque != null)
+        if (blockOutPut != null)
         {
             lineRenderer.positionCount = 2;
-            lineRenderer.SetPosition(0, salidaFijaDelBloque.position);
+            lineRenderer.SetPosition(0, blockOutPut.position);
             lineRenderer.SetPosition(1, transform.position);
         }
     }
 
-    private void GestionarEventosMeta(PointerEvent evento)
+    private void EventsMeta(PointerEvent evento)
     {
         if (evento.Type == PointerEventType.Unselect)
         {
-            IntentarConectar();
+            TryConnection();
         }
         else if (evento.Type == PointerEventType.Select)
         {
-            transform.SetParent(bloqueOrigenPadre);
-            puertoDestino = null;
+            transform.SetParent(blockOriginal);
+            destinyPort = null;
         }
     }
 
-    void IntentarConectar()
+    void TryConnection()
     {
-        Collider[] hits = Physics.OverlapSphere(transform.position, distanciaConexion);
-        Transform entradaEncontrada = null;
+        Collider[] hits = Physics.OverlapSphere(transform.position, distConn);
+        Transform InPutFound = null;
 
         foreach (var hit in hits)
         {
-            if (hit.CompareTag(tagEntrada))
+            if (hit.CompareTag(tagIn))
             {
-                if (hit.transform.IsChildOf(bloqueOrigenPadre))
+                if (hit.transform.IsChildOf(blockOriginal))
                 {
                     continue; 
                 }
 
-                entradaEncontrada = hit.transform;
+                InPutFound = hit.transform;
                 break;
             }
         }
 
-        if (entradaEncontrada != null)
+        if (InPutFound != null)
         {
-            transform.position = entradaEncontrada.position;
-            transform.rotation = entradaEncontrada.rotation;
-            transform.SetParent(entradaEncontrada); 
-            puertoDestino = entradaEncontrada;
+            transform.position = InPutFound.position;
+            transform.rotation = InPutFound.rotation;
+            transform.SetParent(InPutFound); 
+            destinyPort = InPutFound;
         }
         else
         {
-            ResetearPosicion();
+            ResetPosition();
         }
     }
 
-    public void ResetearPosicion()
+    public void ResetPosition()
     {
-        transform.SetParent(bloqueOrigenPadre);
-        transform.localPosition = posicionOriginal;
-        transform.localRotation = rotacionOriginal;
-        puertoDestino = null;
+        transform.SetParent(blockOriginal);
+        transform.localPosition = positionOriginal;
+        transform.localRotation = rotationOriginal;
+        destinyPort = null;
     }
 
 }

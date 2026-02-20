@@ -5,10 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Cable
-  - Entrada
-  - Salida
-  - PuertoEntrada
   - Block
+  - OutPut
+  - InPut
+  - Salida
   layers:
   - Default
   - TransparentFX
