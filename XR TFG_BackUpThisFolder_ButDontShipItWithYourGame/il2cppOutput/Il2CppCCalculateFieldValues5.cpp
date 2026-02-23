@@ -6846,6 +6846,8 @@ struct CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F  : public MonoBehavio
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___positionOriginal;
 	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___rotationOriginal;
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___destinyPort;
+	int32_t ___curveResolution;
+	float ___curveForce;
 };
 struct DeleteButton_t83882758AC000A501AD7EF0672341893CA64F6DF  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -9045,9 +9047,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable15683[6] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable15687[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t4CD66A162F5D953B7D54B787725E07B4A495919B_StaticFields, ___685D33E36DBAAACD58F4B35441F9B70BB1F802DA5A24F6C4FBBFD56AB33E8AEC)),static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t4CD66A162F5D953B7D54B787725E07B4A495919B_StaticFields, ___989ED28A64AA8525D31EB9555F6B189F24220647FAFF5BCF681C984E2868AC8E)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable15689[9] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable15689[11] = 
 {
-	static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___lineRenderer)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___grabbableMeta)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___blockOutPut)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___distConn)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___tagIn)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___blockOriginal)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___positionOriginal)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___rotationOriginal)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___destinyPort)),};
+	static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___lineRenderer)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___grabbableMeta)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___blockOutPut)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___distConn)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___tagIn)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___blockOriginal)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___positionOriginal)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___rotationOriginal)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___destinyPort)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___curveResolution)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___curveForce)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable15690[4] = 
 {
 	static_cast<int32_t>(offsetof(DeleteButton_t83882758AC000A501AD7EF0672341893CA64F6DF, ___plugConnection)),static_cast<int32_t>(offsetof(DeleteButton_t83882758AC000A501AD7EF0672341893CA64F6DF, ___grabbableButton)),static_cast<int32_t>(offsetof(DeleteButton_t83882758AC000A501AD7EF0672341893CA64F6DF, ___fixedPosition)),static_cast<int32_t>(offsetof(DeleteButton_t83882758AC000A501AD7EF0672341893CA64F6DF, ___fixedRotation)),};

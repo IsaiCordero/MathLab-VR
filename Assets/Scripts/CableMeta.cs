@@ -18,6 +18,9 @@ public class CableMeta : MonoBehaviour
     private Quaternion rotationOriginal;
     private Transform destinyPort = null;
 
+    public int curveResolution = 10;
+    public float curveForce = 0.5f;
+
     void Start()
     {
         if (blockOriginal == null)
@@ -58,12 +61,42 @@ public class CableMeta : MonoBehaviour
     {
         if (blockOutPut != null)
         {
-            lineRenderer.positionCount = 2;
-            lineRenderer.SetPosition(0, blockOutPut.position);
-            lineRenderer.SetPosition(1, transform.position);
+            DrawCurveBezier();
         }
     }
 
+    void DrawCurveBezier()
+    {
+        lineRenderer.positionCount = curveResolution;
+
+        Vector3 startPoint = blockOutPut.position;
+        Vector3 endPoint = transform.position;
+
+        Vector3 middlePoint = (startPoint + endPoint) / 2f;
+        float distance = Vector3.Distance(startPoint, endPoint);
+        middlePoint += blockOutPut.right * (distance * 0.3f);
+        middlePoint.y -= (distance * 0.2f);
+
+        for (int i = 0; i < curveResolution; i++)
+        {
+            float y = i / (float)(curveResolution - 1);
+            Vector3 curvePosition = CalculateBezierPoint(y,startPoint,middlePoint,endPoint);
+            lineRenderer.SetPosition(i,curvePosition);
+        }
+    }
+
+    Vector3 CalculateBezierPoint(float y, Vector3 p0, Vector3 p1, Vector3 p2)
+    {
+        float u = 1 - y;
+        float yy = y*y;
+        float uu = u*u;
+
+        Vector3 p = uu*p0;
+        p += 2*u*y*p1;
+        p += yy*p2;
+
+        return p;
+    }
     private void EventsMeta(PointerEvent evento)
     {
         if (evento.Type == PointerEventType.Unselect)

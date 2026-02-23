@@ -10,6 +10,8 @@
 extern void CableMeta_Start_m5FBC2CF88D6EA954DC1750892781074816268BD7 (void);
 extern void CableMeta_OnDestroy_mE73E02CBE0FE08C19BE7CE61DCE9C3C33B813B67 (void);
 extern void CableMeta_Update_mC5940AC7279901C8297126B01353F2DD3071624A (void);
+extern void CableMeta_DrawCurveBezier_m8E76D961958AD4BEF28D4FE3946C495D7BAE8940 (void);
+extern void CableMeta_CalculateBezierPoint_mB0F26BD52FAAECF6BF3F4399C7E118F081AF3683 (void);
 extern void CableMeta_EventsMeta_mF8C4ED75BA4A0C77F8628EDDF9E3EE3132216606 (void);
 extern void CableMeta_TryConnection_m86381D71333B44C1223E6DDBE9B1AE9AABA873D0 (void);
 extern void CableMeta_ResetPosition_m6161E888E8E2F4B3F31055D08FE876EBDD0E4991 (void);
@@ -28,11 +30,13 @@ extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
 extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[21] = 
+static Il2CppMethodPointer s_methodPointers[23] = 
 {
 	CableMeta_Start_m5FBC2CF88D6EA954DC1750892781074816268BD7,
 	CableMeta_OnDestroy_mE73E02CBE0FE08C19BE7CE61DCE9C3C33B813B67,
 	CableMeta_Update_mC5940AC7279901C8297126B01353F2DD3071624A,
+	CableMeta_DrawCurveBezier_m8E76D961958AD4BEF28D4FE3946C495D7BAE8940,
+	CableMeta_CalculateBezierPoint_mB0F26BD52FAAECF6BF3F4399C7E118F081AF3683,
 	CableMeta_EventsMeta_mF8C4ED75BA4A0C77F8628EDDF9E3EE3132216606,
 	CableMeta_TryConnection_m86381D71333B44C1223E6DDBE9B1AE9AABA873D0,
 	CableMeta_ResetPosition_m6161E888E8E2F4B3F31055D08FE876EBDD0E4991,
@@ -52,35 +56,37 @@ static Il2CppMethodPointer s_methodPointers[21] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[21] = 
+static const int32_t s_InvokerIndices[23] = 
 {
-	20175,
-	20175,
-	20175,
-	15449,
-	20175,
-	20175,
-	20175,
-	20175,
-	20175,
-	15449,
-	20175,
-	20175,
-	20175,
-	20175,
-	20175,
-	20175,
-	15449,
-	20175,
-	20175,
-	32948,
-	20175,
+	20176,
+	20176,
+	20176,
+	20176,
+	2409,
+	15450,
+	20176,
+	20176,
+	20176,
+	20176,
+	20176,
+	15450,
+	20176,
+	20176,
+	20176,
+	20176,
+	20176,
+	20176,
+	15450,
+	20176,
+	20176,
+	32949,
+	20176,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	21,
+	23,
 	s_methodPointers,
 	0,
 	NULL,
