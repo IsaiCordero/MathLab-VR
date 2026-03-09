@@ -7,8 +7,8 @@ TagManager:
   - Cable
   - Block
   - OutPut
-  - InPut
-  - Salida
+  - First InPut
+  - Second InPut
   layers:
   - Default
   - TransparentFX

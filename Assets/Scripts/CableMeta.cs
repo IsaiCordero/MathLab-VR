@@ -10,7 +10,8 @@ public class CableMeta : MonoBehaviour
     [Header("Configuration")]
     public Transform blockOutPut; 
     public float distConn = 0.1f;
-    public string tagIn = "InPut"; 
+    public string FirstInPut = "First InPut";
+    public string SecondInPut = "Second InPut"; 
 
     [Header("Colors")]
     public Color colorDisconnected = Color.red;
@@ -48,7 +49,7 @@ public class CableMeta : MonoBehaviour
 
         foreach (Transform child in GetComponentsInChildren<Transform>())
         {
-            if(child.CompareTag(tagIn))
+            if(child.CompareTag(FirstInPut) || child.CompareTag(SecondInPut))
             {
                 CableMeta plugConnected = child.GetComponentInChildren<CableMeta>();
                 if(plugConnected != null)
@@ -142,7 +143,7 @@ public class CableMeta : MonoBehaviour
 
         foreach (var hit in hits)
         {
-            if (hit.CompareTag(tagIn))
+            if (hit.CompareTag(FirstInPut) || hit.CompareTag(SecondInPut))
             {
                 if (hit.transform.IsChildOf(blockOriginal))
                 {
