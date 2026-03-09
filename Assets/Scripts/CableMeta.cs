@@ -12,6 +12,10 @@ public class CableMeta : MonoBehaviour
     public float distConn = 0.1f;
     public string tagIn = "InPut"; 
 
+    [Header("Colors")]
+    public Color colorDisconnected = Color.red;
+    public Color colorConnected = Color.green;
+
     [Header("References")]
     public Transform blockOriginal; 
     private Vector3 positionOriginal;
@@ -20,6 +24,7 @@ public class CableMeta : MonoBehaviour
 
     public int curveResolution = 10;
     public float curveForce = 0.5f;
+    private bool isConnected = false;
 
     void Start()
     {
@@ -32,6 +37,8 @@ public class CableMeta : MonoBehaviour
         rotationOriginal = transform.localRotation;
 
         grabbableMeta.WhenPointerEventRaised += EventsMeta;
+
+        UpdateCableColor(colorDisconnected);
     }
 
     private void OnDestroy()
@@ -62,6 +69,22 @@ public class CableMeta : MonoBehaviour
         if (blockOutPut != null)
         {
             DrawCurveBezier();
+        }
+
+        if(grabbableMeta.SelectingPointsCount > 0 && !isConnected)
+        {
+            UpdateCableColor(colorDisconnected);
+        }
+    }
+
+    void UpdateCableColor(Color targetColor)
+    {
+        lineRenderer.startColor = targetColor;
+        lineRenderer.endColor = targetColor;
+
+        if (lineRenderer.material.HasProperty("_EmissionColor"))
+        {
+            lineRenderer.material.SetColor("_EmissionColor", targetColor * 2.0f);
         }
     }
 
@@ -107,6 +130,8 @@ public class CableMeta : MonoBehaviour
         {
             transform.SetParent(blockOriginal);
             destinyPort = null;
+            isConnected = false;
+            UpdateCableColor(colorDisconnected);
         }
     }
 
@@ -135,6 +160,9 @@ public class CableMeta : MonoBehaviour
             transform.rotation = InPutFound.rotation;
             transform.SetParent(InPutFound); 
             destinyPort = InPutFound;
+
+            isConnected = true;
+            UpdateCableColor(colorConnected);
         }
         else
         {
@@ -148,6 +176,9 @@ public class CableMeta : MonoBehaviour
         transform.localPosition = positionOriginal;
         transform.localRotation = rotationOriginal;
         destinyPort = null;
+
+        isConnected = false;
+        UpdateCableColor(colorDisconnected);
     }
 
 }
