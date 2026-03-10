@@ -9,6 +9,8 @@ TagManager:
   - OutPut
   - First InPut
   - Second InPut
+  - ChangeFunctionButton
+  - ChangeFunctionBotton
   layers:
   - Default
   - TransparentFX

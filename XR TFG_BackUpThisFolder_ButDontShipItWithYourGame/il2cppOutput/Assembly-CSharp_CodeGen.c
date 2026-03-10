@@ -7,6 +7,10 @@
 
 
 
+extern void ButtonSelector_Start_m4AA9A7226035DBE8F271E56558A7A52394A2C9C1 (void);
+extern void ButtonSelector_HandlePointerEvent_m1103DF9048C96481497892898A44D8CEEA440994 (void);
+extern void ButtonSelector_OnDestroy_mFE2DD2670CB8C632B7D25DD82CD6FEBE38CE141E (void);
+extern void ButtonSelector__ctor_m1C6119210F85DB77FAD7845A5682F63F15665012 (void);
 extern void CableMeta_Start_m5FBC2CF88D6EA954DC1750892781074816268BD7 (void);
 extern void CableMeta_OnDestroy_mE73E02CBE0FE08C19BE7CE61DCE9C3C33B813B67 (void);
 extern void CableMeta_Update_mC5940AC7279901C8297126B01353F2DD3071624A (void);
@@ -25,7 +29,6 @@ extern void DeleteButton_DeleteSecurity_mAB4DD11EB6ED15F599C0C6430C8798356DA5390
 extern void DeleteButton__ctor_m18CDC1E14D7EE96CC5470B7AE8A3B2D0FA5719B5 (void);
 extern void SelectFunction_Start_mC6F56A211E456FF3A1A54E2EB0C3FD18FA0840F6 (void);
 extern void SelectFunction_ChangeNextFunction_mBE56E41D58311D3DD898C79213F81537F217D4E6 (void);
-extern void SelectFunction_OnTriggerEnter_m9017A48218323E6DF4F393283ABF45A234F8654D (void);
 extern void SelectFunction__ctor_m01D2E0BDEF44A4F456719223A39F0BAC5B611B4C (void);
 extern void SpawnerBloques_Start_mD634E03B43C798298721926B06864593955F2D83 (void);
 extern void SpawnerBloques_Spawn_mE0EBD94255FB4C40C68386B4C68EE25ED14C1975 (void);
@@ -35,8 +38,12 @@ extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
 extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[28] = 
+static Il2CppMethodPointer s_methodPointers[31] = 
 {
+	ButtonSelector_Start_m4AA9A7226035DBE8F271E56558A7A52394A2C9C1,
+	ButtonSelector_HandlePointerEvent_m1103DF9048C96481497892898A44D8CEEA440994,
+	ButtonSelector_OnDestroy_mFE2DD2670CB8C632B7D25DD82CD6FEBE38CE141E,
+	ButtonSelector__ctor_m1C6119210F85DB77FAD7845A5682F63F15665012,
 	CableMeta_Start_m5FBC2CF88D6EA954DC1750892781074816268BD7,
 	CableMeta_OnDestroy_mE73E02CBE0FE08C19BE7CE61DCE9C3C33B813B67,
 	CableMeta_Update_mC5940AC7279901C8297126B01353F2DD3071624A,
@@ -55,7 +62,6 @@ static Il2CppMethodPointer s_methodPointers[28] =
 	DeleteButton__ctor_m18CDC1E14D7EE96CC5470B7AE8A3B2D0FA5719B5,
 	SelectFunction_Start_mC6F56A211E456FF3A1A54E2EB0C3FD18FA0840F6,
 	SelectFunction_ChangeNextFunction_mBE56E41D58311D3DD898C79213F81537F217D4E6,
-	SelectFunction_OnTriggerEnter_m9017A48218323E6DF4F393283ABF45A234F8654D,
 	SelectFunction__ctor_m01D2E0BDEF44A4F456719223A39F0BAC5B611B4C,
 	SpawnerBloques_Start_mD634E03B43C798298721926B06864593955F2D83,
 	SpawnerBloques_Spawn_mE0EBD94255FB4C40C68386B4C68EE25ED14C1975,
@@ -66,8 +72,12 @@ static Il2CppMethodPointer s_methodPointers[28] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[28] = 
+static const int32_t s_InvokerIndices[31] = 
 {
+	20176,
+	15450,
+	20176,
+	20176,
 	20176,
 	20176,
 	20176,
@@ -86,7 +96,6 @@ static const int32_t s_InvokerIndices[28] =
 	20176,
 	20176,
 	20176,
-	15419,
 	20176,
 	20176,
 	20176,
@@ -101,7 +110,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	28,
+	31,
 	s_methodPointers,
 	0,
 	NULL,
