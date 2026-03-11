@@ -8,6 +8,7 @@
 
 
 extern void ButtonSelector_Start_m4AA9A7226035DBE8F271E56558A7A52394A2C9C1 (void);
+extern void ButtonSelector_LateUpdate_m49F5AE882FF50BAE60736CE21DC5C96CE2CE9BAF (void);
 extern void ButtonSelector_HandlePointerEvent_m1103DF9048C96481497892898A44D8CEEA440994 (void);
 extern void ButtonSelector_OnDestroy_mFE2DD2670CB8C632B7D25DD82CD6FEBE38CE141E (void);
 extern void ButtonSelector__ctor_m1C6119210F85DB77FAD7845A5682F63F15665012 (void);
@@ -38,9 +39,10 @@ extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
 extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[31] = 
+static Il2CppMethodPointer s_methodPointers[32] = 
 {
 	ButtonSelector_Start_m4AA9A7226035DBE8F271E56558A7A52394A2C9C1,
+	ButtonSelector_LateUpdate_m49F5AE882FF50BAE60736CE21DC5C96CE2CE9BAF,
 	ButtonSelector_HandlePointerEvent_m1103DF9048C96481497892898A44D8CEEA440994,
 	ButtonSelector_OnDestroy_mFE2DD2670CB8C632B7D25DD82CD6FEBE38CE141E,
 	ButtonSelector__ctor_m1C6119210F85DB77FAD7845A5682F63F15665012,
@@ -72,8 +74,9 @@ static Il2CppMethodPointer s_methodPointers[31] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[31] = 
+static const int32_t s_InvokerIndices[32] = 
 {
+	20176,
 	20176,
 	15450,
 	20176,
@@ -110,7 +113,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	31,
+	32,
 	s_methodPointers,
 	0,
 	NULL,

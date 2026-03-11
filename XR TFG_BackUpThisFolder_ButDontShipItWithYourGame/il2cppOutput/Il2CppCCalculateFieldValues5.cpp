@@ -6841,6 +6841,8 @@ struct ButtonSelector_tD255032DE80F11597E22153AC699680DC92C546B  : public MonoBe
 {
 	SelectFunction_t9022B7AA28BB5FAB7D0C0234FACEBD2D2571CD3C* ___scriptLogic;
 	Grabbable_tC5F191DABDA6ADE2D8270476D37B4E122C1387D3* ___grabbable;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___fixedLocalPos;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___fixedLocalRot;
 };
 struct CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -9007,9 +9009,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable15654[11] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable15656[2] = 
 {
 	static_cast<int32_t>(offsetof(Font_tC95270EA3198038970422D78B74A7F2E218A96B6_StaticFields, ___textureRebuilt)),static_cast<int32_t>(offsetof(Font_tC95270EA3198038970422D78B74A7F2E218A96B6, ___m_FontTextureRebuildCallback)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable15665[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable15665[4] = 
 {
-	static_cast<int32_t>(offsetof(ButtonSelector_tD255032DE80F11597E22153AC699680DC92C546B, ___scriptLogic)),static_cast<int32_t>(offsetof(ButtonSelector_tD255032DE80F11597E22153AC699680DC92C546B, ___grabbable)),};
+	static_cast<int32_t>(offsetof(ButtonSelector_tD255032DE80F11597E22153AC699680DC92C546B, ___scriptLogic)),static_cast<int32_t>(offsetof(ButtonSelector_tD255032DE80F11597E22153AC699680DC92C546B, ___grabbable)),static_cast<int32_t>(offsetof(ButtonSelector_tD255032DE80F11597E22153AC699680DC92C546B, ___fixedLocalPos)),static_cast<int32_t>(offsetof(ButtonSelector_tD255032DE80F11597E22153AC699680DC92C546B, ___fixedLocalRot)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable15666[15] = 
 {
 	static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___lineRenderer)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___grabbableMeta)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___blockOutPut)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___distConn)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___FirstInPut)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___SecondInPut)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___colorDisconnected)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___colorConnected)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___blockOriginal)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___positionOriginal)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___rotationOriginal)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___destinyPort)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___curveResolution)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___curveForce)),static_cast<int32_t>(offsetof(CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F, ___isConnected)),};
