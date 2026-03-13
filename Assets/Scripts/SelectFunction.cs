@@ -19,7 +19,6 @@ public class SelectFunction : MonoBehaviour
         }
     }
 
-    // Este es el método que llamará la Esfera al ser agarrada
     public void ChangeNextFunction()
     {
         actual++;

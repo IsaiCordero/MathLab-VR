@@ -8,13 +8,11 @@ public class ButtonSelector : MonoBehaviour
 
     private Grabbable grabbable;
     
-    // Guardamos la posición y rotación fijas
     private Vector3 fixedLocalPos;
     private Quaternion fixedLocalRot;
 
     void Start()
     {
-        // Al inicio, memorizamos dónde debe quedarse la esfera
         fixedLocalPos = transform.localPosition;
         fixedLocalRot = transform.localRotation;
         
@@ -26,8 +24,6 @@ public class ButtonSelector : MonoBehaviour
         }
     }
 
-    // Usamos LateUpdate porque se ejecuta DESPUÉS de que el SDK de Oculus
-    // haya intentado mover la esfera. Así la "teletransportamos" de vuelta.
     void LateUpdate()
     {
         transform.localPosition = fixedLocalPos;
@@ -41,7 +37,6 @@ public class ButtonSelector : MonoBehaviour
             if (scriptLogic != null)
             {
                 scriptLogic.ChangeNextFunction();
-                Debug.Log("¡Función cambiada! La esfera permanece inmóvil.");
             }
         }
     }

@@ -41,7 +41,10 @@ public class CableMeta : MonoBehaviour
 
         UpdateCableColor(colorDisconnected);
     }
-
+    void LateUpdate()
+    {
+        transform.localRotation = rotationOriginal;
+    }
     private void OnDestroy()
     {
         if (grabbableMeta != null)
