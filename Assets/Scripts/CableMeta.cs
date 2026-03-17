@@ -12,6 +12,7 @@ public class CableMeta : MonoBehaviour
     public float distConn = 0.1f;
     public string FirstInPut = "First InPut";
     public string SecondInPut = "Second InPut"; 
+    public string InPut = "Input"; 
 
     [Header("Colors")]
     public Color colorDisconnected = Color.red;
@@ -52,7 +53,7 @@ public class CableMeta : MonoBehaviour
 
         foreach (Transform child in GetComponentsInChildren<Transform>())
         {
-            if(child.CompareTag(FirstInPut) || child.CompareTag(SecondInPut))
+            if(child.CompareTag(FirstInPut) || child.CompareTag(SecondInPut) || child.CompareTag(InPut))
             {
                 CableMeta plugConnected = child.GetComponentInChildren<CableMeta>();
                 if(plugConnected != null)
@@ -156,8 +157,15 @@ public class CableMeta : MonoBehaviour
                 InPutFound = hit.transform;
                 break;
             }
+            
+            if (hit.CompareTag("Input")) {
+                NumberBlock bloqueDestino = hit.GetComponentInParent<NumberBlock>();
+        
+                if (bloqueDestino != null) {
+                    bloqueDestino.incomingCable = this.GetComponent<DataCable>();
+                }
+            }
         }
-
         if (InPutFound != null)
         {
             transform.position = InPutFound.position;

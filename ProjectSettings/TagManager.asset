@@ -11,6 +11,7 @@ TagManager:
   - Second InPut
   - ChangeFunctionButton
   - ChangeFunctionBotton
+  - Input
   layers:
   - Default
   - TransparentFX

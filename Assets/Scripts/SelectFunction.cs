@@ -8,6 +8,10 @@ public class SelectFunction : MonoBehaviour
     
     [Header("Settings")]
     public string[] functions = { "SUMA", "RESTA", "MULTIPLICACIÓN", "DIVISIÓN" };
+
+    [Header("Data Input")]
+    public DataCable inputA;
+    public DataCable inputB;
     
     private int actual = 0;
 
@@ -17,6 +21,23 @@ public class SelectFunction : MonoBehaviour
         {
             visualText.text = functions[actual];
         }
+    }
+
+    public float GetCurrentResult()
+    {
+        float valA = (inputA != null) ? inputA.GetValueFromSource() : 0;
+        float valB = (inputB != null) ? inputB.GetValueFromSource() : 0;
+        float resultado = 0;
+        switch (functions[actual])
+        {
+            case "SUMA": resultado = valA + valB; break;
+            case "RESTA": resultado = valA - valB; break;
+            case "MULTIPLICACIÓN": resultado = valA * valB; break;
+            case "DIVISIÓN": resultado = (valB != 0) ? (float)valA / valB : 0; break;
+            default: resultado = 0; break;
+        }
+        Debug.Log("Calculando: " + valA + " + " + valB + " = " + resultado);
+        return resultado;
     }
 
     public void ChangeNextFunction()

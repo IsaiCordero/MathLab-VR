@@ -11,6 +11,7 @@ public class SpawnerBloques : MonoBehaviour
         {
           if( evento.Type == PointerEventType.Select)
             {
+                Debug.Log("Prueba de consola");
                 Spawn();
             }  
         };
