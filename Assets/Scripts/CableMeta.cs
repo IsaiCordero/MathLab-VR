@@ -164,6 +164,13 @@ public class CableMeta : MonoBehaviour
                 if (bloqueDestino != null) {
                     bloqueDestino.incomingCable = this.GetComponent<DataCable>();
                 }
+                if (hit.transform.IsChildOf(blockOriginal))
+                {
+                    continue; 
+                }
+
+                InPutFound = hit.transform;
+                break;
             }
         }
         if (InPutFound != null)

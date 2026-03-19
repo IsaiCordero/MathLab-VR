@@ -7012,8 +7012,8 @@ struct SelectFunction_t9022B7AA28BB5FAB7D0C0234FACEBD2D2571CD3C  : public MonoBe
 {
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___visualText;
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___functions;
-	DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* ___inputA;
-	DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* ___inputB;
+	DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* ___firstInput;
+	DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* ___secondInput;
 	int32_t ___actual;
 };
 struct SpawnerBloques_t6D685A5883FCF13C26A30A910CF9D65892396B47  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
@@ -9068,7 +9068,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable15672[2] =
 	static_cast<int32_t>(offsetof(ResultDisplay_tA071E6D37375EAFEB74C72C2300A0460AF05EA2A, ___resultText)),static_cast<int32_t>(offsetof(ResultDisplay_tA071E6D37375EAFEB74C72C2300A0460AF05EA2A, ___functionBlock)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable15673[5] = 
 {
-	static_cast<int32_t>(offsetof(SelectFunction_t9022B7AA28BB5FAB7D0C0234FACEBD2D2571CD3C, ___visualText)),static_cast<int32_t>(offsetof(SelectFunction_t9022B7AA28BB5FAB7D0C0234FACEBD2D2571CD3C, ___functions)),static_cast<int32_t>(offsetof(SelectFunction_t9022B7AA28BB5FAB7D0C0234FACEBD2D2571CD3C, ___inputA)),static_cast<int32_t>(offsetof(SelectFunction_t9022B7AA28BB5FAB7D0C0234FACEBD2D2571CD3C, ___inputB)),static_cast<int32_t>(offsetof(SelectFunction_t9022B7AA28BB5FAB7D0C0234FACEBD2D2571CD3C, ___actual)),};
+	static_cast<int32_t>(offsetof(SelectFunction_t9022B7AA28BB5FAB7D0C0234FACEBD2D2571CD3C, ___visualText)),static_cast<int32_t>(offsetof(SelectFunction_t9022B7AA28BB5FAB7D0C0234FACEBD2D2571CD3C, ___functions)),static_cast<int32_t>(offsetof(SelectFunction_t9022B7AA28BB5FAB7D0C0234FACEBD2D2571CD3C, ___firstInput)),static_cast<int32_t>(offsetof(SelectFunction_t9022B7AA28BB5FAB7D0C0234FACEBD2D2571CD3C, ___secondInput)),static_cast<int32_t>(offsetof(SelectFunction_t9022B7AA28BB5FAB7D0C0234FACEBD2D2571CD3C, ___actual)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable15674[2] = 
 {
 	static_cast<int32_t>(offsetof(SpawnerBloques_t6D685A5883FCF13C26A30A910CF9D65892396B47, ___prefabBloque)),static_cast<int32_t>(offsetof(SpawnerBloques_t6D685A5883FCF13C26A30A910CF9D65892396B47, ___grabbableBoton)),};

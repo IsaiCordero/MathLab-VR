@@ -27,13 +27,6 @@ public class NumberBlock : MonoBehaviour
             Debug.Log("resultado =" + result);
             valueText.text = result.ToString("F1");
         }
-        else
-        {
-            if (Time.frameCount % 100 == 0)
-            {
-                Debug.Log("NO HAY CABLE CONNECTED");
-            }
-        }
     }
 
     public void Add()

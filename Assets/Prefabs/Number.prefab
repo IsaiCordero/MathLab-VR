@@ -937,7 +937,7 @@ Transform:
   m_GameObject: {fileID: 6972021615312266208}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.867, y: 0.32, z: 0}
+  m_LocalPosition: {x: 0.867, y: 0.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1108,7 +1108,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &2047892880557148706
 MonoBehaviour:
@@ -1324,6 +1324,7 @@ MonoBehaviour:
   distConn: 0.1
   FirstInPut: First InPut
   SecondInPut: Second InPut
+  InPut: Input
   colorDisconnected: {r: 1, g: 0, b: 0, a: 1}
   colorConnected: {r: 0, g: 1, b: 0, a: 1}
   blockOriginal: {fileID: 4752835896976161619}
