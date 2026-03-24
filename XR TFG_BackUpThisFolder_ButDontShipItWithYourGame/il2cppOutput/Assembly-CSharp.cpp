@@ -122,7 +122,6 @@ IL2CPP_EXTERN_C RuntimeClass* StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____685A7B778D8E9E9CFDAF6581B3AD2F70B89058C82661577050F29C423083AA2D_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____6FBCAD3B6C81F7B5A4966C014B3DA0AFF0D93101680C2D6903A5482673144D70_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral2C6C4A0396E04E83942E78DFF4DF343644956432;
-IL2CPP_EXTERN_C String_t* _stringLiteral2FB46D44A4C57F814C9D821F9E39080910753F6B;
 IL2CPP_EXTERN_C String_t* _stringLiteral694A1D4E2D5D36876C7BDFEEFA2BF12F5EAB41C9;
 IL2CPP_EXTERN_C String_t* _stringLiteral90C9231C753392927F429B0F9BD11C6A75C6F0CD;
 IL2CPP_EXTERN_C String_t* _stringLiteral9404AFF119D90FC73EDF824A6F426CCC21712D08;
@@ -4003,46 +4002,41 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectFunction_ChangeNextFunction_mBE56E
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2FB46D44A4C57F814C9D821F9E39080910753F6B);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SelectFunction.cs:44>
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral2FB46D44A4C57F814C9D821F9E39080910753F6B, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SelectFunction.cs:45>
 		int32_t L_0 = __this->___actual;
 		__this->___actual = ((int32_t)il2cpp_codegen_add(L_0, 1));
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SelectFunction.cs:47>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SelectFunction.cs:46>
 		int32_t L_1 = __this->___actual;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = __this->___functions;
 		NullCheck(L_2);
 		if ((((int32_t)L_1) < ((int32_t)((int32_t)(((RuntimeArray*)L_2)->max_length)))))
 		{
-			goto IL_002f;
+			goto IL_0025;
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SelectFunction.cs:49>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SelectFunction.cs:48>
 		__this->___actual = 0;
 	}
 
-IL_002f:
+IL_0025:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SelectFunction.cs:52>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SelectFunction.cs:51>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_3 = __this->___visualText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
 		L_4 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_4)
 		{
-			goto IL_0055;
+			goto IL_004b;
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SelectFunction.cs:54>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SelectFunction.cs:53>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_5 = __this->___visualText;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_6 = __this->___functions;
 		int32_t L_7 = __this->___actual;
@@ -4053,9 +4047,9 @@ IL_002f:
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_5, L_9);
 	}
 
-IL_0055:
+IL_004b:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SelectFunction.cs:56>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SelectFunction.cs:55>
 		return;
 	}
 }
