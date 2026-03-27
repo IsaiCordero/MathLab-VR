@@ -174,15 +174,28 @@ public class CableMeta : MonoBehaviour
             }
         }
         if (InPutFound != null)
-        {
-            transform.position = InPutFound.position;
-            transform.rotation = InPutFound.rotation;
-            transform.SetParent(InPutFound); 
-            destinyPort = InPutFound;
+{
+    // 1. Emparentamos para que se mueva con el bloque
+    transform.SetParent(InPutFound); 
 
-            isConnected = true;
-            UpdateCableColor(colorConnected);
-        }
+    // 2. Posición: Justo en el centro del agujero
+    transform.localPosition = Vector3.zero;
+
+    // 3. Rotación Inteligente:
+    // Calculamos la dirección desde el cable hacia el bloque (padre del agujero)
+    Vector3 direccionAlBloque = InPutFound.parent.position - transform.position;
+    
+    if (direccionAlBloque != Vector3.zero)
+    {
+        // Creamos una rotación que "mire" en esa dirección
+        transform.rotation = Quaternion.LookRotation(direccionAlBloque);
+    }
+
+
+    destinyPort = InPutFound;
+    isConnected = true;
+    UpdateCableColor(colorConnected);
+}
         else
         {
             ResetPosition();

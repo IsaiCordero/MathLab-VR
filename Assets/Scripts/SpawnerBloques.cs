@@ -4,18 +4,27 @@ public class SpawnerBloques : MonoBehaviour
 {
     public GameObject prefabBloque;
     public Grabbable grabbableBoton;
+    private Vector3 fixedPost;
+    private Quaternion fixedLocalRot;
 
     void Start()
     {
+        fixedLocalRot = transform.localRotation;
+        fixedPost = transform.localPosition;
         grabbableBoton.WhenPointerEventRaised += (evento) =>
         {
           if( evento.Type == PointerEventType.Select)
             {
-                Debug.Log("Prueba de consola");
                 Spawn();
             }  
         };
     }
+
+    void LateUpdate()
+    {
+        transform.localPosition = fixedPost;
+        transform.localRotation = fixedLocalRot;
+    } 
 
     void Spawn()
     {

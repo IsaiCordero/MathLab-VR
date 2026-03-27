@@ -12,6 +12,7 @@ TagManager:
   - ChangeFunctionButton
   - ChangeFunctionBotton
   - Input
+  - VectorBlock
   layers:
   - Default
   - TransparentFX
