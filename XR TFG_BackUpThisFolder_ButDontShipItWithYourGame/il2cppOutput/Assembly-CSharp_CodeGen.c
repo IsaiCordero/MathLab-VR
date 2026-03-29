@@ -55,14 +55,16 @@ extern void SpawnerBloques__ctor_mD104B3211FDC95DF9691E5AC21532B5C0E48EDB8 (void
 extern void SpawnerBloques_U3CStartU3Eb__4_0_m81D72C40C8C9754B4DA161BB462E1DF2181F47AA (void);
 extern void VectorBlock_Start_m9B035B4E1EFADE2357C43399B87445F4E36E48B0 (void);
 extern void VectorBlock_Update_mAA8BC156536FB0600383C49BC4747F26666D42BD (void);
+extern void VectorBlock_OnPointerEvent_m2E85A56172DFAA04E1BACFCE6B42D457EAE4E2C0 (void);
 extern void VectorBlock_UpdateVisuals_mF156BF20486A0FF9075C53225E2612FEA474C9E5 (void);
+extern void VectorBlock_OnDestroy_m186BB959CACB3BB9A2AD9478A13D925A92C9B017 (void);
 extern void VectorBlock__ctor_mF1AE60EC1CD0C123DFDE520A5E2F71B23F0FEB52 (void);
 extern void VectorController_Start_mFFD11B269E7D8888851E487374B3E9D37A354BA9 (void);
 extern void VectorController_LateUpdate_m2C6CCE439168D36F7D03DA73D637F0236A90FF4D (void);
 extern void VectorController__ctor_mA3A97078DE9BCCD283B1C1ADCCE993FD5B81B68E (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[55] = 
+static Il2CppMethodPointer s_methodPointers[57] = 
 {
 	ButtonSelector_Start_m4AA9A7226035DBE8F271E56558A7A52394A2C9C1,
 	ButtonSelector_LateUpdate_m49F5AE882FF50BAE60736CE21DC5C96CE2CE9BAF,
@@ -112,7 +114,9 @@ static Il2CppMethodPointer s_methodPointers[55] =
 	SpawnerBloques_U3CStartU3Eb__4_0_m81D72C40C8C9754B4DA161BB462E1DF2181F47AA,
 	VectorBlock_Start_m9B035B4E1EFADE2357C43399B87445F4E36E48B0,
 	VectorBlock_Update_mAA8BC156536FB0600383C49BC4747F26666D42BD,
+	VectorBlock_OnPointerEvent_m2E85A56172DFAA04E1BACFCE6B42D457EAE4E2C0,
 	VectorBlock_UpdateVisuals_mF156BF20486A0FF9075C53225E2612FEA474C9E5,
+	VectorBlock_OnDestroy_m186BB959CACB3BB9A2AD9478A13D925A92C9B017,
 	VectorBlock__ctor_mF1AE60EC1CD0C123DFDE520A5E2F71B23F0FEB52,
 	VectorController_Start_mFFD11B269E7D8888851E487374B3E9D37A354BA9,
 	VectorController_LateUpdate_m2C6CCE439168D36F7D03DA73D637F0236A90FF4D,
@@ -120,7 +124,7 @@ static Il2CppMethodPointer s_methodPointers[55] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[55] = 
+static const int32_t s_InvokerIndices[57] = 
 {
 	20176,
 	20176,
@@ -170,6 +174,8 @@ static const int32_t s_InvokerIndices[55] =
 	15450,
 	20176,
 	20176,
+	15450,
+	20176,
 	20176,
 	20176,
 	20176,
@@ -182,7 +188,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	55,
+	57,
 	s_methodPointers,
 	0,
 	NULL,

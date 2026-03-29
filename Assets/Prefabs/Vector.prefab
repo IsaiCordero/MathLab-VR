@@ -92,8 +92,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 2
+  m_fontSizeBase: 2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -389,7 +389,7 @@ MonoBehaviour:
   valueText: {fileID: 2203743633640173688}
   currentVector: {x: 0, y: 0, z: 0}
   joystickObject: {fileID: 8202814010091311874}
-  centerReference: {fileID: 4752835896976161619}
+  centerReference: {fileID: 0}
   incomingCable: {fileID: 0}
 --- !u!1 &5051030337124406938
 GameObject:
