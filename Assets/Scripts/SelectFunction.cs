@@ -38,7 +38,31 @@ public class SelectFunction : MonoBehaviour
         }
         return resultado;
     }
+    public Vector3 GetCurrentVectorResult()
+    {
+        if (firstInput == null || secondInput == null) return Vector3.zero;
 
+        Vector3 v1 = firstInput.GetVectorFromSource();
+        Vector3 v2 = secondInput.GetVectorFromSource();
+
+        Vector3 resultado = v1;
+        switch (functions[actual])
+        {
+            case "SUMA": resultado = v1 + v2; break;
+            case "RESTA": resultado = v1 - v2; break;
+            case "MULTIPLICACIÓN": resultado = new Vector3(
+                v1.x * v2.x,
+                v1.y * v2.y,
+                v1.z * v2.z
+            ); break;
+            case "DIVISIÓN": resultado = new Vector3(
+                v2.x != 0 ? v1.x / v2.x : 0,
+                v2.y != 0 ? v1.y / v2.y : 0,
+                v2.z != 0 ? v1.z / v2.z : 0
+            ); break;
+        }
+        return resultado;
+    }
     public void ChangeNextFunction()
     {
         actual++;
@@ -53,4 +77,21 @@ public class SelectFunction : MonoBehaviour
             visualText.text = functions[actual];
         }
     }
+    public void SetFunctionByIndex(int index)
+    {
+        if (functions == null || functions.Length == 0) return;
+
+        if (index < 0 || index >= functions.Length)
+        {
+            index = 0;
+        }
+
+        actual = index;
+
+        if (visualText != null)
+        {
+            visualText.text = functions[actual];
+        }
+    }
+
 }

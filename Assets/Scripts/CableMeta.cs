@@ -5,21 +5,21 @@ public class CableMeta : MonoBehaviour
 {
     [Header("Components")]
     public LineRenderer lineRenderer;
-    public Grabbable grabbableMeta; 
-    
+    public Grabbable grabbableMeta;
+
     [Header("Configuration")]
-    public Transform blockOutPut; 
+    public Transform blockOutPut;
     public float distConn = 0.1f;
     public string FirstInPut = "First InPut";
-    public string SecondInPut = "Second InPut"; 
-    public string InPut = "Input"; 
+    public string SecondInPut = "Second InPut";
+    public string InPut = "Input";
 
     [Header("Colors")]
     public Color colorDisconnected = Color.red;
     public Color colorConnected = Color.green;
 
     [Header("References")]
-    public Transform blockOriginal; 
+    public Transform blockOriginal;
     private Vector3 positionOriginal;
     private Quaternion rotationOriginal;
     private Transform destinyPort = null;
@@ -32,7 +32,7 @@ public class CableMeta : MonoBehaviour
     {
         if (blockOriginal == null)
         {
-            blockOriginal = transform.root; 
+            blockOriginal = transform.root;
         }
 
         positionOriginal = transform.localPosition;
@@ -42,10 +42,12 @@ public class CableMeta : MonoBehaviour
 
         UpdateCableColor(colorDisconnected);
     }
+
     void LateUpdate()
     {
         transform.localRotation = rotationOriginal;
     }
+
     private void OnDestroy()
     {
         if (grabbableMeta != null)
@@ -53,17 +55,17 @@ public class CableMeta : MonoBehaviour
 
         foreach (Transform child in GetComponentsInChildren<Transform>())
         {
-            if(child.CompareTag(FirstInPut) || child.CompareTag(SecondInPut) || child.CompareTag(InPut))
+            if (child.CompareTag(FirstInPut) || child.CompareTag(SecondInPut) || child.CompareTag(InPut))
             {
                 CableMeta plugConnected = child.GetComponentInChildren<CableMeta>();
-                if(plugConnected != null)
+                if (plugConnected != null)
                 {
                     plugConnected.ResetPosition();
                 }
             }
         }
 
-        if(destinyPort != null)
+        if (destinyPort != null)
         {
             ResetPosition();
         }
@@ -76,7 +78,7 @@ public class CableMeta : MonoBehaviour
             DrawCurveBezier();
         }
 
-        if(grabbableMeta.SelectingPointsCount > 0 && !isConnected)
+        if (grabbableMeta.SelectingPointsCount > 0 && !isConnected)
         {
             UpdateCableColor(colorDisconnected);
         }
@@ -108,23 +110,24 @@ public class CableMeta : MonoBehaviour
         for (int i = 0; i < curveResolution; i++)
         {
             float y = i / (float)(curveResolution - 1);
-            Vector3 curvePosition = CalculateBezierPoint(y,startPoint,middlePoint,endPoint);
-            lineRenderer.SetPosition(i,curvePosition);
+            Vector3 curvePosition = CalculateBezierPoint(y, startPoint, middlePoint, endPoint);
+            lineRenderer.SetPosition(i, curvePosition);
         }
     }
 
     Vector3 CalculateBezierPoint(float y, Vector3 p0, Vector3 p1, Vector3 p2)
     {
         float u = 1 - y;
-        float yy = y*y;
-        float uu = u*u;
+        float yy = y * y;
+        float uu = u * u;
 
-        Vector3 p = uu*p0;
-        p += 2*u*y*p1;
-        p += yy*p2;
+        Vector3 p = uu * p0;
+        p += 2 * u * y * p1;
+        p += yy * p2;
 
         return p;
     }
+
     private void EventsMeta(PointerEvent evento)
     {
         if (evento.Type == PointerEventType.Unselect)
@@ -133,6 +136,12 @@ public class CableMeta : MonoBehaviour
         }
         else if (evento.Type == PointerEventType.Select)
         {
+            DataCable dc = GetComponent<DataCable>();
+            if (dc != null)
+            {
+                dc.DisconnectFromPort();
+            }
+
             transform.SetParent(blockOriginal);
             destinyPort = null;
             isConnected = false;
@@ -147,55 +156,39 @@ public class CableMeta : MonoBehaviour
 
         foreach (var hit in hits)
         {
-            if (hit.CompareTag(FirstInPut) || hit.CompareTag(SecondInPut))
+            if (hit.CompareTag(FirstInPut) || hit.CompareTag(SecondInPut) || hit.CompareTag(InPut))
             {
                 if (hit.transform.IsChildOf(blockOriginal))
                 {
-                    continue; 
-                }
-
-                InPutFound = hit.transform;
-                break;
-            }
-            
-            if (hit.CompareTag("Input")) {
-                NumberBlock bloqueDestino = hit.GetComponentInParent<NumberBlock>();
-        
-                if (bloqueDestino != null) {
-                    bloqueDestino.incomingCable = this.GetComponent<DataCable>();
-                }
-                if (hit.transform.IsChildOf(blockOriginal))
-                {
-                    continue; 
+                    continue;
                 }
 
                 InPutFound = hit.transform;
                 break;
             }
         }
+
         if (InPutFound != null)
-{
-    // 1. Emparentamos para que se mueva con el bloque
-    transform.SetParent(InPutFound); 
+        {
+            transform.SetParent(InPutFound);
+            transform.localPosition = Vector3.zero;
 
-    // 2. Posición: Justo en el centro del agujero
-    transform.localPosition = Vector3.zero;
+            Vector3 direccionAlBloque = InPutFound.parent.position - transform.position;
+            if (direccionAlBloque != Vector3.zero)
+            {
+                transform.rotation = Quaternion.LookRotation(direccionAlBloque);
+            }
 
-    // 3. Rotación Inteligente:
-    // Calculamos la dirección desde el cable hacia el bloque (padre del agujero)
-    Vector3 direccionAlBloque = InPutFound.parent.position - transform.position;
-    
-    if (direccionAlBloque != Vector3.zero)
-    {
-        // Creamos una rotación que "mire" en esa dirección
-        transform.rotation = Quaternion.LookRotation(direccionAlBloque);
-    }
+            DataCable dc = GetComponent<DataCable>();
+            if (dc != null)
+            {
+                dc.ConnectToPort(InPutFound);
+            }
 
-
-    destinyPort = InPutFound;
-    isConnected = true;
-    UpdateCableColor(colorConnected);
-}
+            destinyPort = InPutFound;
+            isConnected = true;
+            UpdateCableColor(colorConnected);
+        }
         else
         {
             ResetPosition();
@@ -204,6 +197,12 @@ public class CableMeta : MonoBehaviour
 
     public void ResetPosition()
     {
+        DataCable dc = GetComponent<DataCable>();
+        if (dc != null)
+        {
+            dc.DisconnectFromPort();
+        }
+
         transform.SetParent(blockOriginal);
         transform.localPosition = positionOriginal;
         transform.localRotation = rotationOriginal;
@@ -213,4 +212,15 @@ public class CableMeta : MonoBehaviour
         UpdateCableColor(colorDisconnected);
     }
 
+    public void Disconnect()
+    {
+        DataCable dc = GetComponent<DataCable>();
+        if (dc != null)
+        {
+            dc.DisconnectFromPort();
+            dc.sourceObject = null;
+        }
+
+        ResetPosition();
+    }
 }

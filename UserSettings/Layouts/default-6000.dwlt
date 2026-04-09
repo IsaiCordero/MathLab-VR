@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1535.2001
     height: 764.8
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -570,7 +570,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -580,7 +580,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\isai\TFG
   m_LockTracker:
@@ -589,12 +589,12 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
     m_SelectedIDs:
-    - m_Data: 75164
+    - m_Data: 75032
     m_LastClickedID:
-      m_Data: 75164
+      m_Data: 75032
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 75010
+    - m_Data: 74886
     - m_Data: 1000000000
     - m_Data: 2147483647
     m_RenameOverlay:
@@ -629,7 +629,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 75010
+    - m_Data: 74886
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -656,9 +656,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs:
-    - m_Data: 45790
-    m_LastClickedInstanceID: 45790
+    m_SelectedInstanceIDs: []
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs:
     - m_Data: 133968
@@ -734,12 +733,33 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs:
-      - m_Data: 45790
+      m_SelectedIDs: []
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
+      - m_Data: -270254
+      - m_Data: -269902
+      - m_Data: -257920
+      - m_Data: -242502
+      - m_Data: -242150
+      - m_Data: -230316
+      - m_Data: -218252
+      - m_Data: -217900
+      - m_Data: -206106
+      - m_Data: -197536
+      - m_Data: -197184
+      - m_Data: -185368
+      - m_Data: -178780
+      - m_Data: -178428
+      - m_Data: -166612
+      - m_Data: -158048
+      - m_Data: -157696
+      - m_Data: -145812
+      - m_Data: -26982
+      - m_Data: -26628
+      - m_Data: -14778
       - m_Data: -1310
+      - m_Data: 201682
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1346,9 +1366,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 0.8524177, y: -0.19439456, z: -1.1138345}
+    m_Target: {x: -0.00903346, y: 1.0416855, z: -0.04451219}
     speed: 2
-    m_Value: {x: 0.8524177, y: -0.19439456, z: -1.1138345}
+    m_Value: {x: -0.009033463, y: 1.0416855, z: -0.044512186}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1394,20 +1414,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.032623418, y: 0.9421285, z: -0.31955722, w: 0.09614253}
+    m_Target: {x: 0.006556416, y: 0.9699219, z: -0.026199594, w: 0.24198732}
     speed: 2
-    m_Value: {x: 0.03262292, y: 0.9421141, z: -0.31955233, w: 0.09614106}
+    m_Value: {x: -0.06791333, y: 0.76327956, z: 0.08137379, w: 0.63731503}
   m_Size:
-    m_Target: 1.3111045
+    m_Target: 0.044239465
     speed: 2
-    m_Value: 1.3111045
+    m_Value: 0.042334415
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 0.100950085
-    m_SpeedNormalized: 0.05000004
+    m_Speed: 2
+    m_SpeedNormalized: 1
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1

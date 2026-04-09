@@ -1,35 +1,63 @@
 using UnityEngine;
 using Oculus.Interaction;
+
 public class SpawnerBloques : MonoBehaviour
 {
-    public GameObject prefabBloque;
+    [Header("Spawn")]
+    public GameObject functionBlockPrefab;
+    public float spawnDistance = -0.25f;
+    public int defaultFunctionIndex = 0;
+
+    [Header("Interaction")]
     public Grabbable grabbableBoton;
-    private Vector3 fixedPost;
-    private Quaternion fixedLocalRot;
+
+    private Vector3 fixedLocalPosition;
+    private Quaternion fixedLocalRotation;
 
     void Start()
     {
-        fixedLocalRot = transform.localRotation;
-        fixedPost = transform.localPosition;
-        grabbableBoton.WhenPointerEventRaised += (evento) =>
+        fixedLocalPosition = transform.localPosition;
+        fixedLocalRotation = transform.localRotation;
+
+        if (grabbableBoton != null)
         {
-          if( evento.Type == PointerEventType.Select)
-            {
-                Spawn();
-            }  
-        };
+            grabbableBoton.WhenPointerEventRaised += HandlePointerEvent;
+        }
     }
 
     void LateUpdate()
     {
-        transform.localPosition = fixedPost;
-        transform.localRotation = fixedLocalRot;
-    } 
-
-    void Spawn()
-    {
-        GameObject newBloque = Instantiate(prefabBloque, transform.position, Quaternion.identity);
-        newBloque.transform.position += transform.forward * 0.2f;
+        transform.localPosition = fixedLocalPosition;
+        transform.localRotation = fixedLocalRotation;
     }
-    
+
+    private void HandlePointerEvent(PointerEvent evt)
+    {
+        if (evt.Type == PointerEventType.Select)
+        {
+            SpawnFunctionBlock();
+        }
+    }
+
+    private void SpawnFunctionBlock()
+    {
+        if (functionBlockPrefab == null) return;
+
+        Vector3 spawnPosition = transform.position + transform.forward * spawnDistance;
+        GameObject newBlock = Instantiate(functionBlockPrefab, spawnPosition, Quaternion.identity);
+
+        SelectFunction selectFunction = newBlock.GetComponent<SelectFunction>();
+        if (selectFunction != null)
+        {
+            selectFunction.SetFunctionByIndex(defaultFunctionIndex);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if (grabbableBoton != null)
+        {
+            grabbableBoton.WhenPointerEventRaised -= HandlePointerEvent;
+        }
+    }
 }
