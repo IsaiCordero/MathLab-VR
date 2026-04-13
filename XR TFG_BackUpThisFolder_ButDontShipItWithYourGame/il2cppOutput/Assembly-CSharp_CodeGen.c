@@ -40,7 +40,11 @@ extern void NumberBlock_Update_mD0EDFFD655D383F6604922DFE45EC903BFC6E83A (void);
 extern void NumberBlock_Add_m0BA535A79B2455233EEC251D128E71CC9BA466D3 (void);
 extern void NumberBlock_Subtract_m8480B6C11C78481636C4551415D8FB64A9085DE3 (void);
 extern void NumberBlock_UpdateVisuals_m1E4A46D55E3CB9F9DF384413E1EB7D5F7C4EB3B7 (void);
+extern void NumberBlock_SetValueFromSlider_m36419F445A2D12A7D808C4035920F7DCB87050D6 (void);
 extern void NumberBlock__ctor_m221835686213C17C362C578C7B38940E2C56F63E (void);
+extern void NumberSlider_Start_mDE29E21DE48DF890C75D0BDFBC87EFC5EFC7AF35 (void);
+extern void NumberSlider_Update_mBFF90768DB0F22BC0D6A9DF4D6152C25A52FCED9 (void);
+extern void NumberSlider__ctor_m7E75CA48273E441CA15F2AB8D90E236180EA4717 (void);
 extern void PlusMinusButton_Start_mDAE20133816CC7E7FBE9B720DE3264969A02AF6A (void);
 extern void PlusMinusButton_LateUpdate_mE7444F38245818304C72A7F5C216B236705970A0 (void);
 extern void PlusMinusButton_HandleEvent_mDF42CEDB56E5DE47A03F5D6C8140E1E1823ACA51 (void);
@@ -72,7 +76,7 @@ extern void VectorController_LateUpdate_m2C6CCE439168D36F7D03DA73D637F0236A90FF4
 extern void VectorController__ctor_mA3A97078DE9BCCD283B1C1ADCCE993FD5B81B68E (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[65] = 
+static Il2CppMethodPointer s_methodPointers[69] = 
 {
 	ButtonSelector_Start_m4AA9A7226035DBE8F271E56558A7A52394A2C9C1,
 	ButtonSelector_LateUpdate_m49F5AE882FF50BAE60736CE21DC5C96CE2CE9BAF,
@@ -107,7 +111,11 @@ static Il2CppMethodPointer s_methodPointers[65] =
 	NumberBlock_Add_m0BA535A79B2455233EEC251D128E71CC9BA466D3,
 	NumberBlock_Subtract_m8480B6C11C78481636C4551415D8FB64A9085DE3,
 	NumberBlock_UpdateVisuals_m1E4A46D55E3CB9F9DF384413E1EB7D5F7C4EB3B7,
+	NumberBlock_SetValueFromSlider_m36419F445A2D12A7D808C4035920F7DCB87050D6,
 	NumberBlock__ctor_m221835686213C17C362C578C7B38940E2C56F63E,
+	NumberSlider_Start_mDE29E21DE48DF890C75D0BDFBC87EFC5EFC7AF35,
+	NumberSlider_Update_mBFF90768DB0F22BC0D6A9DF4D6152C25A52FCED9,
+	NumberSlider__ctor_m7E75CA48273E441CA15F2AB8D90E236180EA4717,
 	PlusMinusButton_Start_mDAE20133816CC7E7FBE9B720DE3264969A02AF6A,
 	PlusMinusButton_LateUpdate_mE7444F38245818304C72A7F5C216B236705970A0,
 	PlusMinusButton_HandleEvent_mDF42CEDB56E5DE47A03F5D6C8140E1E1823ACA51,
@@ -140,7 +148,7 @@ static Il2CppMethodPointer s_methodPointers[65] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[65] = 
+static const int32_t s_InvokerIndices[69] = 
 {
 	20176,
 	20176,
@@ -172,6 +180,10 @@ static const int32_t s_InvokerIndices[65] =
 	20176,
 	20176,
 	20176,
+	20176,
+	20176,
+	20176,
+	15328,
 	20176,
 	20176,
 	20176,
@@ -212,7 +224,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	65,
+	69,
 	s_methodPointers,
 	0,
 	NULL,

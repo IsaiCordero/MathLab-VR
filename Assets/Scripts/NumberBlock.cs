@@ -52,4 +52,13 @@ public class NumberBlock : MonoBehaviour
             valueText.text = currentValue.ToString();
         }
     }
+
+    public void SetValueFromSlider(int value)
+    {
+        if (incomingCable != null) return;
+
+            currentValue = value;
+            UpdateVisuals();
+    }
+
 }
