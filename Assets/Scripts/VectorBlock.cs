@@ -1,7 +1,5 @@
 using UnityEngine;
 using TMPro;
-using System.Globalization;
-using Oculus.Interaction; 
 
 public class VectorBlock : MonoBehaviour
 {
@@ -9,177 +7,82 @@ public class VectorBlock : MonoBehaviour
     public TextMeshProUGUI valueText;
 
     [Header("Vector Data")]
-    public Vector3 currentVector; 
+    public Vector3 currentVector;
 
-    [Header("Joystick Reference")]
-    public Transform joystickObject;
-    public Transform centerReference; 
-    private Renderer joystickRenderer;
-    private Rigidbody joystickRb;
+    [Header("Vector Area")]
+    public Transform vectorCube;
+    public Transform centerReference;
 
-    [Header("Settings & Colors")]
-    public Color manualColor = Color.white;
-    public Color autoColor = Color.blue;
-    public float lerpSpeed = 10f; 
+    [Header("Settings")]
+    public float lerpSpeed = 10f;
 
     [Header("Cable")]
     public DataCable incomingCable;
 
     private bool wasConnected = false;
 
-    [Header("Arrow Visual")]
-    public Transform arrowRoot;
-    public Transform arrowModel;
-    public float arrowHeightOffset = 0.15f;
-    public float arrowLengthMultiplier = 1f;
-    public float minArrowLength = 0.05f;
-
-    private Vector3 arrowInitialScale;
     void Start()
     {
-        if (joystickObject != null)
-        {
-            joystickRb = joystickObject.GetComponent<Rigidbody>();
-            joystickRenderer = joystickObject.GetComponent<Renderer>();
-            
-            Vector3 initialPosition = joystickObject.position;
-            Quaternion initialRotation = joystickObject.rotation;
-            joystickObject.SetParent(null);
-            joystickObject.position = initialPosition;
-            joystickObject.rotation = initialRotation;
-
-            var grabbable = joystickObject.GetComponent<Grabbable>();
-            if (grabbable != null) grabbable.WhenPointerEventRaised += OnPointerEvent;
-        }
-        if (arrowModel != null)
-        {
-            arrowInitialScale = arrowModel.localScale;
-        }
-        // Configuración del Centro de Referencia
-        if (centerReference == null)
-        {
-            GameObject refGlobal = GameObject.Find("Center"); 
-            if (refGlobal != null)
-            {
-                centerReference = refGlobal.transform;
-            }
-            else
-            {
-                GameObject go = new GameObject("LocalCenterRef_" + name);
-                centerReference = go.transform;
-                centerReference.SetParent(this.transform);
-                centerReference.localPosition = Vector3.zero; 
-            }
-        }
+        UpdateVisuals();
     }
 
     void Update()
     {
+        if (vectorCube == null || centerReference == null)
+            return;
+
         if (incomingCable != null)
         {
             wasConnected = true;
-            
+
+            // 1. Leemos el vector que llega por el cable
             currentVector = incomingCable.GetVectorFromSource();
-            
-            if (joystickObject != null && centerReference != null)
-            {
-                Vector3 targetWorldPos = centerReference.position + currentVector;
-                joystickObject.position = Vector3.Lerp(joystickObject.position, targetWorldPos, Time.deltaTime * lerpSpeed);
-                
-                if (joystickRb != null) joystickRb.isKinematic = true;
-            }
-            
-            if (joystickRenderer != null) joystickRenderer.material.color = autoColor;
+
+            // 2. Movemos el cubo dentro del área local hacia ese vector
+            vectorCube.localPosition = Vector3.Lerp(
+                vectorCube.localPosition,
+                centerReference.localPosition + currentVector,
+                Time.deltaTime * lerpSpeed
+            );
         }
         else
         {
-            if (wasConnected) ResetBlock();
-
-            if (joystickObject != null && centerReference != null)
+            // Si antes estaba conectado y ahora no, reiniciamos
+            if (wasConnected)
             {
-                currentVector = joystickObject.position - centerReference.position;
-                
-                if (joystickRenderer != null) joystickRenderer.material.color = manualColor;
+                ResetBlock();
             }
+
+            // En modo manual, el vector sale de la posición local del cubo
+            Vector3 localOffset = vectorCube.localPosition - centerReference.localPosition;
+            localOffset.x = -localOffset.x;
+            currentVector = localOffset * 10f;
+
         }
 
         UpdateVisuals();
-        UpdateArrowVisual();
     }
 
     void ResetBlock()
     {
-        if (joystickObject != null && centerReference != null)
+        if (vectorCube != null && centerReference != null)
         {
-            joystickObject.position = centerReference.position;
-            if (joystickRb != null) joystickRb.isKinematic = true;
+            vectorCube.localPosition = centerReference.localPosition;
         }
+
         currentVector = Vector3.zero;
         wasConnected = false;
-    }
-
-    private void OnPointerEvent(PointerEvent evt)
-    {
-        if (joystickRb == null || incomingCable != null) return;
-
-        if (evt.Type == PointerEventType.Unselect)
-        {
-            joystickRb.isKinematic = true;
-            joystickRb.linearVelocity = Vector3.zero;
-            joystickRb.angularVelocity = Vector3.zero;
-        }
-        else if (evt.Type == PointerEventType.Select)
-        {
-            joystickRb.isKinematic = false;
-        }
     }
 
     void UpdateVisuals()
     {
         if (valueText != null)
-        {   
-            string x = currentVector.x.ToString("F1", CultureInfo.InvariantCulture);
-            string y = currentVector.y.ToString("F1", CultureInfo.InvariantCulture);
-            string z = currentVector.z.ToString("F1", CultureInfo.InvariantCulture);
+        {
+            string x = currentVector.x.ToString("F1", System.Globalization.CultureInfo.InvariantCulture);
+            string y = currentVector.y.ToString("F1", System.Globalization.CultureInfo.InvariantCulture);
+            string z = currentVector.z.ToString("F1", System.Globalization.CultureInfo.InvariantCulture);
+
             valueText.text = $"({x}, {y}, {z})";
-        }
-    }
-
-    void UpdateArrowVisual()
-    {
-        if (arrowRoot == null || arrowModel == null || joystickObject == null || centerReference == null) return;
-
-        Vector3 visualVector = joystickObject.position - centerReference.position;
-        float magnitude = visualVector.magnitude;
-
-        arrowRoot.position = centerReference.position + Vector3.up * arrowHeightOffset;
-
-        if (magnitude < 0.001f)
-        {
-            arrowModel.gameObject.SetActive(false);
-            return;
-        }
-
-        arrowModel.gameObject.SetActive(true);
-
-        Vector3 direction = visualVector.normalized;
-        arrowRoot.rotation = Quaternion.FromToRotation(Vector3.up, direction);
-
-        float visualLength = Mathf.Max(minArrowLength, magnitude * arrowLengthMultiplier);
-
-        arrowModel.localScale = new Vector3(
-            arrowInitialScale.x,
-            arrowInitialScale.y * visualLength,
-            arrowInitialScale.z
-        );
-    }
-
-    private void OnDestroy()
-    {
-        if (joystickObject != null)
-        {
-            var grabbable = joystickObject.GetComponent<Grabbable>();
-            if (grabbable != null) grabbable.WhenPointerEventRaised -= OnPointerEvent;
         }
     }
 }

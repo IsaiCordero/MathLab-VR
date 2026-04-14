@@ -1,28 +1,34 @@
 using UnityEngine;
-using Oculus.Interaction; 
 
 public class VectorController : MonoBehaviour
 {
-    public VectorBlock parentVectorBlock; 
+    public VectorBlock parentVectorBlock;
+    public Transform areaCenter;
 
-    private Vector3 startPosition;
-    private Transform originalParent;
+    [Header("Limits")]
+    public Vector3 minLocalPosition = new Vector3(-0.3f, -0.3f, -0.3f);
+    public Vector3 maxLocalPosition = new Vector3(0.3f, 0.3f, 0.3f);
 
-    void Start()
+    void Update()
     {
-        Rigidbody rb = GetComponent<Rigidbody>();
-        if (rb == null) rb = gameObject.AddComponent<Rigidbody>();
-        rb.isKinematic = false; 
+        Vector3 localPos = transform.localPosition;
 
-        startPosition = transform.localPosition;
-        originalParent = transform.parent;
-    }
+        localPos.x = Mathf.Clamp(localPos.x, minLocalPosition.x, maxLocalPosition.x);
+        localPos.y = Mathf.Clamp(localPos.y, minLocalPosition.y, maxLocalPosition.y);
+        localPos.z = Mathf.Clamp(localPos.z, minLocalPosition.z, maxLocalPosition.z);
 
-    void LateUpdate()
-    {
+        transform.localPosition = localPos;
+
         if (parentVectorBlock != null)
         {
-            parentVectorBlock.currentVector = transform.localPosition;
+            if (areaCenter != null)
+            {
+                parentVectorBlock.currentVector = transform.localPosition - areaCenter.localPosition;
+            }
+            else
+            {
+                parentVectorBlock.currentVector = transform.localPosition;
+            }
         }
     }
 }
