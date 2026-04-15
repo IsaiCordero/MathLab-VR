@@ -49,7 +49,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\VectorBlock.cs" />
     <Compile Include="Assets\Scripts\DeleteButton.cs" />
-    <Compile Include="Assets\Scripts\ButtonSelector.cs" />
     <Compile Include="Assets\Scripts\SpawnerBloques.cs" />
     <Compile Include="Assets\Scripts\SelectFunction.cs" />
     <Compile Include="Assets\Scripts\VectorController.cs" />
@@ -57,7 +56,6 @@
     <Compile Include="Assets\Scripts\ResultDisplay.cs" />
     <Compile Include="Assets\Scripts\NumberBlock.cs" />
     <Compile Include="Assets\Scripts\NumberSlider.cs" />
-    <Compile Include="Assets\Scripts\PlusMinusButton.cs" />
     <Compile Include="Assets\Scripts\CableMeta.cs" />
   </ItemGroup>
   <ItemGroup>
