@@ -33,6 +33,9 @@ public class VectorBlock : MonoBehaviour
     private Vector3 dynamicArrowHeadInitialScale;
     private Vector3 dynamicArrowBodyInitialLocalPosition;
 
+    private Vector3 lastDisplayedVector;
+    private Vector3 lastCubeLocalPosition;
+    private bool arrowWasVisible = false;
 
     void Start()
     {
@@ -42,7 +45,6 @@ public class VectorBlock : MonoBehaviour
             dynamicArrowBodyInitialLocalPosition = dynamicArrowBody.localPosition;
         }
 
-
         if (dynamicArrowHead != null)
         {
             dynamicArrowHeadInitialScale = dynamicArrowHead.localScale;
@@ -50,6 +52,12 @@ public class VectorBlock : MonoBehaviour
         }
 
         UpdateVisuals();
+        lastDisplayedVector = currentVector;
+
+        if (vectorCube != null)
+        {
+            lastCubeLocalPosition = vectorCube.localPosition;
+        }
     }
 
     void Update()
@@ -66,11 +74,20 @@ public class VectorBlock : MonoBehaviour
             Vector3 targetLocalOffset = currentVector / vectorScaleFactor;
             targetLocalOffset.x = -targetLocalOffset.x;
 
-            vectorCube.localPosition = Vector3.Lerp(
-                vectorCube.localPosition,
-                centerReference.localPosition + targetLocalOffset,
-                Time.deltaTime * lerpSpeed
-            );
+            Vector3 targetPosition = centerReference.localPosition + targetLocalOffset;
+
+            if ((vectorCube.localPosition - targetPosition).sqrMagnitude > 0.000001f)
+            {
+                vectorCube.localPosition = Vector3.Lerp(
+                    vectorCube.localPosition,
+                    targetPosition,
+                    Time.deltaTime * lerpSpeed
+                );
+            }
+            else
+            {
+                vectorCube.localPosition = targetPosition;
+            }
         }
         else
         {
@@ -84,23 +101,45 @@ public class VectorBlock : MonoBehaviour
             currentVector = localOffset * vectorScaleFactor;
         }
 
-        UpdateVisuals();
-    }
-    void LateUpdate()
-    {
-        UpdateDynamicArrow();
+        if (currentVector != lastDisplayedVector)
+        {
+            UpdateVisuals();
+            lastDisplayedVector = currentVector;
+        }
     }
 
+    void LateUpdate()
+    {
+        if (vectorCube == null || centerReference == null)
+            return;
+
+        if (vectorCube.localPosition != lastCubeLocalPosition)
+        {
+            UpdateDynamicArrow();
+            lastCubeLocalPosition = vectorCube.localPosition;
+        }
+        else if (!arrowWasVisible && dynamicArrowRoot != null)
+        {
+            UpdateDynamicArrow();
+        }
+    }
 
     void ResetBlock()
     {
         if (vectorCube != null && centerReference != null)
         {
             vectorCube.localPosition = centerReference.localPosition;
+            lastCubeLocalPosition = vectorCube.localPosition;
         }
 
         currentVector = Vector3.zero;
         wasConnected = false;
+        arrowWasVisible = false;
+
+        if (dynamicArrowRoot != null)
+        {
+            dynamicArrowRoot.gameObject.SetActive(false);
+        }
     }
 
     void UpdateVisuals()
@@ -129,21 +168,18 @@ public class VectorBlock : MonoBehaviour
         if (magnitude < 0.001f)
         {
             dynamicArrowRoot.gameObject.SetActive(false);
+            arrowWasVisible = false;
             return;
         }
 
         dynamicArrowRoot.gameObject.SetActive(true);
+        arrowWasVisible = true;
 
-        // La flecha nace en el centro del área
         dynamicArrowRoot.localPosition = centerReference.localPosition;
 
-        // Dirección hacia el cubito
         Vector3 direction = localOffset.normalized;
-
-        // Como tu flecha base está montada "hacia arriba"
         dynamicArrowRoot.localRotation = Quaternion.FromToRotation(Vector3.up, direction);
 
-        // Longitud visual según distancia al cubo
         float lengthFactor = Mathf.Max(0.001f, (magnitude + 0.1f) * arrowLengthMultiplier);
         float lengthFactorHead = Mathf.Max(0.001f, (magnitude + 0.5f) * arrowLengthMultiplier);
 
@@ -164,12 +200,11 @@ public class VectorBlock : MonoBehaviour
             dynamicArrowHeadInitialScale.y * lengthFactorHead,
             dynamicArrowHeadInitialScale.z
         );
+
         dynamicArrowHead.localPosition = new Vector3(
             dynamicArrowHeadInitialLocalPosition.x,
             (dynamicArrowHeadInitialLocalPosition.y * lengthFactor) + 0.05f,
             dynamicArrowHeadInitialLocalPosition.z
         );
-
-
     }
 }

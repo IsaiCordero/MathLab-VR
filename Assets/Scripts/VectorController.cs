@@ -9,8 +9,19 @@ public class VectorController : MonoBehaviour
     public Vector3 minLocalPosition = new Vector3(-0.3f, -0.3f, -0.3f);
     public Vector3 maxLocalPosition = new Vector3(0.3f, 0.3f, 0.3f);
 
+    private Vector3 lastLocalPosition;
+
+
+    void Start()
+    {
+        lastLocalPosition = transform.localPosition;
+    }
+
     void Update()
     {
+        if (transform.localPosition == lastLocalPosition)
+            return;
+
         Vector3 localPos = transform.localPosition;
 
         localPos.x = Mathf.Clamp(localPos.x, minLocalPosition.x, maxLocalPosition.x);
@@ -18,17 +29,7 @@ public class VectorController : MonoBehaviour
         localPos.z = Mathf.Clamp(localPos.z, minLocalPosition.z, maxLocalPosition.z);
 
         transform.localPosition = localPos;
-
-        if (parentVectorBlock != null)
-        {
-            if (areaCenter != null)
-            {
-                parentVectorBlock.currentVector = transform.localPosition - areaCenter.localPosition;
-            }
-            else
-            {
-                parentVectorBlock.currentVector = transform.localPosition;
-            }
-        }
+        lastLocalPosition = localPos;
     }
+
 }

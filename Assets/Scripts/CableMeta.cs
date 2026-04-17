@@ -28,6 +28,11 @@ public class CableMeta : MonoBehaviour
     public float curveForce = 0.5f;
     private bool isConnected = false;
 
+    // Optimizacion: solo redibujamos el cable si alguno de sus extremos cambia
+    private Vector3 lastStartPoint;
+    private Vector3 lastEndPoint;
+    private bool curveInitialized = false;
+
     void Start()
     {
         if (blockOriginal == null)
@@ -41,6 +46,13 @@ public class CableMeta : MonoBehaviour
         grabbableMeta.WhenPointerEventRaised += EventsMeta;
 
         UpdateCableColor(colorDisconnected);
+
+        if (blockOutPut != null)
+        {
+            lastStartPoint = blockOutPut.position;
+        }
+        lastEndPoint = transform.position;
+        curveInitialized = false;
     }
 
     void LateUpdate()
@@ -75,7 +87,16 @@ public class CableMeta : MonoBehaviour
     {
         if (blockOutPut != null)
         {
-            DrawCurveBezier();
+            Vector3 currentStartPoint = blockOutPut.position;
+            Vector3 currentEndPoint = transform.position;
+
+            if (!curveInitialized || currentStartPoint != lastStartPoint || currentEndPoint != lastEndPoint)
+            {
+                DrawCurveBezier();
+                lastStartPoint = currentStartPoint;
+                lastEndPoint = currentEndPoint;
+                curveInitialized = true;
+            }
         }
 
         if (grabbableMeta.SelectingPointsCount > 0 && !isConnected)
@@ -146,6 +167,7 @@ public class CableMeta : MonoBehaviour
             destinyPort = null;
             isConnected = false;
             UpdateCableColor(colorDisconnected);
+            curveInitialized = false;
         }
     }
 
@@ -188,6 +210,7 @@ public class CableMeta : MonoBehaviour
             destinyPort = InPutFound;
             isConnected = true;
             UpdateCableColor(colorConnected);
+            curveInitialized = false;
         }
         else
         {
@@ -210,6 +233,7 @@ public class CableMeta : MonoBehaviour
 
         isConnected = false;
         UpdateCableColor(colorDisconnected);
+        curveInitialized = false;
     }
 
     public void Disconnect()

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1535.2001
     height: 764.8
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 44
+  controlID: 17
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -248,8 +248,8 @@ MonoBehaviour:
     y: 0
     width: 374.3999
     height: 708.8
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 76}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -570,7 +570,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Materiales
+    - Assets/Prefabs
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -580,23 +580,23 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Materiales
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\isai\TFG
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
+    scrollPos: {x: 0, y: 69}
     m_SelectedIDs:
-    - m_Data: 81124
+    - m_Data: 93682
     m_LastClickedID:
-      m_Data: 81124
+      m_Data: 93682
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 75164
-    - m_Data: 81122
-    - m_Data: 534550
+    - m_Data: 93574
+    - m_Data: 93674
+    - m_Data: 212504
     - m_Data: 1000000000
     - m_Data: 2147483647
     m_RenameOverlay:
@@ -631,7 +631,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 75164
+    - m_Data: 93574
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -739,16 +739,38 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -160762
-      - m_Data: -160410
-      - m_Data: -149106
-      - m_Data: -142416
-      - m_Data: -142064
-      - m_Data: -130692
-      - m_Data: -26362
-      - m_Data: -26010
-      - m_Data: -14638
-      - m_Data: -1310
+      - m_Data: -164584
+      - m_Data: -164232
+      - m_Data: -152928
+      - m_Data: -137662
+      - m_Data: -137310
+      - m_Data: -125938
+      - m_Data: -114050
+      - m_Data: -113698
+      - m_Data: -102394
+      - m_Data: -94578
+      - m_Data: -94226
+      - m_Data: -82922
+      - m_Data: -76124
+      - m_Data: -75772
+      - m_Data: -64468
+      - m_Data: -57368
+      - m_Data: -57016
+      - m_Data: -45712
+      - m_Data: -40370
+      - m_Data: -40018
+      - m_Data: -28646
+      - m_Data: -1350
+      - m_Data: 93340
+      - m_Data: 93382
+      - m_Data: 93430
+      - m_Data: 93506
+      - m_Data: 109088
+      - m_Data: 112044
+      - m_Data: 115050
+      - m_Data: 127884
+      - m_Data: 130840
+      - m_Data: 133846
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1355,9 +1377,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 1.1039486, y: 0.818183, z: -0.31200314}
+    m_Target: {x: -0.04124308, y: -0.18543276, z: -0.18356492}
     speed: 2
-    m_Value: {x: 0.35234362, y: -0.08138192, z: -0.6800264}
+    m_Value: {x: 7.3176875, y: 4.2473702, z: -7.469949}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1403,13 +1425,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.16589513, y: -0.41669378, z: 0.0776623, w: 0.8904233}
+    m_Target: {x: -0.0025251494, y: -0.93268645, z: 0.36069292, w: -0.006430873}
     speed: 2
-    m_Value: {x: 0.017479137, y: 0.97696364, z: -0.08878392, w: 0.19327152}
+    m_Value: {x: -0.16270293, y: 0.06714682, z: -0.011097684, w: -0.9843251}
   m_Size:
-    m_Target: 0.22295058
+    m_Target: 0.26918036
     speed: 2
-    m_Value: 0.6136229
+    m_Value: 0.17051022
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1487,7 +1509,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1057.5001, y: 466.25}
+  m_TargetSize: {x: 846.00006, y: 373}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1502,10 +1524,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -423.00006
-    m_HBaseRangeMax: 423.00006
-    m_VBaseRangeMin: -186.5
-    m_VBaseRangeMax: 186.5
+    m_HBaseRangeMin: -338.40002
+    m_HBaseRangeMax: 338.40002
+    m_VBaseRangeMin: -149.2
+    m_VBaseRangeMax: 149.2
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1538,7 +1560,7 @@ MonoBehaviour:
       width: 676.80005
       height: 298.4
     m_MinimalGUI: 1
-  m_defaultScale: 0.99999994
+  m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1057.5001, y: 492.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
