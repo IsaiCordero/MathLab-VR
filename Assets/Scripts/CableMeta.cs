@@ -24,11 +24,13 @@ public class CableMeta : MonoBehaviour
     private Quaternion rotationOriginal;
     private Transform destinyPort = null;
 
+    // Esto lo añadimos para que otros scripts puedan saber a qué puerto está conectado el cable
+    public Transform DestinyPort => destinyPort;
+
     public int curveResolution = 10;
     public float curveForce = 0.5f;
     private bool isConnected = false;
 
-    // Optimizacion: solo redibujamos el cable si alguno de sus extremos cambia
     private Vector3 lastStartPoint;
     private Vector3 lastEndPoint;
     private bool curveInitialized = false;
@@ -57,7 +59,10 @@ public class CableMeta : MonoBehaviour
 
     void LateUpdate()
     {
-        transform.localRotation = rotationOriginal;
+        if (!isConnected)
+        {
+            transform.localRotation = rotationOriginal;
+        }
     }
 
     private void OnDestroy()
@@ -98,6 +103,19 @@ public class CableMeta : MonoBehaviour
                 curveInitialized = true;
             }
         }
+
+        if (isConnected && destinyPort != null)
+        {
+            transform.position = destinyPort.position;
+
+            Vector3 directionToTarget = destinyPort.parent.position - transform.position;
+
+            if (directionToTarget.sqrMagnitude > 0.0001f)
+            {
+                transform.rotation = Quaternion.LookRotation(directionToTarget);
+            }
+        }
+
 
         if (grabbableMeta.SelectingPointsCount > 0 && !isConnected)
         {
@@ -192,14 +210,11 @@ public class CableMeta : MonoBehaviour
 
         if (InPutFound != null)
         {
-            transform.SetParent(InPutFound);
-            transform.localPosition = Vector3.zero;
+            Quaternion previousWorldRotation = transform.rotation;
 
-            Vector3 direccionAlBloque = InPutFound.parent.position - transform.position;
-            if (direccionAlBloque != Vector3.zero)
-            {
-                transform.rotation = Quaternion.LookRotation(direccionAlBloque);
-            }
+            transform.SetParent(null, true);
+            transform.position = InPutFound.position;
+            transform.rotation = previousWorldRotation;
 
             DataCable dc = GetComponent<DataCable>();
             if (dc != null)

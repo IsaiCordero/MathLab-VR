@@ -22,6 +22,11 @@ public class DataCable : MonoBehaviour
             return selectFunction.GetCurrentResult();
         }
 
+        FunctionOneInput oneInputFunction = sourceObject.GetComponent<FunctionOneInput>();
+        if(oneInputFunction != null)
+        {
+            return oneInputFunction.GetCurrentResult();
+        }
         return 0;
     }
 
@@ -34,6 +39,9 @@ public class DataCable : MonoBehaviour
 
         SelectFunction selectFunc = sourceObject.GetComponent<SelectFunction>();
         if (selectFunc != null) return selectFunc.GetCurrentVectorResult();
+
+        FunctionOneInput oneInputFunction = sourceObject.GetComponent<FunctionOneInput>();
+        if(oneInputFunction != null) return oneInputFunction.GetCurrentVectorResult();
 
         return Vector3.zero;
     }
@@ -72,6 +80,12 @@ public class DataCable : MonoBehaviour
         {
             vBlock.incomingCable = this;
         }
+
+        FunctionOneInput functionOneInput = port.GetComponentInParent<FunctionOneInput>();
+        if (functionOneInput != null && port.CompareTag("Input"))
+        {
+            functionOneInput.input = this;
+        }
     }
 
     public void DisconnectFromPort()
@@ -90,6 +104,12 @@ public class DataCable : MonoBehaviour
                 bloqueFunc.secondInput = null;
             }
         }
+        FunctionOneInput functionOneInput = connectedPort.GetComponentInParent<FunctionOneInput>();
+        if (functionOneInput != null && connectedPort.CompareTag("Input") && functionOneInput.input == this)
+        {
+            functionOneInput.input = null;
+        }
+
 
         NumberBlock bloqueNum = connectedPort.GetComponentInParent<NumberBlock>();
         if (bloqueNum != null && connectedPort.CompareTag("Input") && bloqueNum.incomingCable == this)

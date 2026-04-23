@@ -7,6 +7,7 @@
 
 
 
+extern void CableMeta_get_DestinyPort_mBB17C96E671C4B1D3557B196CB0DF08ABD58FADE (void);
 extern void CableMeta_Start_m5FBC2CF88D6EA954DC1750892781074816268BD7 (void);
 extern void CableMeta_LateUpdate_m699B6F33AD9E795D6F1F6FD437AD7677778F8F92 (void);
 extern void CableMeta_OnDestroy_mE73E02CBE0FE08C19BE7CE61DCE9C3C33B813B67 (void);
@@ -30,6 +31,12 @@ extern void DeleteButton_EventsButton_mBF54EE73ACD1C737BB2BB790426D2D27D4A62391 
 extern void DeleteButton_Update_m9DE88F571B97CE78636C5E656581D525E8270AFC (void);
 extern void DeleteButton_DeleteSecurity_mAB4DD11EB6ED15F599C0C6430C8798356DA53900 (void);
 extern void DeleteButton__ctor_m18CDC1E14D7EE96CC5470B7AE8A3B2D0FA5719B5 (void);
+extern void FunctionOneInput_Start_m4337721414EFB4E08F5AE52FB7CA7A00FCA4555A (void);
+extern void FunctionOneInput_GetCurrentResult_mA0E733C5CB4668144CD4496D44193C73406A58C4 (void);
+extern void FunctionOneInput_GetCurrentVectorResult_mFE98876231763DF61827E4C2C03D3764A423716B (void);
+extern void FunctionOneInput_ChangeNextFunction_mC31F334C27210376F5653E5188C458E26AA4A5EA (void);
+extern void FunctionOneInput_SetFunctionByIndex_m722DDFA88E392941FF3EE6F7338DD9181885D06D (void);
+extern void FunctionOneInput__ctor_m5D13B3E4A8AA4431FC9511658751C9FFD39C228F (void);
 extern void NumberBlock_Start_mB2DA1D9378015E4B1DCDABFF02EF08F576EE5B6C (void);
 extern void NumberBlock_Update_mD0EDFFD655D383F6604922DFE45EC903BFC6E83A (void);
 extern void NumberBlock_Add_m0BA535A79B2455233EEC251D128E71CC9BA466D3 (void);
@@ -66,8 +73,9 @@ extern void VectorController_Update_m5F533AA0D11E039A8BEB2BBEF7602E4146D51AF7 (v
 extern void VectorController__ctor_mA3A97078DE9BCCD283B1C1ADCCE993FD5B81B68E (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[59] = 
+static Il2CppMethodPointer s_methodPointers[66] = 
 {
+	CableMeta_get_DestinyPort_mBB17C96E671C4B1D3557B196CB0DF08ABD58FADE,
 	CableMeta_Start_m5FBC2CF88D6EA954DC1750892781074816268BD7,
 	CableMeta_LateUpdate_m699B6F33AD9E795D6F1F6FD437AD7677778F8F92,
 	CableMeta_OnDestroy_mE73E02CBE0FE08C19BE7CE61DCE9C3C33B813B67,
@@ -91,6 +99,12 @@ static Il2CppMethodPointer s_methodPointers[59] =
 	DeleteButton_Update_m9DE88F571B97CE78636C5E656581D525E8270AFC,
 	DeleteButton_DeleteSecurity_mAB4DD11EB6ED15F599C0C6430C8798356DA53900,
 	DeleteButton__ctor_m18CDC1E14D7EE96CC5470B7AE8A3B2D0FA5719B5,
+	FunctionOneInput_Start_m4337721414EFB4E08F5AE52FB7CA7A00FCA4555A,
+	FunctionOneInput_GetCurrentResult_mA0E733C5CB4668144CD4496D44193C73406A58C4,
+	FunctionOneInput_GetCurrentVectorResult_mFE98876231763DF61827E4C2C03D3764A423716B,
+	FunctionOneInput_ChangeNextFunction_mC31F334C27210376F5653E5188C458E26AA4A5EA,
+	FunctionOneInput_SetFunctionByIndex_m722DDFA88E392941FF3EE6F7338DD9181885D06D,
+	FunctionOneInput__ctor_m5D13B3E4A8AA4431FC9511658751C9FFD39C228F,
 	NumberBlock_Start_mB2DA1D9378015E4B1DCDABFF02EF08F576EE5B6C,
 	NumberBlock_Update_mD0EDFFD655D383F6604922DFE45EC903BFC6E83A,
 	NumberBlock_Add_m0BA535A79B2455233EEC251D128E71CC9BA466D3,
@@ -128,8 +142,9 @@ static Il2CppMethodPointer s_methodPointers[59] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[59] = 
+static const int32_t s_InvokerIndices[66] = 
 {
+	19937,
 	20176,
 	20176,
 	20176,
@@ -152,6 +167,12 @@ static const int32_t s_InvokerIndices[59] =
 	15450,
 	20176,
 	20176,
+	20176,
+	20176,
+	20049,
+	20165,
+	20176,
+	15328,
 	20176,
 	20176,
 	20176,
@@ -194,7 +215,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	59,
+	66,
 	s_methodPointers,
 	0,
 	NULL,

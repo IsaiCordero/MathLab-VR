@@ -50,7 +50,10 @@ public class DeleteButton : MonoBehaviour
         CableMeta[] allCables = FindObjectsOfType<CableMeta>();
         foreach (CableMeta c in allCables)
         {
-            if (c.transform.IsChildOf(rootBlock))
+            bool cableBelongsToDeletedBlock = c.transform.IsChildOf(rootBlock);
+            bool cableConnectedToDeletedBlock = c.DestinyPort != null && c.DestinyPort.IsChildOf(rootBlock);
+
+            if (cableBelongsToDeletedBlock || cableConnectedToDeletedBlock)
             {
                 c.ResetPosition();
             }

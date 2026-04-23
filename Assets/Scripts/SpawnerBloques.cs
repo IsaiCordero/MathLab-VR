@@ -50,6 +50,13 @@ public class SpawnerBloques : MonoBehaviour
         if (selectFunction != null)
         {
             selectFunction.SetFunctionByIndex(defaultFunctionIndex);
+            return;
+        }
+
+        FunctionOneInput oneInputFunction = newBlock.GetComponent<FunctionOneInput>();
+        if(oneInputFunction != null)
+        {
+            oneInputFunction.SetFunctionByIndex(defaultFunctionIndex);
         }
     }
 
