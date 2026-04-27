@@ -3,7 +3,7 @@ using TMPro;
 public class ResultDisplay : MonoBehaviour
 {
     public TextMeshProUGUI resultText;
-    public SelectFunction functionBlock;
+    public TwoInputFunction functionBlock;
 
     void Update()
     {

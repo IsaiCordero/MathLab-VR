@@ -217,15 +217,22 @@ public class CableMeta : MonoBehaviour
             transform.rotation = previousWorldRotation;
 
             DataCable dc = GetComponent<DataCable>();
+            bool connectedSuccessfully = false;
             if (dc != null)
             {
-                dc.ConnectToPort(InPutFound);
+                 connectedSuccessfully = dc.ConnectToPort(InPutFound);
             }
-
-            destinyPort = InPutFound;
-            isConnected = true;
-            UpdateCableColor(colorConnected);
-            curveInitialized = false;
+            if (connectedSuccessfully)
+            {
+                destinyPort = InPutFound;
+                isConnected = true;
+                UpdateCableColor(colorConnected);
+                curveInitialized = false;
+            }
+            else
+            {
+                ResetPosition();
+            }
         }
         else
         {

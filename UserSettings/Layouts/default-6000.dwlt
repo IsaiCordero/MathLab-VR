@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1535.2001
     height: 764.8
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 99
+  controlID: 17
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -141,8 +141,8 @@ MonoBehaviour:
     y: 0
     width: 312.8
     height: 708.8
-  m_MinSize: {x: 50, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 51, y: 76}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 112}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 55
+  controlID: 65
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -221,14 +221,14 @@ MonoBehaviour:
     y: 420
     width: 848.00006
     height: 288.8
-  m_MinSize: {x: 232, y: 276}
-  m_MaxSize: {x: 10002, y: 10026}
-  m_ActualView: {fileID: 12}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 12}
   - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -570,7 +570,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -580,7 +580,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\isai\TFG
   m_LockTracker:
@@ -589,12 +589,12 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 29.200012}
     m_SelectedIDs:
-    - m_Data: 75532
+    - m_Data: 94478
     m_LastClickedID:
-      m_Data: 75532
+      m_Data: 94478
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 75384
+    - m_Data: 94362
     - m_Data: 1000000000
     - m_Data: 2147483647
     m_RenameOverlay:
@@ -629,7 +629,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 75384
+    - m_Data: 94362
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -733,17 +733,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: []
+      m_SelectedIDs:
+      - m_Data: 148348
       m_LastClickedID:
-        m_Data: 0
+        m_Data: 148348
       m_ExpandedIDs:
-      - m_Data: -50016
-      - m_Data: -49664
-      - m_Data: -38206
-      - m_Data: -31852
-      - m_Data: -31500
-      - m_Data: -20046
-      - m_Data: -1310
+      - m_Data: -26538
+      - m_Data: -26184
+      - m_Data: -14602
+      - m_Data: -1360
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1350,9 +1348,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 0.5024508, y: -0.37892747, z: -3.9395957}
+    m_Target: {x: -2.2777886, y: 0.18259883, z: -3.103019}
     speed: 2
-    m_Value: {x: 0.5024508, y: -0.37892747, z: -3.9395957}
+    m_Value: {x: -2.2777886, y: 0.18259883, z: -3.103019}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1398,13 +1396,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.0043079737, y: -0.97697306, z: 0.2125379, w: -0.019641107}
+    m_Target: {x: 0.047201373, y: -0.92363495, z: 0.12096332, w: 0.36068472}
     speed: 2
-    m_Value: {x: -0.0043078596, y: -0.9769472, z: 0.21253228, w: -0.019640587}
+    m_Value: {x: 0.047200073, y: -0.9236095, z: 0.12095999, w: 0.3606748}
   m_Size:
-    m_Target: 2.0588315
+    m_Target: 2.1375647
     speed: 2
-    m_Value: 2.0588315
+    m_Value: 2.1375647
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1679,7 +1677,7 @@ MonoBehaviour:
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 108
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:

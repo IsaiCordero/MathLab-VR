@@ -49,8 +49,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\VectorBlock.cs" />
     <Compile Include="Assets\Scripts\DeleteButton.cs" />
+    <Compile Include="Assets\Scripts\TwoInputFunction.cs" />
     <Compile Include="Assets\Scripts\SpawnerBloques.cs" />
-    <Compile Include="Assets\Scripts\SelectFunction.cs" />
     <Compile Include="Assets\Scripts\VectorController.cs" />
     <Compile Include="Assets\Scripts\DataCable.cs" />
     <Compile Include="Assets\Scripts\ResultDisplay.cs" />

@@ -16,10 +16,10 @@ public class DataCable : MonoBehaviour
             return numberBlock.currentValue;
         }
 
-        SelectFunction selectFunction = sourceObject.GetComponent<SelectFunction>();
-        if (selectFunction != null)
+        TwoInputFunction functionTwoInput = sourceObject.GetComponent<TwoInputFunction>();
+        if (functionTwoInput != null)
         {
-            return selectFunction.GetCurrentResult();
+            return functionTwoInput.GetCurrentResult();
         }
 
         FunctionOneInput oneInputFunction = sourceObject.GetComponent<FunctionOneInput>();
@@ -37,23 +37,60 @@ public class DataCable : MonoBehaviour
         VectorBlock vBlock = sourceObject.GetComponent<VectorBlock>();
         if (vBlock != null) return vBlock.currentVector;
 
-        SelectFunction selectFunc = sourceObject.GetComponent<SelectFunction>();
-        if (selectFunc != null) return selectFunc.GetCurrentVectorResult();
+        TwoInputFunction functionTwoInput = sourceObject.GetComponent<TwoInputFunction>();
+        if (functionTwoInput != null) return functionTwoInput.GetCurrentVectorResult();
 
         FunctionOneInput oneInputFunction = sourceObject.GetComponent<FunctionOneInput>();
         if(oneInputFunction != null) return oneInputFunction.GetCurrentVectorResult();
 
         return Vector3.zero;
     }
-
-    public void ConnectToPort(Transform port)
+    private bool PortAlreadyOccupied(Transform port)
     {
-        if (port == null) return;
+        TwoInputFunction bloqueFunc = port.GetComponentInParent<TwoInputFunction>();
+        if (bloqueFunc != null)
+        {
+            if (port.CompareTag("First InPut"))
+                return bloqueFunc.firstInput != null && bloqueFunc.firstInput != this;
+
+            if (port.CompareTag("Second InPut"))
+                return bloqueFunc.secondInput != null && bloqueFunc.secondInput != this;
+        }
+
+        NumberBlock bloqueNum = port.GetComponentInParent<NumberBlock>();
+        if (bloqueNum != null && port.CompareTag("Input"))
+        {
+            return bloqueNum.incomingCable != null && bloqueNum.incomingCable != this;
+        }
+
+        VectorBlock vBlock = port.GetComponentInParent<VectorBlock>();
+        if (vBlock != null && port.CompareTag("Input"))
+        {
+            return vBlock.incomingCable != null && vBlock.incomingCable != this;
+        }
+
+        FunctionOneInput functionOneInput = port.GetComponentInParent<FunctionOneInput>();
+        if (functionOneInput != null && port.CompareTag("Input"))
+        {
+            return functionOneInput.input != null && functionOneInput.input != this;
+        }
+
+        return false;
+    }
+
+    public bool ConnectToPort(Transform port)
+    {
+        if (port == null) return false;
+
+        if (PortAlreadyOccupied(port))
+        {
+            return false;
+        }
 
         DisconnectFromPort();
         connectedPort = port;
 
-        SelectFunction bloqueFunc = port.GetComponentInParent<SelectFunction>();
+        TwoInputFunction bloqueFunc = port.GetComponentInParent<TwoInputFunction>();
         if (bloqueFunc != null)
         {
             if (port.CompareTag("First InPut"))
@@ -65,34 +102,37 @@ public class DataCable : MonoBehaviour
                 bloqueFunc.secondInput = this;
             }
 
-            return;
+            return true;
         }
 
         NumberBlock bloqueNum = port.GetComponentInParent<NumberBlock>();
         if (bloqueNum != null && port.CompareTag("Input"))
         {
             bloqueNum.incomingCable = this;
-            return;
+            return true;
         }
 
         VectorBlock vBlock = port.GetComponentInParent<VectorBlock>();
         if (vBlock != null && port.CompareTag("Input"))
         {
             vBlock.incomingCable = this;
+            return true;
         }
 
         FunctionOneInput functionOneInput = port.GetComponentInParent<FunctionOneInput>();
         if (functionOneInput != null && port.CompareTag("Input"))
         {
             functionOneInput.input = this;
+            return true;
         }
+        return false;
     }
 
     public void DisconnectFromPort()
     {
         if (connectedPort == null) return;
 
-        SelectFunction bloqueFunc = connectedPort.GetComponentInParent<SelectFunction>();
+        TwoInputFunction bloqueFunc = connectedPort.GetComponentInParent<TwoInputFunction>();
         if (bloqueFunc != null)
         {
             if (connectedPort.CompareTag("First InPut") && bloqueFunc.firstInput == this)

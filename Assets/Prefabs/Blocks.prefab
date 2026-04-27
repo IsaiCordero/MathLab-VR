@@ -671,7 +671,7 @@ GameObject:
   - component: {fileID: 6644290365181224714}
   - component: {fileID: 3060815545600119426}
   - component: {fileID: 6965222532019281621}
-  - component: {fileID: 1053526883156319883}
+  - component: {fileID: 1000507391524308382}
   m_Layer: 0
   m_Name: Blocks
   m_TagString: Block
@@ -848,7 +848,7 @@ MonoBehaviour:
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
   _forceKinematicDisabled: 0
---- !u!114 &1053526883156319883
+--- !u!114 &1000507391524308382
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -857,15 +857,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 4727693009523292905}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a98500d038885f4ba81b29dc0286378, type: 3}
+  m_Script: {fileID: 11500000, guid: e87a01119695a0c49ba84e5f9e32ac48, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SelectFunction
+  m_EditorClassIdentifier: Assembly-CSharp::TwoInputFunction
   visualText: {fileID: 5952539990937110445}
   functions:
   - SUMA
   - RESTA
   - "MULTIPLICACI\xD3N"
   - "DIVISI\xD3N"
+  - PRODUCTO ESCALAR
+  - PRODUCTO VECTORIAL
   firstInput: {fileID: 0}
   secondInput: {fileID: 0}
 --- !u!1 &6054087855279590952

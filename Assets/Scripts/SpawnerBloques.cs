@@ -46,10 +46,10 @@ public class SpawnerBloques : MonoBehaviour
         Vector3 spawnPosition = transform.position + transform.forward * spawnDistance;
         GameObject newBlock = Instantiate(functionBlockPrefab, spawnPosition, Quaternion.identity);
 
-        SelectFunction selectFunction = newBlock.GetComponent<SelectFunction>();
-        if (selectFunction != null)
+        TwoInputFunction functionTwoInput = newBlock.GetComponent<TwoInputFunction>();
+        if (functionTwoInput != null)
         {
-            selectFunction.SetFunctionByIndex(defaultFunctionIndex);
+            functionTwoInput.SetFunctionByIndex(defaultFunctionIndex);
             return;
         }
 
