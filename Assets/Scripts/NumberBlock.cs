@@ -24,6 +24,7 @@ public class NumberBlock : MonoBehaviour
         if(incomingCable != null)
         {
             float result = incomingCable.GetValueFromSource();
+            currentValue = Mathf.RoundToInt(result);
             Debug.Log("resultado =" + result);
             valueText.text = result.ToString("F1");
         }

@@ -1976,13 +1976,13 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberBlock_UpdateVisuals_m1E4A46D55E3CB9F9DF384413E1EB7D5F7C4EB3B7 (NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DataCable_GetValueFromSource_m9BC88D5DBEE4441E5C37C3C33C3206538BE589C3 (DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_RoundToInt_m60F8B66CF27F1FA75AA219342BD184B75771EB4B_inline (float ___0_f, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972 (float* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_m3F2C4433B6ADFA5ED8E3F14ED19CD23014E5179D (float* __this, String_t* ___0_format, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5 (int32_t* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_RoundToInt_m60F8B66CF27F1FA75AA219342BD184B75771EB4B_inline (float ___0_f, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberBlock_SetValueFromSlider_m36419F445A2D12A7D808C4035920F7DCB87050D6 (NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpawnerBloques_SpawnFunctionBlock_m5DEB3F4ED4C8BDCEABB5068536C7E640904BC1BD (SpawnerBloques_t6D685A5883FCF13C26A30A910CF9D65892396B47* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
@@ -2909,7 +2909,7 @@ IL_0071:
 		L_27 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_26, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_27)
 		{
-			goto IL_0100;
+			goto IL_0101;
 		}
 	}
 	{
@@ -2994,11 +2994,14 @@ IL_00fa:
 	{
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:234>
 		CableMeta_ResetPosition_m6161E888E8E2F4B3F31055D08FE876EBDD0E4991(__this, NULL);
+		return;
 	}
 
-IL_0100:
+IL_0101:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:237>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:239>
+		CableMeta_ResetPosition_m6161E888E8E2F4B3F31055D08FE876EBDD0E4991(__this, NULL);
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:241>
 		return;
 	}
 }
@@ -3014,11 +3017,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CableMeta_ResetPosition_m6161E888E8E2F4B
 	}
 	DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* V_0 = NULL;
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:241>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:245>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_0;
 		L_0 = Component_GetComponent_TisDataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E_mA5EF961506326247E5674FEAA53CA113EFC961B1(__this, Component_GetComponent_TisDataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E_mA5EF961506326247E5674FEAA53CA113EFC961B1_RuntimeMethod_var);
 		V_0 = L_0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:242>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:246>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_1 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_2;
@@ -3029,7 +3032,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CableMeta_ResetPosition_m6161E888E8E2F4B
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:244>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:248>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_3 = V_0;
 		NullCheck(L_3);
 		DataCable_DisconnectFromPort_m82D82A30A9C537BD699B0D87C5713A3FE5C0704E(L_3, NULL);
@@ -3037,35 +3040,35 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CableMeta_ResetPosition_m6161E888E8E2F4B
 
 IL_0016:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:247>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:251>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
 		L_4 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->___blockOriginal;
 		NullCheck(L_4);
 		Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250(L_4, L_5, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:248>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:252>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
 		L_6 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = __this->___positionOriginal;
 		NullCheck(L_6);
 		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_6, L_7, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:249>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:253>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
 		L_8 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_9 = __this->___rotationOriginal;
 		NullCheck(L_8);
 		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_8, L_9, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:250>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:254>
 		__this->___destinyPort = (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___destinyPort), (void*)(Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:252>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:256>
 		__this->___isConnected = (bool)0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:253>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:257>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_10 = __this->___colorDisconnected;
 		CableMeta_UpdateCableColor_m7CE1F6466FB31FF0516764ED3926CFFD857AF5FE(__this, L_10, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:254>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:258>
 		__this->___curveInitialized = (bool)0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:255>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:259>
 		return;
 	}
 }
@@ -3081,11 +3084,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CableMeta_Disconnect_mCDDC3B99303CBBDFAB
 	}
 	DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* V_0 = NULL;
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:259>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:263>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_0;
 		L_0 = Component_GetComponent_TisDataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E_mA5EF961506326247E5674FEAA53CA113EFC961B1(__this, Component_GetComponent_TisDataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E_mA5EF961506326247E5674FEAA53CA113EFC961B1_RuntimeMethod_var);
 		V_0 = L_0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:260>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:264>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_1 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_2;
@@ -3096,11 +3099,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CableMeta_Disconnect_mCDDC3B99303CBBDFAB
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:262>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:266>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_3 = V_0;
 		NullCheck(L_3);
 		DataCable_DisconnectFromPort_m82D82A30A9C537BD699B0D87C5713A3FE5C0704E(L_3, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:263>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:267>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_4 = V_0;
 		NullCheck(L_4);
 		L_4->___sourceObject = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
@@ -3109,9 +3112,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CableMeta_Disconnect_mCDDC3B99303CBBDFAB
 
 IL_001d:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:266>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:270>
 		CableMeta_ResetPosition_m6161E888E8E2F4B3F31055D08FE876EBDD0E4991(__this, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:267>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/CableMeta.cs:271>
 		return;
 	}
 }
@@ -4993,7 +4996,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberBlock_Update_mD0EDFFD655D383F66049
 		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_1)
 		{
-			goto IL_0047;
+			goto IL_0053;
 		}
 	}
 	{
@@ -5004,23 +5007,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberBlock_Update_mD0EDFFD655D383F66049
 		L_3 = DataCable_GetValueFromSource_m9BC88D5DBEE4441E5C37C3C33C3206538BE589C3(L_2, NULL);
 		V_0 = L_3;
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:27>
-		String_t* L_4;
-		L_4 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972((&V_0), NULL);
-		String_t* L_5;
-		L_5 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral694A1D4E2D5D36876C7BDFEEFA2BF12F5EAB41C9, L_4, NULL);
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_5, NULL);
+		float L_4 = V_0;
+		int32_t L_5;
+		L_5 = Mathf_RoundToInt_m60F8B66CF27F1FA75AA219342BD184B75771EB4B_inline(L_4, NULL);
+		__this->___currentValue = L_5;
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:28>
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_6 = __this->___valueText;
+		String_t* L_6;
+		L_6 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972((&V_0), NULL);
 		String_t* L_7;
-		L_7 = Single_ToString_m3F2C4433B6ADFA5ED8E3F14ED19CD23014E5179D((&V_0), _stringLiteralC613D4D2FE3F5D74727D376F793286A2BCBB1391, NULL);
-		NullCheck(L_6);
-		VirtualActionInvoker1< String_t* >::Invoke(66, L_6, L_7);
+		L_7 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral694A1D4E2D5D36876C7BDFEEFA2BF12F5EAB41C9, L_6, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_7, NULL);
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:29>
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_8 = __this->___valueText;
+		String_t* L_9;
+		L_9 = Single_ToString_m3F2C4433B6ADFA5ED8E3F14ED19CD23014E5179D((&V_0), _stringLiteralC613D4D2FE3F5D74727D376F793286A2BCBB1391, NULL);
+		NullCheck(L_8);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_8, L_9);
 	}
 
-IL_0047:
+IL_0053:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:30>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:31>
 		return;
 	}
 }
@@ -5034,7 +5042,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberBlock_Add_m0BA535A79B2455233EEC251
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:34>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:35>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_0 = __this->___incomingCable;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -5045,17 +5053,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberBlock_Add_m0BA535A79B2455233EEC251
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:35>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:36>
 		int32_t L_2 = __this->___currentValue;
 		int32_t L_3 = __this->___step;
 		__this->___currentValue = ((int32_t)il2cpp_codegen_add(L_2, L_3));
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:36>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:37>
 		NumberBlock_UpdateVisuals_m1E4A46D55E3CB9F9DF384413E1EB7D5F7C4EB3B7(__this, NULL);
 	}
 
 IL_0027:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:38>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:39>
 		return;
 	}
 }
@@ -5069,7 +5077,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberBlock_Subtract_m8480B6C11C78481636
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:42>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:43>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_0 = __this->___incomingCable;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -5080,17 +5088,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberBlock_Subtract_m8480B6C11C78481636
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:43>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:44>
 		int32_t L_2 = __this->___currentValue;
 		int32_t L_3 = __this->___step;
 		__this->___currentValue = ((int32_t)il2cpp_codegen_subtract(L_2, L_3));
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:44>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:45>
 		NumberBlock_UpdateVisuals_m1E4A46D55E3CB9F9DF384413E1EB7D5F7C4EB3B7(__this, NULL);
 	}
 
 IL_0027:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:46>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:47>
 		return;
 	}
 }
@@ -5104,7 +5112,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberBlock_UpdateVisuals_m1E4A46D55E3CB
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:50>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:51>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_0 = __this->___valueText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -5125,7 +5133,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberBlock_UpdateVisuals_m1E4A46D55E3CB
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:52>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:53>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_4 = __this->___valueText;
 		int32_t* L_5 = (int32_t*)(&__this->___currentValue);
 		String_t* L_6;
@@ -5136,7 +5144,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberBlock_UpdateVisuals_m1E4A46D55E3CB
 
 IL_0032:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:54>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:55>
 		return;
 	}
 }
@@ -5150,7 +5158,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberBlock_SetValueFromSlider_m36419F44
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:58>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:59>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_0 = __this->___incomingCable;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -5161,18 +5169,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberBlock_SetValueFromSlider_m36419F44
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:58>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:59>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:60>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:61>
 		int32_t L_2 = ___0_value;
 		__this->___currentValue = L_2;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:61>
-		NumberBlock_UpdateVisuals_m1E4A46D55E3CB9F9DF384413E1EB7D5F7C4EB3B7(__this, NULL);
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:62>
+		NumberBlock_UpdateVisuals_m1E4A46D55E3CB9F9DF384413E1EB7D5F7C4EB3B7(__this, NULL);
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/NumberBlock.cs:63>
 		return;
 	}
 }
@@ -7942,6 +7950,31 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_6;
 	}
 }
+// Method Definition Index: 59601
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_RoundToInt_m60F8B66CF27F1FA75AA219342BD184B75771EB4B_inline (float ___0_f, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		float L_0 = ___0_f;
+		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		double L_1;
+		L_1 = bankers_round(((double)L_0));
+		V_0 = il2cpp_codegen_cast_double_to_int<int32_t>(L_1);
+		goto IL_000c;
+	}
+
+IL_000c:
+	{
+		int32_t L_2 = V_0;
+		return L_2;
+	}
+}
 // Method Definition Index: 59603
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) 
 {
@@ -7991,31 +8024,6 @@ IL_001d:
 	{
 		float L_9 = V_2;
 		return L_9;
-	}
-}
-// Method Definition Index: 59601
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_RoundToInt_m60F8B66CF27F1FA75AA219342BD184B75771EB4B_inline (float ___0_f, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t V_0 = 0;
-	{
-		float L_0 = ___0_f;
-		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
-		double L_1;
-		L_1 = bankers_round(((double)L_0));
-		V_0 = il2cpp_codegen_cast_double_to_int<int32_t>(L_1);
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		int32_t L_2 = V_0;
-		return L_2;
 	}
 }
 // Method Definition Index: 59531

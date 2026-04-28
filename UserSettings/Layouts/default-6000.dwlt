@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 17
+  controlID: 54
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 112}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 65
+  controlID: 55
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -221,14 +221,14 @@ MonoBehaviour:
     y: 420
     width: 848.00006
     height: 288.8
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 17}
+  m_MinSize: {x: 232, y: 276}
+  m_MaxSize: {x: 10002, y: 10026}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
   - {fileID: 17}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -570,7 +570,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -580,7 +580,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\isai\TFG
   m_LockTracker:
@@ -589,9 +589,9 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 29.200012}
     m_SelectedIDs:
-    - m_Data: 94478
+    - m_Data: 113998
     m_LastClickedID:
-      m_Data: 94478
+      m_Data: 113998
     m_ExpandedIDs:
     - m_Data: 0
     - m_Data: 94362
@@ -733,14 +733,16 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs:
-      - m_Data: 148348
+      m_SelectedIDs: []
       m_LastClickedID:
-        m_Data: 148348
+        m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -26538
-      - m_Data: -26184
-      - m_Data: -14602
+      - m_Data: -50486
+      - m_Data: -50134
+      - m_Data: -38560
+      - m_Data: -26026
+      - m_Data: -25672
+      - m_Data: -14098
       - m_Data: -1360
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1350,7 +1352,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: -2.2777886, y: 0.18259883, z: -3.103019}
     speed: 2
-    m_Value: {x: -2.2777886, y: 0.18259883, z: -3.103019}
+    m_Value: {x: 7.3505096, y: 4.197176, z: -7.497529}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1398,11 +1400,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.047201373, y: -0.92363495, z: 0.12096332, w: 0.36068472}
     speed: 2
-    m_Value: {x: 0.047200073, y: -0.9236095, z: 0.12095999, w: 0.3606748}
+    m_Value: {x: -0.20318127, y: 0.007941338, z: -0.0016472279, w: -0.9791076}
   m_Size:
     m_Target: 2.1375647
     speed: 2
-    m_Value: 2.1375647
+    m_Value: 0.005450771
   m_Ortho:
     m_Target: 0
     speed: 2
