@@ -7,7 +7,7 @@ public class TwoInputFunction : MonoBehaviour
     public TextMeshProUGUI visualText; 
     
     [Header("Settings")]
-    public string[] functions = { "SUMA", "RESTA", "MULTIPLICACIÓN", "DIVISIÓN", "PRODUCTO ESCALAR", "PRODUCTO VECTORIAL" };
+    public string[] functions = { "SUMA", "RESTA", "MULTIPLICACIÓN", "DIVISIÓN", "PRODUCTO ESCALAR", "PRODUCTO VECTORIAL", "PUNTO MEDIO", "ÁNGULO" };
 
     [Header("Data Input")]
     public DataCable firstInput;
@@ -52,6 +52,23 @@ public class TwoInputFunction : MonoBehaviour
             case "PRODUCTO VECTORIAL":
                 resultado = 0;
                 break;
+
+            case "PUNTO MEDIO":
+                resultado = 0;
+                break;
+
+            case "ÁNGULO":
+                if (firstInput != null && secondInput != null)
+                {
+                    Vector3 v1 = firstInput.GetVectorFromSource();
+                    Vector3 v2 = secondInput.GetVectorFromSource();
+                    resultado = Vector3.Angle(v1,v2);
+                }
+                else
+                {
+                    resultado = 0;
+                }
+                break;
         }
         return resultado;
     }
@@ -82,6 +99,12 @@ public class TwoInputFunction : MonoBehaviour
                 break;
             case "PRODUCTO VECTORIAL":
                 resultado = Vector3.Cross(v1, v2);
+                break;
+            case "PUNTO MEDIO":
+                resultado = (v1+v2)/2f;
+                break;
+            case "ÁNGULO":
+                resultado = Vector3.zero;
                 break;
         }
         return resultado;

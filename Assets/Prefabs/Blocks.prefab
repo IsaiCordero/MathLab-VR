@@ -671,7 +671,7 @@ GameObject:
   - component: {fileID: 6644290365181224714}
   - component: {fileID: 3060815545600119426}
   - component: {fileID: 6965222532019281621}
-  - component: {fileID: 1000507391524308382}
+  - component: {fileID: 5009397661818693423}
   m_Layer: 0
   m_Name: Blocks
   m_TagString: Block
@@ -848,7 +848,7 @@ MonoBehaviour:
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
   _forceKinematicDisabled: 0
---- !u!114 &1000507391524308382
+--- !u!114 &5009397661818693423
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -868,6 +868,8 @@ MonoBehaviour:
   - "DIVISI\xD3N"
   - PRODUCTO ESCALAR
   - PRODUCTO VECTORIAL
+  - PUNTO MEDIO
+  - "\xC1NGULO"
   firstInput: {fileID: 0}
   secondInput: {fileID: 0}
 --- !u!1 &6054087855279590952

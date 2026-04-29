@@ -7,7 +7,7 @@ public class FunctionOneInput : MonoBehaviour
     public TextMeshProUGUI visualText;
 
     [Header("Settings")]
-    public string[] functions = { "MAGNITUD", "NORMALIZACIÓN", "OPUESTO" };
+    public string[] functions = { "MAGNITUD", "NORMALIZACIÓN", "OPUESTO", "ABSOLUTO" };
 
     [Header("Data Input")]
     public DataCable input;
@@ -58,6 +58,14 @@ public class FunctionOneInput : MonoBehaviour
 
             case "OPUESTO":
                 resultado = -v;
+                break;
+            
+            case "ABSOLUTO":
+                resultado = new Vector3(
+                    Mathf.Abs(v.x),
+                    Mathf.Abs(v.y),
+                    Mathf.Abs(v.z)
+                );
                 break;
 
             default:

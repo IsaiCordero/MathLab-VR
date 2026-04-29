@@ -617,7 +617,7 @@ GameObject:
   - component: {fileID: 6644290365181224714}
   - component: {fileID: 3060815545600119426}
   - component: {fileID: 6965222532019281621}
-  - component: {fileID: 4969678891224687828}
+  - component: {fileID: 4211459453015375972}
   m_Layer: 0
   m_Name: OneInputFunction
   m_TagString: Block
@@ -744,7 +744,7 @@ MonoBehaviour:
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
   _forceKinematicDisabled: 0
---- !u!114 &4969678891224687828
+--- !u!114 &4211459453015375972
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -761,6 +761,7 @@ MonoBehaviour:
   - MAGNITUD
   - "NORMALIZACI\xD3N"
   - OPUESTO
+  - ABSOLUTO
   input: {fileID: 0}
 --- !u!1 &6054087855279590952
 GameObject:

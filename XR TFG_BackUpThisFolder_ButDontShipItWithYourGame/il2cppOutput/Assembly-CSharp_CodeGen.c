@@ -74,7 +74,8 @@ extern void VectorController_Update_m5F533AA0D11E039A8BEB2BBEF7602E4146D51AF7 (v
 extern void VectorController__ctor_mA3A97078DE9BCCD283B1C1ADCCE993FD5B81B68E (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[67] = 
+extern void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (void);
+static Il2CppMethodPointer s_methodPointers[68] = 
 {
 	CableMeta_get_DestinyPort_mBB17C96E671C4B1D3557B196CB0DF08ABD58FADE,
 	CableMeta_Start_m5FBC2CF88D6EA954DC1750892781074816268BD7,
@@ -143,8 +144,9 @@ static Il2CppMethodPointer s_methodPointers[67] =
 	VectorController__ctor_mA3A97078DE9BCCD283B1C1ADCCE993FD5B81B68E,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
+	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876,
 };
-static const int32_t s_InvokerIndices[67] = 
+static const int32_t s_InvokerIndices[68] = 
 {
 	19937,
 	20176,
@@ -213,12 +215,13 @@ static const int32_t s_InvokerIndices[67] =
 	20176,
 	32949,
 	20176,
+	31341,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	67,
+	68,
 	s_methodPointers,
 	0,
 	NULL,
