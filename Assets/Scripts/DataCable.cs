@@ -165,4 +165,35 @@ public class DataCable : MonoBehaviour
 
         connectedPort = null;
     }
+
+    public bool IsNumberSource()
+    {
+        if (sourceObject == null) return false;
+
+        if (sourceObject.GetComponent<NumberBlock>() != null) return true;
+
+        TwoInputFunction twoInput = sourceObject.GetComponent<TwoInputFunction>();
+        if (twoInput != null) return twoInput.OutputsNumber();
+
+        FunctionOneInput oneInput = sourceObject.GetComponent<FunctionOneInput>();
+        if (oneInput != null) return oneInput.OutputsNumber();
+
+        return false;
+    }
+
+    public bool IsVectorSource()
+    {
+        if (sourceObject == null) return false;
+
+        if (sourceObject.GetComponent<VectorBlock>() != null) return true;
+
+        TwoInputFunction twoInput = sourceObject.GetComponent<TwoInputFunction>();
+        if (twoInput != null) return twoInput.OutputsVector();
+
+        FunctionOneInput oneInput = sourceObject.GetComponent<FunctionOneInput>();
+        if (oneInput != null) return oneInput.OutputsVector();
+
+        return false;
+    }
+
 }

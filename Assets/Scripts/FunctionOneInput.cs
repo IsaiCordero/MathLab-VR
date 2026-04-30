@@ -21,6 +21,16 @@ public class FunctionOneInput : MonoBehaviour
             visualText.text = functions[actual];
         }
     }
+    public bool OutputsNumber()
+    {
+        return functions[actual] == "MAGNITUD";
+    }
+
+    public bool OutputsVector()
+    {
+        return !OutputsNumber();
+    }   
+
 
     public float GetCurrentResult()
     {
