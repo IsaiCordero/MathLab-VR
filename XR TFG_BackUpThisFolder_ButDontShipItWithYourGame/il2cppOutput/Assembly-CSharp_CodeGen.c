@@ -44,16 +44,12 @@ extern void FunctionOneInput_SetFunctionByIndex_m722DDFA88E392941FF3EE6F7338DD91
 extern void FunctionOneInput__ctor_m5D13B3E4A8AA4431FC9511658751C9FFD39C228F (void);
 extern void NumberBlock_Start_mB2DA1D9378015E4B1DCDABFF02EF08F576EE5B6C (void);
 extern void NumberBlock_Update_mD0EDFFD655D383F6604922DFE45EC903BFC6E83A (void);
-extern void NumberBlock_Add_m0BA535A79B2455233EEC251D128E71CC9BA466D3 (void);
-extern void NumberBlock_Subtract_m8480B6C11C78481636C4551415D8FB64A9085DE3 (void);
 extern void NumberBlock_UpdateVisuals_m1E4A46D55E3CB9F9DF384413E1EB7D5F7C4EB3B7 (void);
 extern void NumberBlock_SetValueFromSlider_m36419F445A2D12A7D808C4035920F7DCB87050D6 (void);
 extern void NumberBlock__ctor_m221835686213C17C362C578C7B38940E2C56F63E (void);
 extern void NumberSlider_Start_mDE29E21DE48DF890C75D0BDFBC87EFC5EFC7AF35 (void);
 extern void NumberSlider_Update_mBFF90768DB0F22BC0D6A9DF4D6152C25A52FCED9 (void);
 extern void NumberSlider__ctor_m7E75CA48273E441CA15F2AB8D90E236180EA4717 (void);
-extern void ResultDisplay_Update_mC31CD829AE12C34A6DD360E82D4212CFBFB67842 (void);
-extern void ResultDisplay__ctor_m4456A4B025FB377DD9DAF00F24AEFD7EB35A2471 (void);
 extern void SpawnerBloques_Start_mD634E03B43C798298721926B06864593955F2D83 (void);
 extern void SpawnerBloques_LateUpdate_m6EBF68CE61B85A368A9B3DFC628ED9E2C66E8C87 (void);
 extern void SpawnerBloques_HandlePointerEvent_m32FA892816123C26843657AFE7D1F943E06A4E97 (void);
@@ -80,7 +76,7 @@ extern void VectorController_Update_m5F533AA0D11E039A8BEB2BBEF7602E4146D51AF7 (v
 extern void VectorController__ctor_mA3A97078DE9BCCD283B1C1ADCCE993FD5B81B68E (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[73] = 
+static Il2CppMethodPointer s_methodPointers[69] = 
 {
 	CableMeta_get_DestinyPort_mBB17C96E671C4B1D3557B196CB0DF08ABD58FADE,
 	CableMeta_Start_m5FBC2CF88D6EA954DC1750892781074816268BD7,
@@ -119,16 +115,12 @@ static Il2CppMethodPointer s_methodPointers[73] =
 	FunctionOneInput__ctor_m5D13B3E4A8AA4431FC9511658751C9FFD39C228F,
 	NumberBlock_Start_mB2DA1D9378015E4B1DCDABFF02EF08F576EE5B6C,
 	NumberBlock_Update_mD0EDFFD655D383F6604922DFE45EC903BFC6E83A,
-	NumberBlock_Add_m0BA535A79B2455233EEC251D128E71CC9BA466D3,
-	NumberBlock_Subtract_m8480B6C11C78481636C4551415D8FB64A9085DE3,
 	NumberBlock_UpdateVisuals_m1E4A46D55E3CB9F9DF384413E1EB7D5F7C4EB3B7,
 	NumberBlock_SetValueFromSlider_m36419F445A2D12A7D808C4035920F7DCB87050D6,
 	NumberBlock__ctor_m221835686213C17C362C578C7B38940E2C56F63E,
 	NumberSlider_Start_mDE29E21DE48DF890C75D0BDFBC87EFC5EFC7AF35,
 	NumberSlider_Update_mBFF90768DB0F22BC0D6A9DF4D6152C25A52FCED9,
 	NumberSlider__ctor_m7E75CA48273E441CA15F2AB8D90E236180EA4717,
-	ResultDisplay_Update_mC31CD829AE12C34A6DD360E82D4212CFBFB67842,
-	ResultDisplay__ctor_m4456A4B025FB377DD9DAF00F24AEFD7EB35A2471,
 	SpawnerBloques_Start_mD634E03B43C798298721926B06864593955F2D83,
 	SpawnerBloques_LateUpdate_m6EBF68CE61B85A368A9B3DFC628ED9E2C66E8C87,
 	SpawnerBloques_HandlePointerEvent_m32FA892816123C26843657AFE7D1F943E06A4E97,
@@ -156,7 +148,7 @@ static Il2CppMethodPointer s_methodPointers[73] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[73] = 
+static const int32_t s_InvokerIndices[69] = 
 {
 	19937,
 	20176,
@@ -196,11 +188,7 @@ static const int32_t s_InvokerIndices[73] =
 	20176,
 	20176,
 	20176,
-	20176,
-	20176,
 	15328,
-	20176,
-	20176,
 	20176,
 	20176,
 	20176,
@@ -236,7 +224,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	73,
+	69,
 	s_methodPointers,
 	0,
 	NULL,

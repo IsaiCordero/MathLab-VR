@@ -203,20 +203,6 @@ public class TwoInputFunction : MonoBehaviour
         return resultado;
     }
 
-    public void ChangeNextFunction()
-    {
-        actual++;
-        
-        if (actual >= functions.Length) 
-        {
-            actual = 0;
-        }
-
-        if (visualText != null)
-        {
-            visualText.text = functions[actual];
-        }
-    }
     public void SetFunctionByIndex(int index)
     {
         if (functions == null || functions.Length == 0) return;

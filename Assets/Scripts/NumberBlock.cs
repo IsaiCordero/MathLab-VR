@@ -9,7 +9,6 @@ public class NumberBlock : MonoBehaviour
 
     [Header("Settings")]
     public int currentValue = 0;
-    public int step = 1;
 
     [Header("Cable")]
     public DataCable incomingCable;
@@ -27,22 +26,6 @@ public class NumberBlock : MonoBehaviour
             currentValue = Mathf.RoundToInt(result);
             Debug.Log("resultado =" + result);
             valueText.text = result.ToString("F1");
-        }
-    }
-
-    public void Add()
-    {
-        if(incomingCable == null){
-            currentValue += step;
-            UpdateVisuals();
-        }
-    }
-
-    public void Subtract()
-    {
-        if(incomingCable == null){
-            currentValue -= step;
-            UpdateVisuals();
         }
     }
 

@@ -21,7 +21,6 @@ public class VectorBlock : MonoBehaviour
     [Header("Settings")]
     public float lerpSpeed = 10f;
     public float vectorScaleFactor = 10f;
-    public float minArrowLength = 0.02f;
     public float arrowLengthMultiplier = 2f;
 
     [Header("Cable")]

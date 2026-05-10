@@ -2,9 +2,6 @@ using UnityEngine;
 
 public class VectorController : MonoBehaviour
 {
-    public VectorBlock parentVectorBlock;
-    public Transform areaCenter;
-
     [Header("Limits")]
     public Vector3 minLocalPosition = new Vector3(-0.3f, -0.3f, -0.3f);
     public Vector3 maxLocalPosition = new Vector3(0.3f, 0.3f, 0.3f);

@@ -24,11 +24,9 @@ public class CableMeta : MonoBehaviour
     private Quaternion rotationOriginal;
     private Transform destinyPort = null;
 
-    // Esto lo añadimos para que otros scripts puedan saber a qué puerto está conectado el cable
     public Transform DestinyPort => destinyPort;
 
     public int curveResolution = 10;
-    public float curveForce = 0.5f;
     private bool isConnected = false;
 
     private Vector3 lastStartPoint;

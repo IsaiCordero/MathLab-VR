@@ -22,11 +22,9 @@ public class NumberSlider : MonoBehaviour
 
         Vector3 localPos = transform.localPosition;
 
-        // Solo permitimos movimiento horizontal
         localPos.y = startLocalPosition.y;
         localPos.z = startLocalPosition.z;
 
-        // Limitamos el recorrido izquierda-derecha
         localPos.x = Mathf.Clamp(
             localPos.x,
             startLocalPosition.x - maxOffset,
@@ -35,7 +33,6 @@ public class NumberSlider : MonoBehaviour
 
         transform.localPosition = localPos;
 
-        // Convertimos posición en valor
         float delta = startLocalPosition.x - localPos.x;
         float normalized = delta / maxOffset; // entre -1 y 1
         int value = Mathf.RoundToInt(normalized * maxValue);
