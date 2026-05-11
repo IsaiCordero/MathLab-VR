@@ -153,6 +153,32 @@ public class VectorBlock : MonoBehaviour
         }
     }
 
+    public void SetVectorManually(Vector3 newVector)
+    {
+        currentVector = newVector;
+
+        if (vectorCube != null && centerReference != null)
+        {
+            Vector3 targetLocalOffset = currentVector / vectorScaleFactor;
+            targetLocalOffset.x = -targetLocalOffset.x;
+
+            Vector3 targetPosition = centerReference.localPosition + targetLocalOffset;
+
+            VectorController controller = vectorCube.GetComponent<VectorController>();
+            if (controller != null)
+            {
+                targetPosition.x = Mathf.Clamp(targetPosition.x, controller.minLocalPosition.x, controller.maxLocalPosition.x);
+                targetPosition.y = Mathf.Clamp(targetPosition.y, controller.minLocalPosition.y, controller.maxLocalPosition.y);
+                targetPosition.z = Mathf.Clamp(targetPosition.z, controller.minLocalPosition.z, controller.maxLocalPosition.z);
+            }
+
+            vectorCube.localPosition = targetPosition;
+        }
+
+        UpdateVisuals();
+    }
+
+
     void UpdateDynamicArrow()
     {
         if (dynamicArrowRoot == null || dynamicArrowBody == null || dynamicArrowHead == null)
