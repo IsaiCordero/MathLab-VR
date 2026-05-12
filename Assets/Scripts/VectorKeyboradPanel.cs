@@ -58,6 +58,10 @@ public class VectorKeyboardPanel : MonoBehaviour
                 }
                 break;
 
+            case "CANCEL":
+                CancelInput();
+                return;
+
             default:
                 currentInput += value;
                 break;
@@ -91,9 +95,19 @@ public class VectorKeyboardPanel : MonoBehaviour
         }
 
         targetVectorBlock.SetVectorManually(v);
+        targetVectorBlock.CloseKeyboard();
 
-        currentInput = "";
-        RefreshDisplay();
+    }
+    void CancelInput()
+    {
+        if (targetVectorBlock != null)
+        {
+            targetVectorBlock.CloseKeyboard();
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     void RefreshDisplay()

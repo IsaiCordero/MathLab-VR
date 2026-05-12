@@ -51,6 +51,7 @@
     <Compile Include="Assets\Scripts\VectorBlock.cs" />
     <Compile Include="Assets\Scripts\KeyboardButton.cs" />
     <Compile Include="Assets\Scripts\DeleteButton.cs" />
+    <Compile Include="Assets\Scripts\OpenKeyboardButton.cs" />
     <Compile Include="Assets\Scripts\TwoInputFunction.cs" />
     <Compile Include="Assets\Scripts\SpawnerBloques.cs" />
     <Compile Include="Assets\Scripts\VectorController.cs" />

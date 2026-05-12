@@ -26,6 +26,15 @@ public class VectorBlock : MonoBehaviour
     [Header("Cable")]
     public DataCable incomingCable;
 
+    [Header("Keyboard")]
+    public GameObject keyboardPanelPrefab;
+    public Transform keyboardSpawnPoint;
+    public Vector3 keyboardSpawnScale = Vector3.one * 0.15f;
+
+
+    private GameObject currentKeyboardInstance;
+
+
     private bool wasConnected = false;
     private Vector3 dynamicArrowBodyInitialScale;
     private Vector3 dynamicArrowHeadInitialLocalPosition;
@@ -35,6 +44,10 @@ public class VectorBlock : MonoBehaviour
     private Vector3 lastDisplayedVector;
     private Vector3 lastCubeLocalPosition;
     private bool arrowWasVisible = false;
+
+    private bool usingKeyboardValue = false;
+    private Vector3 keyboardExactVector = Vector3.zero;
+
 
     void Start()
     {
@@ -95,9 +108,16 @@ public class VectorBlock : MonoBehaviour
                 ResetBlock();
             }
 
-            Vector3 localOffset = vectorCube.localPosition - centerReference.localPosition;
-            localOffset.x = -localOffset.x;
-            currentVector = localOffset * vectorScaleFactor;
+            if (!usingKeyboardValue)
+            {
+                Vector3 localOffset = vectorCube.localPosition - centerReference.localPosition;
+                localOffset.x = -localOffset.x;
+                currentVector = localOffset * vectorScaleFactor;
+            }
+            else
+            {
+                currentVector = keyboardExactVector;
+            }
         }
 
         if (currentVector != lastDisplayedVector)
@@ -155,7 +175,10 @@ public class VectorBlock : MonoBehaviour
 
     public void SetVectorManually(Vector3 newVector)
     {
+        keyboardExactVector = newVector;
         currentVector = newVector;
+        usingKeyboardValue = true;
+
 
         if (vectorCube != null && centerReference != null)
         {
@@ -178,6 +201,43 @@ public class VectorBlock : MonoBehaviour
         UpdateVisuals();
     }
 
+    public void OpenKeyboard()
+    {
+        if (keyboardPanelPrefab == null) return;
+
+        if (currentKeyboardInstance != null)
+        {
+            Destroy(currentKeyboardInstance);
+            currentKeyboardInstance = null;
+        }
+
+        Vector3 spawnPosition = keyboardSpawnPoint != null
+            ? keyboardSpawnPoint.position
+            : transform.position + transform.right * 0.35f;
+
+        Quaternion spawnRotation = keyboardSpawnPoint != null
+            ? keyboardSpawnPoint.rotation
+            : transform.rotation;
+
+        currentKeyboardInstance = Instantiate(keyboardPanelPrefab, spawnPosition, spawnRotation);
+        currentKeyboardInstance.transform.localScale = keyboardSpawnScale;
+
+
+        VectorKeyboardPanel keyboardPanel = currentKeyboardInstance.GetComponent<VectorKeyboardPanel>();
+        if (keyboardPanel != null)
+        {
+            keyboardPanel.targetVectorBlock = this;
+        }
+    }
+
+    public void CloseKeyboard()
+    {
+        if (currentKeyboardInstance != null)
+        {
+            Destroy(currentKeyboardInstance);
+            currentKeyboardInstance = null;
+        }
+    }
 
     void UpdateDynamicArrow()
     {
