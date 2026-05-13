@@ -1306,6 +1306,7 @@ struct VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6  : public MonoBehav
 	bool ___arrowWasVisible;
 	bool ___usingKeyboardValue;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___keyboardExactVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___keyboardVisualPosition;
 };
 struct VectorController_tB813F0BDD206E29257815656133ED125738EE280  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -7649,7 +7650,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_Start_m9B035B4E1EFADE2357C43
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:54>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:55>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___dynamicArrowBody;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -7660,13 +7661,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_Start_m9B035B4E1EFADE2357C43
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:56>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:57>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = __this->___dynamicArrowBody;
 		NullCheck(L_2);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
 		L_3 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_2, NULL);
 		__this->___dynamicArrowBodyInitialScale = L_3;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:57>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:58>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = __this->___dynamicArrowBody;
 		NullCheck(L_4);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
@@ -7676,7 +7677,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_Start_m9B035B4E1EFADE2357C43
 
 IL_0030:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:60>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:61>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6 = __this->___dynamicArrowHead;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -7687,13 +7688,13 @@ IL_0030:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:62>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:63>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8 = __this->___dynamicArrowHead;
 		NullCheck(L_8);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
 		L_9 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_8, NULL);
 		__this->___dynamicArrowHeadInitialScale = L_9;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:63>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:64>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10 = __this->___dynamicArrowHead;
 		NullCheck(L_10);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
@@ -7703,12 +7704,12 @@ IL_0030:
 
 IL_0060:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:66>
-		VectorBlock_UpdateVisuals_mF156BF20486A0FF9075C53225E2612FEA474C9E5(__this, NULL);
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:67>
+		VectorBlock_UpdateVisuals_mF156BF20486A0FF9075C53225E2612FEA474C9E5(__this, NULL);
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:68>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = __this->___currentVector;
 		__this->___lastDisplayedVector = L_12;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:69>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:70>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13 = __this->___vectorCube;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_14;
@@ -7719,7 +7720,7 @@ IL_0060:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:71>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:72>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15 = __this->___vectorCube;
 		NullCheck(L_15);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
@@ -7729,7 +7730,7 @@ IL_0060:
 
 IL_0091:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:73>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:74>
 		return;
 	}
 }
@@ -7751,7 +7752,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_Update_mAA8BC156536FB0600383
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_3;
 	memset((&V_3), 0, sizeof(V_3));
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:77>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:78>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___vectorCube;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -7774,42 +7775,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_Update_mAA8BC156536FB0600383
 
 IL_001c:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:78>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:79>
 		return;
 	}
 
 IL_001d:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:80>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:81>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_4 = __this->___incomingCable;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_5;
 		L_5 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_4, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_5)
 		{
-			goto IL_00d0;
+			goto IL_00d6;
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:82>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:83>
 		__this->___wasConnected = (bool)1;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:84>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:85>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_6 = __this->___incomingCable;
 		NullCheck(L_6);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
 		L_7 = DataCable_GetVectorFromSource_m5917375FB98B3BCD3B78C76AB1E36863B960CE68(L_6, NULL);
 		__this->___currentVector = L_7;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:86>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:87>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = __this->___currentVector;
 		float L_9 = __this->___vectorScaleFactor;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
 		L_10 = Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline(L_8, L_9, NULL);
 		V_0 = L_10;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:87>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:88>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = V_0;
 		float L_12 = L_11.___x;
 		(&V_0)->___x = ((-L_12));
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:89>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:90>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13 = __this->___centerReference;
 		NullCheck(L_13);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
@@ -7818,7 +7819,7 @@ IL_001d:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
 		L_16 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_14, L_15, NULL);
 		V_1 = L_16;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:91>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:92>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17 = __this->___vectorCube;
 		NullCheck(L_17);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
@@ -7831,15 +7832,15 @@ IL_001d:
 		L_21 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_2), NULL);
 		if ((!(((float)L_21) > ((float)(9.99999997E-07f)))))
 		{
-			goto IL_00c2;
+			goto IL_00c5;
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:93>
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:94>
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:95>
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:96>
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:97>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:98>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22 = __this->___vectorCube;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23 = __this->___vectorCube;
 		NullCheck(L_23);
@@ -7853,98 +7854,129 @@ IL_001d:
 		L_28 = Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline(L_24, L_25, ((float)il2cpp_codegen_multiply(L_26, L_27)), NULL);
 		NullCheck(L_22);
 		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_22, L_28, NULL);
-		goto IL_0130;
+		goto IL_016a;
 	}
 
-IL_00c2:
+IL_00c5:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:101>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:102>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_29 = __this->___vectorCube;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30 = V_1;
 		NullCheck(L_29);
 		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_29, L_30, NULL);
-		goto IL_0130;
+		goto IL_016a;
 	}
 
-IL_00d0:
+IL_00d6:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:106>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:107>
 		bool L_31 = __this->___wasConnected;
 		if (!L_31)
 		{
-			goto IL_00de;
+			goto IL_00e4;
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:108>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:109>
 		VectorBlock_ResetBlock_m36F2121915AE14BD1093E28A77A7D2205197906F(__this, NULL);
 	}
 
-IL_00de:
+IL_00e4:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:111>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:112>
 		bool L_32 = __this->___usingKeyboardValue;
-		if (L_32)
+		if (!L_32)
 		{
-			goto IL_0124;
+			goto IL_0126;
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:113>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:114>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_33 = __this->___vectorCube;
 		NullCheck(L_33);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34;
 		L_34 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_33, NULL);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_35 = __this->___centerReference;
-		NullCheck(L_35);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35 = __this->___keyboardVisualPosition;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36;
-		L_36 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_35, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37;
-		L_37 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_34, L_36, NULL);
-		V_3 = L_37;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:114>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38 = V_3;
-		float L_39 = L_38.___x;
-		(&V_3)->___x = ((-L_39));
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:115>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40 = V_3;
-		float L_41 = __this->___vectorScaleFactor;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_42;
-		L_42 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_40, L_41, NULL);
-		__this->___currentVector = L_42;
-		goto IL_0130;
-	}
-
-IL_0124:
-	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:119>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_43 = __this->___keyboardExactVector;
-		__this->___currentVector = L_43;
-	}
-
-IL_0130:
-	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:123>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_44 = __this->___currentVector;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_45 = __this->___lastDisplayedVector;
-		bool L_46;
-		L_46 = Vector3_op_Inequality_m9F170CDFBF1E490E559DA5D06D6547501A402BBF_inline(L_44, L_45, NULL);
-		if (!L_46)
+		L_36 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_34, L_35, NULL);
+		V_2 = L_36;
+		float L_37;
+		L_37 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_2), NULL);
+		if ((!(((float)L_37) > ((float)(9.99999997E-07f)))))
 		{
-			goto IL_0155;
+			goto IL_011a;
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:125>
-		VectorBlock_UpdateVisuals_mF156BF20486A0FF9075C53225E2612FEA474C9E5(__this, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:126>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_47 = __this->___currentVector;
-		__this->___lastDisplayedVector = L_47;
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:116>
+		__this->___usingKeyboardValue = (bool)0;
+		goto IL_0126;
 	}
 
-IL_0155:
+IL_011a:
 	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:120>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38 = __this->___keyboardExactVector;
+		__this->___currentVector = L_38;
+	}
+
+IL_0126:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:124>
+		bool L_39 = __this->___usingKeyboardValue;
+		if (L_39)
+		{
+			goto IL_016a;
+		}
+	}
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:126>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_40 = __this->___vectorCube;
+		NullCheck(L_40);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41;
+		L_41 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_40, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_42 = __this->___centerReference;
+		NullCheck(L_42);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_43;
+		L_43 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_42, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_44;
+		L_44 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_41, L_43, NULL);
+		V_3 = L_44;
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:127>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_45 = V_3;
+		float L_46 = L_45.___x;
+		(&V_3)->___x = ((-L_46));
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:128>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_47 = V_3;
+		float L_48 = __this->___vectorScaleFactor;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_49;
+		L_49 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_47, L_48, NULL);
+		__this->___currentVector = L_49;
+	}
+
+IL_016a:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:132>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_50 = __this->___currentVector;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_51 = __this->___lastDisplayedVector;
+		bool L_52;
+		L_52 = Vector3_op_Inequality_m9F170CDFBF1E490E559DA5D06D6547501A402BBF_inline(L_50, L_51, NULL);
+		if (!L_52)
+		{
+			goto IL_018f;
+		}
+	}
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:134>
+		VectorBlock_UpdateVisuals_mF156BF20486A0FF9075C53225E2612FEA474C9E5(__this, NULL);
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:135>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_53 = __this->___currentVector;
+		__this->___lastDisplayedVector = L_53;
+	}
+
+IL_018f:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:137>
 		return;
 	}
 }
@@ -7958,7 +7990,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_LateUpdate_mE6C33AF2E6DB17A9
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:132>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:141>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___vectorCube;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -7981,13 +8013,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_LateUpdate_mE6C33AF2E6DB17A9
 
 IL_001c:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:133>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:142>
 		return;
 	}
 
 IL_001d:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:135>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:144>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = __this->___vectorCube;
 		NullCheck(L_4);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
@@ -8001,9 +8033,9 @@ IL_001d:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:137>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:146>
 		VectorBlock_UpdateDynamicArrow_m7E7B234DBBA9106B1A73ACDAD21EA245192D83A7(__this, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:138>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:147>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8 = __this->___vectorCube;
 		NullCheck(L_8);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
@@ -8014,7 +8046,7 @@ IL_001d:
 
 IL_004d:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:140>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:149>
 		bool L_10 = __this->___arrowWasVisible;
 		if (L_10)
 		{
@@ -8032,13 +8064,13 @@ IL_004d:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:142>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:151>
 		VectorBlock_UpdateDynamicArrow_m7E7B234DBBA9106B1A73ACDAD21EA245192D83A7(__this, NULL);
 	}
 
 IL_0069:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:144>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:153>
 		return;
 	}
 }
@@ -8052,7 +8084,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_ResetBlock_m36F2121915AE14BD
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:148>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:157>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___vectorCube;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -8073,7 +8105,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_ResetBlock_m36F2121915AE14BD
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:150>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:159>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = __this->___vectorCube;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->___centerReference;
 		NullCheck(L_5);
@@ -8081,7 +8113,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_ResetBlock_m36F2121915AE14BD
 		L_6 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_5, NULL);
 		NullCheck(L_4);
 		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_4, L_6, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:151>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:160>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7 = __this->___vectorCube;
 		NullCheck(L_7);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
@@ -8091,37 +8123,49 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_ResetBlock_m36F2121915AE14BD
 
 IL_0043:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:154>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:163>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
 		L_9 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		__this->___currentVector = L_9;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:155>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:164>
 		__this->___wasConnected = (bool)0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:156>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:165>
 		__this->___arrowWasVisible = (bool)0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:158>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10 = __this->___dynamicArrowRoot;
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:166>
+		__this->___usingKeyboardValue = (bool)0;
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:167>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
+		L_10 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
+		__this->___keyboardExactVector = L_10;
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:168>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11 = __this->___centerReference;
+		NullCheck(L_11);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		L_12 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_11, NULL);
+		__this->___keyboardVisualPosition = L_12;
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:171>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13 = __this->___dynamicArrowRoot;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_11;
-		L_11 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_10, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_11)
+		bool L_14;
+		L_14 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_13, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_14)
 		{
-			goto IL_007b;
+			goto IL_009e;
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:160>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12 = __this->___dynamicArrowRoot;
-		NullCheck(L_12);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13;
-		L_13 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_12, NULL);
-		NullCheck(L_13);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_13, (bool)0, NULL);
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:173>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15 = __this->___dynamicArrowRoot;
+		NullCheck(L_15);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16;
+		L_16 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_15, NULL);
+		NullCheck(L_16);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_16, (bool)0, NULL);
 	}
 
-IL_007b:
+IL_009e:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:162>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:175>
 		return;
 	}
 }
@@ -8144,7 +8188,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_UpdateVisuals_mF156BF20486A0
 	String_t* V_1 = NULL;
 	String_t* V_2 = NULL;
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:166>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:179>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_0 = __this->___valueText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -8155,7 +8199,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_UpdateVisuals_mF156BF20486A0
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:168>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:181>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___currentVector);
 		float* L_3 = (float*)(&L_2->___x);
 		il2cpp_codegen_runtime_class_init_inline(CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var);
@@ -8164,7 +8208,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_UpdateVisuals_mF156BF20486A0
 		String_t* L_5;
 		L_5 = Single_ToString_mF468A56B3A746EFD805E0604EE7A2873DA157ADE(L_3, _stringLiteralC613D4D2FE3F5D74727D376F793286A2BCBB1391, L_4, NULL);
 		V_0 = L_5;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:169>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:182>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_6 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___currentVector);
 		float* L_7 = (float*)(&L_6->___y);
 		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_8;
@@ -8172,7 +8216,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_UpdateVisuals_mF156BF20486A0
 		String_t* L_9;
 		L_9 = Single_ToString_mF468A56B3A746EFD805E0604EE7A2873DA157ADE(L_7, _stringLiteralC613D4D2FE3F5D74727D376F793286A2BCBB1391, L_8, NULL);
 		V_1 = L_9;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:170>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:183>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_10 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___currentVector);
 		float* L_11 = (float*)(&L_10->___z);
 		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_12;
@@ -8180,7 +8224,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_UpdateVisuals_mF156BF20486A0
 		String_t* L_13;
 		L_13 = Single_ToString_mF468A56B3A746EFD805E0604EE7A2873DA157ADE(L_11, _stringLiteralC613D4D2FE3F5D74727D376F793286A2BCBB1391, L_12, NULL);
 		V_2 = L_13;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:172>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:185>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_14 = __this->___valueText;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_15 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)7);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_16 = L_15;
@@ -8215,7 +8259,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_UpdateVisuals_mF156BF20486A0
 
 IL_00a4:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:174>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:187>
 		return;
 	}
 }
@@ -8235,22 +8279,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_SetVectorManually_m55413FD60
 	memset((&V_1), 0, sizeof(V_1));
 	VectorController_tB813F0BDD206E29257815656133ED125738EE280* V_2 = NULL;
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:178>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:191>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_newVector;
 		__this->___keyboardExactVector = L_0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:179>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:192>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___0_newVector;
 		__this->___currentVector = L_1;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:180>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:193>
 		__this->___usingKeyboardValue = (bool)1;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:183>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:195>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = __this->___vectorCube;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
 		L_3 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_3)
 		{
-			goto IL_0102;
+			goto IL_0109;
 		}
 	}
 	{
@@ -8260,21 +8304,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_SetVectorManually_m55413FD60
 		L_5 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_4, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_5)
 		{
-			goto IL_0102;
+			goto IL_0109;
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:185>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:197>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = __this->___currentVector;
 		float L_7 = __this->___vectorScaleFactor;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
 		L_8 = Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline(L_6, L_7, NULL);
 		V_0 = L_8;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:186>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:198>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = V_0;
 		float L_10 = L_9.___x;
 		(&V_0)->___x = ((-L_10));
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:188>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:200>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11 = __this->___centerReference;
 		NullCheck(L_11);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
@@ -8283,13 +8327,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_SetVectorManually_m55413FD60
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
 		L_14 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_12, L_13, NULL);
 		V_1 = L_14;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:190>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:202>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15 = __this->___vectorCube;
 		NullCheck(L_15);
 		VectorController_tB813F0BDD206E29257815656133ED125738EE280* L_16;
 		L_16 = Component_GetComponent_TisVectorController_tB813F0BDD206E29257815656133ED125738EE280_mF732AF08C0A68FBB3D54DD895F53F9550B7C4236(L_15, Component_GetComponent_TisVectorController_tB813F0BDD206E29257815656133ED125738EE280_mF732AF08C0A68FBB3D54DD895F53F9550B7C4236_RuntimeMethod_var);
 		V_2 = L_16;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:191>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:203>
 		VectorController_tB813F0BDD206E29257815656133ED125738EE280* L_17 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_18;
@@ -8300,7 +8344,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_SetVectorManually_m55413FD60
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:193>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:205>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = V_1;
 		float L_20 = L_19.___x;
 		VectorController_tB813F0BDD206E29257815656133ED125738EE280* L_21 = V_2;
@@ -8314,7 +8358,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_SetVectorManually_m55413FD60
 		float L_27;
 		L_27 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_20, L_23, L_26, NULL);
 		(&V_1)->___x = L_27;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:194>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:206>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28 = V_1;
 		float L_29 = L_28.___y;
 		VectorController_tB813F0BDD206E29257815656133ED125738EE280* L_30 = V_2;
@@ -8328,7 +8372,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_SetVectorManually_m55413FD60
 		float L_36;
 		L_36 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_29, L_32, L_35, NULL);
 		(&V_1)->___y = L_36;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:195>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:207>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37 = V_1;
 		float L_38 = L_37.___z;
 		VectorController_tB813F0BDD206E29257815656133ED125738EE280* L_39 = V_2;
@@ -8346,18 +8390,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_SetVectorManually_m55413FD60
 
 IL_00f6:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:198>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:210>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_46 = __this->___vectorCube;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_47 = V_1;
 		NullCheck(L_46);
 		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_46, L_47, NULL);
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:211>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_48 = V_1;
+		__this->___keyboardVisualPosition = L_48;
 	}
 
-IL_0102:
+IL_0109:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:201>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:214>
 		VectorBlock_UpdateVisuals_mF156BF20486A0FF9075C53225E2612FEA474C9E5(__this, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:202>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:215>
 		return;
 	}
 }
@@ -8382,7 +8429,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_OpenKeyboard_mA055EBDC031897
 	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 G_B10_0;
 	memset((&G_B10_0), 0, sizeof(G_B10_0));
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:206>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:220>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___keyboardPanelPrefab;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -8393,13 +8440,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_OpenKeyboard_mA055EBDC031897
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:206>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:220>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:208>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:222>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___currentKeyboardInstance;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
@@ -8410,20 +8457,20 @@ IL_000f:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:210>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:224>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___currentKeyboardInstance;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_4, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:211>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:225>
 		__this->___currentKeyboardInstance = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentKeyboardInstance), (void*)(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL);
 	}
 
 IL_002f:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:214>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:215>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:216>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:228>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:229>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:230>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->___keyboardSpawnPoint;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_6;
@@ -8464,9 +8511,9 @@ IL_0064:
 IL_006f:
 	{
 		V_0 = G_B7_0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:218>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:219>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:220>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:232>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:233>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:234>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15 = __this->___keyboardSpawnPoint;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_16;
@@ -8498,7 +8545,7 @@ IL_008b:
 IL_0096:
 	{
 		V_1 = G_B10_0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:222>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:236>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21 = __this->___keyboardPanelPrefab;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = V_0;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_23 = V_1;
@@ -8507,7 +8554,7 @@ IL_0096:
 		L_24 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4(L_21, L_22, L_23, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
 		__this->___currentKeyboardInstance = L_24;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentKeyboardInstance), (void*)L_24);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:223>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:237>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25 = __this->___currentKeyboardInstance;
 		NullCheck(L_25);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_26;
@@ -8515,13 +8562,13 @@ IL_0096:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27 = __this->___keyboardSpawnScale;
 		NullCheck(L_26);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_26, L_27, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:226>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:240>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28 = __this->___currentKeyboardInstance;
 		NullCheck(L_28);
 		VectorKeyboardPanel_tC06D7292AE1E1D3732B52E8964046D9CC9D81CF7* L_29;
 		L_29 = GameObject_GetComponent_TisVectorKeyboardPanel_tC06D7292AE1E1D3732B52E8964046D9CC9D81CF7_m0981CE3ACBFB46511D0356274ABD69C976A07977(L_28, GameObject_GetComponent_TisVectorKeyboardPanel_tC06D7292AE1E1D3732B52E8964046D9CC9D81CF7_m0981CE3ACBFB46511D0356274ABD69C976A07977_RuntimeMethod_var);
 		V_2 = L_29;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:227>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:241>
 		VectorKeyboardPanel_tC06D7292AE1E1D3732B52E8964046D9CC9D81CF7* L_30 = V_2;
 		bool L_31;
 		L_31 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_30, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
@@ -8531,7 +8578,7 @@ IL_0096:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:229>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:243>
 		VectorKeyboardPanel_tC06D7292AE1E1D3732B52E8964046D9CC9D81CF7* L_32 = V_2;
 		NullCheck(L_32);
 		L_32->___targetVectorBlock = __this;
@@ -8540,7 +8587,7 @@ IL_0096:
 
 IL_00dc:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:231>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:245>
 		return;
 	}
 }
@@ -8554,7 +8601,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_CloseKeyboard_mCD0C67785388D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:235>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:249>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___currentKeyboardInstance;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -8565,18 +8612,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_CloseKeyboard_mCD0C67785388D
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:237>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:251>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___currentKeyboardInstance;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_2, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:238>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:252>
 		__this->___currentKeyboardInstance = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentKeyboardInstance), (void*)(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL);
 	}
 
 IL_0020:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:240>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:254>
 		return;
 	}
 }
@@ -8597,7 +8644,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_UpdateDynamicArrow_m7E7B234D
 	float V_3 = 0.0f;
 	float V_4 = 0.0f;
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:244>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:258>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___dynamicArrowRoot;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -8630,13 +8677,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_UpdateDynamicArrow_m7E7B234D
 
 IL_002a:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:245>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:259>
 		return;
 	}
 
 IL_002b:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:247>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:261>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6 = __this->___vectorCube;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -8659,13 +8706,13 @@ IL_002b:
 
 IL_0047:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:248>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:262>
 		return;
 	}
 
 IL_0048:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:250>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:264>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10 = __this->___vectorCube;
 		NullCheck(L_10);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
@@ -8677,11 +8724,11 @@ IL_0048:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
 		L_14 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_11, L_13, NULL);
 		V_0 = L_14;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:251>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:265>
 		float L_15;
 		L_15 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&V_0), NULL);
 		V_1 = L_15;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:253>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:267>
 		float L_16 = V_1;
 		if ((!(((float)L_16) < ((float)(0.00100000005f)))))
 		{
@@ -8689,31 +8736,31 @@ IL_0048:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:255>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:269>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17 = __this->___dynamicArrowRoot;
 		NullCheck(L_17);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18;
 		L_18 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_17, NULL);
 		NullCheck(L_18);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_18, (bool)0, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:256>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:270>
 		__this->___arrowWasVisible = (bool)0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:257>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:271>
 		return;
 	}
 
 IL_008d:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:260>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:274>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19 = __this->___dynamicArrowRoot;
 		NullCheck(L_19);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20;
 		L_20 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_19, NULL);
 		NullCheck(L_20);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_20, (bool)1, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:261>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:275>
 		__this->___arrowWasVisible = (bool)1;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:263>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:277>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21 = __this->___dynamicArrowRoot;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22 = __this->___centerReference;
 		NullCheck(L_22);
@@ -8721,11 +8768,11 @@ IL_008d:
 		L_23 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_22, NULL);
 		NullCheck(L_21);
 		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_21, L_23, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:265>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:279>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24;
 		L_24 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_0), NULL);
 		V_2 = L_24;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:266>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:280>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_25 = __this->___dynamicArrowRoot;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26;
 		L_26 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
@@ -8734,23 +8781,23 @@ IL_008d:
 		L_28 = Quaternion_FromToRotation_mCB3100F93637E72455388B901C36EF8A25DFDB9A_inline(L_26, L_27, NULL);
 		NullCheck(L_25);
 		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_25, L_28, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:268>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:282>
 		float L_29 = V_1;
 		float L_30 = __this->___arrowLengthMultiplier;
 		float L_31;
 		L_31 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline((0.00100000005f), ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_add(L_29, (0.100000001f))), L_30)), NULL);
 		V_3 = L_31;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:269>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:283>
 		float L_32 = V_1;
 		float L_33 = __this->___arrowLengthMultiplier;
 		float L_34;
 		L_34 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline((0.00100000005f), ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_add(L_32, (0.5f))), L_33)), NULL);
 		V_4 = L_34;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:271>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:272>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:273>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:274>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:275>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:285>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:286>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:287>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:288>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:289>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_35 = __this->___dynamicArrowBody;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_36 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___dynamicArrowBodyInitialScale);
 		float L_37 = L_36->___x;
@@ -8764,11 +8811,11 @@ IL_008d:
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_43), L_37, ((float)il2cpp_codegen_multiply(L_39, L_40)), L_42, NULL);
 		NullCheck(L_35);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_35, L_43, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:277>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:278>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:279>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:280>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:281>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:291>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:292>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:293>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:294>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:295>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_44 = __this->___dynamicArrowBody;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_45 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___dynamicArrowBodyInitialLocalPosition);
 		float L_46 = L_45->___x;
@@ -8782,11 +8829,11 @@ IL_008d:
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_52), L_46, ((float)il2cpp_codegen_multiply(L_48, L_49)), L_51, NULL);
 		NullCheck(L_44);
 		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_44, L_52, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:283>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:284>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:285>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:286>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:287>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:297>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:298>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:299>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:300>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:301>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_53 = __this->___dynamicArrowHead;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_54 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___dynamicArrowHeadInitialScale);
 		float L_55 = L_54->___x;
@@ -8800,11 +8847,11 @@ IL_008d:
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_61), L_55, ((float)il2cpp_codegen_multiply(L_57, L_58)), L_60, NULL);
 		NullCheck(L_53);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_53, L_61, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:289>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:290>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:291>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:292>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:293>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:303>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:304>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:305>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:306>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:307>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_62 = __this->___dynamicArrowHead;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_63 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___dynamicArrowHeadInitialLocalPosition);
 		float L_64 = L_63->___x;
@@ -8818,7 +8865,7 @@ IL_008d:
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_70), L_64, ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_66, L_67)), (0.0500000007f))), L_69, NULL);
 		NullCheck(L_62);
 		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_62, L_70, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:294>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/VectorBlock.cs:308>
 		return;
 	}
 }

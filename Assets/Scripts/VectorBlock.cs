@@ -47,6 +47,7 @@ public class VectorBlock : MonoBehaviour
 
     private bool usingKeyboardValue = false;
     private Vector3 keyboardExactVector = Vector3.zero;
+    private Vector3 keyboardVisualPosition;
 
 
     void Start()
@@ -108,15 +109,23 @@ public class VectorBlock : MonoBehaviour
                 ResetBlock();
             }
 
+            if (usingKeyboardValue)
+            {
+                if ((vectorCube.localPosition - keyboardVisualPosition).sqrMagnitude > 0.000001f)
+                {
+                    usingKeyboardValue = false;
+                }
+                else
+                {
+                    currentVector = keyboardExactVector;
+                }
+            }
+
             if (!usingKeyboardValue)
             {
                 Vector3 localOffset = vectorCube.localPosition - centerReference.localPosition;
                 localOffset.x = -localOffset.x;
                 currentVector = localOffset * vectorScaleFactor;
-            }
-            else
-            {
-                currentVector = keyboardExactVector;
             }
         }
 
@@ -154,6 +163,10 @@ public class VectorBlock : MonoBehaviour
         currentVector = Vector3.zero;
         wasConnected = false;
         arrowWasVisible = false;
+        usingKeyboardValue = false;
+        keyboardExactVector = Vector3.zero;
+        keyboardVisualPosition = centerReference.localPosition;
+
 
         if (dynamicArrowRoot != null)
         {
@@ -179,7 +192,6 @@ public class VectorBlock : MonoBehaviour
         currentVector = newVector;
         usingKeyboardValue = true;
 
-
         if (vectorCube != null && centerReference != null)
         {
             Vector3 targetLocalOffset = currentVector / vectorScaleFactor;
@@ -196,10 +208,12 @@ public class VectorBlock : MonoBehaviour
             }
 
             vectorCube.localPosition = targetPosition;
+            keyboardVisualPosition = targetPosition;
         }
 
         UpdateVisuals();
     }
+
 
     public void OpenKeyboard()
     {
