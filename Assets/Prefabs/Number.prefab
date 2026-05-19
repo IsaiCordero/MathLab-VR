@@ -505,7 +505,7 @@ MonoBehaviour:
   _maxGrabPoints: -1
   _rigidbody: {fileID: -5447349507061167671}
   _kinematicWhileSelected: 1
-  _throwWhenUnselected: 1
+  _throwWhenUnselected: 0
   _forceKinematicDisabled: 0
 --- !u!114 &4950933439224562850
 MonoBehaviour:
@@ -585,7 +585,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NumberBlock
   valueText: {fileID: 2203743633640173688}
   currentValue: 0
-  step: 1
   incomingCable: {fileID: 0}
 --- !u!1 &5051030337124406938
 GameObject:
@@ -1070,7 +1069,6 @@ MonoBehaviour:
   colorConnected: {r: 0, g: 1, b: 0, a: 1}
   blockOriginal: {fileID: 4752835896976161619}
   curveResolution: 10
-  curveForce: 0.5
 --- !u!114 &4216577797355477558
 MonoBehaviour:
   m_ObjectHideFlags: 0

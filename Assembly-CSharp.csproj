@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\NumberSlider.cs" />
     <Compile Include="Assets\Scripts\VectorKeyboradPanel.cs" />
     <Compile Include="Assets\Scripts\FunctionOneInput.cs" />
+    <Compile Include="Assets\Scripts\OneInputNumberFunction.cs" />
     <Compile Include="Assets\Scripts\CableMeta.cs" />
   </ItemGroup>
   <ItemGroup>

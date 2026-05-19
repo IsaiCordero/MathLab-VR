@@ -165,7 +165,7 @@ MonoBehaviour:
   _maxGrabPoints: -1
   _rigidbody: {fileID: 2507879279747690695}
   _kinematicWhileSelected: 1
-  _throwWhenUnselected: 1
+  _throwWhenUnselected: 0
   _forceKinematicDisabled: 0
 --- !u!114 &3668225087641293722
 MonoBehaviour:
@@ -179,7 +179,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6674a6c824bdfa448a744d91b228db4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnerBloques
-  prefabBloque: {fileID: 2688589327440509510, guid: ece4b4833441ebe48affd947cef1c38e, type: 3}
+  functionBlockPrefab: {fileID: 0}
+  spawnDistance: -0.25
+  defaultFunctionIndex: 0
   grabbableBoton: {fileID: 1442426238338483439}
 --- !u!114 &686103025427698674
 MonoBehaviour:

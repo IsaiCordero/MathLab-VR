@@ -25,8 +25,20 @@ public class TwoInputFunction : MonoBehaviour
     public bool OutputsNumber()
     {
         string fn = functions[actual];
-        return fn == "PRODUCTO ESCALAR" || fn == "ÁNGULO";
-    }
+
+        if (fn == "PRODUCTO ESCALAR" || fn == "ÁNGULO")
+            return true;
+
+        if (fn == "SUMA" || fn == "RESTA" || fn == "MULTIPLICACIÓN" || fn == "DIVISIÓN")
+        {
+            bool aIsVector = firstInput != null && firstInput.IsVectorSource();
+            bool bIsVector = secondInput != null && secondInput.IsVectorSource();
+
+            return !aIsVector && !bIsVector;
+        }
+
+        return false;
+    }   
 
     public bool OutputsVector()
     {

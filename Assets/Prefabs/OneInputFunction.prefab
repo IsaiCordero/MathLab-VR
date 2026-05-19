@@ -742,7 +742,7 @@ MonoBehaviour:
   _maxGrabPoints: -1
   _rigidbody: {fileID: 3060815545600119426}
   _kinematicWhileSelected: 1
-  _throwWhenUnselected: 1
+  _throwWhenUnselected: 0
   _forceKinematicDisabled: 0
 --- !u!114 &4211459453015375972
 MonoBehaviour:
@@ -1106,7 +1106,6 @@ MonoBehaviour:
   colorConnected: {r: 0, g: 1, b: 0, a: 1}
   blockOriginal: {fileID: 3308571308384321213}
   curveResolution: 20
-  curveForce: 0.5
 --- !u!114 &7321982935352318119
 MonoBehaviour:
   m_ObjectHideFlags: 0

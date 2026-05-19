@@ -58,6 +58,12 @@ public class SpawnerBloques : MonoBehaviour
         {
             oneInputFunction.SetFunctionByIndex(defaultFunctionIndex);
         }
+
+        OneInputNumberFunction oneInputNumberFunction = newBlock.GetComponent<OneInputNumberFunction>();
+        if (oneInputNumberFunction != null)
+        {
+            oneInputNumberFunction.SetFunctionByIndex(defaultFunctionIndex);
+        }
     }
 
     private void OnDestroy()

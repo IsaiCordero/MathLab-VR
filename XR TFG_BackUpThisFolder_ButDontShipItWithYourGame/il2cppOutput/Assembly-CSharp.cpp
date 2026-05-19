@@ -88,6 +88,7 @@ struct NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062;
 struct NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472;
 struct NumberSlider_t5B3939E073ABBA7221DA254FFC2F8E2186F2B3F0;
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
+struct OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6;
 struct OpenKeyboardButton_tB37A82F64CFC26C2FF77D4A87CB986E662457C06;
 struct PointableElement_t0F91651B1FF972C5FBC7E9476BBA548F38EF9CF7;
 struct RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670;
@@ -131,16 +132,19 @@ IL2CPP_EXTERN_C RuntimeClass* Physics_t1244C2983AEAFA149425AFFC3DF53BC91C18ED56_
 IL2CPP_EXTERN_C RuntimeClass* Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____B5FE1EDC39B918F384B90B24DDE22731FF2532E6DCA28279112AE719FC9536EB_FieldInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____B8624BC1636AA1BE8ECF82C23216767EE5034DB0384567CA15C355B86FF7358C_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____BAAD990E6FBF9C307F8C92BEE5009664949DE7F331D8119105FDE1FF2A244D92_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____CEFFE21DE1872D72B339958EC82A5FA9D2CB47CE7079C862E2F0AB6BC8DA2FF2_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral1168E92C164109D6220480DEDA987085B2A21155;
 IL2CPP_EXTERN_C String_t* _stringLiteral234D19ACC97DBDDB4C2351D9B583DDC8AD958380;
 IL2CPP_EXTERN_C String_t* _stringLiteral25E826F472A35124A949189BC9B3639E7A652E31;
 IL2CPP_EXTERN_C String_t* _stringLiteral2C6C4A0396E04E83942E78DFF4DF343644956432;
+IL2CPP_EXTERN_C String_t* _stringLiteral354BB319791929462B888E5C7625AB8DABE43E81;
 IL2CPP_EXTERN_C String_t* _stringLiteral3B2C1C62D4D1C2A0C8A9AC42DB00D33C654F9AD0;
 IL2CPP_EXTERN_C String_t* _stringLiteral50639CAD49418C7B223CC529395C0E2A3892501C;
 IL2CPP_EXTERN_C String_t* _stringLiteral54D7DEBE88C4ED298BBDA1EB59F812F6EC44FAEC;
 IL2CPP_EXTERN_C String_t* _stringLiteral571B8015AB310D000C937E6BB40186AA60B9C5C1;
+IL2CPP_EXTERN_C String_t* _stringLiteral59C00D8CDE1C0B7CDE4D637CECB77E0760E75287;
+IL2CPP_EXTERN_C String_t* _stringLiteral5C428ACD6AC01C0A74DDDD063A93ECB4E9763A47;
 IL2CPP_EXTERN_C String_t* _stringLiteral694A1D4E2D5D36876C7BDFEEFA2BF12F5EAB41C9;
 IL2CPP_EXTERN_C String_t* _stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D;
 IL2CPP_EXTERN_C String_t* _stringLiteral7FAE5D58BE5ABC42D695762815383DD4B307BF9E;
@@ -159,6 +163,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralB92EF51E45166C91E2762DB6C9F27C8BD6EBE466
 IL2CPP_EXTERN_C String_t* _stringLiteralC1BD9BD90CD9F1AC239F9A86461118334E2AE630;
 IL2CPP_EXTERN_C String_t* _stringLiteralC5CB235FDF341E57B3A3E3D289810AD3382B4E8B;
 IL2CPP_EXTERN_C String_t* _stringLiteralC613D4D2FE3F5D74727D376F793286A2BCBB1391;
+IL2CPP_EXTERN_C String_t* _stringLiteralCBDE4209A28D15F4303640C8C8F1206538122DF3;
 IL2CPP_EXTERN_C String_t* _stringLiteralD5D2875F228D651E1289522AEAAB8C492001C1BE;
 IL2CPP_EXTERN_C String_t* _stringLiteralD93ABA6C8699F54FF0DCE1BF204364133EE8A077;
 IL2CPP_EXTERN_C String_t* _stringLiteralD9FB78596E63E545F5E25EF29FB924A5C4C9188E;
@@ -170,6 +175,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* CableMeta_EventsMeta_mF8C4ED75BA4A0C77F8628
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisCableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F_mAD54C61F379E050332D646CE0EAF61EF3FFC895D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInParent_TisFunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9_m83F0BD411BF0BB9E5003D73E729A00A0343B8FE2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInParent_TisNumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062_m803100CBC75CFAF7F586284825FD5B6422606D7C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInParent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_mD4AEF4293BC348A937DD311CCBF95ADD9E5C5467_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInParent_TisTwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337_m6796E075C375983A963A00AA78D9E416C64AD2EF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInParent_TisVectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6_m8BB94EA5DA1BF7C5F1A31A4E9894A5DB4C7507C7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisDataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E_mA5EF961506326247E5674FEAA53CA113EFC961B1_RuntimeMethod_var;
@@ -178,6 +184,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentsInChildren_TisTransf
 IL2CPP_EXTERN_C const RuntimeMethod* DeleteButton_EventsButton_mBF54EE73ACD1C737BB2BB790426D2D27D4A62391_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisFunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9_mAC1063E2F4E5F5BCB8022488645175E637309B14_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisNumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062_m9CD5A5EE8C3F93C1D95EC905AF49235D0630CE09_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_m7F15CF6F7CCB4BB11D4CFBDA770C65696064CE0F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisTwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337_m17631D93A3344B0069761B894B3CC123103D0409_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisVectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6_mCC0AB5F61A281F386AC5F5DED98017F16FD59F66_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisVectorKeyboardPanel_tC06D7292AE1E1D3732B52E8964046D9CC9D81CF7_m0981CE3ACBFB46511D0356274ABD69C976A07977_RuntimeMethod_var;
@@ -575,7 +582,7 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 	};
 };
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D255_t389B1F744686EF60056C691379390662A41E3877 
+struct __StaticArrayInitTypeSizeU3D283_t4CD939A86C37AC8C2F258B86C1496FD303CDE601 
 {
 	union
 	{
@@ -585,12 +592,12 @@ struct __StaticArrayInitTypeSizeU3D255_t389B1F744686EF60056C691379390662A41E3877
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D255_t389B1F744686EF60056C691379390662A41E3877__padding[255];
+		uint8_t __StaticArrayInitTypeSizeU3D283_t4CD939A86C37AC8C2F258B86C1496FD303CDE601__padding[283];
 	};
 };
 #pragma pack(pop, tp)
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D528_t1B7B6CC17BED04F099223D3B6E0D9A94F56157A6 
+struct __StaticArrayInitTypeSizeU3D577_t5982BEBD8D26D4FCB1FB04D627BC9074DEC1F9FE 
 {
 	union
 	{
@@ -600,7 +607,7 @@ struct __StaticArrayInitTypeSizeU3D528_t1B7B6CC17BED04F099223D3B6E0D9A94F56157A6
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D528_t1B7B6CC17BED04F099223D3B6E0D9A94F56157A6__padding[528];
+		uint8_t __StaticArrayInitTypeSizeU3D577_t5982BEBD8D26D4FCB1FB04D627BC9074DEC1F9FE__padding[577];
 	};
 };
 #pragma pack(pop, tp)
@@ -1239,6 +1246,13 @@ struct NumberSlider_t5B3939E073ABBA7221DA254FFC2F8E2186F2B3F0  : public MonoBeha
 	int32_t ___maxValue;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___startLocalPosition;
 };
+struct OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___visualText;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___functions;
+	DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* ___input;
+	int32_t ___actual;
+};
 struct OpenKeyboardButton_tB37A82F64CFC26C2FF77D4A87CB986E662457C06  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* ___targetVectorBlock;
@@ -1618,8 +1632,8 @@ struct TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957  : public TMP_T
 };
 struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields
 {
-	__StaticArrayInitTypeSizeU3D528_t1B7B6CC17BED04F099223D3B6E0D9A94F56157A6 ___B5FE1EDC39B918F384B90B24DDE22731FF2532E6DCA28279112AE719FC9536EB;
-	__StaticArrayInitTypeSizeU3D255_t389B1F744686EF60056C691379390662A41E3877 ___B8624BC1636AA1BE8ECF82C23216767EE5034DB0384567CA15C355B86FF7358C;
+	__StaticArrayInitTypeSizeU3D283_t4CD939A86C37AC8C2F258B86C1496FD303CDE601 ___BAAD990E6FBF9C307F8C92BEE5009664949DE7F331D8119105FDE1FF2A244D92;
+	__StaticArrayInitTypeSizeU3D577_t5982BEBD8D26D4FCB1FB04D627BC9074DEC1F9FE ___CEFFE21DE1872D72B339958EC82A5FA9D2CB47CE7079C862E2F0AB6BC8DA2FF2;
 };
 struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_StaticFields
 {
@@ -1993,6 +2007,11 @@ inline FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* GameObject_Ge
 	return ((  FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FunctionOneInput_GetCurrentResult_mA0E733C5CB4668144CD4496D44193C73406A58C4 (FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* __this, const RuntimeMethod* method) ;
+inline OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* GameObject_GetComponent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_m7F15CF6F7CCB4BB11D4CFBDA770C65696064CE0F (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float OneInputNumberFunction_GetCurrentResult_mB9A7DBA412D881A3F0026D4AEB0C89269252467A (OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline (const RuntimeMethod* method) ;
 inline VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* GameObject_GetComponent_TisVectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6_mCC0AB5F61A281F386AC5F5DED98017F16FD59F66 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
 {
@@ -2016,9 +2035,14 @@ inline FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* Component_Get
 {
 	return ((  FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponentInParent_TisRuntimeObject_m6746D6BB99912B1B509746C993906492F86CD119_gshared)(__this, method);
 }
+inline OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* Component_GetComponentInParent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_mD4AEF4293BC348A937DD311CCBF95ADD9E5C5467 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponentInParent_TisRuntimeObject_m6746D6BB99912B1B509746C993906492F86CD119_gshared)(__this, method);
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataCable_PortAlreadyOccupied_mC4657B0BD3970040CF5BF8FCDFB60E5095C0FB61 (DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_port, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TwoInputFunction_OutputsNumber_m66A47200B35C8917526AE3BF0E8880181CA921C3 (TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FunctionOneInput_OutputsNumber_m16857AE26FC801DFC22202F9FBBCC3FAD98F6F22 (FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OneInputNumberFunction_OutputsNumber_m8D957E7B43145195807EE4C4F85A696211612514 (OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TwoInputFunction_OutputsVector_m6AC265BC1F3748970247B4269FBA6CD72D86D2C3 (TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FunctionOneInput_OutputsVector_mCE6D2A56259CE1E37D37EEAEB32B7A9BC5C0FD38 (FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeleteButton_DeleteSecurity_mAB4DD11EB6ED15F599C0C6430C8798356DA53900 (DeleteButton_t83882758AC000A501AD7EF0672341893CA64F6DF* __this, const RuntimeMethod* method) ;
@@ -2056,6 +2080,7 @@ inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Object_Instantiate_
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TwoInputFunction_SetFunctionByIndex_m3C6B7FF180E4B2964F990F5107F51ECDC8B082E0 (TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FunctionOneInput_SetFunctionByIndex_m722DDFA88E392941FF3EE6F7338DD9181885D06D (FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* __this, int32_t ___0_index, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OneInputNumberFunction_SetFunctionByIndex_m086DB0BC9E0BE95AAB9B3FBAF5AB4B18D6ADFAF5 (OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataCable_IsVectorSource_m3737DFD75BF0CD7C80C8D735AD79A8ADC5FEB337 (DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_rhs, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_from, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_to, const RuntimeMethod* method) ;
@@ -2118,7 +2143,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 120215
+// Method Definition Index: 119989
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* CableMeta_get_DestinyPort_mBB17C96E671C4B1D3557B196CB0DF08ABD58FADE (CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2127,7 +2152,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 		return L_0;
 	}
 }
-// Method Definition Index: 120216
+// Method Definition Index: 119990
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CableMeta_Start_m5FBC2CF88D6EA954DC1750892781074816268BD7 (CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2219,7 +2244,7 @@ IL_0083:
 		return;
 	}
 }
-// Method Definition Index: 120217
+// Method Definition Index: 119991
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CableMeta_LateUpdate_m699B6F33AD9E795D6F1F6FD437AD7677778F8F92 (CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2245,7 +2270,7 @@ IL_0019:
 		return;
 	}
 }
-// Method Definition Index: 120218
+// Method Definition Index: 119992
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CableMeta_OnDestroy_mE73E02CBE0FE08C19BE7CE61DCE9C3C33B813B67 (CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2399,7 +2424,7 @@ IL_0092:
 		return;
 	}
 }
-// Method Definition Index: 120219
+// Method Definition Index: 119993
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CableMeta_Update_mC5940AC7279901C8297126B01353F2DD3071624A (CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2576,7 +2601,7 @@ IL_00f3:
 		return;
 	}
 }
-// Method Definition Index: 120220
+// Method Definition Index: 119994
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CableMeta_UpdateCableColor_m7CE1F6466FB31FF0516764ED3926CFFD857AF5FE (CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_targetColor, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2628,7 +2653,7 @@ IL_004f:
 		return;
 	}
 }
-// Method Definition Index: 120221
+// Method Definition Index: 119995
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CableMeta_DrawCurveBezier_m8E76D961958AD4BEF28D4FE3946C495D7BAE8940 (CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F* __this, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -2738,7 +2763,7 @@ IL_00a9:
 		return;
 	}
 }
-// Method Definition Index: 120222
+// Method Definition Index: 119996
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 CableMeta_CalculateBezierPoint_mB0F26BD52FAAECF6BF3F4399C7E118F081AF3683 (CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F* __this, float ___0_y, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_p0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_p1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_p2, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -2777,7 +2802,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_15;
 	}
 }
-// Method Definition Index: 120223
+// Method Definition Index: 119997
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CableMeta_EventsMeta_mF8C4ED75BA4A0C77F8628EDDF9E3EE3132216606 (CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F* __this, PointerEvent_tAEB047AC9AE96DA96400B3C6FA88E56C917608BC ___0_evento, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2861,7 +2886,7 @@ IL_0063:
 		return;
 	}
 }
-// Method Definition Index: 120224
+// Method Definition Index: 119998
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CableMeta_TryConnection_m86381D71333B44C1223E6DDBE9B1AE9AABA873D0 (CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3092,7 +3117,7 @@ IL_0101:
 		return;
 	}
 }
-// Method Definition Index: 120225
+// Method Definition Index: 119999
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CableMeta_ResetPosition_m6161E888E8E2F4B3F31055D08FE876EBDD0E4991 (CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3159,7 +3184,7 @@ IL_0016:
 		return;
 	}
 }
-// Method Definition Index: 120226
+// Method Definition Index: 120000
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CableMeta_Disconnect_mCDDC3B99303CBBDFAB4BCDE7C95A5ABF6DFE02CC (CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3205,7 +3230,7 @@ IL_001d:
 		return;
 	}
 }
-// Method Definition Index: 120227
+// Method Definition Index: 120001
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CableMeta__ctor_mC89F32F748579FAC02B1EDF37939BFCB2862B8E8 (CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3250,7 +3275,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CableMeta__ctor_mC89F32F748579FAC02B1EDF
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 120228
+// Method Definition Index: 120002
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DataCable_GetValueFromSource_m9BC88D5DBEE4441E5C37C3C33C3206538BE589C3 (DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3258,6 +3283,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DataCable_GetValueFromSource_m9BC88D5DB
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisFunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9_mAC1063E2F4E5F5BCB8022488645175E637309B14_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisNumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062_m9CD5A5EE8C3F93C1D95EC905AF49235D0630CE09_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_m7F15CF6F7CCB4BB11D4CFBDA770C65696064CE0F_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisTwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337_m17631D93A3344B0069761B894B3CC123103D0409_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
@@ -3265,6 +3291,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DataCable_GetValueFromSource_m9BC88D5DB
 	NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062* V_0 = NULL;
 	TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* V_1 = NULL;
 	FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* V_2 = NULL;
+	OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* V_3 = NULL;
 	{
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:11>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___sourceObject;
@@ -3363,11 +3390,38 @@ IL_004d:
 
 IL_0069:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:30>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:31>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = __this->___sourceObject;
+		NullCheck(L_20);
+		OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* L_21;
+		L_21 = GameObject_GetComponent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_m7F15CF6F7CCB4BB11D4CFBDA770C65696064CE0F(L_20, GameObject_GetComponent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_m7F15CF6F7CCB4BB11D4CFBDA770C65696064CE0F_RuntimeMethod_var);
+		V_3 = L_21;
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:32>
+		OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* L_22 = V_3;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_23;
+		L_23 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_22, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_23)
+		{
+			goto IL_0085;
+		}
+	}
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:34>
+		OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* L_24 = V_3;
+		NullCheck(L_24);
+		float L_25;
+		L_25 = OneInputNumberFunction_GetCurrentResult_mB9A7DBA412D881A3F0026D4AEB0C89269252467A(L_24, NULL);
+		return L_25;
+	}
+
+IL_0085:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:36>
 		return (0.0f);
 	}
 }
-// Method Definition Index: 120229
+// Method Definition Index: 120003
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 DataCable_GetVectorFromSource_m5917375FB98B3BCD3B78C76AB1E36863B960CE68 (DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3383,7 +3437,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 	TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* V_1 = NULL;
 	FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* V_2 = NULL;
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:35>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:41>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___sourceObject;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -3394,7 +3448,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:35>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:41>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
 		L_2 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		return L_2;
@@ -3402,13 +3456,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 
 IL_0014:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:37>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:43>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___sourceObject;
 		NullCheck(L_3);
 		VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* L_4;
 		L_4 = GameObject_GetComponent_TisVectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6_mCC0AB5F61A281F386AC5F5DED98017F16FD59F66(L_3, GameObject_GetComponent_TisVectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6_mCC0AB5F61A281F386AC5F5DED98017F16FD59F66_RuntimeMethod_var);
 		V_0 = L_4;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:38>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:44>
 		VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* L_5 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_6;
@@ -3419,7 +3473,7 @@ IL_0014:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:38>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:44>
 		VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* L_7 = V_0;
 		NullCheck(L_7);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = L_7->___currentVector;
@@ -3428,13 +3482,13 @@ IL_0014:
 
 IL_0030:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:40>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:46>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___sourceObject;
 		NullCheck(L_9);
 		TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* L_10;
 		L_10 = GameObject_GetComponent_TisTwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337_m17631D93A3344B0069761B894B3CC123103D0409(L_9, GameObject_GetComponent_TisTwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337_m17631D93A3344B0069761B894B3CC123103D0409_RuntimeMethod_var);
 		V_1 = L_10;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:41>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:47>
 		TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* L_11 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_12;
@@ -3445,7 +3499,7 @@ IL_0030:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:41>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:47>
 		TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* L_13 = V_1;
 		NullCheck(L_13);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
@@ -3455,13 +3509,13 @@ IL_0030:
 
 IL_004c:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:43>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:49>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = __this->___sourceObject;
 		NullCheck(L_15);
 		FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* L_16;
 		L_16 = GameObject_GetComponent_TisFunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9_mAC1063E2F4E5F5BCB8022488645175E637309B14(L_15, GameObject_GetComponent_TisFunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9_mAC1063E2F4E5F5BCB8022488645175E637309B14_RuntimeMethod_var);
 		V_2 = L_16;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:44>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:50>
 		FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* L_17 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_18;
@@ -3472,7 +3526,7 @@ IL_004c:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:44>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:50>
 		FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* L_19 = V_2;
 		NullCheck(L_19);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
@@ -3482,13 +3536,13 @@ IL_004c:
 
 IL_0068:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:46>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:52>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
 		L_21 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		return L_21;
 	}
 }
-// Method Definition Index: 120230
+// Method Definition Index: 120004
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataCable_PortAlreadyOccupied_mC4657B0BD3970040CF5BF8FCDFB60E5095C0FB61 (DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_port, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3496,6 +3550,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataCable_PortAlreadyOccupied_mC4657B0BD
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisFunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9_m83F0BD411BF0BB9E5003D73E729A00A0343B8FE2_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisNumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062_m803100CBC75CFAF7F586284825FD5B6422606D7C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_mD4AEF4293BC348A937DD311CCBF95ADD9E5C5467_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisTwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337_m6796E075C375983A963A00AA78D9E416C64AD2EF_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisVectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6_m8BB94EA5DA1BF7C5F1A31A4E9894A5DB4C7507C7_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -3508,14 +3563,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataCable_PortAlreadyOccupied_mC4657B0BD
 	NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062* V_1 = NULL;
 	VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* V_2 = NULL;
 	FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* V_3 = NULL;
+	OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* V_4 = NULL;
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:50>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:56>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_port;
 		NullCheck(L_0);
 		TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* L_1;
 		L_1 = Component_GetComponentInParent_TisTwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337_m6796E075C375983A963A00AA78D9E416C64AD2EF(L_0, Component_GetComponentInParent_TisTwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337_m6796E075C375983A963A00AA78D9E416C64AD2EF_RuntimeMethod_var);
 		V_0 = L_1;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:51>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:57>
 		TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* L_2 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
@@ -3526,7 +3582,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataCable_PortAlreadyOccupied_mC4657B0BD
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:53>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:59>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = ___0_port;
 		NullCheck(L_4);
 		bool L_5;
@@ -3537,7 +3593,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataCable_PortAlreadyOccupied_mC4657B0BD
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:54>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:60>
 		TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* L_6 = V_0;
 		NullCheck(L_6);
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_7 = L_6->___firstInput;
@@ -3566,7 +3622,7 @@ IL_0038:
 
 IL_003a:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:56>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:62>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12 = ___0_port;
 		NullCheck(L_12);
 		bool L_13;
@@ -3577,7 +3633,7 @@ IL_003a:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:57>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:63>
 		TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* L_14 = V_0;
 		NullCheck(L_14);
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_15 = L_14->___secondInput;
@@ -3606,13 +3662,13 @@ IL_0062:
 
 IL_0064:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:60>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:66>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20 = ___0_port;
 		NullCheck(L_20);
 		NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062* L_21;
 		L_21 = Component_GetComponentInParent_TisNumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062_m803100CBC75CFAF7F586284825FD5B6422606D7C(L_20, Component_GetComponentInParent_TisNumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062_m803100CBC75CFAF7F586284825FD5B6422606D7C_RuntimeMethod_var);
 		V_1 = L_21;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:61>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:67>
 		NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062* L_22 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_23;
@@ -3633,7 +3689,7 @@ IL_0064:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:63>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:69>
 		NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062* L_26 = V_1;
 		NullCheck(L_26);
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_27 = L_26->___incomingCable;
@@ -3662,13 +3718,13 @@ IL_009c:
 
 IL_009e:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:66>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:72>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_32 = ___0_port;
 		NullCheck(L_32);
 		VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* L_33;
 		L_33 = Component_GetComponentInParent_TisVectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6_m8BB94EA5DA1BF7C5F1A31A4E9894A5DB4C7507C7(L_32, Component_GetComponentInParent_TisVectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6_m8BB94EA5DA1BF7C5F1A31A4E9894A5DB4C7507C7_RuntimeMethod_var);
 		V_2 = L_33;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:67>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:73>
 		VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* L_34 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_35;
@@ -3689,7 +3745,7 @@ IL_009e:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:69>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:75>
 		VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* L_38 = V_2;
 		NullCheck(L_38);
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_39 = L_38->___incomingCable;
@@ -3718,13 +3774,13 @@ IL_00d6:
 
 IL_00d8:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:72>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:78>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_44 = ___0_port;
 		NullCheck(L_44);
 		FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* L_45;
 		L_45 = Component_GetComponentInParent_TisFunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9_m83F0BD411BF0BB9E5003D73E729A00A0343B8FE2(L_44, Component_GetComponentInParent_TisFunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9_m83F0BD411BF0BB9E5003D73E729A00A0343B8FE2_RuntimeMethod_var);
 		V_3 = L_45;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:73>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:79>
 		FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* L_46 = V_3;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_47;
@@ -3745,7 +3801,7 @@ IL_00d8:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:75>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:81>
 		FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* L_50 = V_3;
 		NullCheck(L_50);
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_51 = L_50->___input;
@@ -3774,11 +3830,67 @@ IL_0110:
 
 IL_0112:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:78>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:84>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_56 = ___0_port;
+		NullCheck(L_56);
+		OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* L_57;
+		L_57 = Component_GetComponentInParent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_mD4AEF4293BC348A937DD311CCBF95ADD9E5C5467(L_56, Component_GetComponentInParent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_mD4AEF4293BC348A937DD311CCBF95ADD9E5C5467_RuntimeMethod_var);
+		V_4 = L_57;
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:85>
+		OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* L_58 = V_4;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_59;
+		L_59 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_58, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_59)
+		{
+			goto IL_0150;
+		}
+	}
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_60 = ___0_port;
+		NullCheck(L_60);
+		bool L_61;
+		L_61 = Component_CompareTag_mE6F8897E84F12DF12D302FFC4D58204D51096FC5(L_60, _stringLiteral2C6C4A0396E04E83942E78DFF4DF343644956432, NULL);
+		if (!L_61)
+		{
+			goto IL_0150;
+		}
+	}
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:87>
+		OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* L_62 = V_4;
+		NullCheck(L_62);
+		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_63 = L_62->___input;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_64;
+		L_64 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_63, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_64)
+		{
+			goto IL_014e;
+		}
+	}
+	{
+		OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* L_65 = V_4;
+		NullCheck(L_65);
+		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_66 = L_65->___input;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_67;
+		L_67 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_66, __this, NULL);
+		return L_67;
+	}
+
+IL_014e:
+	{
+		return (bool)0;
+	}
+
+IL_0150:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:90>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 120231
+// Method Definition Index: 120005
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataCable_ConnectToPort_mE2F832B7C6A7C15A47661F73B70655AE86325DB6 (DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_port, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3786,6 +3898,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataCable_ConnectToPort_mE2F832B7C6A7C15
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisFunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9_m83F0BD411BF0BB9E5003D73E729A00A0343B8FE2_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisNumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062_m803100CBC75CFAF7F586284825FD5B6422606D7C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_mD4AEF4293BC348A937DD311CCBF95ADD9E5C5467_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisTwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337_m6796E075C375983A963A00AA78D9E416C64AD2EF_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisVectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6_m8BB94EA5DA1BF7C5F1A31A4E9894A5DB4C7507C7_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -3798,8 +3911,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataCable_ConnectToPort_mE2F832B7C6A7C15
 	NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062* V_1 = NULL;
 	VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* V_2 = NULL;
 	FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* V_3 = NULL;
+	OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* V_4 = NULL;
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:83>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:95>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_port;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -3810,13 +3924,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataCable_ConnectToPort_mE2F832B7C6A7C15
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:83>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:95>
 		return (bool)0;
 	}
 
 IL_000b:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:85>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:97>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = ___0_port;
 		bool L_3;
 		L_3 = DataCable_PortAlreadyOccupied_mC4657B0BD3970040CF5BF8FCDFB60E5095C0FB61(__this, L_2, NULL);
@@ -3826,25 +3940,25 @@ IL_000b:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:87>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:99>
 		return (bool)0;
 	}
 
 IL_0016:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:90>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:102>
 		DataCable_DisconnectFromPort_m82D82A30A9C537BD699B0D87C5713A3FE5C0704E(__this, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:91>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:103>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = ___0_port;
 		__this->___connectedPort = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___connectedPort), (void*)L_4);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:93>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:105>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = ___0_port;
 		NullCheck(L_5);
 		TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* L_6;
 		L_6 = Component_GetComponentInParent_TisTwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337_m6796E075C375983A963A00AA78D9E416C64AD2EF(L_5, Component_GetComponentInParent_TisTwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337_m6796E075C375983A963A00AA78D9E416C64AD2EF_RuntimeMethod_var);
 		V_0 = L_6;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:94>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:106>
 		TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* L_7 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_8;
@@ -3855,7 +3969,7 @@ IL_0016:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:96>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:108>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9 = ___0_port;
 		NullCheck(L_9);
 		bool L_10;
@@ -3866,7 +3980,7 @@ IL_0016:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:98>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:110>
 		TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* L_11 = V_0;
 		NullCheck(L_11);
 		L_11->___firstInput = __this;
@@ -3876,7 +3990,7 @@ IL_0016:
 
 IL_0049:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:100>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:112>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12 = ___0_port;
 		NullCheck(L_12);
 		bool L_13;
@@ -3887,7 +4001,7 @@ IL_0049:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:102>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:114>
 		TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* L_14 = V_0;
 		NullCheck(L_14);
 		L_14->___secondInput = __this;
@@ -3896,19 +4010,19 @@ IL_0049:
 
 IL_005d:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:105>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:117>
 		return (bool)1;
 	}
 
 IL_005f:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:108>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:120>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15 = ___0_port;
 		NullCheck(L_15);
 		NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062* L_16;
 		L_16 = Component_GetComponentInParent_TisNumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062_m803100CBC75CFAF7F586284825FD5B6422606D7C(L_15, Component_GetComponentInParent_TisNumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062_m803100CBC75CFAF7F586284825FD5B6422606D7C_RuntimeMethod_var);
 		V_1 = L_16;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:109>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:121>
 		NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062* L_17 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_18;
@@ -3929,24 +4043,24 @@ IL_005f:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:111>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:123>
 		NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062* L_21 = V_1;
 		NullCheck(L_21);
 		L_21->___incomingCable = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_21->___incomingCable), (void*)__this);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:112>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:124>
 		return (bool)1;
 	}
 
 IL_0085:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:115>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:127>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22 = ___0_port;
 		NullCheck(L_22);
 		VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* L_23;
 		L_23 = Component_GetComponentInParent_TisVectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6_m8BB94EA5DA1BF7C5F1A31A4E9894A5DB4C7507C7(L_22, Component_GetComponentInParent_TisVectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6_m8BB94EA5DA1BF7C5F1A31A4E9894A5DB4C7507C7_RuntimeMethod_var);
 		V_2 = L_23;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:116>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:128>
 		VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* L_24 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_25;
@@ -3967,24 +4081,24 @@ IL_0085:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:118>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:130>
 		VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* L_28 = V_2;
 		NullCheck(L_28);
 		L_28->___incomingCable = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_28->___incomingCable), (void*)__this);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:119>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:131>
 		return (bool)1;
 	}
 
 IL_00ab:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:122>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:134>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_29 = ___0_port;
 		NullCheck(L_29);
 		FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* L_30;
 		L_30 = Component_GetComponentInParent_TisFunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9_m83F0BD411BF0BB9E5003D73E729A00A0343B8FE2(L_29, Component_GetComponentInParent_TisFunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9_m83F0BD411BF0BB9E5003D73E729A00A0343B8FE2_RuntimeMethod_var);
 		V_3 = L_30;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:123>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:135>
 		FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* L_31 = V_3;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_32;
@@ -4005,22 +4119,60 @@ IL_00ab:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:125>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:137>
 		FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* L_35 = V_3;
 		NullCheck(L_35);
 		L_35->___input = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_35->___input), (void*)__this);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:126>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:138>
 		return (bool)1;
 	}
 
 IL_00d1:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:128>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:141>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_36 = ___0_port;
+		NullCheck(L_36);
+		OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* L_37;
+		L_37 = Component_GetComponentInParent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_mD4AEF4293BC348A937DD311CCBF95ADD9E5C5467(L_36, Component_GetComponentInParent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_mD4AEF4293BC348A937DD311CCBF95ADD9E5C5467_RuntimeMethod_var);
+		V_4 = L_37;
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:142>
+		OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* L_38 = V_4;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_39;
+		L_39 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_38, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_39)
+		{
+			goto IL_00fa;
+		}
+	}
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_40 = ___0_port;
+		NullCheck(L_40);
+		bool L_41;
+		L_41 = Component_CompareTag_mE6F8897E84F12DF12D302FFC4D58204D51096FC5(L_40, _stringLiteral2C6C4A0396E04E83942E78DFF4DF343644956432, NULL);
+		if (!L_41)
+		{
+			goto IL_00fa;
+		}
+	}
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:144>
+		OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* L_42 = V_4;
+		NullCheck(L_42);
+		L_42->___input = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_42->___input), (void*)__this);
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:145>
+		return (bool)1;
+	}
+
+IL_00fa:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:147>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 120232
+// Method Definition Index: 120006
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DataCable_DisconnectFromPort_m82D82A30A9C537BD699B0D87C5713A3FE5C0704E (DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4028,6 +4180,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DataCable_DisconnectFromPort_m82D82A30A9
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisFunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9_m83F0BD411BF0BB9E5003D73E729A00A0343B8FE2_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisNumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062_m803100CBC75CFAF7F586284825FD5B6422606D7C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_mD4AEF4293BC348A937DD311CCBF95ADD9E5C5467_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisTwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337_m6796E075C375983A963A00AA78D9E416C64AD2EF_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisVectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6_m8BB94EA5DA1BF7C5F1A31A4E9894A5DB4C7507C7_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -4040,8 +4193,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DataCable_DisconnectFromPort_m82D82A30A9
 	FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* V_1 = NULL;
 	NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062* V_2 = NULL;
 	VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* V_3 = NULL;
+	OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* V_4 = NULL;
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:133>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:152>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___connectedPort;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -4052,19 +4206,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DataCable_DisconnectFromPort_m82D82A30A9
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:133>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:152>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:135>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:154>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = __this->___connectedPort;
 		NullCheck(L_2);
 		TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* L_3;
 		L_3 = Component_GetComponentInParent_TisTwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337_m6796E075C375983A963A00AA78D9E416C64AD2EF(L_2, Component_GetComponentInParent_TisTwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337_m6796E075C375983A963A00AA78D9E416C64AD2EF_RuntimeMethod_var);
 		V_0 = L_3;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:136>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:155>
 		TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* L_4 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_5;
@@ -4075,7 +4229,7 @@ IL_000f:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:138>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:157>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6 = __this->___connectedPort;
 		NullCheck(L_6);
 		bool L_7;
@@ -4098,7 +4252,7 @@ IL_000f:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:140>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:159>
 		TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* L_11 = V_0;
 		NullCheck(L_11);
 		L_11->___firstInput = (DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E*)NULL;
@@ -4108,7 +4262,7 @@ IL_000f:
 
 IL_004d:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:142>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:161>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12 = __this->___connectedPort;
 		NullCheck(L_12);
 		bool L_13;
@@ -4131,7 +4285,7 @@ IL_004d:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:144>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:163>
 		TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* L_17 = V_0;
 		NullCheck(L_17);
 		L_17->___secondInput = (DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E*)NULL;
@@ -4140,13 +4294,13 @@ IL_004d:
 
 IL_0074:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:147>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:166>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18 = __this->___connectedPort;
 		NullCheck(L_18);
 		FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* L_19;
 		L_19 = Component_GetComponentInParent_TisFunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9_m83F0BD411BF0BB9E5003D73E729A00A0343B8FE2(L_18, Component_GetComponentInParent_TisFunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9_m83F0BD411BF0BB9E5003D73E729A00A0343B8FE2_RuntimeMethod_var);
 		V_1 = L_19;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:148>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:167>
 		FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* L_20 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_21;
@@ -4179,7 +4333,7 @@ IL_0074:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:150>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:169>
 		FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* L_27 = V_1;
 		NullCheck(L_27);
 		L_27->___input = (DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E*)NULL;
@@ -4188,13 +4342,13 @@ IL_0074:
 
 IL_00b0:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:154>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:173>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_28 = __this->___connectedPort;
 		NullCheck(L_28);
 		NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062* L_29;
 		L_29 = Component_GetComponentInParent_TisNumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062_m803100CBC75CFAF7F586284825FD5B6422606D7C(L_28, Component_GetComponentInParent_TisNumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062_m803100CBC75CFAF7F586284825FD5B6422606D7C_RuntimeMethod_var);
 		V_2 = L_29;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:155>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:174>
 		NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062* L_30 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_31;
@@ -4227,7 +4381,7 @@ IL_00b0:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:157>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:176>
 		NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062* L_37 = V_2;
 		NullCheck(L_37);
 		L_37->___incomingCable = (DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E*)NULL;
@@ -4236,13 +4390,13 @@ IL_00b0:
 
 IL_00ec:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:160>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:179>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_38 = __this->___connectedPort;
 		NullCheck(L_38);
 		VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* L_39;
 		L_39 = Component_GetComponentInParent_TisVectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6_m8BB94EA5DA1BF7C5F1A31A4E9894A5DB4C7507C7(L_38, Component_GetComponentInParent_TisVectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6_m8BB94EA5DA1BF7C5F1A31A4E9894A5DB4C7507C7_RuntimeMethod_var);
 		V_3 = L_39;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:161>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:180>
 		VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* L_40 = V_3;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_41;
@@ -4275,7 +4429,7 @@ IL_00ec:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:163>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:182>
 		VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* L_47 = V_3;
 		NullCheck(L_47);
 		L_47->___incomingCable = (DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E*)NULL;
@@ -4284,14 +4438,62 @@ IL_00ec:
 
 IL_0128:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:166>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:185>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_48 = __this->___connectedPort;
+		NullCheck(L_48);
+		OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* L_49;
+		L_49 = Component_GetComponentInParent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_mD4AEF4293BC348A937DD311CCBF95ADD9E5C5467(L_48, Component_GetComponentInParent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_mD4AEF4293BC348A937DD311CCBF95ADD9E5C5467_RuntimeMethod_var);
+		V_4 = L_49;
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:186>
+		OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* L_50 = V_4;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_51;
+		L_51 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_50, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_51)
+		{
+			goto IL_0168;
+		}
+	}
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_52 = __this->___connectedPort;
+		NullCheck(L_52);
+		bool L_53;
+		L_53 = Component_CompareTag_mE6F8897E84F12DF12D302FFC4D58204D51096FC5(L_52, _stringLiteral2C6C4A0396E04E83942E78DFF4DF343644956432, NULL);
+		if (!L_53)
+		{
+			goto IL_0168;
+		}
+	}
+	{
+		OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* L_54 = V_4;
+		NullCheck(L_54);
+		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_55 = L_54->___input;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_56;
+		L_56 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_55, __this, NULL);
+		if (!L_56)
+		{
+			goto IL_0168;
+		}
+	}
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:188>
+		OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* L_57 = V_4;
+		NullCheck(L_57);
+		L_57->___input = (DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&L_57->___input), (void*)(DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E*)NULL);
+	}
+
+IL_0168:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:191>
 		__this->___connectedPort = (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___connectedPort), (void*)(Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:167>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:192>
 		return;
 	}
 }
-// Method Definition Index: 120233
+// Method Definition Index: 120007
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataCable_IsNumberSource_mE4482820DAF82245755D1CB83293A3B6D20DBF3A (DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4299,14 +4501,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataCable_IsNumberSource_mE4482820DAF822
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisFunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9_mAC1063E2F4E5F5BCB8022488645175E637309B14_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisNumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062_m9CD5A5EE8C3F93C1D95EC905AF49235D0630CE09_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_m7F15CF6F7CCB4BB11D4CFBDA770C65696064CE0F_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisTwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337_m17631D93A3344B0069761B894B3CC123103D0409_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* V_0 = NULL;
 	FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* V_1 = NULL;
+	OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* V_2 = NULL;
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:171>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:196>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___sourceObject;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -4317,13 +4521,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataCable_IsNumberSource_mE4482820DAF822
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:171>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:196>
 		return (bool)0;
 	}
 
 IL_0010:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:173>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:198>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___sourceObject;
 		NullCheck(L_2);
 		NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062* L_3;
@@ -4337,19 +4541,19 @@ IL_0010:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:173>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:198>
 		return (bool)1;
 	}
 
 IL_0025:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:175>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:200>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___sourceObject;
 		NullCheck(L_5);
 		TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* L_6;
 		L_6 = GameObject_GetComponent_TisTwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337_m17631D93A3344B0069761B894B3CC123103D0409(L_5, GameObject_GetComponent_TisTwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337_m17631D93A3344B0069761B894B3CC123103D0409_RuntimeMethod_var);
 		V_0 = L_6;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:176>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:201>
 		TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* L_7 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_8;
@@ -4360,7 +4564,7 @@ IL_0025:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:176>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:201>
 		TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* L_9 = V_0;
 		NullCheck(L_9);
 		bool L_10;
@@ -4370,13 +4574,13 @@ IL_0025:
 
 IL_0041:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:178>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:203>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->___sourceObject;
 		NullCheck(L_11);
 		FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* L_12;
 		L_12 = GameObject_GetComponent_TisFunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9_mAC1063E2F4E5F5BCB8022488645175E637309B14(L_11, GameObject_GetComponent_TisFunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9_mAC1063E2F4E5F5BCB8022488645175E637309B14_RuntimeMethod_var);
 		V_1 = L_12;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:179>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:204>
 		FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* L_13 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_14;
@@ -4387,7 +4591,7 @@ IL_0041:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:179>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:204>
 		FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* L_15 = V_1;
 		NullCheck(L_15);
 		bool L_16;
@@ -4397,11 +4601,38 @@ IL_0041:
 
 IL_005d:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:181>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:206>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = __this->___sourceObject;
+		NullCheck(L_17);
+		OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* L_18;
+		L_18 = GameObject_GetComponent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_m7F15CF6F7CCB4BB11D4CFBDA770C65696064CE0F(L_17, GameObject_GetComponent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_m7F15CF6F7CCB4BB11D4CFBDA770C65696064CE0F_RuntimeMethod_var);
+		V_2 = L_18;
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:207>
+		OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* L_19 = V_2;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_20;
+		L_20 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_19, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_20)
+		{
+			goto IL_0079;
+		}
+	}
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:207>
+		OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* L_21 = V_2;
+		NullCheck(L_21);
+		bool L_22;
+		L_22 = OneInputNumberFunction_OutputsNumber_m8D957E7B43145195807EE4C4F85A696211612514(L_21, NULL);
+		return L_22;
+	}
+
+IL_0079:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:209>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 120234
+// Method Definition Index: 120008
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataCable_IsVectorSource_m3737DFD75BF0CD7C80C8D735AD79A8ADC5FEB337 (DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4416,7 +4647,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataCable_IsVectorSource_m3737DFD75BF0CD
 	TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* V_0 = NULL;
 	FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* V_1 = NULL;
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:186>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:214>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___sourceObject;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -4427,13 +4658,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataCable_IsVectorSource_m3737DFD75BF0CD
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:186>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:214>
 		return (bool)0;
 	}
 
 IL_0010:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:188>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:216>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___sourceObject;
 		NullCheck(L_2);
 		VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* L_3;
@@ -4447,19 +4678,19 @@ IL_0010:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:188>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:216>
 		return (bool)1;
 	}
 
 IL_0025:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:190>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:218>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___sourceObject;
 		NullCheck(L_5);
 		TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* L_6;
 		L_6 = GameObject_GetComponent_TisTwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337_m17631D93A3344B0069761B894B3CC123103D0409(L_5, GameObject_GetComponent_TisTwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337_m17631D93A3344B0069761B894B3CC123103D0409_RuntimeMethod_var);
 		V_0 = L_6;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:191>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:219>
 		TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* L_7 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_8;
@@ -4470,7 +4701,7 @@ IL_0025:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:191>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:219>
 		TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* L_9 = V_0;
 		NullCheck(L_9);
 		bool L_10;
@@ -4480,13 +4711,13 @@ IL_0025:
 
 IL_0041:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:193>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:221>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->___sourceObject;
 		NullCheck(L_11);
 		FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* L_12;
 		L_12 = GameObject_GetComponent_TisFunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9_mAC1063E2F4E5F5BCB8022488645175E637309B14(L_11, GameObject_GetComponent_TisFunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9_mAC1063E2F4E5F5BCB8022488645175E637309B14_RuntimeMethod_var);
 		V_1 = L_12;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:194>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:222>
 		FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* L_13 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_14;
@@ -4497,7 +4728,7 @@ IL_0041:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:194>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:222>
 		FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* L_15 = V_1;
 		NullCheck(L_15);
 		bool L_16;
@@ -4507,11 +4738,11 @@ IL_0041:
 
 IL_005d:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:196>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/DataCable.cs:224>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 120235
+// Method Definition Index: 120009
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DataCable__ctor_m6CF505FDAE0D3CC5EB667E1AD9255D2EADD918BB (DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4527,7 +4758,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DataCable__ctor_m6CF505FDAE0D3CC5EB667E1
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 120236
+// Method Definition Index: 120010
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeleteButton_Start_m9F3F4453B192217A95547012509570F699586F18 (DeleteButton_t83882758AC000A501AD7EF0672341893CA64F6DF* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4578,7 +4809,7 @@ IL_0047:
 		return;
 	}
 }
-// Method Definition Index: 120237
+// Method Definition Index: 120011
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeleteButton_OnDestroy_m7B402F79A638020814A97126C88B470CFC1005E2 (DeleteButton_t83882758AC000A501AD7EF0672341893CA64F6DF* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4615,7 +4846,7 @@ IL_0025:
 		return;
 	}
 }
-// Method Definition Index: 120238
+// Method Definition Index: 120012
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeleteButton_EventsButton_mBF54EE73ACD1C737BB2BB790426D2D27D4A62391 (DeleteButton_t83882758AC000A501AD7EF0672341893CA64F6DF* __this, PointerEvent_tAEB047AC9AE96DA96400B3C6FA88E56C917608BC ___0_evento, const RuntimeMethod* method) 
 {
 	{
@@ -4638,7 +4869,7 @@ IL_0010:
 		return;
 	}
 }
-// Method Definition Index: 120239
+// Method Definition Index: 120013
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeleteButton_Update_m9DE88F571B97CE78636C5E656581D525E8270AFC (DeleteButton_t83882758AC000A501AD7EF0672341893CA64F6DF* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4658,7 +4889,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeleteButton_Update_m9DE88F571B97CE78636
 		return;
 	}
 }
-// Method Definition Index: 120240
+// Method Definition Index: 120014
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeleteButton_DeleteSecurity_mAB4DD11EB6ED15F599C0C6430C8798356DA53900 (DeleteButton_t83882758AC000A501AD7EF0672341893CA64F6DF* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4813,7 +5044,7 @@ IL_0063:
 		return;
 	}
 }
-// Method Definition Index: 120241
+// Method Definition Index: 120015
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeleteButton__ctor_m18CDC1E14D7EE96CC5470B7AE8A3B2D0FA5719B5 (DeleteButton_t83882758AC000A501AD7EF0672341893CA64F6DF* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4829,7 +5060,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeleteButton__ctor_m18CDC1E14D7EE96CC547
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 120242
+// Method Definition Index: 120016
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FunctionOneInput_Start_m4337721414EFB4E08F5AE52FB7CA7A00FCA4555A (FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4875,7 +5106,7 @@ IL_002f:
 		return;
 	}
 }
-// Method Definition Index: 120243
+// Method Definition Index: 120017
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FunctionOneInput_OutputsNumber_m16857AE26FC801DFC22202F9FBBCC3FAD98F6F22 (FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4896,7 +5127,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FunctionOneInput_OutputsNumber_m16857AE2
 		return L_4;
 	}
 }
-// Method Definition Index: 120244
+// Method Definition Index: 120018
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FunctionOneInput_OutputsVector_mCE6D2A56259CE1E37D37EEAEB32B7A9BC5C0FD38 (FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4906,7 +5137,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FunctionOneInput_OutputsVector_mCE6D2A56
 		return (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
 	}
 }
-// Method Definition Index: 120245
+// Method Definition Index: 120019
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FunctionOneInput_GetCurrentResult_mA0E733C5CB4668144CD4496D44193C73406A58C4 (FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4980,7 +5211,7 @@ IL_004f:
 		return L_10;
 	}
 }
-// Method Definition Index: 120246
+// Method Definition Index: 120020
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 FunctionOneInput_GetCurrentVectorResult_mFE98876231763DF61827E4C2C03D3764A423716B (FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5150,7 +5381,7 @@ IL_00b4:
 		return L_33;
 	}
 }
-// Method Definition Index: 120247
+// Method Definition Index: 120021
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FunctionOneInput_SetFunctionByIndex_m722DDFA88E392941FF3EE6F7338DD9181885D06D (FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* __this, int32_t ___0_index, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5240,7 +5471,7 @@ IL_0051:
 		return;
 	}
 }
-// Method Definition Index: 120248
+// Method Definition Index: 120022
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FunctionOneInput__ctor_m5D13B3E4A8AA4431FC9511658751C9FFD39C228F (FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5282,7 +5513,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FunctionOneInput__ctor_m5D13B3E4A8AA4431
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 120249
+// Method Definition Index: 120023
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardButton_Start_m23B5813C6E6CC266DD8F8B96139ECED55D871F5B (KeyboardButton_t4F921D0D590B63763DF6043E3F26BACFCA2257F4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5333,7 +5564,7 @@ IL_0047:
 		return;
 	}
 }
-// Method Definition Index: 120250
+// Method Definition Index: 120024
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardButton_LateUpdate_m9B026B8B97A77E2F3C0F6A57183CDEED7448D9D3 (KeyboardButton_t4F921D0D590B63763DF6043E3F26BACFCA2257F4* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5353,7 +5584,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardButton_LateUpdate_m9B026B8B97A77
 		return;
 	}
 }
-// Method Definition Index: 120251
+// Method Definition Index: 120025
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardButton_HandlePointerEvent_mABC05C4E1563958ADB0388B7397D768D81CA6524 (KeyboardButton_t4F921D0D590B63763DF6043E3F26BACFCA2257F4* __this, PointerEvent_tAEB047AC9AE96DA96400B3C6FA88E56C917608BC ___0_evt, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5395,7 +5626,7 @@ IL_0029:
 		return;
 	}
 }
-// Method Definition Index: 120252
+// Method Definition Index: 120026
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardButton_OnDestroy_m9FCCC88C56097E615370583BEF80E30615C311DC (KeyboardButton_t4F921D0D590B63763DF6043E3F26BACFCA2257F4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5432,7 +5663,7 @@ IL_0025:
 		return;
 	}
 }
-// Method Definition Index: 120253
+// Method Definition Index: 120027
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardButton__ctor_m6F1196ECF2363BF9868726922B074104D3DA80B9 (KeyboardButton_t4F921D0D590B63763DF6043E3F26BACFCA2257F4* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5448,7 +5679,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardButton__ctor_m6F1196ECF2363BF986
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 120254
+// Method Definition Index: 120028
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberBlock_Start_mB2DA1D9378015E4B1DCDABFF02EF08F576EE5B6C (NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5458,7 +5689,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberBlock_Start_mB2DA1D9378015E4B1DCDA
 		return;
 	}
 }
-// Method Definition Index: 120255
+// Method Definition Index: 120029
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberBlock_Update_mD0EDFFD655D383F6604922DFE45EC903BFC6E83A (NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5515,7 +5746,7 @@ IL_0053:
 		return;
 	}
 }
-// Method Definition Index: 120256
+// Method Definition Index: 120030
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberBlock_UpdateVisuals_m1E4A46D55E3CB9F9DF384413E1EB7D5F7C4EB3B7 (NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5561,7 +5792,7 @@ IL_0032:
 		return;
 	}
 }
-// Method Definition Index: 120257
+// Method Definition Index: 120031
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberBlock_SetValueFromSlider_m36419F445A2D12A7D808C4035920F7DCB87050D6 (NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5597,7 +5828,7 @@ IL_000f:
 		return;
 	}
 }
-// Method Definition Index: 120258
+// Method Definition Index: 120032
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberBlock__ctor_m221835686213C17C362C578C7B38940E2C56F63E (NumberBlock_t8F413148DE02D3ED35E74AE1F114170393845062* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5613,7 +5844,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberBlock__ctor_m221835686213C17C362C5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 120259
+// Method Definition Index: 120033
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberSlider_Start_mDE29E21DE48DF890C75D0BDFBC87EFC5EFC7AF35 (NumberSlider_t5B3939E073ABBA7221DA254FFC2F8E2186F2B3F0* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5628,7 +5859,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberSlider_Start_mDE29E21DE48DF890C75D
 		return;
 	}
 }
-// Method Definition Index: 120260
+// Method Definition Index: 120034
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberSlider_Update_mBFF90768DB0F22BC0D6A9DF4D6152C25A52FCED9 (NumberSlider_t5B3939E073ABBA7221DA254FFC2F8E2186F2B3F0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5730,7 +5961,7 @@ IL_0022:
 		return;
 	}
 }
-// Method Definition Index: 120261
+// Method Definition Index: 120035
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberSlider__ctor_m7E75CA48273E441CA15F2AB8D90E236180EA4717 (NumberSlider_t5B3939E073ABBA7221DA254FFC2F8E2186F2B3F0* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5750,7 +5981,342 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberSlider__ctor_m7E75CA48273E441CA15F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 120262
+// Method Definition Index: 120036
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OneInputNumberFunction_Start_m1F6D280A37D5894A957A14FD0FC8C89260FCDE54 (OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:19>
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_0 = __this->___visualText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = __this->___functions;
+		NullCheck(L_2);
+		if (!(((RuntimeArray*)L_2)->max_length))
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:21>
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_3 = __this->___visualText;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = __this->___functions;
+		int32_t L_5 = __this->___actual;
+		NullCheck(L_4);
+		int32_t L_6 = L_5;
+		String_t* L_7 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		NullCheck(L_3);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_3, L_7);
+	}
+
+IL_002f:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:23>
+		return;
+	}
+}
+// Method Definition Index: 120037
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OneInputNumberFunction_OutputsNumber_m8D957E7B43145195807EE4C4F85A696211612514 (OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:27>
+		return (bool)1;
+	}
+}
+// Method Definition Index: 120038
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float OneInputNumberFunction_GetCurrentResult_mB9A7DBA412D881A3F0026D4AEB0C89269252467A (OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral354BB319791929462B888E5C7625AB8DABE43E81);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral59C00D8CDE1C0B7CDE4D637CECB77E0760E75287);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5C428ACD6AC01C0A74DDDD063A93ECB4E9763A47);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCBDE4209A28D15F4303640C8C8F1206538122DF3);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	String_t* V_2 = NULL;
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:32>
+		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_0 = __this->___input;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:32>
+		return (0.0f);
+	}
+
+IL_0014:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:34>
+		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_2 = __this->___input;
+		NullCheck(L_2);
+		float L_3;
+		L_3 = DataCable_GetValueFromSource_m9BC88D5DBEE4441E5C37C3C33C3206538BE589C3(L_2, NULL);
+		V_0 = L_3;
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:35>
+		V_1 = (0.0f);
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:37>
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = __this->___functions;
+		int32_t L_5 = __this->___actual;
+		NullCheck(L_4);
+		int32_t L_6 = L_5;
+		String_t* L_7 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		V_2 = L_7;
+		String_t* L_8 = V_2;
+		bool L_9;
+		L_9 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_8, _stringLiteral354BB319791929462B888E5C7625AB8DABE43E81, NULL);
+		if (L_9)
+		{
+			goto IL_006a;
+		}
+	}
+	{
+		String_t* L_10 = V_2;
+		bool L_11;
+		L_11 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_10, _stringLiteral5C428ACD6AC01C0A74DDDD063A93ECB4E9763A47, NULL);
+		if (L_11)
+		{
+			goto IL_0079;
+		}
+	}
+	{
+		String_t* L_12 = V_2;
+		bool L_13;
+		L_13 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_12, _stringLiteralCBDE4209A28D15F4303640C8C8F1206538122DF3, NULL);
+		if (L_13)
+		{
+			goto IL_0088;
+		}
+	}
+	{
+		String_t* L_14 = V_2;
+		bool L_15;
+		L_15 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_14, _stringLiteral59C00D8CDE1C0B7CDE4D637CECB77E0760E75287, NULL);
+		if (L_15)
+		{
+			goto IL_00a6;
+		}
+	}
+	{
+		goto IL_00c4;
+	}
+
+IL_006a:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:40>
+		float L_16 = V_0;
+		float L_17;
+		L_17 = sinf(((float)il2cpp_codegen_multiply(L_16, (0.0174532924f))));
+		V_1 = L_17;
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:41>
+		goto IL_00ca;
+	}
+
+IL_0079:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:44>
+		float L_18 = V_0;
+		float L_19;
+		L_19 = cosf(((float)il2cpp_codegen_multiply(L_18, (0.0174532924f))));
+		V_1 = L_19;
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:45>
+		goto IL_00ca;
+	}
+
+IL_0088:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:48>
+		float L_20 = V_0;
+		float L_21;
+		L_21 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_20, (-1.0f), (1.0f), NULL);
+		float L_22;
+		L_22 = asinf(L_21);
+		V_1 = ((float)il2cpp_codegen_multiply(L_22, (57.2957802f)));
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:49>
+		goto IL_00ca;
+	}
+
+IL_00a6:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:52>
+		float L_23 = V_0;
+		float L_24;
+		L_24 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_23, (-1.0f), (1.0f), NULL);
+		float L_25;
+		L_25 = acosf(L_24);
+		V_1 = ((float)il2cpp_codegen_multiply(L_25, (57.2957802f)));
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:53>
+		goto IL_00ca;
+	}
+
+IL_00c4:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:56>
+		V_1 = (0.0f);
+	}
+
+IL_00ca:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:60>
+		float L_26 = V_1;
+		return L_26;
+	}
+}
+// Method Definition Index: 120039
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OneInputNumberFunction_SetFunctionByIndex_m086DB0BC9E0BE95AAB9B3FBAF5AB4B18D6ADFAF5 (OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* __this, int32_t ___0_index, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:65>
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = __this->___functions;
+		if (!L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = __this->___functions;
+		NullCheck(L_1);
+		if ((((RuntimeArray*)L_1)->max_length))
+		{
+			goto IL_0012;
+		}
+	}
+
+IL_0011:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:65>
+		return;
+	}
+
+IL_0012:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:67>
+		int32_t L_2 = ___0_index;
+		if ((((int32_t)L_2) < ((int32_t)0)))
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		int32_t L_3 = ___0_index;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = __this->___functions;
+		NullCheck(L_4);
+		if ((((int32_t)L_3) < ((int32_t)((int32_t)(((RuntimeArray*)L_4)->max_length)))))
+		{
+			goto IL_0024;
+		}
+	}
+
+IL_0021:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:69>
+		___0_index = 0;
+	}
+
+IL_0024:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:72>
+		int32_t L_5 = ___0_index;
+		__this->___actual = L_5;
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:74>
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_6 = __this->___visualText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_7;
+		L_7 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_6, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_7)
+		{
+			goto IL_0051;
+		}
+	}
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:76>
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_8 = __this->___visualText;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_9 = __this->___functions;
+		int32_t L_10 = __this->___actual;
+		NullCheck(L_9);
+		int32_t L_11 = L_10;
+		String_t* L_12 = (L_9)->GetAt(static_cast<il2cpp_array_size_t>(L_11));
+		NullCheck(L_8);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_8, L_12);
+	}
+
+IL_0051:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:78>
+		return;
+	}
+}
+// Method Definition Index: 120040
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OneInputNumberFunction__ctor_mD9ADB0BF86654D159AEC570C3560C8694F0E0B27 (OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral354BB319791929462B888E5C7625AB8DABE43E81);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral59C00D8CDE1C0B7CDE4D637CECB77E0760E75287);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5C428ACD6AC01C0A74DDDD063A93ECB4E9763A47);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCBDE4209A28D15F4303640C8C8F1206538122DF3);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/OneInputNumberFunction.cs:10>
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)4);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = L_0;
+		NullCheck(L_1);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral354BB319791929462B888E5C7625AB8DABE43E81);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = L_1;
+		NullCheck(L_2);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteral5C428ACD6AC01C0A74DDDD063A93ECB4E9763A47);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_3 = L_2;
+		NullCheck(L_3);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteralCBDE4209A28D15F4303640C8C8F1206538122DF3);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = L_3;
+		NullCheck(L_4);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)_stringLiteral59C00D8CDE1C0B7CDE4D637CECB77E0760E75287);
+		__this->___functions = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___functions), (void*)L_4);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 120041
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenKeyboardButton_Start_mE44CF469E02C23E5C1A7D3E4AFD07164AB70D0C6 (OpenKeyboardButton_tB37A82F64CFC26C2FF77D4A87CB986E662457C06* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5801,7 +6367,7 @@ IL_0047:
 		return;
 	}
 }
-// Method Definition Index: 120263
+// Method Definition Index: 120042
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenKeyboardButton_LateUpdate_m0087D2D1C4EFCD76260785332FD00F4D193557AB (OpenKeyboardButton_tB37A82F64CFC26C2FF77D4A87CB986E662457C06* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5821,7 +6387,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenKeyboardButton_LateUpdate_m0087D2D1C
 		return;
 	}
 }
-// Method Definition Index: 120264
+// Method Definition Index: 120043
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenKeyboardButton_HandlePointerEvent_m1B940EAACF70896F9C6877DAF9E3DC1AEFA76771 (OpenKeyboardButton_tB37A82F64CFC26C2FF77D4A87CB986E662457C06* __this, PointerEvent_tAEB047AC9AE96DA96400B3C6FA88E56C917608BC ___0_evt, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5862,7 +6428,7 @@ IL_0023:
 		return;
 	}
 }
-// Method Definition Index: 120265
+// Method Definition Index: 120044
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenKeyboardButton_OnDestroy_m5BCC636D009D5ED712CA69BA5A883DA01B9B5C97 (OpenKeyboardButton_tB37A82F64CFC26C2FF77D4A87CB986E662457C06* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5899,7 +6465,7 @@ IL_0025:
 		return;
 	}
 }
-// Method Definition Index: 120266
+// Method Definition Index: 120045
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenKeyboardButton__ctor_m745A73A47818EAF793D10F95ADD83299E5F2852C (OpenKeyboardButton_tB37A82F64CFC26C2FF77D4A87CB986E662457C06* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5915,7 +6481,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenKeyboardButton__ctor_m745A73A47818EA
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 120267
+// Method Definition Index: 120046
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpawnerBloques_Start_mD634E03B43C798298721926B06864593955F2D83 (SpawnerBloques_t6D685A5883FCF13C26A30A910CF9D65892396B47* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5966,7 +6532,7 @@ IL_0047:
 		return;
 	}
 }
-// Method Definition Index: 120268
+// Method Definition Index: 120047
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpawnerBloques_LateUpdate_m6EBF68CE61B85A368A9B3DFC628ED9E2C66E8C87 (SpawnerBloques_t6D685A5883FCF13C26A30A910CF9D65892396B47* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5986,7 +6552,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpawnerBloques_LateUpdate_m6EBF68CE61B85
 		return;
 	}
 }
-// Method Definition Index: 120269
+// Method Definition Index: 120048
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpawnerBloques_HandlePointerEvent_m32FA892816123C26843657AFE7D1F943E06A4E97 (SpawnerBloques_t6D685A5883FCF13C26A30A910CF9D65892396B47* __this, PointerEvent_tAEB047AC9AE96DA96400B3C6FA88E56C917608BC ___0_evt, const RuntimeMethod* method) 
 {
 	{
@@ -6009,13 +6575,14 @@ IL_0010:
 		return;
 	}
 }
-// Method Definition Index: 120270
+// Method Definition Index: 120049
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpawnerBloques_SpawnFunctionBlock_m5DEB3F4ED4C8BDCEABB5068536C7E640904BC1BD (SpawnerBloques_t6D685A5883FCF13C26A30A910CF9D65892396B47* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisFunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9_mAC1063E2F4E5F5BCB8022488645175E637309B14_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_m7F15CF6F7CCB4BB11D4CFBDA770C65696064CE0F_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisTwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337_m17631D93A3344B0069761B894B3CC123103D0409_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -6026,6 +6593,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpawnerBloques_SpawnFunctionBlock_m5DEB3
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_1 = NULL;
 	TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* V_2 = NULL;
 	FunctionOneInput_tD522ADABE9D7729203C9D338AA72382E813DA6D9* V_3 = NULL;
+	OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* V_4 = NULL;
 	{
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SpawnerBloques.cs:44>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___functionBlockPrefab;
@@ -6123,11 +6691,37 @@ IL_0065:
 
 IL_0081:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SpawnerBloques.cs:61>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SpawnerBloques.cs:62>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25 = V_1;
+		NullCheck(L_25);
+		OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* L_26;
+		L_26 = GameObject_GetComponent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_m7F15CF6F7CCB4BB11D4CFBDA770C65696064CE0F(L_25, GameObject_GetComponent_TisOneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6_m7F15CF6F7CCB4BB11D4CFBDA770C65696064CE0F_RuntimeMethod_var);
+		V_4 = L_26;
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SpawnerBloques.cs:63>
+		OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* L_27 = V_4;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_28;
+		L_28 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_27, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_28)
+		{
+			goto IL_00a0;
+		}
+	}
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SpawnerBloques.cs:65>
+		OneInputNumberFunction_tD2055C3552869DBD49AD28506BD460F8C0C658D6* L_29 = V_4;
+		int32_t L_30 = __this->___defaultFunctionIndex;
+		NullCheck(L_29);
+		OneInputNumberFunction_SetFunctionByIndex_m086DB0BC9E0BE95AAB9B3FBAF5AB4B18D6ADFAF5(L_29, L_30, NULL);
+	}
+
+IL_00a0:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SpawnerBloques.cs:67>
 		return;
 	}
 }
-// Method Definition Index: 120271
+// Method Definition Index: 120050
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpawnerBloques_OnDestroy_mDF575519E926918E5A06E43629AE5C8FDC13F47D (SpawnerBloques_t6D685A5883FCF13C26A30A910CF9D65892396B47* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6139,7 +6733,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpawnerBloques_OnDestroy_mDF575519E92691
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SpawnerBloques.cs:65>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SpawnerBloques.cs:71>
 		Grabbable_tC5F191DABDA6ADE2D8270476D37B4E122C1387D3* L_0 = __this->___grabbableBoton;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -6150,7 +6744,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpawnerBloques_OnDestroy_mDF575519E92691
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SpawnerBloques.cs:67>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SpawnerBloques.cs:73>
 		Grabbable_tC5F191DABDA6ADE2D8270476D37B4E122C1387D3* L_2 = __this->___grabbableBoton;
 		Action_1_t16439AC0253118742562394ACC7B97D80B44200D* L_3 = (Action_1_t16439AC0253118742562394ACC7B97D80B44200D*)il2cpp_codegen_object_new(Action_1_t16439AC0253118742562394ACC7B97D80B44200D_il2cpp_TypeInfo_var);
 		Action_1__ctor_m4052E43C460A30441C3F436AC271D3F5CDC77FA4(L_3, __this, (intptr_t)((void*)SpawnerBloques_HandlePointerEvent_m32FA892816123C26843657AFE7D1F943E06A4E97_RuntimeMethod_var), NULL);
@@ -6160,11 +6754,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpawnerBloques_OnDestroy_mDF575519E92691
 
 IL_0025:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SpawnerBloques.cs:69>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/SpawnerBloques.cs:75>
 		return;
 	}
 }
-// Method Definition Index: 120272
+// Method Definition Index: 120051
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpawnerBloques__ctor_mD104B3211FDC95DF9691E5AC21532B5C0E48EDB8 (SpawnerBloques_t6D685A5883FCF13C26A30A910CF9D65892396B47* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6182,7 +6776,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpawnerBloques__ctor_mD104B3211FDC95DF96
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 120273
+// Method Definition Index: 120052
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TwoInputFunction_Start_mBFF735B0326D01DC9C196B2D2D77305C3951F448 (TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6228,17 +6822,28 @@ IL_002f:
 		return;
 	}
 }
-// Method Definition Index: 120274
+// Method Definition Index: 120053
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TwoInputFunction_OutputsNumber_m66A47200B35C8917526AE3BF0E8880181CA921C3 (TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9404AFF119D90FC73EDF824A6F426CCC21712D08);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9E5442828C0746CD0B9BBF3F56D9A70AE834F4B7);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA4EA1BD7647B10CC8580300848CED0901B8AFE84);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAC44FD2B7F0D8BA2097B8DA3854AEF2290B29795);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD93ABA6C8699F54FF0DCE1BF204364133EE8A077);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD9FB78596E63E545F5E25EF29FB924A5C4C9188E);
 		s_Il2CppMethodInitialized = true;
 	}
 	String_t* V_0 = NULL;
+	bool V_1 = false;
+	int32_t G_B10_0 = 0;
+	int32_t G_B12_0 = 0;
+	int32_t G_B11_0 = 0;
+	int32_t G_B13_0 = 0;
+	int32_t G_B13_1 = 0;
 	{
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:27>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = __this->___functions;
@@ -6247,38 +6852,162 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TwoInputFunction_OutputsNumber_m66A47200
 		int32_t L_2 = L_1;
 		String_t* L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
 		V_0 = L_3;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:28>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:29>
 		String_t* L_4 = V_0;
 		bool L_5;
 		L_5 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_4, _stringLiteralD93ABA6C8699F54FF0DCE1BF204364133EE8A077, NULL);
 		if (L_5)
 		{
-			goto IL_0027;
+			goto IL_0028;
 		}
 	}
 	{
 		String_t* L_6 = V_0;
 		bool L_7;
 		L_7 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_6, _stringLiteralA4EA1BD7647B10CC8580300848CED0901B8AFE84, NULL);
-		return L_7;
+		if (!L_7)
+		{
+			goto IL_002a;
+		}
 	}
 
-IL_0027:
+IL_0028:
 	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:30>
 		return (bool)1;
 	}
+
+IL_002a:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:32>
+		String_t* L_8 = V_0;
+		bool L_9;
+		L_9 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_8, _stringLiteral9E5442828C0746CD0B9BBF3F56D9A70AE834F4B7, NULL);
+		if (L_9)
+		{
+			goto IL_005e;
+		}
+	}
+	{
+		String_t* L_10 = V_0;
+		bool L_11;
+		L_11 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_10, _stringLiteralD9FB78596E63E545F5E25EF29FB924A5C4C9188E, NULL);
+		if (L_11)
+		{
+			goto IL_005e;
+		}
+	}
+	{
+		String_t* L_12 = V_0;
+		bool L_13;
+		L_13 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_12, _stringLiteralAC44FD2B7F0D8BA2097B8DA3854AEF2290B29795, NULL);
+		if (L_13)
+		{
+			goto IL_005e;
+		}
+	}
+	{
+		String_t* L_14 = V_0;
+		bool L_15;
+		L_15 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_14, _stringLiteral9404AFF119D90FC73EDF824A6F426CCC21712D08, NULL);
+		if (!L_15)
+		{
+			goto IL_00a0;
+		}
+	}
+
+IL_005e:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:34>
+		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_16 = __this->___firstInput;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_17;
+		L_17 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_16, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_17)
+		{
+			goto IL_0079;
+		}
+	}
+	{
+		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_18 = __this->___firstInput;
+		NullCheck(L_18);
+		bool L_19;
+		L_19 = DataCable_IsVectorSource_m3737DFD75BF0CD7C80C8D735AD79A8ADC5FEB337(L_18, NULL);
+		G_B10_0 = ((int32_t)(L_19));
+		goto IL_007a;
+	}
+
+IL_0079:
+	{
+		G_B10_0 = 0;
+	}
+
+IL_007a:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:35>
+		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_20 = __this->___secondInput;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_21;
+		L_21 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_20, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_21)
+		{
+			G_B12_0 = G_B10_0;
+			goto IL_0095;
+		}
+		G_B11_0 = G_B10_0;
+	}
+	{
+		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_22 = __this->___secondInput;
+		NullCheck(L_22);
+		bool L_23;
+		L_23 = DataCable_IsVectorSource_m3737DFD75BF0CD7C80C8D735AD79A8ADC5FEB337(L_22, NULL);
+		G_B13_0 = ((int32_t)(L_23));
+		G_B13_1 = G_B11_0;
+		goto IL_0096;
+	}
+
+IL_0095:
+	{
+		G_B13_0 = 0;
+		G_B13_1 = G_B12_0;
+	}
+
+IL_0096:
+	{
+		V_1 = (bool)G_B13_0;
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:37>
+		if (G_B13_1)
+		{
+			goto IL_009e;
+		}
+	}
+	{
+		bool L_24 = V_1;
+		return (bool)((((int32_t)L_24) == ((int32_t)0))? 1 : 0);
+	}
+
+IL_009e:
+	{
+		return (bool)0;
+	}
+
+IL_00a0:
+	{
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:40>
+		return (bool)0;
+	}
 }
-// Method Definition Index: 120275
+// Method Definition Index: 120054
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TwoInputFunction_OutputsVector_m6AC265BC1F3748970247B4269FBA6CD72D86D2C3 (TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:33>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:45>
 		bool L_0;
 		L_0 = TwoInputFunction_OutputsNumber_m66A47200B35C8917526AE3BF0E8880181CA921C3(__this, NULL);
 		return (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
 	}
 }
-// Method Definition Index: 120276
+// Method Definition Index: 120055
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TwoInputFunction_GetCurrentResult_m0302F9D7B92A9A852E201C37F82A7CC6CCFF28C7 (TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6313,7 +7042,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TwoInputFunction_GetCurrentResult_m0302
 	memset((&G_B18_0), 0, sizeof(G_B18_0));
 	float G_B39_0 = 0.0f;
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:38>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:50>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_0 = __this->___firstInput;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -6340,7 +7069,7 @@ IL_0015:
 IL_0020:
 	{
 		V_0 = G_B3_0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:39>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:51>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_4 = __this->___secondInput;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_5;
@@ -6367,7 +7096,7 @@ IL_0036:
 IL_0041:
 	{
 		V_1 = G_B6_0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:41>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:53>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_8 = __this->___firstInput;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_9;
@@ -6394,7 +7123,7 @@ IL_005d:
 IL_005e:
 	{
 		V_2 = (bool)G_B9_0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:42>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:54>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_12 = __this->___secondInput;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_13;
@@ -6421,7 +7150,7 @@ IL_007a:
 IL_007b:
 	{
 		V_3 = (bool)G_B12_0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:44>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:56>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_16 = __this->___firstInput;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_17;
@@ -6450,7 +7179,7 @@ IL_0091:
 IL_009c:
 	{
 		V_4 = G_B15_0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:45>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:57>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_21 = __this->___secondInput;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_22;
@@ -6479,9 +7208,9 @@ IL_00b3:
 IL_00be:
 	{
 		V_5 = G_B18_0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:47>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:59>
 		V_6 = (0.0f);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:49>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:61>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_26 = __this->___functions;
 		int32_t L_27 = __this->___actual;
 		NullCheck(L_26);
@@ -6547,7 +7276,7 @@ IL_00be:
 
 IL_0132:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:52>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:64>
 		bool L_42 = V_2;
 		if (L_42)
 		{
@@ -6562,17 +7291,17 @@ IL_0132:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:54>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:66>
 		float L_44 = V_0;
 		float L_45 = V_1;
 		V_6 = ((float)il2cpp_codegen_add(L_44, L_45));
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:56>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:68>
 		goto IL_01e0;
 	}
 
 IL_0148:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:59>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:71>
 		bool L_46 = V_2;
 		if (L_46)
 		{
@@ -6587,17 +7316,17 @@ IL_0148:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:61>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:73>
 		float L_48 = V_0;
 		float L_49 = V_1;
 		V_6 = ((float)il2cpp_codegen_subtract(L_48, L_49));
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:63>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:75>
 		goto IL_01e0;
 	}
 
 IL_015e:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:66>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:78>
 		bool L_50 = V_2;
 		if (L_50)
 		{
@@ -6612,17 +7341,17 @@ IL_015e:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:68>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:80>
 		float L_52 = V_0;
 		float L_53 = V_1;
 		V_6 = ((float)il2cpp_codegen_multiply(L_52, L_53));
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:70>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:82>
 		goto IL_01e0;
 	}
 
 IL_016b:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:73>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:85>
 		bool L_54 = V_2;
 		if (L_54)
 		{
@@ -6637,7 +7366,7 @@ IL_016b:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:75>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:87>
 		float L_56 = V_1;
 		if ((!(((float)L_56) == ((float)(0.0f)))))
 		{
@@ -6659,13 +7388,13 @@ IL_0180:
 IL_0183:
 	{
 		V_6 = G_B39_0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:77>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:89>
 		goto IL_01e0;
 	}
 
 IL_0187:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:80>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:92>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_59 = __this->___firstInput;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_60;
@@ -6686,19 +7415,19 @@ IL_0187:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:82>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:94>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_63 = V_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_64 = V_5;
 		float L_65;
 		L_65 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_63, L_64, NULL);
 		V_6 = L_65;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:84>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:96>
 		goto IL_01e0;
 	}
 
 IL_01b0:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:87>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:99>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_66 = __this->___firstInput;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_67;
@@ -6719,30 +7448,30 @@ IL_01b0:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:89>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:101>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_70 = V_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_71 = V_5;
 		float L_72;
 		L_72 = Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D_inline(L_70, L_71, NULL);
 		V_6 = L_72;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:91>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:103>
 		goto IL_01e0;
 	}
 
 IL_01d9:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:94>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:106>
 		V_6 = (0.0f);
 	}
 
 IL_01e0:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:98>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:110>
 		float L_73 = V_6;
 		return L_73;
 	}
 }
-// Method Definition Index: 120277
+// Method Definition Index: 120056
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 TwoInputFunction_GetCurrentVectorResult_m2638A05EE6CB7124D50BCED3D4F695FEF2D1ABCF (TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6813,7 +7542,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 	float G_B58_2 = 0.0f;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* G_B58_3 = NULL;
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:103>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:115>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_0 = __this->___firstInput;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -6836,7 +7565,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 
 IL_001c:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:103>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:115>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
 		L_4 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		return L_4;
@@ -6844,47 +7573,47 @@ IL_001c:
 
 IL_0022:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:105>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:117>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_5 = __this->___firstInput;
 		NullCheck(L_5);
 		bool L_6;
 		L_6 = DataCable_IsVectorSource_m3737DFD75BF0CD7C80C8D735AD79A8ADC5FEB337(L_5, NULL);
 		V_0 = L_6;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:106>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:118>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_7 = __this->___secondInput;
 		NullCheck(L_7);
 		bool L_8;
 		L_8 = DataCable_IsVectorSource_m3737DFD75BF0CD7C80C8D735AD79A8ADC5FEB337(L_7, NULL);
 		V_1 = L_8;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:108>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:120>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_9 = __this->___firstInput;
 		NullCheck(L_9);
 		float L_10;
 		L_10 = DataCable_GetValueFromSource_m9BC88D5DBEE4441E5C37C3C33C3206538BE589C3(L_9, NULL);
 		V_2 = L_10;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:109>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:121>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_11 = __this->___secondInput;
 		NullCheck(L_11);
 		float L_12;
 		L_12 = DataCable_GetValueFromSource_m9BC88D5DBEE4441E5C37C3C33C3206538BE589C3(L_11, NULL);
 		V_3 = L_12;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:111>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:123>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_13 = __this->___firstInput;
 		NullCheck(L_13);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
 		L_14 = DataCable_GetVectorFromSource_m5917375FB98B3BCD3B78C76AB1E36863B960CE68(L_13, NULL);
 		V_4 = L_14;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:112>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:124>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_15 = __this->___secondInput;
 		NullCheck(L_15);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
 		L_16 = DataCable_GetVectorFromSource_m5917375FB98B3BCD3B78C76AB1E36863B960CE68(L_15, NULL);
 		V_5 = L_16;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:114>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:126>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
 		L_17 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		V_6 = L_17;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:116>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:128>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_18 = __this->___functions;
 		int32_t L_19 = __this->___actual;
 		NullCheck(L_18);
@@ -6950,7 +7679,7 @@ IL_0022:
 
 IL_00ea:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:119>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:131>
 		bool L_34 = V_0;
 		bool L_35 = V_1;
 		if (!((int32_t)((int32_t)L_34&(int32_t)L_35)))
@@ -6959,7 +7688,7 @@ IL_00ea:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:121>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:133>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36 = V_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37 = V_5;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38;
@@ -6970,7 +7699,7 @@ IL_00ea:
 
 IL_00ff:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:123>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:135>
 		bool L_39 = V_0;
 		if (!L_39)
 		{
@@ -6985,7 +7714,7 @@ IL_00ff:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:125>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:137>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41 = V_4;
 		float L_42 = V_3;
 		float L_43 = V_3;
@@ -7001,7 +7730,7 @@ IL_00ff:
 
 IL_011b:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:127>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:139>
 		bool L_47 = V_0;
 		bool L_48 = V_1;
 		if (!((int32_t)(((((int32_t)L_47) == ((int32_t)0))? 1 : 0)&(int32_t)L_48)))
@@ -7010,7 +7739,7 @@ IL_011b:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:129>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:141>
 		float L_49 = V_2;
 		float L_50 = V_2;
 		float L_51 = V_2;
@@ -7021,13 +7750,13 @@ IL_011b:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_54;
 		L_54 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_52, L_53, NULL);
 		V_6 = L_54;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:131>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:143>
 		goto IL_0335;
 	}
 
 IL_013c:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:134>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:146>
 		bool L_55 = V_0;
 		bool L_56 = V_1;
 		if (!((int32_t)((int32_t)L_55&(int32_t)L_56)))
@@ -7036,7 +7765,7 @@ IL_013c:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:136>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:148>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_57 = V_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_58 = V_5;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59;
@@ -7047,7 +7776,7 @@ IL_013c:
 
 IL_0151:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:138>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:150>
 		bool L_60 = V_0;
 		if (!L_60)
 		{
@@ -7062,7 +7791,7 @@ IL_0151:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:140>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:152>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_62 = V_4;
 		float L_63 = V_3;
 		float L_64 = V_3;
@@ -7078,7 +7807,7 @@ IL_0151:
 
 IL_016d:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:142>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:154>
 		bool L_68 = V_0;
 		bool L_69 = V_1;
 		if (!((int32_t)(((((int32_t)L_68) == ((int32_t)0))? 1 : 0)&(int32_t)L_69)))
@@ -7087,7 +7816,7 @@ IL_016d:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:144>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:156>
 		float L_70 = V_2;
 		float L_71 = V_2;
 		float L_72 = V_2;
@@ -7098,13 +7827,13 @@ IL_016d:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_75;
 		L_75 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_73, L_74, NULL);
 		V_6 = L_75;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:146>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:158>
 		goto IL_0335;
 	}
 
 IL_018e:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:149>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:161>
 		bool L_76 = V_0;
 		bool L_77 = V_1;
 		if (!((int32_t)((int32_t)L_76&(int32_t)L_77)))
@@ -7113,11 +7842,11 @@ IL_018e:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:151>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:152>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:153>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:154>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:155>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:163>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:164>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:165>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:166>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:167>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_78 = V_4;
 		float L_79 = L_78.___x;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_80 = V_5;
@@ -7136,7 +7865,7 @@ IL_018e:
 
 IL_01cc:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:157>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:169>
 		bool L_90 = V_0;
 		if (!L_90)
 		{
@@ -7151,7 +7880,7 @@ IL_01cc:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:159>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:171>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_92 = V_4;
 		float L_93 = V_3;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_94;
@@ -7162,7 +7891,7 @@ IL_01cc:
 
 IL_01e1:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:161>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:173>
 		bool L_95 = V_0;
 		bool L_96 = V_1;
 		if (!((int32_t)(((((int32_t)L_95) == ((int32_t)0))? 1 : 0)&(int32_t)L_96)))
@@ -7171,19 +7900,19 @@ IL_01e1:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:163>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:175>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_97 = V_5;
 		float L_98 = V_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_99;
 		L_99 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_97, L_98, NULL);
 		V_6 = L_99;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:165>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:177>
 		goto IL_0335;
 	}
 
 IL_01fb:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:168>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:180>
 		bool L_100 = V_0;
 		bool L_101 = V_1;
 		if (!((int32_t)((int32_t)L_100&(int32_t)L_101)))
@@ -7192,11 +7921,11 @@ IL_01fb:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:170>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:171>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:172>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:173>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:174>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:182>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:183>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:184>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:185>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:186>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_102 = V_5;
 		float L_103 = L_102.___x;
 		if ((!(((float)L_103) == ((float)(0.0f)))))
@@ -7296,7 +8025,7 @@ IL_026e:
 
 IL_0278:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:176>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:188>
 		bool L_120 = V_0;
 		if (!L_120)
 		{
@@ -7311,7 +8040,7 @@ IL_0278:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:178>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:190>
 		float L_122 = V_3;
 		if ((!(((float)L_122) == ((float)(0.0f)))))
 		{
@@ -7342,7 +8071,7 @@ IL_0295:
 
 IL_029c:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:180>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:192>
 		bool L_127 = V_0;
 		bool L_128 = V_1;
 		if (!((int32_t)(((((int32_t)L_127) == ((int32_t)0))? 1 : 0)&(int32_t)L_128)))
@@ -7351,11 +8080,11 @@ IL_029c:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:182>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:183>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:184>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:185>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:186>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:194>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:195>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:196>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:197>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:198>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_129 = V_5;
 		float L_130 = L_129.___x;
 		if ((!(((float)L_130) == ((float)(0.0f)))))
@@ -7447,25 +8176,25 @@ IL_02fa:
 IL_0303:
 	{
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline(G_B58_3, G_B58_2, G_B58_1, G_B58_0, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:188>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:200>
 		goto IL_0335;
 	}
 
 IL_030a:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:191>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:203>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_144 = V_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_145 = V_5;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_146;
 		L_146 = Vector3_Cross_mF93A280558BCE756D13B6CC5DCD7DE8A43148987_inline(L_144, L_145, NULL);
 		V_6 = L_146;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:192>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:204>
 		goto IL_0335;
 	}
 
 IL_0317:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:195>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:207>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_147 = V_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_148 = V_5;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_149;
@@ -7473,13 +8202,13 @@ IL_0317:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_150;
 		L_150 = Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline(L_149, (2.0f), NULL);
 		V_6 = L_150;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:196>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:208>
 		goto IL_0335;
 	}
 
 IL_032e:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:199>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:211>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_151;
 		L_151 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		V_6 = L_151;
@@ -7487,12 +8216,12 @@ IL_032e:
 
 IL_0335:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:203>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:215>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_152 = V_6;
 		return L_152;
 	}
 }
-// Method Definition Index: 120278
+// Method Definition Index: 120057
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TwoInputFunction_SetFunctionByIndex_m3C6B7FF180E4B2964F990F5107F51ECDC8B082E0 (TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* __this, int32_t ___0_index, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7502,7 +8231,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TwoInputFunction_SetFunctionByIndex_m3C6
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:208>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:220>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = __this->___functions;
 		if (!L_0)
 		{
@@ -7520,13 +8249,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TwoInputFunction_SetFunctionByIndex_m3C6
 
 IL_0011:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:208>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:220>
 		return;
 	}
 
 IL_0012:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:210>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:222>
 		int32_t L_2 = ___0_index;
 		if ((((int32_t)L_2) < ((int32_t)0)))
 		{
@@ -7545,16 +8274,16 @@ IL_0012:
 
 IL_0021:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:212>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:224>
 		___0_index = 0;
 	}
 
 IL_0024:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:215>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:227>
 		int32_t L_5 = ___0_index;
 		__this->___actual = L_5;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:217>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:229>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_6 = __this->___visualText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -7565,7 +8294,7 @@ IL_0024:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:219>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:231>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_8 = __this->___visualText;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_9 = __this->___functions;
 		int32_t L_10 = __this->___actual;
@@ -7578,11 +8307,11 @@ IL_0024:
 
 IL_0051:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:221>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:233>
 		return;
 	}
 }
-// Method Definition Index: 120279
+// Method Definition Index: 120058
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TwoInputFunction__ctor_m15EA12073B860D16179DD7FA0452E1D4ED8FC6AE (TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7640,7 +8369,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TwoInputFunction__ctor_m15EA12073B860D16
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 120280
+// Method Definition Index: 120059
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_Start_m9B035B4E1EFADE2357C43399B87445F4E36E48B0 (VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7734,7 +8463,7 @@ IL_0091:
 		return;
 	}
 }
-// Method Definition Index: 120281
+// Method Definition Index: 120060
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_Update_mAA8BC156536FB0600383C49BC4747F26666D42BD (VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7980,7 +8709,7 @@ IL_018f:
 		return;
 	}
 }
-// Method Definition Index: 120282
+// Method Definition Index: 120061
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_LateUpdate_mE6C33AF2E6DB17A942BBFC0546FA1A840589C48C (VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8074,7 +8803,7 @@ IL_0069:
 		return;
 	}
 }
-// Method Definition Index: 120283
+// Method Definition Index: 120062
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_ResetBlock_m36F2121915AE14BD1093E28A77A7D2205197906F (VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8169,7 +8898,7 @@ IL_009e:
 		return;
 	}
 }
-// Method Definition Index: 120284
+// Method Definition Index: 120063
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_UpdateVisuals_mF156BF20486A0FF9075C53225E2612FEA474C9E5 (VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8263,7 +8992,7 @@ IL_00a4:
 		return;
 	}
 }
-// Method Definition Index: 120285
+// Method Definition Index: 120064
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_SetVectorManually_m55413FD60FFC876E398B837AE98560DA5D34B7B4 (VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_newVector, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8408,7 +9137,7 @@ IL_0109:
 		return;
 	}
 }
-// Method Definition Index: 120286
+// Method Definition Index: 120065
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_OpenKeyboard_mA055EBDC0318976CFF792F228DE4165505EBD374 (VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8591,7 +9320,7 @@ IL_00dc:
 		return;
 	}
 }
-// Method Definition Index: 120287
+// Method Definition Index: 120066
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_CloseKeyboard_mCD0C67785388DDD3D7296395BA2BA59E732FDA5A (VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8627,7 +9356,7 @@ IL_0020:
 		return;
 	}
 }
-// Method Definition Index: 120288
+// Method Definition Index: 120067
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock_UpdateDynamicArrow_m7E7B234DBBA9106B1A73ACDAD21EA245192D83A7 (VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8869,7 +9598,7 @@ IL_008d:
 		return;
 	}
 }
-// Method Definition Index: 120289
+// Method Definition Index: 120068
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock__ctor_mF1AE60EC1CD0C123DFDE520A5E2F71B23F0FEB52 (VectorBlock_tA56F2AB65FEB572EDC37C4594B4EF7749ED6D4E6* __this, const RuntimeMethod* method) 
 {
 	{
@@ -8901,7 +9630,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorBlock__ctor_mF1AE60EC1CD0C123DFDE5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 120290
+// Method Definition Index: 120069
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorController_Start_mFFD11B269E7D8888851E487374B3E9D37A354BA9 (VectorController_tB813F0BDD206E29257815656133ED125738EE280* __this, const RuntimeMethod* method) 
 {
 	{
@@ -8916,7 +9645,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorController_Start_mFFD11B269E7D8888
 		return;
 	}
 }
-// Method Definition Index: 120291
+// Method Definition Index: 120070
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorController_Update_m5F533AA0D11E039A8BEB2BBEF7602E4146D51AF7 (VectorController_tB813F0BDD206E29257815656133ED125738EE280* __this, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -8993,7 +9722,7 @@ IL_0019:
 		return;
 	}
 }
-// Method Definition Index: 120292
+// Method Definition Index: 120071
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorController__ctor_mA3A97078DE9BCCD283B1C1ADCCE993FD5B81B68E (VectorController_tB813F0BDD206E29257815656133ED125738EE280* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9019,7 +9748,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorController__ctor_mA3A97078DE9BCCD2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 120293
+// Method Definition Index: 120072
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorKeyboardPanel_Start_mEBE12757B5F07095EAC185E6897A4F3F3A1BB983 (VectorKeyboardPanel_tC06D7292AE1E1D3732B52E8964046D9CC9D81CF7* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9029,7 +9758,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorKeyboardPanel_Start_mEBE12757B5F07
 		return;
 	}
 }
-// Method Definition Index: 120294
+// Method Definition Index: 120073
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorKeyboardPanel_HandleButtonPress_m1295766E46D1F7D10723D1A77E7277171CC50044 (VectorKeyboardPanel_tC06D7292AE1E1D3732B52E8964046D9CC9D81CF7* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9405,7 +10134,7 @@ IL_0200:
 		return;
 	}
 }
-// Method Definition Index: 120295
+// Method Definition Index: 120074
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorKeyboardPanel_ConfirmInput_m1079EDA94EA4FE6074085D0719FA441315B86503 (VectorKeyboardPanel_tC06D7292AE1E1D3732B52E8964046D9CC9D81CF7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9537,7 +10266,7 @@ IL_0081:
 		return;
 	}
 }
-// Method Definition Index: 120296
+// Method Definition Index: 120075
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorKeyboardPanel_CancelInput_mC4987C5D44C2C0812EFDBCB7CCF2FC74F380A520 (VectorKeyboardPanel_tC06D7292AE1E1D3732B52E8964046D9CC9D81CF7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9576,7 +10305,7 @@ IL_001a:
 		return;
 	}
 }
-// Method Definition Index: 120297
+// Method Definition Index: 120076
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorKeyboardPanel_RefreshDisplay_m1BFAF7CCAF15E576FC12D3478CA41A8646FA21EC (VectorKeyboardPanel_tC06D7292AE1E1D3732B52E8964046D9CC9D81CF7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9640,7 +10369,7 @@ IL_0045:
 		return;
 	}
 }
-// Method Definition Index: 120298
+// Method Definition Index: 120077
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorKeyboardPanel__ctor_m99C1DB80F6FFF51B02F916460885923F5CBC85C6 (VectorKeyboardPanel_tC06D7292AE1E1D3732B52E8964046D9CC9D81CF7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9669,41 +10398,41 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorKeyboardPanel__ctor_m99C1DB80F6FFF
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 120299
+// Method Definition Index: 120078
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____B5FE1EDC39B918F384B90B24DDE22731FF2532E6DCA28279112AE719FC9536EB_FieldInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____B8624BC1636AA1BE8ECF82C23216767EE5034DB0384567CA15C355B86FF7358C_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____BAAD990E6FBF9C307F8C92BEE5009664949DE7F331D8119105FDE1FF2A244D92_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____CEFFE21DE1872D72B339958EC82A5FA9D2CB47CE7079C862E2F0AB6BC8DA2FF2_FieldInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		il2cpp_codegen_initobj((&V_0), sizeof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E));
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)528));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)577));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = L_0;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____B5FE1EDC39B918F384B90B24DDE22731FF2532E6DCA28279112AE719FC9536EB_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____CEFFE21DE1872D72B339958EC82A5FA9D2CB47CE7079C862E2F0AB6BC8DA2FF2_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_1, L_2, NULL);
 		(&V_0)->___FilePathsData = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___FilePathsData), (void*)L_1);
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)255));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)283));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = L_3;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____B8624BC1636AA1BE8ECF82C23216767EE5034DB0384567CA15C355B86FF7358C_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____BAAD990E6FBF9C307F8C92BEE5009664949DE7F331D8119105FDE1FF2A244D92_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_4, L_5, NULL);
 		(&V_0)->___TypesData = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___TypesData), (void*)L_4);
-		(&V_0)->___TotalFiles = ((int32_t)13);
-		(&V_0)->___TotalTypes = ((int32_t)13);
+		(&V_0)->___TotalFiles = ((int32_t)14);
+		(&V_0)->___TotalTypes = ((int32_t)14);
 		(&V_0)->___IsEditorOnly = (bool)0;
 		MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E L_6 = V_0;
 		return L_6;
 	}
 }
-// Method Definition Index: 120300
+// Method Definition Index: 120079
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9789,7 +10518,7 @@ IL2CPP_EXTERN_C void MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_ma
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 120301
+// Method Definition Index: 120080
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (String_t* ___0_s, const RuntimeMethod* method) 
 {
 	uint32_t V_0 = 0;
@@ -10135,7 +10864,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 120215
+// Method Definition Index: 119989
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* CableMeta_get_DestinyPort_mBB17C96E671C4B1D3557B196CB0DF08ABD58FADE_inline (CableMeta_t1C65FA5600A2BE1C6373527688B0734DF728952F* __this, const RuntimeMethod* method) 
 {
 	{

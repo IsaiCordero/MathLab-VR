@@ -27,6 +27,12 @@ public class DataCable : MonoBehaviour
         {
             return oneInputFunction.GetCurrentResult();
         }
+
+        OneInputNumberFunction oneInputNumberFunction = sourceObject.GetComponent<OneInputNumberFunction>();
+        if (oneInputNumberFunction != null)
+        {
+            return oneInputNumberFunction.GetCurrentResult();
+        }
         return 0;
     }
 
@@ -73,6 +79,12 @@ public class DataCable : MonoBehaviour
         if (functionOneInput != null && port.CompareTag("Input"))
         {
             return functionOneInput.input != null && functionOneInput.input != this;
+        }
+
+        OneInputNumberFunction oneInputNumberFunction = port.GetComponentInParent<OneInputNumberFunction>();
+        if (oneInputNumberFunction != null && port.CompareTag("Input"))
+        {
+            return oneInputNumberFunction.input != null && oneInputNumberFunction.input != this;
         }
 
         return false;
@@ -125,6 +137,13 @@ public class DataCable : MonoBehaviour
             functionOneInput.input = this;
             return true;
         }
+
+        OneInputNumberFunction oneInputNumberFunction = port.GetComponentInParent<OneInputNumberFunction>();
+        if (oneInputNumberFunction != null && port.CompareTag("Input"))
+        {
+            oneInputNumberFunction.input = this;
+            return true;
+        }
         return false;
     }
 
@@ -163,6 +182,12 @@ public class DataCable : MonoBehaviour
             vBlock.incomingCable = null;
         }
 
+        OneInputNumberFunction oneInputNumberFunction = connectedPort.GetComponentInParent<OneInputNumberFunction>();
+        if (oneInputNumberFunction != null && connectedPort.CompareTag("Input") && oneInputNumberFunction.input == this)
+        {
+            oneInputNumberFunction.input = null;
+        }
+
         connectedPort = null;
     }
 
@@ -177,6 +202,9 @@ public class DataCable : MonoBehaviour
 
         FunctionOneInput oneInput = sourceObject.GetComponent<FunctionOneInput>();
         if (oneInput != null) return oneInput.OutputsNumber();
+
+        OneInputNumberFunction oneInputNumber = sourceObject.GetComponent<OneInputNumberFunction>();
+        if (oneInputNumber != null) return oneInputNumber.OutputsNumber();
 
         return false;
     }
