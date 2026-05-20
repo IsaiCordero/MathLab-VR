@@ -10,6 +10,8 @@ public class KeyboardButton : MonoBehaviour
     [Header("Button Action")]
     public string buttonValue;
 
+    public NumberKeyboardPanel numberKeyboardPanel;
+
     private Vector3 fixedLocalPosition;
     private Quaternion fixedLocalRotation;
 
@@ -32,9 +34,16 @@ public class KeyboardButton : MonoBehaviour
 
     private void HandlePointerEvent(PointerEvent evt)
     {
-        if (evt.Type == PointerEventType.Select && keyboardPanel != null)
+        if (evt.Type == PointerEventType.Select)
         {
-            keyboardPanel.HandleButtonPress(buttonValue);
+            if (keyboardPanel != null)
+            {
+                keyboardPanel.HandleButtonPress(buttonValue);
+            }
+            else if (numberKeyboardPanel != null)
+            {
+                numberKeyboardPanel.HandleButtonPress(buttonValue);
+            }
         }
     }
 

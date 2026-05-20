@@ -50,7 +50,21 @@ extern void NumberBlock_Start_mB2DA1D9378015E4B1DCDABFF02EF08F576EE5B6C (void);
 extern void NumberBlock_Update_mD0EDFFD655D383F6604922DFE45EC903BFC6E83A (void);
 extern void NumberBlock_UpdateVisuals_m1E4A46D55E3CB9F9DF384413E1EB7D5F7C4EB3B7 (void);
 extern void NumberBlock_SetValueFromSlider_m36419F445A2D12A7D808C4035920F7DCB87050D6 (void);
+extern void NumberBlock_SetValueFromKeyboard_m2042F2911C82868EA326A4EA0D6BE38404ACD4D7 (void);
+extern void NumberBlock_OpenKeyboard_mE1D8D89D48169A19358C457863D7E1BD27FF2596 (void);
+extern void NumberBlock_CloseKeyboard_mEDE3C95913A43ED08753654EC28F3CEEB7E6D32A (void);
 extern void NumberBlock__ctor_m221835686213C17C362C578C7B38940E2C56F63E (void);
+extern void NumberKeyboardButton_Start_m0A43C45FF7DF4F2A4E51901B30E8B6CC32E9FC2C (void);
+extern void NumberKeyboardButton_LateUpdate_m7BEC8231E2A33EA5EF8E23D314DC76798DA74487 (void);
+extern void NumberKeyboardButton_HandlePointerEvent_m7A3914EFAF60CA3BE843B6331989A8357534C0DB (void);
+extern void NumberKeyboardButton_OnDestroy_m08AD66D1820A7BEAABABC01A9319915CFF30319E (void);
+extern void NumberKeyboardButton__ctor_m70A1EB9DB4DFD7888798474B629DE3B69F943926 (void);
+extern void NumberKeyboardPanel_Start_mF76546E1E79E5894B6121D2DF7144A38D1C81092 (void);
+extern void NumberKeyboardPanel_HandleButtonPress_m18F988CBC4A10E2C461B56F8CA0A15E9570506A0 (void);
+extern void NumberKeyboardPanel_ConfirmInput_m30C6665F9CC8F8E374E13D47233D987A15281B61 (void);
+extern void NumberKeyboardPanel_CancelInput_m3CB67AF9A62DDDA99B6588C90EC594C8A1AAC5B8 (void);
+extern void NumberKeyboardPanel_RefreshDisplay_mC7312C40C7E3832F2E400C6A9DE52D8E03302955 (void);
+extern void NumberKeyboardPanel__ctor_m13D6C35DAC97D03F93809F1E64ED93575FBEFF15 (void);
 extern void NumberSlider_Start_mDE29E21DE48DF890C75D0BDFBC87EFC5EFC7AF35 (void);
 extern void NumberSlider_Update_mBFF90768DB0F22BC0D6A9DF4D6152C25A52FCED9 (void);
 extern void NumberSlider__ctor_m7E75CA48273E441CA15F2AB8D90E236180EA4717 (void);
@@ -64,6 +78,11 @@ extern void OpenKeyboardButton_LateUpdate_m0087D2D1C4EFCD76260785332FD00F4D19355
 extern void OpenKeyboardButton_HandlePointerEvent_m1B940EAACF70896F9C6877DAF9E3DC1AEFA76771 (void);
 extern void OpenKeyboardButton_OnDestroy_m5BCC636D009D5ED712CA69BA5A883DA01B9B5C97 (void);
 extern void OpenKeyboardButton__ctor_m745A73A47818EAF793D10F95ADD83299E5F2852C (void);
+extern void OpenNumberKeyboardButton_Start_m9DDF328AD2AFFC50B44B2E6E220B625AA11D4B99 (void);
+extern void OpenNumberKeyboardButton_LateUpdate_m8628B4D06334298307523B05A3F4D8AD14CDE5AF (void);
+extern void OpenNumberKeyboardButton_HandlePointerEvent_m3A03EE7E0C1427A5AB250534BBDD361CD93FF74D (void);
+extern void OpenNumberKeyboardButton_OnDestroy_m6F2DF07F2FD4F9ABFE9F440FDCF340E66AEA0860 (void);
+extern void OpenNumberKeyboardButton__ctor_m059C46A5FD08824493B7F595E8CF84EB111B35A8 (void);
 extern void SpawnerBloques_Start_mD634E03B43C798298721926B06864593955F2D83 (void);
 extern void SpawnerBloques_LateUpdate_m6EBF68CE61B85A368A9B3DFC628ED9E2C66E8C87 (void);
 extern void SpawnerBloques_HandlePointerEvent_m32FA892816123C26843657AFE7D1F943E06A4E97 (void);
@@ -99,7 +118,7 @@ extern void VectorKeyboardPanel__ctor_m99C1DB80F6FFF51B02F916460885923F5CBC85C6 
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
 extern void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (void);
-static Il2CppMethodPointer s_methodPointers[92] = 
+static Il2CppMethodPointer s_methodPointers[111] = 
 {
 	CableMeta_get_DestinyPort_mBB17C96E671C4B1D3557B196CB0DF08ABD58FADE,
 	CableMeta_Start_m5FBC2CF88D6EA954DC1750892781074816268BD7,
@@ -144,7 +163,21 @@ static Il2CppMethodPointer s_methodPointers[92] =
 	NumberBlock_Update_mD0EDFFD655D383F6604922DFE45EC903BFC6E83A,
 	NumberBlock_UpdateVisuals_m1E4A46D55E3CB9F9DF384413E1EB7D5F7C4EB3B7,
 	NumberBlock_SetValueFromSlider_m36419F445A2D12A7D808C4035920F7DCB87050D6,
+	NumberBlock_SetValueFromKeyboard_m2042F2911C82868EA326A4EA0D6BE38404ACD4D7,
+	NumberBlock_OpenKeyboard_mE1D8D89D48169A19358C457863D7E1BD27FF2596,
+	NumberBlock_CloseKeyboard_mEDE3C95913A43ED08753654EC28F3CEEB7E6D32A,
 	NumberBlock__ctor_m221835686213C17C362C578C7B38940E2C56F63E,
+	NumberKeyboardButton_Start_m0A43C45FF7DF4F2A4E51901B30E8B6CC32E9FC2C,
+	NumberKeyboardButton_LateUpdate_m7BEC8231E2A33EA5EF8E23D314DC76798DA74487,
+	NumberKeyboardButton_HandlePointerEvent_m7A3914EFAF60CA3BE843B6331989A8357534C0DB,
+	NumberKeyboardButton_OnDestroy_m08AD66D1820A7BEAABABC01A9319915CFF30319E,
+	NumberKeyboardButton__ctor_m70A1EB9DB4DFD7888798474B629DE3B69F943926,
+	NumberKeyboardPanel_Start_mF76546E1E79E5894B6121D2DF7144A38D1C81092,
+	NumberKeyboardPanel_HandleButtonPress_m18F988CBC4A10E2C461B56F8CA0A15E9570506A0,
+	NumberKeyboardPanel_ConfirmInput_m30C6665F9CC8F8E374E13D47233D987A15281B61,
+	NumberKeyboardPanel_CancelInput_m3CB67AF9A62DDDA99B6588C90EC594C8A1AAC5B8,
+	NumberKeyboardPanel_RefreshDisplay_mC7312C40C7E3832F2E400C6A9DE52D8E03302955,
+	NumberKeyboardPanel__ctor_m13D6C35DAC97D03F93809F1E64ED93575FBEFF15,
 	NumberSlider_Start_mDE29E21DE48DF890C75D0BDFBC87EFC5EFC7AF35,
 	NumberSlider_Update_mBFF90768DB0F22BC0D6A9DF4D6152C25A52FCED9,
 	NumberSlider__ctor_m7E75CA48273E441CA15F2AB8D90E236180EA4717,
@@ -158,6 +191,11 @@ static Il2CppMethodPointer s_methodPointers[92] =
 	OpenKeyboardButton_HandlePointerEvent_m1B940EAACF70896F9C6877DAF9E3DC1AEFA76771,
 	OpenKeyboardButton_OnDestroy_m5BCC636D009D5ED712CA69BA5A883DA01B9B5C97,
 	OpenKeyboardButton__ctor_m745A73A47818EAF793D10F95ADD83299E5F2852C,
+	OpenNumberKeyboardButton_Start_m9DDF328AD2AFFC50B44B2E6E220B625AA11D4B99,
+	OpenNumberKeyboardButton_LateUpdate_m8628B4D06334298307523B05A3F4D8AD14CDE5AF,
+	OpenNumberKeyboardButton_HandlePointerEvent_m3A03EE7E0C1427A5AB250534BBDD361CD93FF74D,
+	OpenNumberKeyboardButton_OnDestroy_m6F2DF07F2FD4F9ABFE9F440FDCF340E66AEA0860,
+	OpenNumberKeyboardButton__ctor_m059C46A5FD08824493B7F595E8CF84EB111B35A8,
 	SpawnerBloques_Start_mD634E03B43C798298721926B06864593955F2D83,
 	SpawnerBloques_LateUpdate_m6EBF68CE61B85A368A9B3DFC628ED9E2C66E8C87,
 	SpawnerBloques_HandlePointerEvent_m32FA892816123C26843657AFE7D1F943E06A4E97,
@@ -194,7 +232,7 @@ static Il2CppMethodPointer s_methodPointers[92] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876,
 };
-static const int32_t s_InvokerIndices[92] = 
+static const int32_t s_InvokerIndices[111] = 
 {
 	19937,
 	20176,
@@ -239,6 +277,20 @@ static const int32_t s_InvokerIndices[92] =
 	20176,
 	20176,
 	15328,
+	15526,
+	20176,
+	20176,
+	20176,
+	20176,
+	20176,
+	15450,
+	20176,
+	20176,
+	20176,
+	15419,
+	20176,
+	20176,
+	20176,
 	20176,
 	20176,
 	20176,
@@ -247,6 +299,11 @@ static const int32_t s_InvokerIndices[92] =
 	19693,
 	20049,
 	15328,
+	20176,
+	20176,
+	20176,
+	15450,
+	20176,
 	20176,
 	20176,
 	20176,
@@ -293,7 +350,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	92,
+	111,
 	s_methodPointers,
 	0,
 	NULL,
