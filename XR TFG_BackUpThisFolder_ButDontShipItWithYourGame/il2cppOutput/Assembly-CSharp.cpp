@@ -137,19 +137,22 @@ IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____1FBFEDE74E1AAA6389CCEEA4036A38D324BC095162082FC82D8961217ADA3AB2_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____2B96C6F2A3F1B3CC93BB7D53D3644739B7B0994B6F86B4712BD751A2A2594F75_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral1168E92C164109D6220480DEDA987085B2A21155;
+IL2CPP_EXTERN_C String_t* _stringLiteral1A359D7E8784C5FF0AFB066ECA2A38D8C7C94EFF;
+IL2CPP_EXTERN_C String_t* _stringLiteral1BEF44535F1072651156556C2ACCC2C774009020;
+IL2CPP_EXTERN_C String_t* _stringLiteral21468AD82179E9C218804862508643E6A120283A;
 IL2CPP_EXTERN_C String_t* _stringLiteral234D19ACC97DBDDB4C2351D9B583DDC8AD958380;
 IL2CPP_EXTERN_C String_t* _stringLiteral25E826F472A35124A949189BC9B3639E7A652E31;
 IL2CPP_EXTERN_C String_t* _stringLiteral2C6C4A0396E04E83942E78DFF4DF343644956432;
 IL2CPP_EXTERN_C String_t* _stringLiteral354BB319791929462B888E5C7625AB8DABE43E81;
 IL2CPP_EXTERN_C String_t* _stringLiteral3B2C1C62D4D1C2A0C8A9AC42DB00D33C654F9AD0;
+IL2CPP_EXTERN_C String_t* _stringLiteral47F75CE90133AC5A4AD8AFBDE0DF2C65540DAB4C;
 IL2CPP_EXTERN_C String_t* _stringLiteral50639CAD49418C7B223CC529395C0E2A3892501C;
-IL2CPP_EXTERN_C String_t* _stringLiteral54D7DEBE88C4ED298BBDA1EB59F812F6EC44FAEC;
 IL2CPP_EXTERN_C String_t* _stringLiteral571B8015AB310D000C937E6BB40186AA60B9C5C1;
 IL2CPP_EXTERN_C String_t* _stringLiteral59C00D8CDE1C0B7CDE4D637CECB77E0760E75287;
 IL2CPP_EXTERN_C String_t* _stringLiteral5C428ACD6AC01C0A74DDDD063A93ECB4E9763A47;
 IL2CPP_EXTERN_C String_t* _stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D;
 IL2CPP_EXTERN_C String_t* _stringLiteral7FAE5D58BE5ABC42D695762815383DD4B307BF9E;
-IL2CPP_EXTERN_C String_t* _stringLiteral868A641EE549EBC188721614C10A6C250184E711;
+IL2CPP_EXTERN_C String_t* _stringLiteral833CD741E4EB1647FD918974555B1AE1E1990E8C;
 IL2CPP_EXTERN_C String_t* _stringLiteral9404AFF119D90FC73EDF824A6F426CCC21712D08;
 IL2CPP_EXTERN_C String_t* _stringLiteral98AABF03989148D52D66933EEB5FC0BDBF4728D7;
 IL2CPP_EXTERN_C String_t* _stringLiteral9A9974AC80477EF37CE4F6E71F076BC3D101BF1C;
@@ -158,15 +161,18 @@ IL2CPP_EXTERN_C String_t* _stringLiteral9E5442828C0746CD0B9BBF3F56D9A70AE834F4B7
 IL2CPP_EXTERN_C String_t* _stringLiteral9EDBF979AFE163931A10F390CA898329A9A27F7D;
 IL2CPP_EXTERN_C String_t* _stringLiteralA3DFC0C77ACADE0EE48DCC73E795A597D0270A73;
 IL2CPP_EXTERN_C String_t* _stringLiteralA4EA1BD7647B10CC8580300848CED0901B8AFE84;
+IL2CPP_EXTERN_C String_t* _stringLiteralA8E175088285E04E2BC82E67E4FF1F2CC2487332;
 IL2CPP_EXTERN_C String_t* _stringLiteralAC44FD2B7F0D8BA2097B8DA3854AEF2290B29795;
 IL2CPP_EXTERN_C String_t* _stringLiteralB3F14BF976EFD974E34846B742502C802FABAE9D;
+IL2CPP_EXTERN_C String_t* _stringLiteralB42F938BC01D103EC42119A65731280841C7778C;
 IL2CPP_EXTERN_C String_t* _stringLiteralB92EF51E45166C91E2762DB6C9F27C8BD6EBE466;
+IL2CPP_EXTERN_C String_t* _stringLiteralC14233B3ECCB39648E865AC1B001C61DAB266519;
 IL2CPP_EXTERN_C String_t* _stringLiteralC1BD9BD90CD9F1AC239F9A86461118334E2AE630;
 IL2CPP_EXTERN_C String_t* _stringLiteralC5CB235FDF341E57B3A3E3D289810AD3382B4E8B;
 IL2CPP_EXTERN_C String_t* _stringLiteralC613D4D2FE3F5D74727D376F793286A2BCBB1391;
+IL2CPP_EXTERN_C String_t* _stringLiteralC88173539CC7E19B91E302A8CE8DF7A6D6B4B078;
 IL2CPP_EXTERN_C String_t* _stringLiteralCBDE4209A28D15F4303640C8C8F1206538122DF3;
 IL2CPP_EXTERN_C String_t* _stringLiteralD5D2875F228D651E1289522AEAAB8C492001C1BE;
-IL2CPP_EXTERN_C String_t* _stringLiteralD93ABA6C8699F54FF0DCE1BF204364133EE8A077;
 IL2CPP_EXTERN_C String_t* _stringLiteralD9FB78596E63E545F5E25EF29FB924A5C4C9188E;
 IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 IL2CPP_EXTERN_C String_t* _stringLiteralDED255C6188796AA0D317083FE9D01BC0BBC9276;
@@ -1315,7 +1321,8 @@ struct SpawnerBloques_t6D685A5883FCF13C26A30A910CF9D65892396B47  : public MonoBe
 struct TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___visualText;
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___functions;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___functionKeys;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___functionLabels;
 	DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* ___firstInput;
 	DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* ___secondInput;
 	int32_t ___actual;
@@ -7822,7 +7829,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TwoInputFunction_Start_mBFF735B0326D01DC
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:20>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:22>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_0 = __this->___visualText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -7833,7 +7840,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TwoInputFunction_Start_mBFF735B0326D01DC
 		}
 	}
 	{
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = __this->___functions;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = __this->___functionLabels;
 		NullCheck(L_2);
 		if (!(((RuntimeArray*)L_2)->max_length))
 		{
@@ -7841,9 +7848,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TwoInputFunction_Start_mBFF735B0326D01DC
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:22>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:24>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_3 = __this->___visualText;
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = __this->___functions;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = __this->___functionLabels;
 		int32_t L_5 = __this->___actual;
 		NullCheck(L_4);
 		int32_t L_6 = L_5;
@@ -7854,7 +7861,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TwoInputFunction_Start_mBFF735B0326D01DC
 
 IL_002f:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:24>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:26>
 		return;
 	}
 }
@@ -7865,11 +7872,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TwoInputFunction_OutputsNumber_m66A47200
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9404AFF119D90FC73EDF824A6F426CCC21712D08);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral833CD741E4EB1647FD918974555B1AE1E1990E8C);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9E5442828C0746CD0B9BBF3F56D9A70AE834F4B7);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA4EA1BD7647B10CC8580300848CED0901B8AFE84);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAC44FD2B7F0D8BA2097B8DA3854AEF2290B29795);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD93ABA6C8699F54FF0DCE1BF204364133EE8A077);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA8E175088285E04E2BC82E67E4FF1F2CC2487332);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC14233B3ECCB39648E865AC1B001C61DAB266519);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC88173539CC7E19B91E302A8CE8DF7A6D6B4B078);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD9FB78596E63E545F5E25EF29FB924A5C4C9188E);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -7881,17 +7888,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TwoInputFunction_OutputsNumber_m66A47200
 	int32_t G_B13_0 = 0;
 	int32_t G_B13_1 = 0;
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:27>
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = __this->___functions;
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:29>
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = __this->___functionKeys;
 		int32_t L_1 = __this->___actual;
 		NullCheck(L_0);
 		int32_t L_2 = L_1;
 		String_t* L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
 		V_0 = L_3;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:29>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:31>
 		String_t* L_4 = V_0;
 		bool L_5;
-		L_5 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_4, _stringLiteralD93ABA6C8699F54FF0DCE1BF204364133EE8A077, NULL);
+		L_5 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_4, _stringLiteralA8E175088285E04E2BC82E67E4FF1F2CC2487332, NULL);
 		if (L_5)
 		{
 			goto IL_0028;
@@ -7900,7 +7907,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TwoInputFunction_OutputsNumber_m66A47200
 	{
 		String_t* L_6 = V_0;
 		bool L_7;
-		L_7 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_6, _stringLiteralA4EA1BD7647B10CC8580300848CED0901B8AFE84, NULL);
+		L_7 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_6, _stringLiteralC88173539CC7E19B91E302A8CE8DF7A6D6B4B078, NULL);
 		if (!L_7)
 		{
 			goto IL_002a;
@@ -7909,13 +7916,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TwoInputFunction_OutputsNumber_m66A47200
 
 IL_0028:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:30>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:32>
 		return (bool)1;
 	}
 
 IL_002a:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:32>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:34>
 		String_t* L_8 = V_0;
 		bool L_9;
 		L_9 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_8, _stringLiteral9E5442828C0746CD0B9BBF3F56D9A70AE834F4B7, NULL);
@@ -7936,7 +7943,7 @@ IL_002a:
 	{
 		String_t* L_12 = V_0;
 		bool L_13;
-		L_13 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_12, _stringLiteralAC44FD2B7F0D8BA2097B8DA3854AEF2290B29795, NULL);
+		L_13 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_12, _stringLiteral833CD741E4EB1647FD918974555B1AE1E1990E8C, NULL);
 		if (L_13)
 		{
 			goto IL_005e;
@@ -7945,7 +7952,7 @@ IL_002a:
 	{
 		String_t* L_14 = V_0;
 		bool L_15;
-		L_15 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_14, _stringLiteral9404AFF119D90FC73EDF824A6F426CCC21712D08, NULL);
+		L_15 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_14, _stringLiteralC14233B3ECCB39648E865AC1B001C61DAB266519, NULL);
 		if (!L_15)
 		{
 			goto IL_00a0;
@@ -7954,7 +7961,7 @@ IL_002a:
 
 IL_005e:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:34>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:36>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_16 = __this->___firstInput;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_17;
@@ -7980,7 +7987,7 @@ IL_0079:
 
 IL_007a:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:35>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:37>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_20 = __this->___secondInput;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_21;
@@ -8011,7 +8018,7 @@ IL_0095:
 IL_0096:
 	{
 		V_1 = (bool)G_B13_0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:37>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:39>
 		if (G_B13_1)
 		{
 			goto IL_009e;
@@ -8029,7 +8036,7 @@ IL_009e:
 
 IL_00a0:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:40>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:42>
 		return (bool)0;
 	}
 }
@@ -8037,7 +8044,7 @@ IL_00a0:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TwoInputFunction_OutputsVector_m6AC265BC1F3748970247B4269FBA6CD72D86D2C3 (TwoInputFunction_t839615C2C3AE6E97121DB22A3CB8ACFAAA1FD337* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:45>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:47>
 		bool L_0;
 		L_0 = TwoInputFunction_OutputsNumber_m66A47200B35C8917526AE3BF0E8880181CA921C3(__this, NULL);
 		return (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
@@ -8050,11 +8057,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TwoInputFunction_GetCurrentResult_m0302
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9404AFF119D90FC73EDF824A6F426CCC21712D08);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral833CD741E4EB1647FD918974555B1AE1E1990E8C);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9E5442828C0746CD0B9BBF3F56D9A70AE834F4B7);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA4EA1BD7647B10CC8580300848CED0901B8AFE84);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAC44FD2B7F0D8BA2097B8DA3854AEF2290B29795);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD93ABA6C8699F54FF0DCE1BF204364133EE8A077);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA8E175088285E04E2BC82E67E4FF1F2CC2487332);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC14233B3ECCB39648E865AC1B001C61DAB266519);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC88173539CC7E19B91E302A8CE8DF7A6D6B4B078);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD9FB78596E63E545F5E25EF29FB924A5C4C9188E);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -8078,7 +8085,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TwoInputFunction_GetCurrentResult_m0302
 	memset((&G_B18_0), 0, sizeof(G_B18_0));
 	float G_B39_0 = 0.0f;
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:50>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:52>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_0 = __this->___firstInput;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -8105,7 +8112,7 @@ IL_0015:
 IL_0020:
 	{
 		V_0 = G_B3_0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:51>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:53>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_4 = __this->___secondInput;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_5;
@@ -8132,7 +8139,7 @@ IL_0036:
 IL_0041:
 	{
 		V_1 = G_B6_0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:53>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:55>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_8 = __this->___firstInput;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_9;
@@ -8159,7 +8166,7 @@ IL_005d:
 IL_005e:
 	{
 		V_2 = (bool)G_B9_0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:54>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:56>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_12 = __this->___secondInput;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_13;
@@ -8186,7 +8193,7 @@ IL_007a:
 IL_007b:
 	{
 		V_3 = (bool)G_B12_0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:56>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:58>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_16 = __this->___firstInput;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_17;
@@ -8215,7 +8222,7 @@ IL_0091:
 IL_009c:
 	{
 		V_4 = G_B15_0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:57>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:59>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_21 = __this->___secondInput;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_22;
@@ -8244,10 +8251,10 @@ IL_00b3:
 IL_00be:
 	{
 		V_5 = G_B18_0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:59>
-		V_6 = (0.0f);
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:61>
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_26 = __this->___functions;
+		V_6 = (0.0f);
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:63>
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_26 = __this->___functionKeys;
 		int32_t L_27 = __this->___actual;
 		NullCheck(L_26);
 		int32_t L_28 = L_27;
@@ -8273,7 +8280,7 @@ IL_00be:
 	{
 		String_t* L_34 = V_7;
 		bool L_35;
-		L_35 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_34, _stringLiteralAC44FD2B7F0D8BA2097B8DA3854AEF2290B29795, NULL);
+		L_35 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_34, _stringLiteral833CD741E4EB1647FD918974555B1AE1E1990E8C, NULL);
 		if (L_35)
 		{
 			goto IL_015e;
@@ -8282,7 +8289,7 @@ IL_00be:
 	{
 		String_t* L_36 = V_7;
 		bool L_37;
-		L_37 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_36, _stringLiteral9404AFF119D90FC73EDF824A6F426CCC21712D08, NULL);
+		L_37 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_36, _stringLiteralC14233B3ECCB39648E865AC1B001C61DAB266519, NULL);
 		if (L_37)
 		{
 			goto IL_016b;
@@ -8291,7 +8298,7 @@ IL_00be:
 	{
 		String_t* L_38 = V_7;
 		bool L_39;
-		L_39 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_38, _stringLiteralD93ABA6C8699F54FF0DCE1BF204364133EE8A077, NULL);
+		L_39 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_38, _stringLiteralA8E175088285E04E2BC82E67E4FF1F2CC2487332, NULL);
 		if (L_39)
 		{
 			goto IL_0187;
@@ -8300,7 +8307,7 @@ IL_00be:
 	{
 		String_t* L_40 = V_7;
 		bool L_41;
-		L_41 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_40, _stringLiteralA4EA1BD7647B10CC8580300848CED0901B8AFE84, NULL);
+		L_41 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_40, _stringLiteralC88173539CC7E19B91E302A8CE8DF7A6D6B4B078, NULL);
 		if (L_41)
 		{
 			goto IL_01b0;
@@ -8312,7 +8319,7 @@ IL_00be:
 
 IL_0132:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:64>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:66>
 		bool L_42 = V_2;
 		if (L_42)
 		{
@@ -8327,17 +8334,17 @@ IL_0132:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:66>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:68>
 		float L_44 = V_0;
 		float L_45 = V_1;
 		V_6 = ((float)il2cpp_codegen_add(L_44, L_45));
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:68>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:70>
 		goto IL_01e0;
 	}
 
 IL_0148:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:71>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:73>
 		bool L_46 = V_2;
 		if (L_46)
 		{
@@ -8352,17 +8359,17 @@ IL_0148:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:73>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:75>
 		float L_48 = V_0;
 		float L_49 = V_1;
 		V_6 = ((float)il2cpp_codegen_subtract(L_48, L_49));
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:75>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:77>
 		goto IL_01e0;
 	}
 
 IL_015e:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:78>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:80>
 		bool L_50 = V_2;
 		if (L_50)
 		{
@@ -8377,17 +8384,17 @@ IL_015e:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:80>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:82>
 		float L_52 = V_0;
 		float L_53 = V_1;
 		V_6 = ((float)il2cpp_codegen_multiply(L_52, L_53));
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:82>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:84>
 		goto IL_01e0;
 	}
 
 IL_016b:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:85>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:87>
 		bool L_54 = V_2;
 		if (L_54)
 		{
@@ -8402,7 +8409,7 @@ IL_016b:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:87>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:89>
 		float L_56 = V_1;
 		if ((!(((float)L_56) == ((float)(0.0f)))))
 		{
@@ -8424,13 +8431,13 @@ IL_0180:
 IL_0183:
 	{
 		V_6 = G_B39_0;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:89>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:91>
 		goto IL_01e0;
 	}
 
 IL_0187:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:92>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:94>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_59 = __this->___firstInput;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_60;
@@ -8451,19 +8458,19 @@ IL_0187:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:94>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:96>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_63 = V_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_64 = V_5;
 		float L_65;
 		L_65 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_63, L_64, NULL);
 		V_6 = L_65;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:96>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:98>
 		goto IL_01e0;
 	}
 
 IL_01b0:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:99>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:101>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_66 = __this->___firstInput;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_67;
@@ -8484,25 +8491,25 @@ IL_01b0:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:101>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:103>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_70 = V_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_71 = V_5;
 		float L_72;
 		L_72 = Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D_inline(L_70, L_71, NULL);
 		V_6 = L_72;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:103>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:105>
 		goto IL_01e0;
 	}
 
 IL_01d9:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:106>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:108>
 		V_6 = (0.0f);
 	}
 
 IL_01e0:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:110>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:112>
 		float L_73 = V_6;
 		return L_73;
 	}
@@ -8514,11 +8521,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral54D7DEBE88C4ED298BBDA1EB59F812F6EC44FAEC);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral868A641EE549EBC188721614C10A6C250184E711);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9404AFF119D90FC73EDF824A6F426CCC21712D08);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1A359D7E8784C5FF0AFB066ECA2A38D8C7C94EFF);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1BEF44535F1072651156556C2ACCC2C774009020);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral833CD741E4EB1647FD918974555B1AE1E1990E8C);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9E5442828C0746CD0B9BBF3F56D9A70AE834F4B7);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAC44FD2B7F0D8BA2097B8DA3854AEF2290B29795);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC14233B3ECCB39648E865AC1B001C61DAB266519);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD9FB78596E63E545F5E25EF29FB924A5C4C9188E);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -8578,7 +8585,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 	float G_B58_2 = 0.0f;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* G_B58_3 = NULL;
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:115>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:117>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_0 = __this->___firstInput;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -8601,7 +8608,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 
 IL_001c:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:115>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:117>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
 		L_4 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		return L_4;
@@ -8609,48 +8616,48 @@ IL_001c:
 
 IL_0022:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:117>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:119>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_5 = __this->___firstInput;
 		NullCheck(L_5);
 		bool L_6;
 		L_6 = DataCable_IsVectorSource_m3737DFD75BF0CD7C80C8D735AD79A8ADC5FEB337(L_5, NULL);
 		V_0 = L_6;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:118>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:120>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_7 = __this->___secondInput;
 		NullCheck(L_7);
 		bool L_8;
 		L_8 = DataCable_IsVectorSource_m3737DFD75BF0CD7C80C8D735AD79A8ADC5FEB337(L_7, NULL);
 		V_1 = L_8;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:120>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:122>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_9 = __this->___firstInput;
 		NullCheck(L_9);
 		float L_10;
 		L_10 = DataCable_GetValueFromSource_m9BC88D5DBEE4441E5C37C3C33C3206538BE589C3(L_9, NULL);
 		V_2 = L_10;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:121>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:123>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_11 = __this->___secondInput;
 		NullCheck(L_11);
 		float L_12;
 		L_12 = DataCable_GetValueFromSource_m9BC88D5DBEE4441E5C37C3C33C3206538BE589C3(L_11, NULL);
 		V_3 = L_12;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:123>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:125>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_13 = __this->___firstInput;
 		NullCheck(L_13);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
 		L_14 = DataCable_GetVectorFromSource_m5917375FB98B3BCD3B78C76AB1E36863B960CE68(L_13, NULL);
 		V_4 = L_14;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:124>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:126>
 		DataCable_t5C5B78EFADEBC9D014E0C2F557356078BA1EED9E* L_15 = __this->___secondInput;
 		NullCheck(L_15);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
 		L_16 = DataCable_GetVectorFromSource_m5917375FB98B3BCD3B78C76AB1E36863B960CE68(L_15, NULL);
 		V_5 = L_16;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:126>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:128>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
 		L_17 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		V_6 = L_17;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:128>
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_18 = __this->___functions;
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:130>
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_18 = __this->___functionKeys;
 		int32_t L_19 = __this->___actual;
 		NullCheck(L_18);
 		int32_t L_20 = L_19;
@@ -8676,7 +8683,7 @@ IL_0022:
 	{
 		String_t* L_26 = V_7;
 		bool L_27;
-		L_27 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_26, _stringLiteralAC44FD2B7F0D8BA2097B8DA3854AEF2290B29795, NULL);
+		L_27 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_26, _stringLiteral833CD741E4EB1647FD918974555B1AE1E1990E8C, NULL);
 		if (L_27)
 		{
 			goto IL_018e;
@@ -8685,7 +8692,7 @@ IL_0022:
 	{
 		String_t* L_28 = V_7;
 		bool L_29;
-		L_29 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_28, _stringLiteral9404AFF119D90FC73EDF824A6F426CCC21712D08, NULL);
+		L_29 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_28, _stringLiteralC14233B3ECCB39648E865AC1B001C61DAB266519, NULL);
 		if (L_29)
 		{
 			goto IL_01fb;
@@ -8694,7 +8701,7 @@ IL_0022:
 	{
 		String_t* L_30 = V_7;
 		bool L_31;
-		L_31 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_30, _stringLiteral868A641EE549EBC188721614C10A6C250184E711, NULL);
+		L_31 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_30, _stringLiteral1A359D7E8784C5FF0AFB066ECA2A38D8C7C94EFF, NULL);
 		if (L_31)
 		{
 			goto IL_030a;
@@ -8703,7 +8710,7 @@ IL_0022:
 	{
 		String_t* L_32 = V_7;
 		bool L_33;
-		L_33 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_32, _stringLiteral54D7DEBE88C4ED298BBDA1EB59F812F6EC44FAEC, NULL);
+		L_33 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_32, _stringLiteral1BEF44535F1072651156556C2ACCC2C774009020, NULL);
 		if (L_33)
 		{
 			goto IL_0317;
@@ -8715,7 +8722,7 @@ IL_0022:
 
 IL_00ea:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:131>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:133>
 		bool L_34 = V_0;
 		bool L_35 = V_1;
 		if (!((int32_t)((int32_t)L_34&(int32_t)L_35)))
@@ -8724,7 +8731,7 @@ IL_00ea:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:133>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:135>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36 = V_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37 = V_5;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38;
@@ -8735,7 +8742,7 @@ IL_00ea:
 
 IL_00ff:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:135>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:137>
 		bool L_39 = V_0;
 		if (!L_39)
 		{
@@ -8750,7 +8757,7 @@ IL_00ff:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:137>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:139>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41 = V_4;
 		float L_42 = V_3;
 		float L_43 = V_3;
@@ -8766,7 +8773,7 @@ IL_00ff:
 
 IL_011b:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:139>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:141>
 		bool L_47 = V_0;
 		bool L_48 = V_1;
 		if (!((int32_t)(((((int32_t)L_47) == ((int32_t)0))? 1 : 0)&(int32_t)L_48)))
@@ -8775,7 +8782,7 @@ IL_011b:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:141>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:143>
 		float L_49 = V_2;
 		float L_50 = V_2;
 		float L_51 = V_2;
@@ -8786,13 +8793,13 @@ IL_011b:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_54;
 		L_54 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_52, L_53, NULL);
 		V_6 = L_54;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:143>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:145>
 		goto IL_0335;
 	}
 
 IL_013c:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:146>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:148>
 		bool L_55 = V_0;
 		bool L_56 = V_1;
 		if (!((int32_t)((int32_t)L_55&(int32_t)L_56)))
@@ -8801,7 +8808,7 @@ IL_013c:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:148>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:150>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_57 = V_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_58 = V_5;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59;
@@ -8812,7 +8819,7 @@ IL_013c:
 
 IL_0151:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:150>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:152>
 		bool L_60 = V_0;
 		if (!L_60)
 		{
@@ -8827,7 +8834,7 @@ IL_0151:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:152>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:154>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_62 = V_4;
 		float L_63 = V_3;
 		float L_64 = V_3;
@@ -8843,7 +8850,7 @@ IL_0151:
 
 IL_016d:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:154>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:156>
 		bool L_68 = V_0;
 		bool L_69 = V_1;
 		if (!((int32_t)(((((int32_t)L_68) == ((int32_t)0))? 1 : 0)&(int32_t)L_69)))
@@ -8852,7 +8859,7 @@ IL_016d:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:156>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:158>
 		float L_70 = V_2;
 		float L_71 = V_2;
 		float L_72 = V_2;
@@ -8863,13 +8870,13 @@ IL_016d:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_75;
 		L_75 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_73, L_74, NULL);
 		V_6 = L_75;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:158>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:160>
 		goto IL_0335;
 	}
 
 IL_018e:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:161>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:163>
 		bool L_76 = V_0;
 		bool L_77 = V_1;
 		if (!((int32_t)((int32_t)L_76&(int32_t)L_77)))
@@ -8878,11 +8885,11 @@ IL_018e:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:163>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:164>
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:165>
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:166>
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:167>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:168>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:169>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_78 = V_4;
 		float L_79 = L_78.___x;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_80 = V_5;
@@ -8901,7 +8908,7 @@ IL_018e:
 
 IL_01cc:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:169>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:171>
 		bool L_90 = V_0;
 		if (!L_90)
 		{
@@ -8916,7 +8923,7 @@ IL_01cc:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:171>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:173>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_92 = V_4;
 		float L_93 = V_3;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_94;
@@ -8927,7 +8934,7 @@ IL_01cc:
 
 IL_01e1:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:173>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:175>
 		bool L_95 = V_0;
 		bool L_96 = V_1;
 		if (!((int32_t)(((((int32_t)L_95) == ((int32_t)0))? 1 : 0)&(int32_t)L_96)))
@@ -8936,19 +8943,19 @@ IL_01e1:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:175>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:177>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_97 = V_5;
 		float L_98 = V_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_99;
 		L_99 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_97, L_98, NULL);
 		V_6 = L_99;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:177>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:179>
 		goto IL_0335;
 	}
 
 IL_01fb:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:180>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:182>
 		bool L_100 = V_0;
 		bool L_101 = V_1;
 		if (!((int32_t)((int32_t)L_100&(int32_t)L_101)))
@@ -8957,11 +8964,11 @@ IL_01fb:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:182>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:183>
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:184>
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:185>
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:186>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:187>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:188>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_102 = V_5;
 		float L_103 = L_102.___x;
 		if ((!(((float)L_103) == ((float)(0.0f)))))
@@ -9061,7 +9068,7 @@ IL_026e:
 
 IL_0278:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:188>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:190>
 		bool L_120 = V_0;
 		if (!L_120)
 		{
@@ -9076,7 +9083,7 @@ IL_0278:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:190>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:192>
 		float L_122 = V_3;
 		if ((!(((float)L_122) == ((float)(0.0f)))))
 		{
@@ -9107,7 +9114,7 @@ IL_0295:
 
 IL_029c:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:192>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:194>
 		bool L_127 = V_0;
 		bool L_128 = V_1;
 		if (!((int32_t)(((((int32_t)L_127) == ((int32_t)0))? 1 : 0)&(int32_t)L_128)))
@@ -9116,11 +9123,11 @@ IL_029c:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:194>
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:195>
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:196>
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:197>
 		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:198>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:199>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:200>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_129 = V_5;
 		float L_130 = L_129.___x;
 		if ((!(((float)L_130) == ((float)(0.0f)))))
@@ -9212,25 +9219,25 @@ IL_02fa:
 IL_0303:
 	{
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline(G_B58_3, G_B58_2, G_B58_1, G_B58_0, NULL);
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:200>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:202>
 		goto IL_0335;
 	}
 
 IL_030a:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:203>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:205>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_144 = V_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_145 = V_5;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_146;
 		L_146 = Vector3_Cross_mF93A280558BCE756D13B6CC5DCD7DE8A43148987_inline(L_144, L_145, NULL);
 		V_6 = L_146;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:204>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:206>
 		goto IL_0335;
 	}
 
 IL_0317:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:207>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:209>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_147 = V_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_148 = V_5;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_149;
@@ -9238,13 +9245,13 @@ IL_0317:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_150;
 		L_150 = Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline(L_149, (2.0f), NULL);
 		V_6 = L_150;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:208>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:210>
 		goto IL_0335;
 	}
 
 IL_032e:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:211>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:213>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_151;
 		L_151 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		V_6 = L_151;
@@ -9252,7 +9259,7 @@ IL_032e:
 
 IL_0335:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:215>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:217>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_152 = V_6;
 		return L_152;
 	}
@@ -9267,15 +9274,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TwoInputFunction_SetFunctionByIndex_m3C6
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:220>
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = __this->___functions;
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:222>
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = __this->___functionKeys;
 		if (!L_0)
 		{
 			goto IL_0011;
 		}
 	}
 	{
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = __this->___functions;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = __this->___functionKeys;
 		NullCheck(L_1);
 		if ((((RuntimeArray*)L_1)->max_length))
 		{
@@ -9285,13 +9292,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TwoInputFunction_SetFunctionByIndex_m3C6
 
 IL_0011:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:220>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:222>
 		return;
 	}
 
 IL_0012:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:222>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:224>
 		int32_t L_2 = ___0_index;
 		if ((((int32_t)L_2) < ((int32_t)0)))
 		{
@@ -9300,7 +9307,7 @@ IL_0012:
 	}
 	{
 		int32_t L_3 = ___0_index;
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = __this->___functions;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = __this->___functionKeys;
 		NullCheck(L_4);
 		if ((((int32_t)L_3) < ((int32_t)((int32_t)(((RuntimeArray*)L_4)->max_length)))))
 		{
@@ -9310,16 +9317,16 @@ IL_0012:
 
 IL_0021:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:224>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:226>
 		___0_index = 0;
 	}
 
 IL_0024:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:227>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:229>
 		int32_t L_5 = ___0_index;
 		__this->___actual = L_5;
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:229>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:231>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_6 = __this->___visualText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -9330,9 +9337,9 @@ IL_0024:
 		}
 	}
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:231>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:233>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_8 = __this->___visualText;
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_9 = __this->___functions;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_9 = __this->___functionLabels;
 		int32_t L_10 = __this->___actual;
 		NullCheck(L_9);
 		int32_t L_11 = L_10;
@@ -9343,7 +9350,7 @@ IL_0024:
 
 IL_0051:
 	{
-		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:233>
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:235>
 		return;
 	}
 }
@@ -9354,13 +9361,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TwoInputFunction__ctor_m15EA12073B860D16
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral54D7DEBE88C4ED298BBDA1EB59F812F6EC44FAEC);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral868A641EE549EBC188721614C10A6C250184E711);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1A359D7E8784C5FF0AFB066ECA2A38D8C7C94EFF);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1BEF44535F1072651156556C2ACCC2C774009020);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral21468AD82179E9C218804862508643E6A120283A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral47F75CE90133AC5A4AD8AFBDE0DF2C65540DAB4C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral833CD741E4EB1647FD918974555B1AE1E1990E8C);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9404AFF119D90FC73EDF824A6F426CCC21712D08);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9E5442828C0746CD0B9BBF3F56D9A70AE834F4B7);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA4EA1BD7647B10CC8580300848CED0901B8AFE84);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA8E175088285E04E2BC82E67E4FF1F2CC2487332);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAC44FD2B7F0D8BA2097B8DA3854AEF2290B29795);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD93ABA6C8699F54FF0DCE1BF204364133EE8A077);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB42F938BC01D103EC42119A65731280841C7778C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC14233B3ECCB39648E865AC1B001C61DAB266519);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC88173539CC7E19B91E302A8CE8DF7A6D6B4B078);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD9FB78596E63E545F5E25EF29FB924A5C4C9188E);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -9375,24 +9388,52 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TwoInputFunction__ctor_m15EA12073B860D16
 		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteralD9FB78596E63E545F5E25EF29FB924A5C4C9188E);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_3 = L_2;
 		NullCheck(L_3);
-		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteralAC44FD2B7F0D8BA2097B8DA3854AEF2290B29795);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral833CD741E4EB1647FD918974555B1AE1E1990E8C);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = L_3;
 		NullCheck(L_4);
-		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)_stringLiteral9404AFF119D90FC73EDF824A6F426CCC21712D08);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)_stringLiteralC14233B3ECCB39648E865AC1B001C61DAB266519);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_5 = L_4;
 		NullCheck(L_5);
-		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteralD93ABA6C8699F54FF0DCE1BF204364133EE8A077);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteralA8E175088285E04E2BC82E67E4FF1F2CC2487332);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_6 = L_5;
 		NullCheck(L_6);
-		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)_stringLiteral868A641EE549EBC188721614C10A6C250184E711);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)_stringLiteral1A359D7E8784C5FF0AFB066ECA2A38D8C7C94EFF);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_7 = L_6;
 		NullCheck(L_7);
-		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)_stringLiteral54D7DEBE88C4ED298BBDA1EB59F812F6EC44FAEC);
+		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)_stringLiteral1BEF44535F1072651156556C2ACCC2C774009020);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_8 = L_7;
 		NullCheck(L_8);
-		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(7), (String_t*)_stringLiteralA4EA1BD7647B10CC8580300848CED0901B8AFE84);
-		__this->___functions = L_8;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___functions), (void*)L_8);
+		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(7), (String_t*)_stringLiteralC88173539CC7E19B91E302A8CE8DF7A6D6B4B078);
+		__this->___functionKeys = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___functionKeys), (void*)L_8);
+		//<source_info:C:/Users/isai/TFG/Assets/Scripts/TwoInputFunction.cs:12>
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_9 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)8);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_10 = L_9;
+		NullCheck(L_10);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral9E5442828C0746CD0B9BBF3F56D9A70AE834F4B7);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_11 = L_10;
+		NullCheck(L_11);
+		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteralD9FB78596E63E545F5E25EF29FB924A5C4C9188E);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_12 = L_11;
+		NullCheck(L_12);
+		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteralAC44FD2B7F0D8BA2097B8DA3854AEF2290B29795);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_13 = L_12;
+		NullCheck(L_13);
+		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)_stringLiteral9404AFF119D90FC73EDF824A6F426CCC21712D08);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_14 = L_13;
+		NullCheck(L_14);
+		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteralB42F938BC01D103EC42119A65731280841C7778C);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_15 = L_14;
+		NullCheck(L_15);
+		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)_stringLiteral47F75CE90133AC5A4AD8AFBDE0DF2C65540DAB4C);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_16 = L_15;
+		NullCheck(L_16);
+		(L_16)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)_stringLiteral21468AD82179E9C218804862508643E6A120283A);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_17 = L_16;
+		NullCheck(L_17);
+		(L_17)->SetAt(static_cast<il2cpp_array_size_t>(7), (String_t*)_stringLiteralA4EA1BD7647B10CC8580300848CED0901B8AFE84);
+		__this->___functionLabels = L_17;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___functionLabels), (void*)L_17);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}

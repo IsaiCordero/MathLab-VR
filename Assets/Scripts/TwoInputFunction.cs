@@ -7,7 +7,9 @@ public class TwoInputFunction : MonoBehaviour
     public TextMeshProUGUI visualText; 
     
     [Header("Settings")]
-    public string[] functions = { "SUMA", "RESTA", "MULTIPLICACIÓN", "DIVISIÓN", "PRODUCTO ESCALAR", "PRODUCTO VECTORIAL", "PUNTO MEDIO", "ÁNGULO" };
+    public string[] functionKeys = { "SUMA", "RESTA", "MULTIPLICACION", "DIVISION", "PRODUCTO_ESCALAR", "PRODUCTO_VECTORIAL", "PUNTO_MEDIO", "ANGULO" };
+
+    public string[] functionLabels = { "SUMA", "RESTA", "MULTIPLICACIÓN", "DIVISIÓN", "PRODUCTO\nESCALAR", "PRODUCTO\nVECTORIAL", "PUNTO\nMEDIO", "ÁNGULO" };
 
     [Header("Data Input")]
     public DataCable firstInput;
@@ -17,19 +19,19 @@ public class TwoInputFunction : MonoBehaviour
 
     void Start()
     {
-        if (visualText != null && functions.Length > 0)
+        if (visualText != null && functionLabels.Length > 0)
         {
-            visualText.text = functions[actual];
+            visualText.text = functionLabels[actual];
         }
     }
     public bool OutputsNumber()
     {
-        string fn = functions[actual];
+        string fn = functionKeys[actual];
 
-        if (fn == "PRODUCTO ESCALAR" || fn == "ÁNGULO")
+        if (fn == "PRODUCTO_ESCALAR" || fn == "ANGULO")
             return true;
 
-        if (fn == "SUMA" || fn == "RESTA" || fn == "MULTIPLICACIÓN" || fn == "DIVISIÓN")
+        if (fn == "SUMA" || fn == "RESTA" || fn == "MULTIPLICACION" || fn == "DIVISION")
         {
             bool aIsVector = firstInput != null && firstInput.IsVectorSource();
             bool bIsVector = secondInput != null && secondInput.IsVectorSource();
@@ -58,7 +60,7 @@ public class TwoInputFunction : MonoBehaviour
 
         float resultado = 0f;
 
-        switch (functions[actual])
+        switch (functionKeys[actual])
         {
             case "SUMA":
                 if (!aIsVector && !bIsVector)
@@ -74,28 +76,28 @@ public class TwoInputFunction : MonoBehaviour
                 }
                 break;
 
-            case "MULTIPLICACIÓN":
+            case "MULTIPLICACION":
                 if (!aIsVector && !bIsVector)
                 {
                     resultado = valA * valB;
                 }
                 break;
 
-            case "DIVISIÓN":
+            case "DIVISION":
                 if (!aIsVector && !bIsVector)
                 {
                     resultado = (valB != 0f) ? valA / valB : 0f;
                 }
                 break;
 
-            case "PRODUCTO ESCALAR":
+            case "PRODUCTO_ESCALAR":
                 if (firstInput != null && secondInput != null)
                 {
                     resultado = Vector3.Dot(v1, v2);
                 }
                 break;
 
-            case "ÁNGULO":
+            case "ANGULO":
                 if (firstInput != null && secondInput != null)
                 {
                     resultado = Vector3.Angle(v1, v2);
@@ -125,7 +127,7 @@ public class TwoInputFunction : MonoBehaviour
 
         Vector3 resultado = Vector3.zero;
 
-        switch (functions[actual])
+        switch (functionKeys[actual])
         {
             case "SUMA":
                 if (aIsVector && bIsVector)
@@ -157,7 +159,7 @@ public class TwoInputFunction : MonoBehaviour
                 }
                 break;
 
-            case "MULTIPLICACIÓN":
+            case "MULTIPLICACION":
                 if (aIsVector && bIsVector)
                 {
                     resultado = new Vector3(
@@ -176,7 +178,7 @@ public class TwoInputFunction : MonoBehaviour
                 }
                 break;
 
-            case "DIVISIÓN":
+            case "DIVISION":
                 if (aIsVector && bIsVector)
                 {
                     resultado = new Vector3(
@@ -199,11 +201,11 @@ public class TwoInputFunction : MonoBehaviour
                 }
                 break;
 
-            case "PRODUCTO VECTORIAL":
+            case "PRODUCTO_VECTORIAL":
                 resultado = Vector3.Cross(v1, v2);
                 break;
 
-            case "PUNTO MEDIO":
+            case "PUNTO_MEDIO":
                 resultado = (v1 + v2) / 2f;
                 break;
 
@@ -217,9 +219,9 @@ public class TwoInputFunction : MonoBehaviour
 
     public void SetFunctionByIndex(int index)
     {
-        if (functions == null || functions.Length == 0) return;
+        if (functionKeys == null || functionKeys.Length == 0) return;
 
-        if (index < 0 || index >= functions.Length)
+        if (index < 0 || index >= functionKeys.Length)
         {
             index = 0;
         }
@@ -228,7 +230,7 @@ public class TwoInputFunction : MonoBehaviour
 
         if (visualText != null)
         {
-            visualText.text = functions[actual];
+            visualText.text = functionLabels[actual];
         }
     }
 
