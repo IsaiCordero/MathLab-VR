@@ -53,6 +53,7 @@ extern void NumberBlock_SetValueFromSlider_m36419F445A2D12A7D808C4035920F7DCB870
 extern void NumberBlock_SetValueFromKeyboard_m2042F2911C82868EA326A4EA0D6BE38404ACD4D7 (void);
 extern void NumberBlock_OpenKeyboard_mE1D8D89D48169A19358C457863D7E1BD27FF2596 (void);
 extern void NumberBlock_CloseKeyboard_mEDE3C95913A43ED08753654EC28F3CEEB7E6D32A (void);
+extern void NumberBlock_SetInputMode_m071423A7D3D94F8A45D9AAF948CAF4466C9B4B8E (void);
 extern void NumberBlock__ctor_m221835686213C17C362C578C7B38940E2C56F63E (void);
 extern void NumberKeyboardButton_Start_m0A43C45FF7DF4F2A4E51901B30E8B6CC32E9FC2C (void);
 extern void NumberKeyboardButton_LateUpdate_m7BEC8231E2A33EA5EF8E23D314DC76798DA74487 (void);
@@ -104,6 +105,7 @@ extern void VectorBlock_UpdateVisuals_mF156BF20486A0FF9075C53225E2612FEA474C9E5 
 extern void VectorBlock_SetVectorManually_m55413FD60FFC876E398B837AE98560DA5D34B7B4 (void);
 extern void VectorBlock_OpenKeyboard_mA055EBDC0318976CFF792F228DE4165505EBD374 (void);
 extern void VectorBlock_CloseKeyboard_mCD0C67785388DDD3D7296395BA2BA59E732FDA5A (void);
+extern void VectorBlock_SetInputMode_mC21B8C4A2D7447EC686602A139AFE9B117461E85 (void);
 extern void VectorBlock_UpdateDynamicArrow_m7E7B234DBBA9106B1A73ACDAD21EA245192D83A7 (void);
 extern void VectorBlock__ctor_mF1AE60EC1CD0C123DFDE520A5E2F71B23F0FEB52 (void);
 extern void VectorController_Start_mFFD11B269E7D8888851E487374B3E9D37A354BA9 (void);
@@ -118,7 +120,7 @@ extern void VectorKeyboardPanel__ctor_m99C1DB80F6FFF51B02F916460885923F5CBC85C6 
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
 extern void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (void);
-static Il2CppMethodPointer s_methodPointers[111] = 
+static Il2CppMethodPointer s_methodPointers[113] = 
 {
 	CableMeta_get_DestinyPort_mBB17C96E671C4B1D3557B196CB0DF08ABD58FADE,
 	CableMeta_Start_m5FBC2CF88D6EA954DC1750892781074816268BD7,
@@ -166,6 +168,7 @@ static Il2CppMethodPointer s_methodPointers[111] =
 	NumberBlock_SetValueFromKeyboard_m2042F2911C82868EA326A4EA0D6BE38404ACD4D7,
 	NumberBlock_OpenKeyboard_mE1D8D89D48169A19358C457863D7E1BD27FF2596,
 	NumberBlock_CloseKeyboard_mEDE3C95913A43ED08753654EC28F3CEEB7E6D32A,
+	NumberBlock_SetInputMode_m071423A7D3D94F8A45D9AAF948CAF4466C9B4B8E,
 	NumberBlock__ctor_m221835686213C17C362C578C7B38940E2C56F63E,
 	NumberKeyboardButton_Start_m0A43C45FF7DF4F2A4E51901B30E8B6CC32E9FC2C,
 	NumberKeyboardButton_LateUpdate_m7BEC8231E2A33EA5EF8E23D314DC76798DA74487,
@@ -217,6 +220,7 @@ static Il2CppMethodPointer s_methodPointers[111] =
 	VectorBlock_SetVectorManually_m55413FD60FFC876E398B837AE98560DA5D34B7B4,
 	VectorBlock_OpenKeyboard_mA055EBDC0318976CFF792F228DE4165505EBD374,
 	VectorBlock_CloseKeyboard_mCD0C67785388DDD3D7296395BA2BA59E732FDA5A,
+	VectorBlock_SetInputMode_mC21B8C4A2D7447EC686602A139AFE9B117461E85,
 	VectorBlock_UpdateDynamicArrow_m7E7B234DBBA9106B1A73ACDAD21EA245192D83A7,
 	VectorBlock__ctor_mF1AE60EC1CD0C123DFDE520A5E2F71B23F0FEB52,
 	VectorController_Start_mFFD11B269E7D8888851E487374B3E9D37A354BA9,
@@ -232,7 +236,7 @@ static Il2CppMethodPointer s_methodPointers[111] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876,
 };
-static const int32_t s_InvokerIndices[111] = 
+static const int32_t s_InvokerIndices[113] = 
 {
 	19937,
 	20176,
@@ -280,6 +284,7 @@ static const int32_t s_InvokerIndices[111] =
 	15526,
 	20176,
 	20176,
+	15176,
 	20176,
 	20176,
 	20176,
@@ -331,6 +336,7 @@ static const int32_t s_InvokerIndices[111] =
 	15641,
 	20176,
 	20176,
+	15176,
 	20176,
 	20176,
 	20176,
@@ -350,7 +356,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	111,
+	113,
 	s_methodPointers,
 	0,
 	NULL,

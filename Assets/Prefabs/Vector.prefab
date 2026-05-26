@@ -621,6 +621,7 @@ MonoBehaviour:
   keyboardPanelPrefab: {fileID: 4080338152072279090, guid: 792f94b7b61e288449d8218a1720299d, type: 3}
   keyboardSpawnPoint: {fileID: 2286076789648054533}
   keyboardSpawnScale: {x: 1.5, y: 3, z: 1.5}
+  editButton: {fileID: 5022307367403261147}
 --- !u!1 &5022307367403261147
 GameObject:
   m_ObjectHideFlags: 0

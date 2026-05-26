@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using Oculus.Interaction;
 
 public class VectorBlock : MonoBehaviour
 {
@@ -30,6 +31,11 @@ public class VectorBlock : MonoBehaviour
     public GameObject keyboardPanelPrefab;
     public Transform keyboardSpawnPoint;
     public Vector3 keyboardSpawnScale = Vector3.one * 0.15f;
+
+    [Header("Input Controls")]
+    public GameObject editButton;
+    private Grabbable vectorCubeGrabbable;
+    private bool lastHadIncomingCable;
 
 
     private GameObject currentKeyboardInstance;
@@ -71,10 +77,32 @@ public class VectorBlock : MonoBehaviour
         {
             lastCubeLocalPosition = vectorCube.localPosition;
         }
+
+        if (vectorCube != null)
+        {
+            vectorCubeGrabbable = vectorCube.GetComponent<Grabbable>();
+        }
+
+        lastHadIncomingCable = incomingCable != null;
+        SetInputMode(!lastHadIncomingCable);
     }
 
     void Update()
     {
+        bool hasIncomingCable = incomingCable != null;
+
+        if (hasIncomingCable != lastHadIncomingCable)
+        {
+            SetInputMode(!hasIncomingCable);
+
+            if (hasIncomingCable)
+            {
+                CloseKeyboard();
+            }
+
+        lastHadIncomingCable = hasIncomingCable;
+    }
+
         if (vectorCube == null || centerReference == null)
             return;
 
@@ -250,6 +278,19 @@ public class VectorBlock : MonoBehaviour
         {
             Destroy(currentKeyboardInstance);
             currentKeyboardInstance = null;
+        }
+    }
+
+    void SetInputMode(bool isEditable)
+    {
+        if (editButton != null)
+        {
+            editButton.SetActive(isEditable);
+        }
+
+        if (vectorCubeGrabbable != null)
+        {
+            vectorCubeGrabbable.enabled = isEditable;
         }
     }
 

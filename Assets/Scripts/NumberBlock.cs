@@ -18,11 +18,18 @@ public class NumberBlock : MonoBehaviour
     public Transform keyboardSpawnPoint;
     public Vector3 keyboardSpawnScale = Vector3.one * 0.15f;
 
+    [Header("Input Controls")]
+    public GameObject editButton;
+    private bool lastHadIncomingCable;
+
 private GameObject currentKeyboardInstance;
 
     void Start()
     {
         UpdateVisuals();
+
+        lastHadIncomingCable = incomingCable != null;
+        SetInputMode(!lastHadIncomingCable);
     }
 
     void Update()
@@ -32,6 +39,20 @@ private GameObject currentKeyboardInstance;
             float result = incomingCable.GetValueFromSource();
             currentValue = result;
             valueText.text = result.ToString("F1");
+        }
+
+        bool hasIncomingCable = incomingCable != null;
+
+        if (hasIncomingCable != lastHadIncomingCable)
+        {
+            SetInputMode(!hasIncomingCable);
+
+            if (hasIncomingCable)
+            {
+                CloseKeyboard();
+            }
+
+            lastHadIncomingCable = hasIncomingCable;
         }
     }
 
@@ -93,6 +114,14 @@ private GameObject currentKeyboardInstance;
         {
             Destroy(currentKeyboardInstance);
             currentKeyboardInstance = null;
+        }
+    }
+
+    void SetInputMode(bool isEditable)
+    {
+        if (editButton != null)
+        {
+            editButton.SetActive(isEditable);
         }
     }
 
