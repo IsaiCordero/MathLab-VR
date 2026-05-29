@@ -22,6 +22,8 @@ public class NumberBlock : MonoBehaviour
     public GameObject editButton;
     private bool lastHadIncomingCable;
 
+
+
 private GameObject currentKeyboardInstance;
 
     void Start()
@@ -123,6 +125,11 @@ private GameObject currentKeyboardInstance;
         {
             editButton.SetActive(isEditable);
         }
+    }
+
+    private void OnDestroy()
+    {
+        CloseKeyboard();
     }
 
 }

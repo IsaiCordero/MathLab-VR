@@ -347,4 +347,9 @@ public class VectorBlock : MonoBehaviour
             dynamicArrowHeadInitialLocalPosition.z
         );
     }
+
+    private void OnDestroy()
+    {
+        CloseKeyboard();
+    }
 }

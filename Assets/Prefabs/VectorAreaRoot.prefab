@@ -525,8 +525,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89e650f3f90ef4f4992c757d8d6bf55c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VectorController
-  parentVectorBlock: {fileID: 0}
-  areaCenter: {fileID: 4177289791642907005}
   minLocalPosition: {x: -0.2, y: -0.2, z: -0.2}
   maxLocalPosition: {x: 0.2, y: 0.2, z: 0.2}
 --- !u!1 &7899927983305164758

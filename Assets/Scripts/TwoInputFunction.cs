@@ -17,12 +17,19 @@ public class TwoInputFunction : MonoBehaviour
     
     private int actual = 0;
 
+    [Header("Visuals")]
+    public Renderer blockRenderer;
+    public Color vectorFunctionColor = new Color(0.15f, 0.75f, 0.95f);
+    public Color numberFunctionColor = new Color(1f, 0.65f, 0.15f);
+
     void Start()
     {
         if (visualText != null && functionLabels.Length > 0)
         {
             visualText.text = functionLabels[actual];
         }
+
+        UpdateBlockColor();
     }
     public bool OutputsNumber()
     {
@@ -41,6 +48,29 @@ public class TwoInputFunction : MonoBehaviour
 
         return false;
     }   
+
+    void UpdateBlockColor()
+    {
+        if (blockRenderer == null) return;
+
+        Color targetColor = OutputsNumber() ? numberFunctionColor : vectorFunctionColor;
+        Material mat = blockRenderer.material;
+        
+        if (mat.HasProperty("_BaseColor"))
+        {
+            mat.SetColor("_BaseColor", targetColor);
+        }
+
+        if (mat.HasProperty("_Color"))
+        {
+            mat.SetColor("_Color", targetColor);
+        }
+
+        if (mat.HasProperty("_EmissionColor"))
+        {
+            mat.SetColor("_EmissionColor", targetColor * 0.6f);
+        }
+    }
 
     public bool OutputsVector()
     {
@@ -232,6 +262,27 @@ public class TwoInputFunction : MonoBehaviour
         {
             visualText.text = functionLabels[actual];
         }
+
+        UpdateBlockColor();
+    }
+
+    public bool AcceptsInput(DataCable cable)
+    {
+        if (cable == null) return false;
+
+        string fn = functionKeys[actual];
+
+        if (fn == "PRODUCTO_ESCALAR" || fn == "PRODUCTO_VECTORIAL" || fn == "PUNTO_MEDIO" || fn == "ANGULO")
+        {
+            return cable.IsVectorSource();
+        }
+
+        if (fn == "SUMA" || fn == "RESTA" || fn == "MULTIPLICACION" || fn == "DIVISION")
+        {
+            return cable.IsNumberSource() || cable.IsVectorSource();
+        }
+
+        return true;
     }
 
 }

@@ -6,6 +6,7 @@ public class CableMeta : MonoBehaviour
     [Header("Components")]
     public LineRenderer lineRenderer;
     public Grabbable grabbableMeta;
+    public GameObject outputArrowVisual;
 
     [Header("Configuration")]
     public Transform blockOutPut;
@@ -132,6 +133,14 @@ public class CableMeta : MonoBehaviour
         }
     }
 
+    void SetOutputArrowVisible(bool visible)
+    {
+        if (outputArrowVisual != null)
+        {
+            outputArrowVisual.SetActive(visible);
+        }
+    }
+
     void DrawCurveBezier()
     {
         lineRenderer.positionCount = curveResolution;
@@ -183,6 +192,7 @@ public class CableMeta : MonoBehaviour
             destinyPort = null;
             isConnected = false;
             UpdateCableColor(colorDisconnected);
+            SetOutputArrowVisible(true);
             curveInitialized = false;
         }
     }
@@ -225,6 +235,7 @@ public class CableMeta : MonoBehaviour
                 destinyPort = InPutFound;
                 isConnected = true;
                 UpdateCableColor(colorConnected);
+                SetOutputArrowVisible(false);
                 curveInitialized = false;
             }
             else
@@ -253,6 +264,7 @@ public class CableMeta : MonoBehaviour
 
         isConnected = false;
         UpdateCableColor(colorDisconnected);
+        SetOutputArrowVisible(true);
         curveInitialized = false;
     }
 

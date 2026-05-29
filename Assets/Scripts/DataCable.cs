@@ -99,8 +99,26 @@ public class DataCable : MonoBehaviour
             return false;
         }
 
+        InputPortVisual portVisual = port.GetComponent<InputPortVisual>();
+
+        if (!IsValidForPort(port))
+        {
+            if (portVisual != null)
+            {
+                portVisual.SetInvalid();
+            }
+
+            return false;
+        }
+
         DisconnectFromPort();
         connectedPort = port;
+
+        portVisual = connectedPort.GetComponent<InputPortVisual>();
+        if (portVisual != null)
+        {
+            portVisual.SetConnected(true);
+        }
 
         TwoInputFunction bloqueFunc = port.GetComponentInParent<TwoInputFunction>();
         if (bloqueFunc != null)
@@ -147,9 +165,50 @@ public class DataCable : MonoBehaviour
         return false;
     }
 
+    bool IsValidForPort(Transform port)
+    {
+        NumberBlock numberBlock = port.GetComponentInParent<NumberBlock>();
+        if (numberBlock != null && port.CompareTag("Input"))
+        {
+            return IsNumberSource();
+        }
+
+        VectorBlock vectorBlock = port.GetComponentInParent<VectorBlock>();
+        if (vectorBlock != null && port.CompareTag("Input"))
+        {
+            return IsVectorSource();
+        }
+
+        FunctionOneInput oneInputFunction = port.GetComponentInParent<FunctionOneInput>();
+        if (oneInputFunction != null && port.CompareTag("Input"))
+        {
+            return IsVectorSource();
+        }
+
+        OneInputNumberFunction oneInputNumberFunction = port.GetComponentInParent<OneInputNumberFunction>();
+        if (oneInputNumberFunction != null && port.CompareTag("Input"))
+        {
+            return IsNumberSource();
+        }
+
+        TwoInputFunction twoInputFunction = port.GetComponentInParent<TwoInputFunction>();
+        if (twoInputFunction != null)
+        {
+            return twoInputFunction.AcceptsInput(this);
+        }
+
+        return true;
+    }
+
     public void DisconnectFromPort()
     {
         if (connectedPort == null) return;
+
+        InputPortVisual portVisual = connectedPort.GetComponent<InputPortVisual>();
+        if (portVisual != null)
+        {
+            portVisual.SetConnected(false);
+        }
 
         TwoInputFunction bloqueFunc = connectedPort.GetComponentInParent<TwoInputFunction>();
         if (bloqueFunc != null)
