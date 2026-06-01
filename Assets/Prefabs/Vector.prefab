@@ -235,7 +235,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: b0c966a1af59c4a40b766b325dd05bd6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1389,7 +1389,10 @@ MonoBehaviour:
   inputArrowObject: {fileID: 3022225069077110370}
   inputArrowRenderer: {fileID: 8810741874395260711}
   inputArrowRenderers: []
+  disconnectedColor: {r: 1, g: 1, b: 1, a: 1}
   connectedColor: {r: 0, g: 1, b: 0, a: 1}
+  invalidColor: {r: 1, g: 0, b: 0, a: 1}
+  invalidFeedbackTime: 0.5
 --- !u!1 &7318275383861184989
 GameObject:
   m_ObjectHideFlags: 0
