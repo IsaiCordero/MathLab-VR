@@ -7,6 +7,19 @@
 
 
 
+extern void ButtonFeedback_Start_m78CC9DB9E8CBAA66D65BE94E13BEF46CC0939D97 (void);
+extern void ButtonFeedback_OnDestroy_mD629F5B5D8AC8A1808A978E57BEA85A4D0DD402F (void);
+extern void ButtonFeedback_OnPointerEvent_m7C03D46DFAE51C7D7878255A11DB4608E257039D (void);
+extern void ButtonFeedback_PlayFeedback_m4E472BF9AC1A1DBE202B5A06ADB947E435474291 (void);
+extern void ButtonFeedback_FeedbackRoutine_m446C9A87F22382F4E05BD8215A2C74B2E5B6451F (void);
+extern void ButtonFeedback_SetColor_m51024F844C5CF9614B949E6566E2E018BB3619FD (void);
+extern void ButtonFeedback__ctor_m8CD0DE026D025CCF78F1604700A693F7FFDFD67C (void);
+extern void U3CFeedbackRoutineU3Ed__15__ctor_mED65B7768ACFE19DF9BBC610A2E6639C1A239231 (void);
+extern void U3CFeedbackRoutineU3Ed__15_System_IDisposable_Dispose_m577153D4EC69B24E96AD28A23C9008FB20430D84 (void);
+extern void U3CFeedbackRoutineU3Ed__15_MoveNext_mFB8AA20E3A8F2A4CDAEF3A4747AC386745B9426F (void);
+extern void U3CFeedbackRoutineU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2DB6C3B9F54B5E2E37524D6F421CCDF23E2705B3 (void);
+extern void U3CFeedbackRoutineU3Ed__15_System_Collections_IEnumerator_Reset_mAC02E134D504FD74D0E331ACF5C41F54CA27137B (void);
+extern void U3CFeedbackRoutineU3Ed__15_System_Collections_IEnumerator_get_Current_m555D8F17EB87E626D7E87741F7158FE869F908E1 (void);
 extern void CableMeta_get_DestinyPort_mBB17C96E671C4B1D3557B196CB0DF08ABD58FADE (void);
 extern void CableMeta_Start_m5FBC2CF88D6EA954DC1750892781074816268BD7 (void);
 extern void CableMeta_LateUpdate_m699B6F33AD9E795D6F1F6FD437AD7677778F8F92 (void);
@@ -139,8 +152,21 @@ extern void VectorKeyboardPanel__ctor_m99C1DB80F6FFF51B02F916460885923F5CBC85C6 
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
 extern void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (void);
-static Il2CppMethodPointer s_methodPointers[132] = 
+static Il2CppMethodPointer s_methodPointers[145] = 
 {
+	ButtonFeedback_Start_m78CC9DB9E8CBAA66D65BE94E13BEF46CC0939D97,
+	ButtonFeedback_OnDestroy_mD629F5B5D8AC8A1808A978E57BEA85A4D0DD402F,
+	ButtonFeedback_OnPointerEvent_m7C03D46DFAE51C7D7878255A11DB4608E257039D,
+	ButtonFeedback_PlayFeedback_m4E472BF9AC1A1DBE202B5A06ADB947E435474291,
+	ButtonFeedback_FeedbackRoutine_m446C9A87F22382F4E05BD8215A2C74B2E5B6451F,
+	ButtonFeedback_SetColor_m51024F844C5CF9614B949E6566E2E018BB3619FD,
+	ButtonFeedback__ctor_m8CD0DE026D025CCF78F1604700A693F7FFDFD67C,
+	U3CFeedbackRoutineU3Ed__15__ctor_mED65B7768ACFE19DF9BBC610A2E6639C1A239231,
+	U3CFeedbackRoutineU3Ed__15_System_IDisposable_Dispose_m577153D4EC69B24E96AD28A23C9008FB20430D84,
+	U3CFeedbackRoutineU3Ed__15_MoveNext_mFB8AA20E3A8F2A4CDAEF3A4747AC386745B9426F,
+	U3CFeedbackRoutineU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2DB6C3B9F54B5E2E37524D6F421CCDF23E2705B3,
+	U3CFeedbackRoutineU3Ed__15_System_Collections_IEnumerator_Reset_mAC02E134D504FD74D0E331ACF5C41F54CA27137B,
+	U3CFeedbackRoutineU3Ed__15_System_Collections_IEnumerator_get_Current_m555D8F17EB87E626D7E87741F7158FE869F908E1,
 	CableMeta_get_DestinyPort_mBB17C96E671C4B1D3557B196CB0DF08ABD58FADE,
 	CableMeta_Start_m5FBC2CF88D6EA954DC1750892781074816268BD7,
 	CableMeta_LateUpdate_m699B6F33AD9E795D6F1F6FD437AD7677778F8F92,
@@ -274,8 +300,21 @@ static Il2CppMethodPointer s_methodPointers[132] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876,
 };
-static const int32_t s_InvokerIndices[132] = 
+static const int32_t s_InvokerIndices[145] = 
 {
+	20176,
+	20176,
+	15450,
+	20176,
+	19937,
+	15182,
+	20176,
+	15328,
+	20176,
+	19693,
+	19937,
+	20176,
+	19937,
 	19937,
 	20176,
 	20176,
@@ -413,7 +452,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	132,
+	145,
 	s_methodPointers,
 	0,
 	NULL,
