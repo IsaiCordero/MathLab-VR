@@ -26,6 +26,7 @@ extern void CableMeta_LateUpdate_m699B6F33AD9E795D6F1F6FD437AD7677778F8F92 (void
 extern void CableMeta_OnDestroy_mE73E02CBE0FE08C19BE7CE61DCE9C3C33B813B67 (void);
 extern void CableMeta_Update_mC5940AC7279901C8297126B01353F2DD3071624A (void);
 extern void CableMeta_UpdateCableColor_m7CE1F6466FB31FF0516764ED3926CFFD857AF5FE (void);
+extern void CableMeta_PlaySound_m92DA9E1FA57ABF5F2CACB94BE16A9334D0363B67 (void);
 extern void CableMeta_SetOutputArrowVisible_m394E2978F55D58DE3A7491EC8C785FC9BB5E476E (void);
 extern void CableMeta_DrawCurveBezier_m8E76D961958AD4BEF28D4FE3946C495D7BAE8940 (void);
 extern void CableMeta_CalculateBezierPoint_mB0F26BD52FAAECF6BF3F4399C7E118F081AF3683 (void);
@@ -55,6 +56,7 @@ extern void FunctionOneInput_OutputsVector_mCE6D2A56259CE1E37D37EEAEB32B7A9BC5C0
 extern void FunctionOneInput_GetCurrentResult_mA0E733C5CB4668144CD4496D44193C73406A58C4 (void);
 extern void FunctionOneInput_GetCurrentVectorResult_mFE98876231763DF61827E4C2C03D3764A423716B (void);
 extern void FunctionOneInput_SetFunctionByIndex_m722DDFA88E392941FF3EE6F7338DD9181885D06D (void);
+extern void FunctionOneInput_UpdateBlockColor_mBAEF893DACA8E13E7A92E03C8818919E899050F0 (void);
 extern void FunctionOneInput__ctor_m5D13B3E4A8AA4431FC9511658751C9FFD39C228F (void);
 extern void InputPortVisual_Start_m642E9E108CB4C158E5EDCA1A25B3257085E8714F (void);
 extern void InputPortVisual_SetConnected_mF6DAD2CFB0F35AB191E2D94090B4C298DCCEB025 (void);
@@ -152,7 +154,7 @@ extern void VectorKeyboardPanel__ctor_m99C1DB80F6FFF51B02F916460885923F5CBC85C6 
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
 extern void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (void);
-static Il2CppMethodPointer s_methodPointers[145] = 
+static Il2CppMethodPointer s_methodPointers[147] = 
 {
 	ButtonFeedback_Start_m78CC9DB9E8CBAA66D65BE94E13BEF46CC0939D97,
 	ButtonFeedback_OnDestroy_mD629F5B5D8AC8A1808A978E57BEA85A4D0DD402F,
@@ -173,6 +175,7 @@ static Il2CppMethodPointer s_methodPointers[145] =
 	CableMeta_OnDestroy_mE73E02CBE0FE08C19BE7CE61DCE9C3C33B813B67,
 	CableMeta_Update_mC5940AC7279901C8297126B01353F2DD3071624A,
 	CableMeta_UpdateCableColor_m7CE1F6466FB31FF0516764ED3926CFFD857AF5FE,
+	CableMeta_PlaySound_m92DA9E1FA57ABF5F2CACB94BE16A9334D0363B67,
 	CableMeta_SetOutputArrowVisible_m394E2978F55D58DE3A7491EC8C785FC9BB5E476E,
 	CableMeta_DrawCurveBezier_m8E76D961958AD4BEF28D4FE3946C495D7BAE8940,
 	CableMeta_CalculateBezierPoint_mB0F26BD52FAAECF6BF3F4399C7E118F081AF3683,
@@ -202,6 +205,7 @@ static Il2CppMethodPointer s_methodPointers[145] =
 	FunctionOneInput_GetCurrentResult_mA0E733C5CB4668144CD4496D44193C73406A58C4,
 	FunctionOneInput_GetCurrentVectorResult_mFE98876231763DF61827E4C2C03D3764A423716B,
 	FunctionOneInput_SetFunctionByIndex_m722DDFA88E392941FF3EE6F7338DD9181885D06D,
+	FunctionOneInput_UpdateBlockColor_mBAEF893DACA8E13E7A92E03C8818919E899050F0,
 	FunctionOneInput__ctor_m5D13B3E4A8AA4431FC9511658751C9FFD39C228F,
 	InputPortVisual_Start_m642E9E108CB4C158E5EDCA1A25B3257085E8714F,
 	InputPortVisual_SetConnected_mF6DAD2CFB0F35AB191E2D94090B4C298DCCEB025,
@@ -300,7 +304,7 @@ static Il2CppMethodPointer s_methodPointers[145] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876,
 };
-static const int32_t s_InvokerIndices[145] = 
+static const int32_t s_InvokerIndices[147] = 
 {
 	20176,
 	20176,
@@ -321,6 +325,7 @@ static const int32_t s_InvokerIndices[145] =
 	20176,
 	20176,
 	15182,
+	15419,
 	15176,
 	20176,
 	2409,
@@ -350,6 +355,7 @@ static const int32_t s_InvokerIndices[145] =
 	20049,
 	20165,
 	15328,
+	20176,
 	20176,
 	20176,
 	15176,
@@ -452,7 +458,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	145,
+	147,
 	s_methodPointers,
 	0,
 	NULL,

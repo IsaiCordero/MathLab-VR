@@ -25,6 +25,11 @@ public class CableMeta : MonoBehaviour
     private Quaternion rotationOriginal;
     private Transform destinyPort = null;
 
+    [Header("Audio Feedback")]
+    public AudioSource audioSource;
+    public AudioClip connectSound;
+    public AudioClip failSound;
+
     public Transform DestinyPort => destinyPort;
 
     public int curveResolution = 10;
@@ -133,6 +138,14 @@ public class CableMeta : MonoBehaviour
         }
     }
 
+    void PlaySound(AudioClip clip)
+    {
+        if (audioSource != null && clip != null)
+        {
+            audioSource.PlayOneShot(clip);
+        }
+    }
+
     void SetOutputArrowVisible(bool visible)
     {
         if (outputArrowVisual != null)
@@ -236,10 +249,12 @@ public class CableMeta : MonoBehaviour
                 isConnected = true;
                 UpdateCableColor(colorConnected);
                 SetOutputArrowVisible(false);
+                PlaySound(connectSound);
                 curveInitialized = false;
             }
             else
             {
+                PlaySound(failSound);
                 ResetPosition();
             }
         }

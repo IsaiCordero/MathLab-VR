@@ -12,6 +12,11 @@ public class FunctionOneInput : MonoBehaviour
     [Header("Data Input")]
     public DataCable input;
 
+    [Header("Visuals")]
+    public Renderer blockRenderer;
+    public Color vectorFunctionColor = new Color(0.11f, 0.65f, 0.85f); 
+    public Color numberFunctionColor = new Color(0.85f, 0.55f, 0.00f);
+
     private int actual = 0;
 
     void Start()
@@ -20,6 +25,7 @@ public class FunctionOneInput : MonoBehaviour
         {
             visualText.text = functions[actual];
         }
+        UpdateBlockColor();
     }
     public bool OutputsNumber()
     {
@@ -101,6 +107,29 @@ public class FunctionOneInput : MonoBehaviour
         if (visualText != null)
         {
             visualText.text = functions[actual];
+        }
+    }
+
+    void UpdateBlockColor()
+    {
+        if (blockRenderer == null) return;
+
+        Color targetColor = OutputsNumber() ? numberFunctionColor : vectorFunctionColor;
+        Material mat = blockRenderer.material;
+
+        if (mat.HasProperty("_BaseColor"))
+        {
+            mat.SetColor("_BaseColor", targetColor);
+        }
+
+        if (mat.HasProperty("_Color"))
+        {
+            mat.SetColor("_Color", targetColor);
+        }
+
+        if (mat.HasProperty("_EmissionColor"))
+        {
+            mat.SetColor("_EmissionColor", targetColor * 0.6f);
         }
     }
 }

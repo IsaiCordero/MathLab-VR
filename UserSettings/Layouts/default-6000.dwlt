@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 68
+  controlID: 17
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -141,8 +141,8 @@ MonoBehaviour:
     y: 0
     width: 312.8
     height: 716.8
-  m_MinSize: {x: 51, y: 76}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 50, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -570,7 +570,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Sounds
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -580,7 +580,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Sounds
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\isai\TFG
   m_LockTracker:
@@ -589,13 +589,13 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 42}
     m_SelectedIDs:
-    - m_Data: 76918
+    - m_Data: 77214
     m_LastClickedID:
-      m_Data: 76918
+      m_Data: 77214
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 76918
-    - m_Data: 77060
+    - m_Data: 77094
+    - m_Data: 77198
     - m_Data: 1000000000
     - m_Data: 2147483647
     m_RenameOverlay:
@@ -630,7 +630,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 76918
+    - m_Data: 77094
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -738,40 +738,28 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -282612
-      - m_Data: -282260
-      - m_Data: -270390
-      - m_Data: -263678
-      - m_Data: -263326
-      - m_Data: -251460
-      - m_Data: -186910
-      - m_Data: -186558
-      - m_Data: -174752
-      - m_Data: -169278
-      - m_Data: -168926
-      - m_Data: -157124
-      - m_Data: -90504
-      - m_Data: -90152
-      - m_Data: -78350
-      - m_Data: -64560
-      - m_Data: -64208
-      - m_Data: -52406
-      - m_Data: -45348
-      - m_Data: -44996
-      - m_Data: -33126
-      - m_Data: -26486
-      - m_Data: -26132
-      - m_Data: -14258
+      - m_Data: -173844
+      - m_Data: -173492
+      - m_Data: -161558
+      - m_Data: -138742
+      - m_Data: -138390
+      - m_Data: -126524
+      - m_Data: -119218
+      - m_Data: -118866
+      - m_Data: -107000
+      - m_Data: -100122
+      - m_Data: -99770
+      - m_Data: -87904
+      - m_Data: -81180
+      - m_Data: -80828
+      - m_Data: -68894
+      - m_Data: -55220
+      - m_Data: -54868
+      - m_Data: -42934
+      - m_Data: -28234
+      - m_Data: -27882
+      - m_Data: -15948
       - m_Data: -1310
-      - m_Data: 59418
-      - m_Data: 59468
-      - m_Data: 59522
-      - m_Data: 89528
-      - m_Data: 90410
-      - m_Data: 92612
-      - m_Data: 110244
-      - m_Data: 112446
-      - m_Data: 115628
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1378,9 +1366,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -0.383218, y: 0.48804253, z: -1.2845309}
+    m_Target: {x: -0.4047624, y: 0.6869904, z: -1.384463}
     speed: 2
-    m_Value: {x: -0.383218, y: 0.48804253, z: -1.2845309}
+    m_Value: {x: 7.047708, y: 4.1547804, z: -7.7627816}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1426,13 +1414,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.052127562, y: -0.9464999, z: 0.24919413, w: 0.19849877}
+    m_Target: {x: 0.041567426, y: -0.9583192, z: 0.2036941, w: 0.19617331}
     speed: 2
-    m_Value: {x: 0.051826436, y: -0.94670016, z: 0.2492467, w: 0.19735499}
+    m_Value: {x: -0.014426497, y: -0.27621874, z: 0.004152416, w: -0.9609776}
   m_Size:
-    m_Target: 0.891292
+    m_Target: 1.160694
     speed: 2
-    m_Value: 0.93329
+    m_Value: 0.0036945299
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1707,7 +1695,7 @@ MonoBehaviour:
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 192.79999
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
