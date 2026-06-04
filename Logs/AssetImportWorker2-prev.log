@@ -1,9 +1,9 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/respin/6000.3.1f1-f56f53296c2c' branch; Version is '6000.3.1f1 (37142da19a94) revision 3609645'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-isai" at "2026-06-02T12:38:54.3988099Z"
 OS: 'Windows 11  (10.0.26200) 64bit Professional' Language: 'es' Physical Memory: 15557 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-isai" at "2026-06-03T10:46:50.3066203Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2026-06-02T12:38:54Z
+Date: 2026-06-03T10:46:50Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.1f1\Editor\Unity.exe
@@ -17,7 +17,7 @@ C:/Users/isai/TFG
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-49407
+52513
 -licensingIpc
 LicenseClient-isai
 -job-worker-count
@@ -65,16 +65,16 @@ C:/Users/isai/TFG
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [5484]  Target information:
+Player connection [22744]  Target information:
 
-Player connection [5484]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2105564032 [EditorId] 2105564032 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OIGNEFO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [22744]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3141382772 [EditorId] 3141382772 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OIGNEFO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [5484]  * "[IP] 192.168.131.1 [Port] 0 [Flags] 2 [Guid] 2105564032 [EditorId] 2105564032 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OIGNEFO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [22744]  * "[IP] 192.168.131.1 [Port] 0 [Flags] 2 [Guid] 3141382772 [EditorId] 3141382772 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OIGNEFO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [5484]  * "[IP] 192.168.1.51 [Port] 0 [Flags] 2 [Guid] 2105564032 [EditorId] 2105564032 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OIGNEFO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [22744]  * "[IP] 192.168.1.51 [Port] 0 [Flags] 2 [Guid] 3141382772 [EditorId] 3141382772 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OIGNEFO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [5484] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [5484] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [22744] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [22744] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -89,23 +89,23 @@ Library Redirect Path: Library/
 [Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              fbe756d0887540dc85630179a3dc2003
-  Correlation Id:          f5b6586ffce2bc48ce4d6bb477ea4eae
-  External correlation Id: 668562015803559119
+  Session Id:              b33480f276f74c6c95f9a07085892c49
+  Correlation Id:          15f30eb59e45edb0a537f6d3064f3594
+  External correlation Id: 2513949321761531207
   Machine Id:              8BCkfwt7wFfauSPm5cA/mWaYFys=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-isai" (connect: 0.00s, validation: 0.00s, handshake: 1.20s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-isai-notifications" at "2026-06-02T12:38:55.6055817Z"
-[Licensing::Module] Licensing Background thread has ended after 1.21s
-[Licensing::Module] Licensing is initialized (took 0.82s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-isai" (connect: 0.00s, validation: 0.00s, handshake: 1.24s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-isai-notifications" at "2026-06-03T10:46:51.5452425Z"
+[Licensing::Module] Licensing Background thread has ended after 1.24s
+[Licensing::Module] Licensing is initialized (took 0.97s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 6872796434554-UnityPersXXXX
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-Refreshing native plugins compatible for Editor in 668.53 ms, found 12 plugins.
+Refreshing native plugins compatible for Editor in 27.17 ms, found 12 plugins.
 Unity memory allocator detected: MetaXRAudio native memory allocations will be tracked.
-Preloading 3 native plugins for Editor in 3.13 ms.
+Preloading 3 native plugins for Editor in 3.06 ms.
 Initialize engine version: 6000.3.1f1 (37142da19a94)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.1f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/isai/TFG/Assets
@@ -122,46 +122,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56764
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56848
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.004409 seconds.
-- Loaded All Assemblies, in 11.753 seconds
+Registered in 0.003605 seconds.
+- Loaded All Assemblies, in  0.453 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 269 ms
+Android Extension - Scanning For ADB Devices 299 ms
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.757 seconds
-Domain Reload Profiling: 12506ms
-	BeginReloadAssembly (11061ms)
+- Finished resetting the current domain, in  0.819 seconds
+Domain Reload Profiling: 1267ms
+	BeginReloadAssembly (145ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (192ms)
+	RebuildCommonClasses (40ms)
 	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (56ms)
-	LoadAllAssembliesAndSetupDomain (427ms)
-		LoadAssemblies (11070ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (196ms)
+		LoadAssemblies (140ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (410ms)
-			TypeCache.Refresh (408ms)
-				TypeCache.ScanAssembly (392ms)
+		AnalyzeDomain (192ms)
+			TypeCache.Refresh (190ms)
+				TypeCache.ScanAssembly (175ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (758ms)
+	FinalizeReload (819ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (701ms)
+		SetupLoadedEditorAssemblies (762ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (379ms)
+			InitializePlatformSupportModulesInManaged (414ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (73ms)
-			ProcessInitializeOnLoadAttributes (149ms)
-			ProcessInitializeOnLoadMethodAttributes (96ms)
+			BeforeProcessingInitializeOnLoad (95ms)
+			ProcessInitializeOnLoadAttributes (167ms)
+			ProcessInitializeOnLoadMethodAttributes (82ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -172,16 +172,16 @@ Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in 18.516 seconds
+- Loaded All Assemblies, in  1.021 seconds
 Script 'CharacterController' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 13.62 ms, found 12 plugins.
+Refreshing native plugins compatible for Editor in 11.28 ms, found 12 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 11.27 ms, found 12 plugins.
+Refreshing native plugins compatible for Editor in 11.45 ms, found 12 plugins.
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -213,62 +213,66 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.291 seconds
-Domain Reload Profiling: 19773ms
-	BeginReloadAssembly (189ms)
+- Finished resetting the current domain, in  1.152 seconds
+Domain Reload Profiling: 2161ms
+	BeginReloadAssembly (193ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (39ms)
-	RebuildCommonClasses (33ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (36ms)
 	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (48ms)
-	LoadAllAssembliesAndSetupDomain (18200ms)
-		LoadAssemblies (17960ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (727ms)
+		LoadAssemblies (504ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (338ms)
-			TypeCache.Refresh (237ms)
+		AnalyzeDomain (329ms)
+			TypeCache.Refresh (239ms)
 				TypeCache.ScanAssembly (216ms)
-			BuildScriptInfoCaches (76ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (1292ms)
+			BuildScriptInfoCaches (68ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1152ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1024ms)
+		SetupLoadedEditorAssemblies (913ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (12ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (185ms)
-			ProcessInitializeOnLoadAttributes (632ms)
-			ProcessInitializeOnLoadMethodAttributes (179ms)
-			AfterProcessingInitializeOnLoad (10ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (196ms)
+			ProcessInitializeOnLoadAttributes (548ms)
+			ProcessInitializeOnLoadMethodAttributes (143ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 11.97 ms, found 12 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 12.59 ms, found 12 plugins.
 Preloading 3 native plugins for Editor in 0.22 ms.
 Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9059 unused Assets / (5.3 MB). Loaded Objects now: 9935.
-Memory consumption went from 180.7 MB to 175.4 MB.
-Total: 17.083200 ms (FindLiveObjects: 1.058400 ms CreateObjectMapping: 0.906200 ms MarkObjects: 11.292000 ms  DeleteObjects: 3.825400 ms)
+Unloading 9059 unused Assets / (4.5 MB). Loaded Objects now: 9935.
+Memory consumption went from 182.5 MB to 178.0 MB.
+Total: 15.415900 ms (FindLiveObjects: 0.912800 ms CreateObjectMapping: 0.790600 ms MarkObjects: 10.500000 ms  DeleteObjects: 3.210800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 357448.224119 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1ca095a5c4735c459f1f64a6e35a7a51') in 0.0594321 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 437524.012684 seconds.
+  path: Assets/Prefabs/AddSpawner.prefab
+  artifactKey: Guid(3c769d73e61f987429ac891138660beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AddSpawner.prefab using Guid(3c769d73e61f987429ac891138660beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae7d6f8841e3707b502325c554c3bcae') in 1.4729141 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 171
 
 ========================================================================
 Received Import Request.
-  Time since last request: 145.857248 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0fb82479b28ad6b406762b895a5cc0ec') in 0.0156024 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000076 seconds.
+  path: Assets/Prefabs/Blocks.prefab
+  artifactKey: Guid(96717fb9e0d798c4b876a575d8df842f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/Blocks.prefab using Guid(96717fb9e0d798c4b876a575d8df842f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '60e68431aa27f672208877ef4c5b2d35') in 0.373508 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 98
 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

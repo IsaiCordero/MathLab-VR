@@ -7,6 +7,7 @@ public class SpawnerBloques : MonoBehaviour
     public GameObject functionBlockPrefab;
     public float spawnDistance = -0.25f;
     public int defaultFunctionIndex = 0;
+    public Vector3 spawnRotationOffset = Vector3.zero;
 
     [Header("Interaction")]
     public Grabbable grabbableBoton;
@@ -44,7 +45,15 @@ public class SpawnerBloques : MonoBehaviour
         if (functionBlockPrefab == null) return;
 
         Vector3 spawnPosition = transform.position + transform.forward * spawnDistance;
-        GameObject newBlock = Instantiate(functionBlockPrefab, spawnPosition, Quaternion.identity);
+
+        Transform cameraTransform = Camera.main.transform;
+        Vector3 directionToPlayer = cameraTransform.position - spawnPosition;
+        directionToPlayer.y = 0f;
+
+        Quaternion spawnRotation = Quaternion.LookRotation(directionToPlayer);
+        spawnRotation *= Quaternion.Euler(spawnRotationOffset);
+
+        GameObject newBlock = Instantiate(functionBlockPrefab, spawnPosition, spawnRotation);
 
         TwoInputFunction functionTwoInput = newBlock.GetComponent<TwoInputFunction>();
         if (functionTwoInput != null)

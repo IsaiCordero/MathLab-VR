@@ -7,7 +7,7 @@ public class OneInputNumberFunction : MonoBehaviour
     public TextMeshProUGUI visualText;
 
     [Header("Settings")]
-    public string[] functions = { "SENO", "COSENO", "ARCOSENO", "ARCOCOSENO" };
+    public string[] functions = { "SENO", "COSENO", "TANGENTE","ARCOSENO", "ARCOCOSENO", "ARCOTANGENTE" };
 
     [Header("Data Input")]
     public DataCable input;
@@ -50,6 +50,14 @@ public class OneInputNumberFunction : MonoBehaviour
 
             case "ARCOCOSENO":
                 resultado = Mathf.Acos(Mathf.Clamp(value, -1f, 1f)) * Mathf.Rad2Deg;
+                break;
+
+            case "TANGENTE":
+                resultado = Mathf.Tan(value * Mathf.Deg2Rad);
+                break;
+
+            case "ARCOTANGENTE":
+                resultado = Mathf.Atan(value) * Mathf.Rad2Deg;
                 break;
 
             default:

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 17
+  controlID: 68
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -570,7 +570,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Sounds
+    - Assets/Prefabs
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -580,22 +580,21 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sounds
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\isai\TFG
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 42}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_Data: 77214
+    - m_Data: 77220
     m_LastClickedID:
-      m_Data: 77214
+      m_Data: 77220
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 77094
-    - m_Data: 77198
+    - m_Data: 77110
     - m_Data: 1000000000
     - m_Data: 2147483647
     m_RenameOverlay:
@@ -630,7 +629,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 77094
+    - m_Data: 77110
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -664,6 +663,7 @@ MonoBehaviour:
     - m_Data: 133968
     - m_Data: 80872
     - m_Data: 80816
+    - m_Data: 0
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -738,32 +738,63 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -173844
-      - m_Data: -173492
-      - m_Data: -161558
-      - m_Data: -138742
-      - m_Data: -138390
-      - m_Data: -126524
-      - m_Data: -119218
-      - m_Data: -118866
-      - m_Data: -107000
-      - m_Data: -100122
-      - m_Data: -99770
-      - m_Data: -87904
-      - m_Data: -81180
-      - m_Data: -80828
-      - m_Data: -68894
-      - m_Data: -55220
-      - m_Data: -54868
-      - m_Data: -42934
-      - m_Data: -28234
-      - m_Data: -27882
-      - m_Data: -15948
+      - m_Data: -149862
+      - m_Data: -149510
+      - m_Data: -137556
+      - m_Data: -129892
+      - m_Data: -129540
+      - m_Data: -117514
+      - m_Data: -108068
+      - m_Data: -107716
+      - m_Data: -95694
+      - m_Data: -86172
+      - m_Data: -85820
+      - m_Data: -73794
+      - m_Data: -67572
+      - m_Data: -67220
+      - m_Data: -55266
+      - m_Data: -43642
+      - m_Data: -43290
+      - m_Data: -31268
+      - m_Data: -21250
+      - m_Data: -17592
+      - m_Data: -10764
+      - m_Data: -10722
+      - m_Data: -10680
+      - m_Data: -10638
+      - m_Data: -10596
+      - m_Data: -10554
+      - m_Data: -10512
+      - m_Data: -10470
+      - m_Data: -10428
+      - m_Data: -10386
+      - m_Data: -10260
+      - m_Data: -10218
+      - m_Data: -10176
+      - m_Data: -10134
       - m_Data: -1310
+      - m_Data: 113832
+      - m_Data: 115634
+      - m_Data: 116450
+      - m_Data: 116688
+      - m_Data: 117530
+      - m_Data: 118448
+      - m_Data: 118482
+      - m_Data: 118580
+      - m_Data: 119320
+      - m_Data: 119632
+      - m_Data: 119808
+      - m_Data: 120370
+      - m_Data: 120472
+      - m_Data: 120514
+      - m_Data: 121654
+      - m_Data: 122220
+      - m_Data: 122302
+      - m_Data: 123278
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: AddSpawner
+        m_OriginalName: AddSpawner
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
@@ -771,10 +802,10 @@ MonoBehaviour:
           width: 0
           height: 0
         m_UserData:
-          m_Data: 0
+          m_Data: 218530
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
         m_ClientGUIView: {fileID: 6}
@@ -1366,9 +1397,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -0.4047624, y: 0.6869904, z: -1.384463}
+    m_Target: {x: -0.2494101, y: 0.94835305, z: -1.2270519}
     speed: 2
-    m_Value: {x: 7.047708, y: 4.1547804, z: -7.7627816}
+    m_Value: {x: -0.062794626, y: 1.1363249, z: 0.046636254}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1414,13 +1445,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.041567426, y: -0.9583192, z: 0.2036941, w: 0.19617331}
+    m_Target: {x: -0.005208384, y: -0.9878094, z: 0.1523321, w: -0.032896202}
     speed: 2
-    m_Value: {x: -0.014426497, y: -0.27621874, z: 0.004152416, w: -0.9609776}
+    m_Value: {x: -0.0040094433, y: -0.97048587, z: 0.2405924, w: -0.01601512}
   m_Size:
-    m_Target: 1.160694
+    m_Target: 0.617078
     speed: 2
-    m_Value: 0.0036945299
+    m_Value: 0.15965411
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1695,7 +1726,7 @@ MonoBehaviour:
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 192.79999
+  m_LastVerticalScrollValue: 324
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:

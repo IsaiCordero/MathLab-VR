@@ -729,7 +729,7 @@ GameObject:
   - component: {fileID: 6644290365181224714}
   - component: {fileID: 3060815545600119426}
   - component: {fileID: 6965222532019281621}
-  - component: {fileID: 8528280768647548075}
+  - component: {fileID: 683669127664795087}
   m_Layer: 0
   m_Name: OneInputNumberBlock
   m_TagString: Block
@@ -856,7 +856,7 @@ MonoBehaviour:
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 0
   _forceKinematicDisabled: 0
---- !u!114 &8528280768647548075
+--- !u!114 &683669127664795087
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -872,8 +872,10 @@ MonoBehaviour:
   functions:
   - SENO
   - COSENO
+  - TANGENTE
   - ARCOSENO
   - ARCOCOSENO
+  - ARCOTANGENTE
   input: {fileID: 0}
 --- !u!1 &6054087855279590952
 GameObject:
@@ -1543,8 +1545,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
