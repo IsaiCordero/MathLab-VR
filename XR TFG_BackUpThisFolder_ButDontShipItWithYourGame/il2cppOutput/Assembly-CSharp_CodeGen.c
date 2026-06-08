@@ -97,9 +97,6 @@ extern void NumberKeyboardPanel_ConfirmInput_m30C6665F9CC8F8E374E13D47233D987A15
 extern void NumberKeyboardPanel_CancelInput_m3CB67AF9A62DDDA99B6588C90EC594C8A1AAC5B8 (void);
 extern void NumberKeyboardPanel_RefreshDisplay_mC7312C40C7E3832F2E400C6A9DE52D8E03302955 (void);
 extern void NumberKeyboardPanel__ctor_m13D6C35DAC97D03F93809F1E64ED93575FBEFF15 (void);
-extern void NumberSlider_Start_mDE29E21DE48DF890C75D0BDFBC87EFC5EFC7AF35 (void);
-extern void NumberSlider_Update_mBFF90768DB0F22BC0D6A9DF4D6152C25A52FCED9 (void);
-extern void NumberSlider__ctor_m7E75CA48273E441CA15F2AB8D90E236180EA4717 (void);
 extern void OneInputNumberFunction_Start_m1F6D280A37D5894A957A14FD0FC8C89260FCDE54 (void);
 extern void OneInputNumberFunction_OutputsNumber_m8D957E7B43145195807EE4C4F85A696211612514 (void);
 extern void OneInputNumberFunction_GetCurrentResult_mB9A7DBA412D881A3F0026D4AEB0C89269252467A (void);
@@ -154,7 +151,7 @@ extern void VectorKeyboardPanel__ctor_m99C1DB80F6FFF51B02F916460885923F5CBC85C6 
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
 extern void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (void);
-static Il2CppMethodPointer s_methodPointers[147] = 
+static Il2CppMethodPointer s_methodPointers[144] = 
 {
 	ButtonFeedback_Start_m78CC9DB9E8CBAA66D65BE94E13BEF46CC0939D97,
 	ButtonFeedback_OnDestroy_mD629F5B5D8AC8A1808A978E57BEA85A4D0DD402F,
@@ -246,9 +243,6 @@ static Il2CppMethodPointer s_methodPointers[147] =
 	NumberKeyboardPanel_CancelInput_m3CB67AF9A62DDDA99B6588C90EC594C8A1AAC5B8,
 	NumberKeyboardPanel_RefreshDisplay_mC7312C40C7E3832F2E400C6A9DE52D8E03302955,
 	NumberKeyboardPanel__ctor_m13D6C35DAC97D03F93809F1E64ED93575FBEFF15,
-	NumberSlider_Start_mDE29E21DE48DF890C75D0BDFBC87EFC5EFC7AF35,
-	NumberSlider_Update_mBFF90768DB0F22BC0D6A9DF4D6152C25A52FCED9,
-	NumberSlider__ctor_m7E75CA48273E441CA15F2AB8D90E236180EA4717,
 	OneInputNumberFunction_Start_m1F6D280A37D5894A957A14FD0FC8C89260FCDE54,
 	OneInputNumberFunction_OutputsNumber_m8D957E7B43145195807EE4C4F85A696211612514,
 	OneInputNumberFunction_GetCurrentResult_mB9A7DBA412D881A3F0026D4AEB0C89269252467A,
@@ -304,7 +298,7 @@ static Il2CppMethodPointer s_methodPointers[147] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876,
 };
-static const int32_t s_InvokerIndices[147] = 
+static const int32_t s_InvokerIndices[144] = 
 {
 	20176,
 	20176,
@@ -397,9 +391,6 @@ static const int32_t s_InvokerIndices[147] =
 	20176,
 	20176,
 	20176,
-	20176,
-	20176,
-	20176,
 	19693,
 	20049,
 	15328,
@@ -458,7 +449,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	147,
+	144,
 	s_methodPointers,
 	0,
 	NULL,
