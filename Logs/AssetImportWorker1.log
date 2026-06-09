@@ -1,9 +1,9 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/respin/6000.3.1f1-f56f53296c2c' branch; Version is '6000.3.1f1 (37142da19a94) revision 3609645'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-isai" at "2026-06-09T08:59:34.0374876Z"
 OS: 'Windows 11  (10.0.26200) 64bit Professional' Language: 'es' Physical Memory: 15557 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-isai" at "2026-06-08T11:00:50.8114492Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2026-06-08T11:00:50Z
+Date: 2026-06-09T08:59:34Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.1f1\Editor\Unity.exe
@@ -17,7 +17,7 @@ C:/Users/isai/TFG
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-60534
+56344
 -licensingIpc
 LicenseClient-isai
 -job-worker-count
@@ -65,16 +65,16 @@ C:/Users/isai/TFG
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [11980]  Target information:
+Player connection [12416]  Target information:
 
-Player connection [11980]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 855168302 [EditorId] 855168302 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OIGNEFO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [12416]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2709743458 [EditorId] 2709743458 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OIGNEFO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [11980]  * "[IP] 192.168.131.1 [Port] 0 [Flags] 2 [Guid] 855168302 [EditorId] 855168302 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OIGNEFO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [12416]  * "[IP] 192.168.131.1 [Port] 0 [Flags] 2 [Guid] 2709743458 [EditorId] 2709743458 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OIGNEFO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [11980]  * "[IP] 192.168.1.51 [Port] 0 [Flags] 2 [Guid] 855168302 [EditorId] 855168302 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OIGNEFO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [12416]  * "[IP] 192.168.1.51 [Port] 0 [Flags] 2 [Guid] 2709743458 [EditorId] 2709743458 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OIGNEFO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [11980] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [11980] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [12416] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [12416] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -89,21 +89,21 @@ Library Redirect Path: Library/
 [Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              ab6d930e5f1f4775bf9b27c4de178c1b
+  Session Id:              c7c463bc07b84deab9c30d3e2616ec9e
   Correlation Id:          62127a6e0317bf03c3432e18761ed310
-  External correlation Id: 125262491803802049
+  External correlation Id: 4079734639953156120
   Machine Id:              8BCkfwt7wFfauSPm5cA/mWaYFys=
 [Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-isai" (connect: 0.00s, validation: 0.00s, handshake: 1.41s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-isai-notifications" at "2026-06-08T11:00:52.2230535Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-isai-notifications" at "2026-06-09T08:59:35.4468557Z"
 [Licensing::Module] Licensing Background thread has ended after 1.41s
-[Licensing::Module] Licensing is initialized (took 0.99s).
+[Licensing::Module] Licensing is initialized (took 1.12s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 6872796434554-UnityPersXXXX
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-Refreshing native plugins compatible for Editor in 580.39 ms, found 12 plugins.
+Refreshing native plugins compatible for Editor in 33.39 ms, found 12 plugins.
 Unity memory allocator detected: MetaXRAudio native memory allocations will be tracked.
 Preloading 3 native plugins for Editor in 3.31 ms.
 Initialize engine version: 6000.3.1f1 (37142da19a94)
@@ -122,46 +122,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56388
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56728
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.004068 seconds.
-- Loaded All Assemblies, in 10.625 seconds
+Registered in 0.003550 seconds.
+- Loaded All Assemblies, in  0.527 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 331 ms
+Android Extension - Scanning For ADB Devices 366 ms
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.854 seconds
-Domain Reload Profiling: 11474ms
-	BeginReloadAssembly (8467ms)
+- Finished resetting the current domain, in  0.961 seconds
+Domain Reload Profiling: 1481ms
+	BeginReloadAssembly (170ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (560ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (55ms)
-	LoadAllAssembliesAndSetupDomain (1527ms)
-		LoadAssemblies (8466ms)
+	RebuildCommonClasses (51ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (64ms)
+	LoadAllAssembliesAndSetupDomain (214ms)
+		LoadAssemblies (162ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1519ms)
-			TypeCache.Refresh (1518ms)
-				TypeCache.ScanAssembly (1136ms)
+		AnalyzeDomain (209ms)
+			TypeCache.Refresh (207ms)
+				TypeCache.ScanAssembly (190ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (855ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (962ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (797ms)
+		SetupLoadedEditorAssemblies (891ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (441ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (88ms)
-			ProcessInitializeOnLoadAttributes (164ms)
-			ProcessInitializeOnLoadMethodAttributes (99ms)
+			InitializePlatformSupportModulesInManaged (513ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (107ms)
+			ProcessInitializeOnLoadAttributes (181ms)
+			ProcessInitializeOnLoadMethodAttributes (85ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -172,16 +172,16 @@ Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in 15.763 seconds
+- Loaded All Assemblies, in  1.347 seconds
 Script 'CharacterController' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 13.24 ms, found 12 plugins.
+Refreshing native plugins compatible for Editor in 19.36 ms, found 12 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 12.51 ms, found 12 plugins.
+Refreshing native plugins compatible for Editor in 19.92 ms, found 12 plugins.
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -213,54 +213,646 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.271 seconds
-Domain Reload Profiling: 18022ms
-	BeginReloadAssembly (209ms)
+- Finished resetting the current domain, in  1.537 seconds
+Domain Reload Profiling: 2870ms
+	BeginReloadAssembly (266ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (12ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (15447ms)
-		LoadAssemblies (14890ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (954ms)
+		LoadAssemblies (617ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (673ms)
-			TypeCache.Refresh (564ms)
-				TypeCache.ScanAssembly (540ms)
-			BuildScriptInfoCaches (86ms)
-			ResolveRequiredComponents (19ms)
-	FinalizeReload (2272ms)
+		AnalyzeDomain (468ms)
+			TypeCache.Refresh (337ms)
+				TypeCache.ScanAssembly (310ms)
+			BuildScriptInfoCaches (99ms)
+			ResolveRequiredComponents (25ms)
+	FinalizeReload (1537ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1676ms)
+		SetupLoadedEditorAssemblies (1155ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
-			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (243ms)
-			ProcessInitializeOnLoadAttributes (1246ms)
-			ProcessInitializeOnLoadMethodAttributes (157ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (10ms)
+			BeforeProcessingInitializeOnLoad (251ms)
+			ProcessInitializeOnLoadAttributes (702ms)
+			ProcessInitializeOnLoadMethodAttributes (164ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+		AwakeInstancesAfterBackupRestoration (8ms)
 Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 14.68 ms, found 12 plugins.
-Preloading 3 native plugins for Editor in 0.25 ms.
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 14.69 ms, found 12 plugins.
+Preloading 3 native plugins for Editor in 0.23 ms.
 Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9058 unused Assets / (4.8 MB). Loaded Objects now: 9934.
-Memory consumption went from 182.4 MB to 177.7 MB.
-Total: 18.817300 ms (FindLiveObjects: 1.558900 ms CreateObjectMapping: 1.603100 ms MarkObjects: 12.189700 ms  DeleteObjects: 3.464000 ms)
+Unloading 9058 unused Assets / (6.2 MB). Loaded Objects now: 9934.
+Memory consumption went from 182.5 MB to 176.3 MB.
+Total: 17.909600 ms (FindLiveObjects: 0.924300 ms CreateObjectMapping: 1.409600 ms MarkObjects: 11.957700 ms  DeleteObjects: 3.616800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 869904.998220 seconds.
-  path: Assets/Resources/PerformanceTestRunSettings.json
-  artifactKey: Guid(91be56f314c8e114f87cbb7675637f3c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Resources/PerformanceTestRunSettings.json using Guid(91be56f314c8e114f87cbb7675637f3c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c32644aaeffaf38e787c339cdd04d68f') in 0.0593144 seconds
+  Time since last request: 949004.238250 seconds.
+  path: Assets/Prefabs/AddSpawner.prefab
+  artifactKey: Guid(3c769d73e61f987429ac891138660beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AddSpawner.prefab using Guid(3c769d73e61f987429ac891138660beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fbf983d973b93552b47fd7904169921a') in 0.5900716 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 179
+
+========================================================================
+Received Import Request.
+  Time since last request: 318.348275 seconds.
+  path: Assets/Materiales/Colores de los bloques/VectorBlock.mat
+  artifactKey: Guid(b0c966a1af59c4a40b766b325dd05bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materiales/Colores de los bloques/VectorBlock.mat using Guid(b0c966a1af59c4a40b766b325dd05bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e4b8e2dac56f2157e6fa6483dc259a3e') in 0.0487785 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 837.666864 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ffc03681ba100aea9cbb5cad58f07474') in 0.0570092 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1267.115125 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9db2526040eea6ef81bce10576f48e72') in 0.1095458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 83
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.015545 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cdaa87f64d946648a9043fb5c16b578d') in 0.0985843 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.636660 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fd43c0f625dfb4b241035852486eb461') in 0.056014 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.080371 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b6502a8f3a8e50f1f9fc1f1a05a601b7') in 0.0652398 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.750864 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7f9ddb38a964f5b8038d444e67dd6e49') in 0.055765 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.147272 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5d95e2ba0ecb6bd205821b18b1b13e2d') in 0.0510999 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.488485 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a61580a90702407ef8d5f6f40ff8ac66') in 0.0567725 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.182484 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b45f5e0b74709fe84e02693dcc3ebdde') in 0.0641105 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.355831 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9a8481be68caec175672b534651f8b26') in 0.0623468 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.878361 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3b8658c787441d92d2b974aea3bd56f4') in 0.0833086 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.934138 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7ac763a2b319a2e7442479d761ffb052') in 0.0552439 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.811856 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8be0299f32e17b63a4ddf857a07d91fc') in 0.0629455 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.050189 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7d6f69b8e889de02eb0c6b2656df70fe') in 0.0634432 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.121489 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '621854fc3df44887b3a7543fa4fb8649') in 0.0591948 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.805190 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e81ab35d469682ba1e81a4078e4db4b1') in 0.0559827 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.792790 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '98f74fa413e2a6330a85856b01cf41e2') in 0.0522621 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.626836 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3a4338a75917710e6cc59134042e092c') in 0.0631459 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.340289 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '67abeccc6c917685e6ce6e34d10ceb73') in 0.0700569 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.369575 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '187479850a9d0aec1121eaddc254fadf') in 0.0536111 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.185129 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f5ee0b71bfff2ad7dcdf3c53819b2d8d') in 0.0594606 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cbe0656ccb9c375bd04c13813cab8b4a') in 0.1026225 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 64
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.403069 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '67a0862879edb8d6f85a551067ea8a02') in 0.0567082 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.046745 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '245040c59532d3042ee6aa83a1c50026') in 0.0568151 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.672185 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '668a76e3095a652042eee430e61a7fa0') in 0.0552617 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.521161 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '722afce36344bd33513c7978a6d5aa64') in 0.0503585 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.207638 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '120c852b05a561bf95ff1182c4ce89dc') in 0.0590917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.550126 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cd2766b2d1f9fdfabd0ec96646fc5a01') in 0.0594088 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.591681 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bebdb9413aec824f237708b4ee5845f3') in 0.0531914 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.766500 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5eff451cc708533667a8730576761f63') in 0.0526366 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.204076 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bc9e8fdb8b47311b813fa9a3a1632618') in 0.0524652 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.516398 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd5ce9b2680cc3213bed1416845a94a2d') in 0.0589607 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.370798 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '67bae73810b95f631ef96a9f4069c665') in 0.0506957 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.218546 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a25dee3d28b699ebc75c190b9579b9fc') in 0.0582212 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 64.825732 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac5a61adb881c6b0f31621d2ad6d16d7') in 0.050919 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.641589 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ce034ffb51be1835252725665c227555') in 0.0653587 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 97
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.702089 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9feca5551285d02b7b1937f925abb872') in 0.0535795 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 97
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.445508 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c4b862d39ac3bc1a4889c03daee45bbe') in 0.0525709 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 97
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.123266 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a7c58c7f724350707d1c7c8d17cda624') in 0.0646793 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 97
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.602145 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a3bc7fb9d3ec78fd9af66fb5cc10ff16') in 0.0599472 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 97
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.936371 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '62a25d70f0a44733b7df82df8ce8f584') in 0.0750449 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 97
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.749218 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ccf6d2dd42093e82117b720694ed8a95') in 0.0604623 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 97
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.908893 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1902767c7ac2c05b92a3bce697bc3ae7') in 0.0734252 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 97
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.059815 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd198682a12bcbcbeced9be80af32adfe') in 0.0788174 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 97
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.114641 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b206fc2c14d410ff0354851eaf8d1857') in 0.0525101 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 97
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.493465 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1e521d77127934dd021c0f5b3f9e4350') in 0.0565352 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.807284 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '107b43df5295e16ee5c4ec51a60e7c9a') in 0.0618839 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.504233 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0eec02136a5fcec677948e76bea38308') in 0.0649209 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.043885 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '992b042194e2555e6796c27b1e46ae82') in 0.0481962 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.668749 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bac8d19ceaf157651217a1e1d069d9cf') in 0.0609725 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.454683 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a97f81168cf041c3637e1e5c02fa9829') in 0.060682 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.259729 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8609e04cf969cc1640cfb803861f9309') in 0.051144 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.859999 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '678ad0cd52ad5ea36d4c0ba33a400b87') in 0.0539405 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 208.848267 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fa1dc08f90b3bbd00553b0e36285c1a9') in 0.0730732 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.490026 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00d0bb87ee7a1a49c27a5b517f20f9fd') in 0.0468693 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3a3bd6bbae9c507ee878fff4d44cd1ae') in 0.0414428 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 72
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.353976 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4fef376db5d99ee3de2122a12b519c1e') in 0.0699696 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.478416 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '992a0b0175cfedbfa941ceb7b3981c6a') in 0.0579072 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.403093 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '345e49103f1b484d8711a4fcb4880d2f') in 0.0619735 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.209406 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '68efd72f7f3ed82b61d9f340f2ef4764') in 0.0653224 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.755473 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '098ae7bf82cde20b5c0f5645c1af5b66') in 0.0559938 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.072493 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd39025a826c1c50708f1b0ee2020f641') in 0.05167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.827669 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76fe057bbf658af331591e23dd40f721') in 0.0495981 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.937066 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '211016a33b7eddda99c4c72cdd709ecf') in 0.0602062 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 306.861121 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '99fad019c971bee532ad3f60523c3928') in 0.104348 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 106
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.442393 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8e8bf5abed20fd013d5a70b96c712a08') in 0.0545428 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.952997 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b749f7369f588291f85cc1d5ffec58b9') in 0.0515041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 100
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.830108 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '888a6ddb9b722d45724cfe75fd89b078') in 0.0793642 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 83.212277 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4eedb3f8049f11d747261879d1f838a7') in 0.0914993 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.203483 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b84766a7cf28aa9560086c86d3763637') in 0.0989764 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.146471 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '095837d7b5a60a958ff122ef6f7fe2af') in 0.0720519 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.321407 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'edc315b3cae9ca940a5770b766b3a2f4') in 0.0777204 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.935361 seconds.
+  path: Assets/Prefabs/VectorAreaRoot.prefab
+  artifactKey: Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VectorAreaRoot.prefab using Guid(2a9434d6bf963804fb544457fb8b58c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0ef1927d559b21eb0d51dafe83367a06') in 0.0694535 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 101
 
