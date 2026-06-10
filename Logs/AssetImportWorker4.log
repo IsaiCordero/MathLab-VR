@@ -1,0 +1,1138 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/respin/6000.3.1f1-f56f53296c2c' branch; Version is '6000.3.1f1 (37142da19a94) revision 3609645'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) 64bit Professional' Language: 'es' Physical Memory: 15557 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-isai" at "2026-06-10T11:45:15.0726279Z"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+Date: 2026-06-10T11:45:15Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/isai/TFG
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+59560
+-licensingIpc
+LicenseClient-isai
+-job-worker-count
+5
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Users/isai/TFG
+C:/Users/isai/TFG
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [16324]  Target information:
+
+Player connection [16324]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2270544356 [EditorId] 2270544356 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OIGNEFO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [16324]  * "[IP] 192.168.131.1 [Port] 0 [Flags] 2 [Guid] 2270544356 [EditorId] 2270544356 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OIGNEFO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [16324]  * "[IP] 192.168.1.51 [Port] 0 [Flags] 2 [Guid] 2270544356 [EditorId] 2270544356 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OIGNEFO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [16324] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [16324] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              238e080b207c4911bd07a1077f1b4c26
+  Correlation Id:          f8909b694438a256cb049e5f384ece68
+  External correlation Id: 6497920117919059710
+  Machine Id:              8BCkfwt7wFfauSPm5cA/mWaYFys=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-isai" (connect: 0.00s, validation: 0.00s, handshake: 1.12s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-isai-notifications" at "2026-06-10T11:45:16.1966351Z"
+[Licensing::Module] Licensing Background thread has ended after 1.12s
+[Licensing::Module] Licensing is initialized (took 0.87s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 6872796434554-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Refreshing native plugins compatible for Editor in 23.88 ms, found 12 plugins.
+Unity memory allocator detected: MetaXRAudio native memory allocations will be tracked.
+Preloading 3 native plugins for Editor in 2.76 ms.
+Initialize engine version: 6000.3.1f1 (37142da19a94)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/isai/TFG/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Laptop GPU (ID=0x25a2)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   32.0.15.9227
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56188
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.003928 seconds.
+- Loaded All Assemblies, in  0.460 seconds
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 281 ms
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.753 seconds
+Domain Reload Profiling: 1207ms
+	BeginReloadAssembly (156ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (56ms)
+	LoadAllAssembliesAndSetupDomain (185ms)
+		LoadAssemblies (151ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (180ms)
+			TypeCache.Refresh (178ms)
+				TypeCache.ScanAssembly (164ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (753ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (698ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (388ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (86ms)
+			ProcessInitializeOnLoadAttributes (149ms)
+			ProcessInitializeOnLoadMethodAttributes (70ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.009 seconds
+Script 'CharacterController' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 11.66 ms, found 12 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 11.10 ms, found 12 plugins.
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus@44578ba4bd45\Runtime\OculusLoader.cs:312 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@44578ba4bd45\Runtime\OculusLoader.cs:297 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <1eb9db207454431c84a47bcd81e79c37>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <1eb9db207454431c84a47bcd81e79c37>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <1eb9db207454431c84a47bcd81e79c37>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00087] in <653e87cf2eee46cba35f0658f2b1887c>:0 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.138 seconds
+Domain Reload Profiling: 2132ms
+	BeginReloadAssembly (188ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (718ms)
+		LoadAssemblies (497ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (323ms)
+			TypeCache.Refresh (232ms)
+				TypeCache.ScanAssembly (211ms)
+			BuildScriptInfoCaches (68ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1139ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (899ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (183ms)
+			ProcessInitializeOnLoadAttributes (542ms)
+			ProcessInitializeOnLoadMethodAttributes (149ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 10.98 ms, found 12 plugins.
+Preloading 3 native plugins for Editor in 0.21 ms.
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9058 unused Assets / (5.1 MB). Loaded Objects now: 9934.
+Memory consumption went from 182.5 MB to 177.4 MB.
+Total: 14.965700 ms (FindLiveObjects: 0.995700 ms CreateObjectMapping: 0.564000 ms MarkObjects: 10.476700 ms  DeleteObjects: 2.927300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1045344.843256 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '29baeaf90c41d50a9357f338798a4dcb') in 0.4970779 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 383
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.360098 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e4e4f3ab3124eabf8ef85e3f7bc7d296') in 0.1097218 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 342
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.362501 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9d37d3bd92bc8cdefd309b36ef6a15a9') in 0.0403134 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 379
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.965650 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1da8bd5bb73042990f4e3520b7f6fb8c') in 0.0424794 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 375
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.848970 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '009b90b5e3ecfb81f2b19eb8d3db5d89') in 0.0310478 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.076030 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'edecd00ab318dd877552e08412ba3a6d') in 0.0391633 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 375
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.807843 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a849fb4810e8088e0d91a4e6a2225a6c') in 0.0316913 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.971294 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2ff1501b45bc8c4490a41d95a67a6100') in 0.0412379 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 375
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.843185 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c9c8d2e3c76255a647c52d4681397263') in 0.0388847 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.751712 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e9f6de9c0dd61d839af65e6b27b3a918') in 0.042874 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 375
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.812278 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c0cd372c2d77ad5ff4efa23760141a9e') in 0.0308617 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.968446 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c5ee79314bf9c6ea8419bcb23ef07bdd') in 0.0416783 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 375
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.813388 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b54cb58062bf3271f23f29647fc3d663') in 0.0308342 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.165838 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bb5589b6e04b8f326a354ee68bb2644f') in 0.037347 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 375
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.835260 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3e7b24f032651ed98b978a449dafaca6') in 0.0300588 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.634618 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'de83f99b81a8dd86ec322691390223c8') in 0.0438435 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 375
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.811658 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a2f00d9d8a5199c3aa829dc485fe3291') in 0.0320616 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.625899 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '63dc1ace1b383ad015c2c3f8ebddf470') in 0.038639 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 375
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.815315 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fca6a022dc5f7376231f44c916cd6f0e') in 0.0315599 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.764108 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a93af6e4a7f4a1dc8e3b61aec36e188b') in 0.0361685 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 375
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.842051 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '64d7a7c3c2f00971aa8e138b90c3256c') in 0.029317 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.866137 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fbd7d2aeba2e93831c95a344722b99ce') in 0.0532364 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 375
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.752524 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0b61bd5735581e61ff8aa173277282f1') in 0.0319942 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.247899 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd8aae760f63247c6d089bd85e3ad8e7d') in 0.0419407 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 375
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.812477 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd84ffee568662b6f892375c1e44b5029') in 0.0302632 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.630410 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '18be9df0b8df8dfc87fa4935a53eac1c') in 0.0450329 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 375
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.808673 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '94e7458b7707bf7c96c58f5e3b961dd9') in 0.0322676 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.350232 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '23ccfb1831da8f465c5ff4997192ef9b') in 0.045992 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 375
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.835742 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1e35df46a9d7b2d868f8cce8ff5bd2cb') in 0.0332005 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.795305 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '91d5fea4f55488d2e44c55bc85c4c967') in 0.0477098 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 375
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.797964 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '23a8660d0fa94d334c1c4a7a637d3c34') in 0.0340937 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.156133 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0caab97f21292d7f18c603f00b3d291e') in 0.04294 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 375
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.825425 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd8664f2f21dde210b986f85dbae83aab') in 0.02999 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.071392 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1bdf0fd0a9e5097a9062fa58a9e5d5b4') in 0.0359857 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 375
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.847744 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '49cb383384f857662ea67e5734a82e91') in 0.0300689 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.673362 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ace19ea9abc693b147ad678624f4b73a') in 0.0390295 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 375
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.828885 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0532259f53a45677fb8602f653cc0eb5') in 0.0311918 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.821574 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6ffbfc4f88c83161984a2e6c19911d27') in 0.0438759 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 375
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.851844 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd2fa7c0707442a2d408374bcb66a6f93') in 0.030338 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.785910 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f7b0fe3eca9ea8abdffc66d1eccab29d') in 0.0462051 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 375
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.826711 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bdc20ebb57c70838bce7dbfc7b3a1bf8') in 0.0304688 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.837120 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '54096e1afd06857fb72b0ab6b7bfe315') in 0.0288838 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.239227 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '349e4fd64908772436b1f5508392073d') in 0.031176 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.340080 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '252fce34b3343401745327ecb5a6f49a') in 0.0358563 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.616986 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e38f925e9978db5d8a5da1f64ceba0eb') in 0.02932 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.057567 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6ea578ef8f96e9aae1e406c9a6547b76') in 0.0355247 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.950450 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cac141b176210a92b0de0a8d85f1bca8') in 0.0340599 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.132954 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b7697dc6b6c19b4f0d7ccfdc2e165126') in 0.0333505 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.378110 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ba50332083b3f0cf5afa5e8a40c2c22f') in 0.0316727 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.565611 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2a2d9d2b88859f3e31419d4801510a04') in 0.0303414 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.709287 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '165f4632f484cec5483605ab33e8feb3') in 0.0327364 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.553198 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'efb71854c38139a436ce5292f84442d1') in 0.0333679 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.191408 seconds.
+  path: Assets/Materiales/Colores de Panel numerico/Buttons.mat
+  artifactKey: Guid(e7bd3603a3f84f84c891ffd28849311e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materiales/Colores de Panel numerico/Buttons.mat using Guid(e7bd3603a3f84f84c891ffd28849311e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '59fd231188fef3203f4fbfe048a227bd') in 0.0314926 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.848514 seconds.
+  path: Assets/Materiales/Colores de Panel numerico/Panel.mat
+  artifactKey: Guid(c60dc3905862cb54bafa1028b8f6c58a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Materiales/Colores de Panel numerico/Panel.mat using Guid(c60dc3905862cb54bafa1028b8f6c58a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1123fe72fa072b15e1603e81a517953e') in 0.0163226 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.522066 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5643033085a923e235fa459ee1a8c166') in 0.032722 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 513.114323 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7eaa0c83f924e0e394f72e54b2acbad1') in 0.032855 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.627695 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e3195dd83a92414184e32eafd7a38df2') in 0.0321021 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.919048 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c5aa8b10dea356ab74a3adf3a5b27a12') in 0.0307009 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.761763 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f587424e9d0c71456be4024e088637f4') in 0.0321031 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.978535 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'daa3690f6c2bf9964a6c3129ab75d93e') in 0.0340162 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.357075 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '217e118ee374e62513133c8c98d10e66') in 0.0331805 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.931425 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5bfd5b3ce88e8f596d7bb5da4e39cf3b') in 0.0319939 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.739618 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '55a74a778416de758ae360b30a5ed4a2') in 0.0299697 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.618563 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '237ecf546e3777e06a04c55cced2ec64') in 0.0302927 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.490943 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8cffba40168b48d98e7b355a5463eb54') in 0.034262 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.852550 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a6cc3e734bff7d7dc9db8a34ac1787b8') in 0.0351261 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.428021 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd40faaa905d9842d74a012e0e6aff9e0') in 0.0322553 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.458736 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ff9c6a746af1644a52070b40ace9ddf3') in 0.0303041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.507858 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8ba87b61408c99055723b2940021bcea') in 0.0302341 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.335611 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b6da4ce40f1213bf9f753eb001c23e2f') in 0.0314265 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.850644 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0ac702b00bfe57405a644668829ad64d') in 0.0325114 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.398397 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4e811c07b8fd7f2fdf46c6c1b4a37de9') in 0.0304224 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.069095 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2c4d4d0ddeb70ac736505b16f6f38fab') in 0.0348549 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 93.921159 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ef5a3cc231a6f14b7500da1b3d8a05d3') in 0.0318348 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.071019 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4f93c6e5f9b65d0c271dc790e37752ae') in 0.0341869 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.971725 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ead7b562dd7e87fa46aa2451a95592de') in 0.0334134 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.096143 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fe0fff661e4a614a374a87c496815e7c') in 0.0310501 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.583786 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f83e605cbe34c21d0030dcba0810edec') in 0.0377762 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.001430 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '28209c73224356356760201b5c319000') in 0.0333288 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.854429 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '76970642006936b4705c543e042b9722') in 0.038033 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.146997 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ed9e22d4155aebc71c9f0ccb694d8378') in 0.0300079 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.450510 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3cbba978e5a1ffba7836e5e15bab698b') in 0.0319669 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.663450 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '99115bf64f7a64a456eadbb245dc6111') in 0.03095 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.403299 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ecfe54ade05d82edac85c62569f917c2') in 0.0307044 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.246683 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0253b3da73cbce53e01b123b90ea6f07') in 0.0320646 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.898426 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4b5e2c00df6d02a932d89aba609e04f5') in 0.0326408 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.526159 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c06e086178d4fd178f29be38d6754150') in 0.0345035 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.474176 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '54b1f2118d953d4127d7946bfcc7575f') in 0.0361959 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.351618 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1c15f8322374f4d9b6bb6e66018f79e1') in 0.0430837 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.588275 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7972f386c0a7c3f80693e562ceb71025') in 0.0402789 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.295727 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e91bd794c2f8688946744a79776b47ce') in 0.0301999 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.481003 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '042848cfa5e5156616fdc46ffbb301f0') in 0.0300138 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.080754 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'caf5b8e491c7c18fb07d48f45857d96a') in 0.0328426 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.031448 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6c66d21eea35919179e1eaecd838b23d') in 0.0305906 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.192796 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4f32c097b03aa6d7da28bbb27cb5a28d') in 0.029881 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.960827 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '674ea2ff9f5190b958e268432045af95') in 0.0331619 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.417654 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1eba8e937cf68bfef8c5c85fbdbeb645') in 0.0314436 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.012449 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'be7650ba1d1046723ce80fce681ed926') in 0.0308682 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.249753 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f2f25614162ad1e01bff64d2702c45a8') in 0.0320774 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.927376 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ca8319ee21edcd8edc1c5373fb8459b7') in 0.037885 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.869044 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1fe36453c44f4b199eb9d43ffd5f5c93') in 0.0305227 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.682261 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '37045dd8d6b0252e78585894d31e0afd') in 0.0300201 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.395113 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd0b532b63e369ab9c24c6859b204e313') in 0.0314617 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.665501 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ba809ade32cbd270b3951af97ab29e35') in 0.0311943 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.705744 seconds.
+  path: Assets/Materiales/Colores de Panel numerico/Panel.mat
+  artifactKey: Guid(c60dc3905862cb54bafa1028b8f6c58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materiales/Colores de Panel numerico/Panel.mat using Guid(c60dc3905862cb54bafa1028b8f6c58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cdc666389ef208e22ffa53ca0fbfc638') in 0.0295169 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.598905 seconds.
+  path: Assets/Materiales/Colores de Panel numerico/Panel.mat
+  artifactKey: Guid(c60dc3905862cb54bafa1028b8f6c58a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Materiales/Colores de Panel numerico/Panel.mat using Guid(c60dc3905862cb54bafa1028b8f6c58a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4df5773ac6e1ba64badf0320a9076352') in 0.0139104 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1532.725540 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '84c62b15b8e1aa465d3ffedeff794eef') in 0.1908187 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 376
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.171333 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd6032589c929c964a033ec9c8281e031') in 0.0633889 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.296778 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd326ab4611403d1579e2d18b9a37e57e') in 0.0440243 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.162532 seconds.
+  path: Assets/Prefabs/keyboardPanel.prefab
+  artifactKey: Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/keyboardPanel.prefab using Guid(792f94b7b61e288449d8218a1720299d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9d841a6acd264fce555963823fe921ef') in 0.0323254 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 334
+
