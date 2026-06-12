@@ -22,6 +22,19 @@ public class NumberBlock : MonoBehaviour
     public GameObject editButton;
     private bool lastHadIncomingCable;
 
+    [Header("Slider")]
+    public GameObject Slider;
+    public Transform sliderHandle;
+    public float maxLocalX = 0.3f;
+    public float minLocalX = -0.3f;
+    private int maxSliderValue = 20;
+    private int minSliderValue = -20;
+    private float originalLocalY;
+    private float originalLocalZ;
+    private Quaternion originalLocalRotation;
+    private float lastSliderLocalX;
+    public float sliderMoveThreshold = 0.001f;
+
 
 
 private GameObject currentKeyboardInstance;
@@ -32,6 +45,14 @@ private GameObject currentKeyboardInstance;
 
         lastHadIncomingCable = incomingCable != null;
         SetInputMode(!lastHadIncomingCable);
+
+        if(sliderHandle != null)
+        {
+            originalLocalY = sliderHandle.localPosition.y;
+            originalLocalZ = sliderHandle.localPosition.z;
+            originalLocalRotation = sliderHandle.localRotation;
+            lastSliderLocalX = Mathf.Clamp(sliderHandle.localPosition.x, minLocalX, maxLocalX);
+        }
     }
 
     void Update()
@@ -41,6 +62,19 @@ private GameObject currentKeyboardInstance;
             float result = incomingCable.GetValueFromSource();
             currentValue = result;
             valueText.text = result.ToString("F1");
+        }
+        else if (Slider != null && sliderHandle != null && Slider.activeInHierarchy)
+        {
+            float localX = Mathf.Clamp(sliderHandle.localPosition.x, minLocalX, maxLocalX);
+            sliderHandle.localPosition = new Vector3(localX, originalLocalY, originalLocalZ);
+            sliderHandle.localRotation = originalLocalRotation;
+            if(Mathf.Abs(localX - lastSliderLocalX) > sliderMoveThreshold){
+                float normalizedValue = Mathf.InverseLerp(minLocalX, maxLocalX, localX);
+                float calculatedValue = Mathf.Lerp(minSliderValue, maxSliderValue, normalizedValue);
+
+                currentValue = -calculatedValue;
+                UpdateVisuals();
+            }
         }
 
         bool hasIncomingCable = incomingCable != null;
@@ -79,6 +113,18 @@ private GameObject currentKeyboardInstance;
         if (incomingCable != null) return;
 
         currentValue = value;
+
+        if (sliderHandle != null)
+        {
+            float clampedSliderValue = Mathf.Clamp(-currentValue, minSliderValue, maxSliderValue);
+            float normalizedValue = Mathf.InverseLerp(minSliderValue, maxSliderValue, clampedSliderValue);
+            float targetX = Mathf.Lerp(minLocalX, maxLocalX, normalizedValue);
+
+            sliderHandle.localPosition = new Vector3(targetX, originalLocalY, originalLocalZ);
+            sliderHandle.localRotation = originalLocalRotation;
+            lastSliderLocalX = targetX;
+        }
+
         UpdateVisuals();
     }
 
@@ -90,6 +136,10 @@ private GameObject currentKeyboardInstance;
         {
             Destroy(currentKeyboardInstance);
             currentKeyboardInstance = null;
+        }
+        if(Slider != null)
+        {
+            Slider.SetActive(false);
         }
 
         Vector3 spawnPosition = keyboardSpawnPoint != null
@@ -116,6 +166,10 @@ private GameObject currentKeyboardInstance;
         {
             Destroy(currentKeyboardInstance);
             currentKeyboardInstance = null;
+        }
+        if(Slider != null && sliderHandle != null)
+        {
+            Slider.SetActive(true);
         }
     }
 

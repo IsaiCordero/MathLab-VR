@@ -2,19 +2,17 @@ using UnityEngine;
 using TMPro;
 using System.Globalization;
 
-public class VectorKeyboardPanel : MonoBehaviour
+public class VectorKeyboardPanel : MonoBehaviour 
 {
     [Header("References")]
     public VectorBlock targetVectorBlock;
     public TextMeshProUGUI displayText;
 
     [Header("Current Input")]
-    public string selectedAxis = "X";
+    public string selectAxis = "X";
+    public string currentInput = "";
 
-    private string currentInput = "";
-
-    void Start()
-    {
+    private void Start() {
         RefreshDisplay();
     }
 
@@ -25,29 +23,29 @@ public class VectorKeyboardPanel : MonoBehaviour
             case "X":
             case "Y":
             case "Z":
-                selectedAxis = value;
+                selectAxis = value;
                 currentInput = "";
                 break;
-
+            
             case "CLEAR":
                 currentInput = "";
                 break;
 
             case "CONFIRM":
                 ConfirmInput();
-                return;
+                break;
 
             case "-":
-                if (!currentInput.Contains("-") && currentInput.Length == 0)
+                if(!currentInput.Contains("-") && currentInput.Length == 0)
                 {
                     currentInput += "-";
                 }
                 break;
-
+            
             case ".":
                 if (!currentInput.Contains("."))
                 {
-                    if (string.IsNullOrEmpty(currentInput) || currentInput == "-")
+                    if(string.IsNullOrEmpty(currentInput) || currentInput == "-")
                     {
                         currentInput += "0.";
                     }
@@ -57,7 +55,7 @@ public class VectorKeyboardPanel : MonoBehaviour
                     }
                 }
                 break;
-
+            
             case "CANCEL":
                 CancelInput();
                 return;
@@ -72,23 +70,25 @@ public class VectorKeyboardPanel : MonoBehaviour
 
     void ConfirmInput()
     {
-        if (targetVectorBlock == null) return;
+        if(targetVectorBlock == null) return;
 
-        if (!float.TryParse(currentInput, NumberStyles.Float, CultureInfo.InvariantCulture, out float parsedValue))
+        if(!float.TryParse(currentInput, NumberStyles.Float, CultureInfo.InvariantCulture, out float parsedValue))
         {
             return;
         }
 
         Vector3 v = targetVectorBlock.currentVector;
 
-        switch (selectedAxis)
+        switch (selectAxis)
         {
             case "X":
                 v.x = parsedValue;
                 break;
+            
             case "Y":
                 v.y = parsedValue;
                 break;
+            
             case "Z":
                 v.z = parsedValue;
                 break;
@@ -96,11 +96,11 @@ public class VectorKeyboardPanel : MonoBehaviour
 
         targetVectorBlock.SetVectorManually(v);
         targetVectorBlock.CloseKeyboard();
-
     }
+
     void CancelInput()
     {
-        if (targetVectorBlock != null)
+        if(targetVectorBlock != null)
         {
             targetVectorBlock.CloseKeyboard();
         }
@@ -112,10 +112,18 @@ public class VectorKeyboardPanel : MonoBehaviour
 
     void RefreshDisplay()
     {
-        if (displayText != null)
+        if(displayText != null)
         {
-            string shownValue = string.IsNullOrEmpty(currentInput) ? "_" : currentInput;
-            displayText.text = selectedAxis + ": " + shownValue;
+            string showValue;
+            if (string.IsNullOrEmpty(currentInput))
+            {
+                showValue = "_";
+            }
+            else
+            {
+                showValue = currentInput;
+            }
+            displayText.text = selectAxis + ": " + showValue;
         }
     }
 }

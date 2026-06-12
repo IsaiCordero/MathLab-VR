@@ -1,23 +1,22 @@
 using UnityEngine;
 
-public class VectorController : MonoBehaviour
-{
-    [Header("Limits")]
+public class VectorController : MonoBehaviour {
+    [Header("limits")]
     public Vector3 minLocalPosition = new Vector3(-0.3f, -0.3f, -0.3f);
     public Vector3 maxLocalPosition = new Vector3(0.3f, 0.3f, 0.3f);
 
     private Vector3 lastLocalPosition;
 
-
-    void Start()
-    {
-        lastLocalPosition = transform.localPosition;
+    void Start() {
+        lastLocalPosition = transform.localPosition;    
     }
 
     void Update()
     {
-        if (transform.localPosition == lastLocalPosition)
+        if(transform.localPosition == lastLocalPosition)
+        {
             return;
+        }
 
         Vector3 localPos = transform.localPosition;
 
@@ -28,5 +27,4 @@ public class VectorController : MonoBehaviour
         transform.localPosition = localPos;
         lastLocalPosition = localPos;
     }
-
 }

@@ -55,12 +55,12 @@
     <Compile Include="Assets\Scripts\OpenKeyboardButton.cs" />
     <Compile Include="Assets\Scripts\TwoInputFunction.cs" />
     <Compile Include="Assets\Scripts\NumberKeyboardButton.cs" />
+    <Compile Include="Assets\Scripts\VectorKeyboardPanel.cs" />
     <Compile Include="Assets\Scripts\SpawnerBloques.cs" />
     <Compile Include="Assets\Scripts\VectorController.cs" />
     <Compile Include="Assets\Scripts\NumberKeyboardPanel.cs" />
     <Compile Include="Assets\Scripts\DataCable.cs" />
     <Compile Include="Assets\Scripts\NumberBlock.cs" />
-    <Compile Include="Assets\Scripts\VectorKeyboradPanel.cs" />
     <Compile Include="Assets\Scripts\InputPortVisual.cs" />
     <Compile Include="Assets\Scripts\FunctionOneInput.cs" />
     <Compile Include="Assets\Scripts\OneInputNumberFunction.cs" />
