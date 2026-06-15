@@ -5,6 +5,9 @@ public class TwoInputFunction : MonoBehaviour
 {
     [Header("UI Reference")]
     public TextMeshProUGUI visualText; 
+    public TextMeshProUGUI firstInputText; 
+    public TextMeshProUGUI secondInputText; 
+    public TextMeshProUGUI outputText; 
     
     [Header("Settings")]
     public string[] functionKeys = { "SUMA", "RESTA", "MULTIPLICACION", "DIVISION", "PRODUCTO_ESCALAR", "PRODUCTO_VECTORIAL", "PUNTO_MEDIO", "ANGULO" };
@@ -30,6 +33,7 @@ public class TwoInputFunction : MonoBehaviour
         }
 
         UpdateBlockColor();
+        UpdateTexts();
     }
     public bool OutputsNumber()
     {
@@ -69,6 +73,62 @@ public class TwoInputFunction : MonoBehaviour
         if (mat.HasProperty("_EmissionColor"))
         {
             mat.SetColor("_EmissionColor", targetColor * 0.6f);
+        }
+    }
+    
+    void UpdateTexts()
+    {
+        if(firstInputText == null || secondInputText == null || outputText == null)
+        {
+            return;
+        }
+
+        string fn = functionKeys[actual];
+
+        switch (fn)
+        {
+            case "SUMA":
+            case "RESTA":
+            case "DIVISION":
+            case "MULTIPLICACION":
+                firstInputText.text = "N/V";
+                secondInputText.text = "N/V";
+
+                bool firstIsVector = firstInput != null && firstInput.IsVectorSource();
+                bool secondIsVector = secondInput != null && secondInput.IsVectorSource();
+
+                outputText.text = (firstIsVector || secondIsVector) ? "V" : "N";
+                break;
+
+            case "PRODUCTO_ESCALAR":
+                firstInputText.text = "V";
+                secondInputText.text = "V";
+                outputText.text = "N";
+                break;
+
+            case "PRODUCTO_VECTORIAL":
+                firstInputText.text = "V";
+                secondInputText.text = "V";
+                outputText.text = "V";
+                break;
+
+            case "PUNTO_MEDIO":
+                firstInputText.text = "V";
+                secondInputText.text = "V";
+                outputText.text = "V";
+                break;
+
+            case "ANGULO":
+                firstInputText.text = "V";
+                secondInputText.text = "V";
+                outputText.text = "V";
+                break;
+
+            default:
+                firstInputText.text = "?";
+                secondInputText.text = "?";
+                outputText.text = "?";
+                break;
         }
     }
 
@@ -264,6 +324,12 @@ public class TwoInputFunction : MonoBehaviour
         }
 
         UpdateBlockColor();
+        UpdateTexts();
+    }
+
+    void Update()
+    {
+        UpdateTexts();
     }
 
     public bool AcceptsInput(DataCable cable)

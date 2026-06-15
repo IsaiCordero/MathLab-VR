@@ -5,6 +5,7 @@ public class FunctionOneInput : MonoBehaviour
 {
     [Header("UI Reference")]
     public TextMeshProUGUI visualText;
+    public TextMeshProUGUI outputText;
 
     [Header("Settings")]
     public string[] functions = { "MAGNITUD", "NORMALIZACIÓN", "OPUESTO", "ABSOLUTO" };
@@ -26,6 +27,7 @@ public class FunctionOneInput : MonoBehaviour
             visualText.text = functions[actual];
         }
         UpdateBlockColor();
+        UpdateTexts();
     }
     public bool OutputsNumber()
     {
@@ -36,6 +38,31 @@ public class FunctionOneInput : MonoBehaviour
     {
         return !OutputsNumber();
     }   
+
+        void UpdateTexts()
+    {
+        if(outputText == null)
+        {
+            return;
+        }
+
+        string fn = functions[actual];
+
+        switch (fn)
+        {
+            case "NORMALIZACIÓN":
+            case "ABSOLUTO":
+            case "OPUESTO":
+                outputText.text = "V";
+                break;
+            case "MAGNITUD":
+                outputText.text = "N";
+                break;
+            default:
+                outputText.text = "V";
+                break;
+        }
+    }
 
 
     public float GetCurrentResult()

@@ -53,6 +53,7 @@ extern void DeleteButton__ctor_m18CDC1E14D7EE96CC5470B7AE8A3B2D0FA5719B5 (void);
 extern void FunctionOneInput_Start_m4337721414EFB4E08F5AE52FB7CA7A00FCA4555A (void);
 extern void FunctionOneInput_OutputsNumber_m16857AE26FC801DFC22202F9FBBCC3FAD98F6F22 (void);
 extern void FunctionOneInput_OutputsVector_mCE6D2A56259CE1E37D37EEAEB32B7A9BC5C0FD38 (void);
+extern void FunctionOneInput_UpdateTexts_m4F2DC084EB3120CE73874667A5C56353B3BF5EB5 (void);
 extern void FunctionOneInput_GetCurrentResult_mA0E733C5CB4668144CD4496D44193C73406A58C4 (void);
 extern void FunctionOneInput_GetCurrentVectorResult_mFE98876231763DF61827E4C2C03D3764A423716B (void);
 extern void FunctionOneInput_SetFunctionByIndex_m722DDFA88E392941FF3EE6F7338DD9181885D06D (void);
@@ -121,10 +122,12 @@ extern void SpawnerBloques__ctor_mD104B3211FDC95DF9691E5AC21532B5C0E48EDB8 (void
 extern void TwoInputFunction_Start_mBFF735B0326D01DC9C196B2D2D77305C3951F448 (void);
 extern void TwoInputFunction_OutputsNumber_m66A47200B35C8917526AE3BF0E8880181CA921C3 (void);
 extern void TwoInputFunction_UpdateBlockColor_mAE15CFC48F5E6C6F9449960A89B699E084AE892C (void);
+extern void TwoInputFunction_UpdateTexts_m1813F9536D004B082DFB3644CACECEC2F9A8058E (void);
 extern void TwoInputFunction_OutputsVector_m6AC265BC1F3748970247B4269FBA6CD72D86D2C3 (void);
 extern void TwoInputFunction_GetCurrentResult_m0302F9D7B92A9A852E201C37F82A7CC6CCFF28C7 (void);
 extern void TwoInputFunction_GetCurrentVectorResult_m2638A05EE6CB7124D50BCED3D4F695FEF2D1ABCF (void);
 extern void TwoInputFunction_SetFunctionByIndex_m3C6B7FF180E4B2964F990F5107F51ECDC8B082E0 (void);
+extern void TwoInputFunction_Update_mB63F6E7053C067D1FC14B3B8CF1C8AC3809D7DEA (void);
 extern void TwoInputFunction_AcceptsInput_m12843B4BD3DE4C0D52960DD5863AE1622CB2800A (void);
 extern void TwoInputFunction__ctor_m15EA12073B860D16179DD7FA0452E1D4ED8FC6AE (void);
 extern void VectorBlock_Start_m9B035B4E1EFADE2357C43399B87445F4E36E48B0 (void);
@@ -151,7 +154,7 @@ extern void VectorKeyboardPanel__ctor_m99C1DB80F6FFF51B02F916460885923F5CBC85C6 
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
 extern void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (void);
-static Il2CppMethodPointer s_methodPointers[144] = 
+static Il2CppMethodPointer s_methodPointers[147] = 
 {
 	ButtonFeedback_Start_m78CC9DB9E8CBAA66D65BE94E13BEF46CC0939D97,
 	ButtonFeedback_OnDestroy_mD629F5B5D8AC8A1808A978E57BEA85A4D0DD402F,
@@ -199,6 +202,7 @@ static Il2CppMethodPointer s_methodPointers[144] =
 	FunctionOneInput_Start_m4337721414EFB4E08F5AE52FB7CA7A00FCA4555A,
 	FunctionOneInput_OutputsNumber_m16857AE26FC801DFC22202F9FBBCC3FAD98F6F22,
 	FunctionOneInput_OutputsVector_mCE6D2A56259CE1E37D37EEAEB32B7A9BC5C0FD38,
+	FunctionOneInput_UpdateTexts_m4F2DC084EB3120CE73874667A5C56353B3BF5EB5,
 	FunctionOneInput_GetCurrentResult_mA0E733C5CB4668144CD4496D44193C73406A58C4,
 	FunctionOneInput_GetCurrentVectorResult_mFE98876231763DF61827E4C2C03D3764A423716B,
 	FunctionOneInput_SetFunctionByIndex_m722DDFA88E392941FF3EE6F7338DD9181885D06D,
@@ -267,10 +271,12 @@ static Il2CppMethodPointer s_methodPointers[144] =
 	TwoInputFunction_Start_mBFF735B0326D01DC9C196B2D2D77305C3951F448,
 	TwoInputFunction_OutputsNumber_m66A47200B35C8917526AE3BF0E8880181CA921C3,
 	TwoInputFunction_UpdateBlockColor_mAE15CFC48F5E6C6F9449960A89B699E084AE892C,
+	TwoInputFunction_UpdateTexts_m1813F9536D004B082DFB3644CACECEC2F9A8058E,
 	TwoInputFunction_OutputsVector_m6AC265BC1F3748970247B4269FBA6CD72D86D2C3,
 	TwoInputFunction_GetCurrentResult_m0302F9D7B92A9A852E201C37F82A7CC6CCFF28C7,
 	TwoInputFunction_GetCurrentVectorResult_m2638A05EE6CB7124D50BCED3D4F695FEF2D1ABCF,
 	TwoInputFunction_SetFunctionByIndex_m3C6B7FF180E4B2964F990F5107F51ECDC8B082E0,
+	TwoInputFunction_Update_mB63F6E7053C067D1FC14B3B8CF1C8AC3809D7DEA,
 	TwoInputFunction_AcceptsInput_m12843B4BD3DE4C0D52960DD5863AE1622CB2800A,
 	TwoInputFunction__ctor_m15EA12073B860D16179DD7FA0452E1D4ED8FC6AE,
 	VectorBlock_Start_m9B035B4E1EFADE2357C43399B87445F4E36E48B0,
@@ -298,7 +304,7 @@ static Il2CppMethodPointer s_methodPointers[144] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876,
 };
-static const int32_t s_InvokerIndices[144] = 
+static const int32_t s_InvokerIndices[147] = 
 {
 	20176,
 	20176,
@@ -346,6 +352,7 @@ static const int32_t s_InvokerIndices[144] =
 	20176,
 	19693,
 	19693,
+	20176,
 	20049,
 	20165,
 	15328,
@@ -414,10 +421,12 @@ static const int32_t s_InvokerIndices[144] =
 	20176,
 	19693,
 	20176,
+	20176,
 	19693,
 	20049,
 	20165,
 	15328,
+	20176,
 	11068,
 	20176,
 	20176,
@@ -449,7 +458,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	144,
+	147,
 	s_methodPointers,
 	0,
 	NULL,
