@@ -202,19 +202,7 @@ public class VectorBlock : MonoBehaviour
         }
     }
 
-    void UpdateVisuals()
-    {
-        if (valueText != null)
-        {
-            string x = currentVector.x.ToString("F1", System.Globalization.CultureInfo.InvariantCulture);
-            string y = currentVector.y.ToString("F1", System.Globalization.CultureInfo.InvariantCulture);
-            string z = currentVector.z.ToString("F1", System.Globalization.CultureInfo.InvariantCulture);
-
-            valueText.text = $"({x}, {y}, {z})";
-        }
-    }
-
-    public void SetVectorManually(Vector3 newVector)
+    public void SetValueFromKeyboard(Vector3 newVector)
     {
         keyboardExactVector = newVector;
         currentVector = newVector;
@@ -241,6 +229,18 @@ public class VectorBlock : MonoBehaviour
 
         UpdateVisuals();
     }
+    void UpdateVisuals()
+    {
+        if (valueText != null)
+        {
+            string x = currentVector.x.ToString("F2", System.Globalization.CultureInfo.InvariantCulture);
+            string y = currentVector.y.ToString("F2", System.Globalization.CultureInfo.InvariantCulture);
+            string z = currentVector.z.ToString("F2", System.Globalization.CultureInfo.InvariantCulture);
+
+            valueText.text = $"x: {x}\n y: {y}\n z: {z}";
+        }
+    }
+
 
 
     public void OpenKeyboard()

@@ -18,6 +18,7 @@ public class CableMeta : MonoBehaviour
     [Header("Colors")]
     public Color colorDisconnected = Color.red;
     public Color colorConnected = Color.green;
+    public float emissionIntensity = 4f;
 
     [Header("References")]
     public Transform blockOriginal;
@@ -129,12 +130,23 @@ public class CableMeta : MonoBehaviour
 
     void UpdateCableColor(Color targetColor)
     {
-        lineRenderer.startColor = targetColor;
-        lineRenderer.endColor = targetColor;
+        lineRenderer.startColor = targetColor * 1.5f;
+        lineRenderer.endColor = targetColor * 1.5f;
 
-        if (lineRenderer.material.HasProperty("_EmissionColor"))
+        Material mat = lineRenderer.material;
+
+        if (mat.HasProperty("_BaseColor"))
         {
-            lineRenderer.material.SetColor("_EmissionColor", targetColor * 2.0f);
+            mat.SetColor("_BaseColor", targetColor);
+        }
+        if (mat.HasProperty("_Color"))
+        {
+            mat.SetColor("_Color", targetColor);
+        }
+        if (mat.HasProperty("_EmissionColor"))
+        {
+            mat.EnableKeyword("_EMISSION");
+            mat.SetColor("_EmissionColor", targetColor * emissionIntensity);
         }
     }
 

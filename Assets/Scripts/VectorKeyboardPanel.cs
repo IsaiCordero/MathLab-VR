@@ -94,7 +94,7 @@ public class VectorKeyboardPanel : MonoBehaviour
                 break;
         }
 
-        targetVectorBlock.SetVectorManually(v);
+        targetVectorBlock.SetValueFromKeyboard(v);
         targetVectorBlock.CloseKeyboard();
     }
 

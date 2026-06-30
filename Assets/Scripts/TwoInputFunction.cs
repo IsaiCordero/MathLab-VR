@@ -121,7 +121,7 @@ public class TwoInputFunction : MonoBehaviour
             case "ANGULO":
                 firstInputText.text = "V";
                 secondInputText.text = "V";
-                outputText.text = "V";
+                outputText.text = "N";
                 break;
 
             default:

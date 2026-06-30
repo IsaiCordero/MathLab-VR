@@ -61,7 +61,7 @@ private GameObject currentKeyboardInstance;
         {
             float result = incomingCable.GetValueFromSource();
             currentValue = result;
-            valueText.text = result.ToString("F1");
+            valueText.text = result.ToString("F2");
         }
         else if (Slider != null && sliderHandle != null && Slider.activeInHierarchy)
         {
@@ -96,7 +96,7 @@ private GameObject currentKeyboardInstance;
     {
         if(valueText != null && incomingCable == null)
         {
-            valueText.text = currentValue.ToString("F1");
+            valueText.text = currentValue.ToString("F2");
         }
     }
 
