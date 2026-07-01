@@ -1,3 +1,4 @@
+# Unity
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -5,5 +6,26 @@
 [Bb]uilds/
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
+MemoryCaptures/
+Recordings/
 
-XR TFG_BackUpThisFolder_ButDontShipItWithYourGame/
+# IL2CPP / Burst
+*_BackUpThisFolder_ButDontShipItWithYourGame/
+*_BurstDebugInformation_DoNotShip/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+
+# Visual Studio
+*.csproj
+*.sln
+*.slnx
+*.user
+*.pidb
+*.booproj
+
+# Android
+*.apk
+*.aab
