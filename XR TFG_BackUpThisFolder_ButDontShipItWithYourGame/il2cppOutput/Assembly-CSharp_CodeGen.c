@@ -29,7 +29,10 @@ extern void CableMeta_UpdateCableColor_m7CE1F6466FB31FF0516764ED3926CFFD857AF5FE
 extern void CableMeta_PlaySound_m92DA9E1FA57ABF5F2CACB94BE16A9334D0363B67 (void);
 extern void CableMeta_SetOutputArrowVisible_m394E2978F55D58DE3A7491EC8C785FC9BB5E476E (void);
 extern void CableMeta_DrawCurveBezier_m8E76D961958AD4BEF28D4FE3946C495D7BAE8940 (void);
-extern void CableMeta_CalculateBezierPoint_mB0F26BD52FAAECF6BF3F4399C7E118F081AF3683 (void);
+extern void CableMeta_CalculateCubicBezierPoint_m7A21C61C9906958F92A18BB8207A4381DCE7ABA7 (void);
+extern void CableMeta_GetAttachPoint_mA2E35A173A903191B35209D6E1A3B68C7E993E88 (void);
+extern void CableMeta_GetNodeRoot_mF972767D55655A57783E187CA5B10AE8910BA25A (void);
+extern void CableMeta_GetOutwardDirection_m8543C8E5AC5070C94B4EAB9B2872A444B4265DC5 (void);
 extern void CableMeta_EventsMeta_mF8C4ED75BA4A0C77F8628EDDF9E3EE3132216606 (void);
 extern void CableMeta_TryConnection_m86381D71333B44C1223E6DDBE9B1AE9AABA873D0 (void);
 extern void CableMeta_ResetPosition_m6161E888E8E2F4B3F31055D08FE876EBDD0E4991 (void);
@@ -154,7 +157,7 @@ extern void VectorKeyboardPanel__ctor_m99C1DB80F6FFF51B02F916460885923F5CBC85C6 
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
 extern void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (void);
-static Il2CppMethodPointer s_methodPointers[147] = 
+static Il2CppMethodPointer s_methodPointers[150] = 
 {
 	ButtonFeedback_Start_m78CC9DB9E8CBAA66D65BE94E13BEF46CC0939D97,
 	ButtonFeedback_OnDestroy_mD629F5B5D8AC8A1808A978E57BEA85A4D0DD402F,
@@ -178,7 +181,10 @@ static Il2CppMethodPointer s_methodPointers[147] =
 	CableMeta_PlaySound_m92DA9E1FA57ABF5F2CACB94BE16A9334D0363B67,
 	CableMeta_SetOutputArrowVisible_m394E2978F55D58DE3A7491EC8C785FC9BB5E476E,
 	CableMeta_DrawCurveBezier_m8E76D961958AD4BEF28D4FE3946C495D7BAE8940,
-	CableMeta_CalculateBezierPoint_mB0F26BD52FAAECF6BF3F4399C7E118F081AF3683,
+	CableMeta_CalculateCubicBezierPoint_m7A21C61C9906958F92A18BB8207A4381DCE7ABA7,
+	CableMeta_GetAttachPoint_mA2E35A173A903191B35209D6E1A3B68C7E993E88,
+	CableMeta_GetNodeRoot_mF972767D55655A57783E187CA5B10AE8910BA25A,
+	CableMeta_GetOutwardDirection_m8543C8E5AC5070C94B4EAB9B2872A444B4265DC5,
 	CableMeta_EventsMeta_mF8C4ED75BA4A0C77F8628EDDF9E3EE3132216606,
 	CableMeta_TryConnection_m86381D71333B44C1223E6DDBE9B1AE9AABA873D0,
 	CableMeta_ResetPosition_m6161E888E8E2F4B3F31055D08FE876EBDD0E4991,
@@ -304,7 +310,7 @@ static Il2CppMethodPointer s_methodPointers[147] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876,
 };
-static const int32_t s_InvokerIndices[147] = 
+static const int32_t s_InvokerIndices[150] = 
 {
 	20176,
 	20176,
@@ -328,7 +334,10 @@ static const int32_t s_InvokerIndices[147] =
 	15419,
 	15176,
 	20176,
-	2409,
+	1180,
+	13419,
+	13419,
+	13828,
 	15450,
 	20176,
 	20176,
@@ -458,7 +467,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	147,
+	150,
 	s_methodPointers,
 	0,
 	NULL,

@@ -149,7 +149,7 @@ Transform:
   m_GameObject: {fileID: 1098920369905751410}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.515, y: 0.158, z: 0}
+  m_LocalPosition: {x: -0.666, y: 0.158, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -350,14 +350,14 @@ RectTransform:
   m_GameObject: {fileID: 2427731781594429033}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.0200001}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.58999, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5728048385330260784}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 16.6, y: -77.4}
+  m_AnchoredPosition: {x: 13.607, y: -77.4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3635274144912413002
@@ -882,14 +882,14 @@ RectTransform:
   m_GameObject: {fileID: 4278265461783090116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.02}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.58999, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5728048385330260784}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: -64.6}
+  m_AnchoredPosition: {x: -3.5, y: -64.6}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8837867750766803975
@@ -1019,7 +1019,7 @@ Transform:
   m_GameObject: {fileID: 4575905344659202813}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.515, y: -0.267, z: 0}
+  m_LocalPosition: {x: -0.666, y: -0.267, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1646,6 +1646,7 @@ MonoBehaviour:
   InPut: Input
   colorDisconnected: {r: 1, g: 0, b: 0, a: 1}
   colorConnected: {r: 0, g: 1, b: 0, a: 1}
+  emissionIntensity: 4
   blockOriginal: {fileID: 3308571308384321213}
   audioSource: {fileID: 6038975051009220779}
   connectSound: {fileID: 8300000, guid: bd055752f18a4e64ba43445d5a68f5da, type: 3}
@@ -2093,14 +2094,14 @@ RectTransform:
   m_GameObject: {fileID: 9094950361736846808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.0200001}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.58999, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5728048385330260784}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: -95.1}
+  m_AnchoredPosition: {x: -3.499999, y: -95.1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8855716064622042126

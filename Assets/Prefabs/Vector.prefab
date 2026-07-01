@@ -1381,7 +1381,7 @@ Transform:
   m_GameObject: {fileID: 6972021615312266208}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.444, y: 0.0029, z: 0.454}
+  m_LocalPosition: {x: 0.532, y: 0.0029, z: 0.454}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1825,6 +1825,7 @@ MonoBehaviour:
   InPut: Input
   colorDisconnected: {r: 1, g: 0, b: 0, a: 1}
   colorConnected: {r: 0, g: 1, b: 0, a: 1}
+  emissionIntensity: 4
   blockOriginal: {fileID: 4752835896976161619}
   audioSource: {fileID: 2843251315252704683}
   connectSound: {fileID: 8300000, guid: bd055752f18a4e64ba43445d5a68f5da, type: 3}

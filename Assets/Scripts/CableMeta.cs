@@ -33,7 +33,12 @@ public class CableMeta : MonoBehaviour
 
     public Transform DestinyPort => destinyPort;
 
-    public int curveResolution = 10;
+    public int curveResolution = 20;
+
+    public float curveTangentStrength = 0.35f;
+    public float curveVerticalDrop = 0.15f;
+    public float controlPointDistance = 0.4f;
+
     private bool isConnected = false;
 
     private Vector3 lastStartPoint;
@@ -95,20 +100,6 @@ public class CableMeta : MonoBehaviour
 
     void Update()
     {
-        if (blockOutPut != null)
-        {
-            Vector3 currentStartPoint = blockOutPut.position;
-            Vector3 currentEndPoint = transform.position;
-
-            if (!curveInitialized || currentStartPoint != lastStartPoint || currentEndPoint != lastEndPoint)
-            {
-                DrawCurveBezier();
-                lastStartPoint = currentStartPoint;
-                lastEndPoint = currentEndPoint;
-                curveInitialized = true;
-            }
-        }
-
         if (isConnected && destinyPort != null)
         {
             transform.position = destinyPort.position;
@@ -120,6 +111,20 @@ public class CableMeta : MonoBehaviour
                 transform.rotation = Quaternion.LookRotation(directionToTarget);
             }
         }
+        if (blockOutPut != null)
+        {
+            Vector3 currentStartPoint = GetAttachPoint(blockOutPut).position;
+            Vector3 currentEndPoint = transform.position;
+
+            if (!curveInitialized || currentStartPoint != lastStartPoint || currentEndPoint != lastEndPoint)
+            {
+                DrawCurveBezier();
+                lastStartPoint = currentStartPoint;
+                lastEndPoint = currentEndPoint;
+                curveInitialized = true;
+            }
+        }
+
 
 
         if (grabbableMeta.SelectingPointsCount > 0 && !isConnected)
@@ -166,38 +171,109 @@ public class CableMeta : MonoBehaviour
         }
     }
 
-    void DrawCurveBezier()
+void DrawCurveBezier()
+{
+    int resolution = Mathf.Max(2, curveResolution);
+    lineRenderer.positionCount = resolution;
+
+    Transform startAttach = GetAttachPoint(blockOutPut);
+
+    Vector3 p0 = startAttach.position;
+    Vector3 p3 = transform.position;
+
+    float distance = Vector3.Distance(p0, p3);
+    float controlDistance = Mathf.Max(0.05f, distance * controlPointDistance);
+
+    Vector3 startDir = GetOutwardDirection(blockOutPut);
+    Vector3 endDir = startDir * -1f;
+
+    if (isConnected && destinyPort != null)
     {
-        lineRenderer.positionCount = curveResolution;
-
-        Vector3 startPoint = blockOutPut.position;
-        Vector3 endPoint = transform.position;
-
-        Vector3 middlePoint = (startPoint + endPoint) / 2f;
-        float distance = Vector3.Distance(startPoint, endPoint);
-        middlePoint += blockOutPut.right * (distance * 0.3f);
-        middlePoint.y -= (distance * 0.2f);
-
-        for (int i = 0; i < curveResolution; i++)
-        {
-            float y = i / (float)(curveResolution - 1);
-            Vector3 curvePosition = CalculateBezierPoint(y, startPoint, middlePoint, endPoint);
-            lineRenderer.SetPosition(i, curvePosition);
-        }
+        endDir = GetOutwardDirection(destinyPort);
     }
 
-    Vector3 CalculateBezierPoint(float y, Vector3 p0, Vector3 p1, Vector3 p2)
+    Vector3 p1 = p0 + startDir * controlDistance;
+    Vector3 p2 = p3 + endDir * controlDistance;
+
+    for (int i = 0; i < resolution; i++)
     {
-        float u = 1 - y;
-        float yy = y * y;
-        float uu = u * u;
-
-        Vector3 p = uu * p0;
-        p += 2 * u * y * p1;
-        p += yy * p2;
-
-        return p;
+        float t = i / (float)(resolution - 1);
+        Vector3 curvePosition = CalculateCubicBezierPoint(t, p0, p1, p2, p3);
+        lineRenderer.SetPosition(i, curvePosition);
     }
+}
+
+Vector3 CalculateCubicBezierPoint(float t, Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3)
+{
+    float u = 1f - t;
+    float uu = u * u;
+    float uuu = uu * u;
+    float tt = t * t;
+    float ttt = tt * t;
+
+    Vector3 p = uuu * p0;
+    p += 3f * uu * t * p1;
+    p += 3f * u * tt * p2;
+    p += ttt * p3;
+
+    return p;
+}
+
+Transform GetAttachPoint(Transform port)
+{
+    if (port == null) return null;
+
+    Transform attachPoint = port.Find("CableAttachPoint");
+
+    if (attachPoint != null)
+    {
+        return attachPoint;
+    }
+
+    return port;
+}
+
+Transform GetNodeRoot(Transform port)
+{
+    if (port == null) return null;
+
+    if (port == blockOutPut && blockOriginal != null)
+    {
+        return blockOriginal;
+    }
+
+    NumberBlock numberBlock = port.GetComponentInParent<NumberBlock>();
+    if (numberBlock != null) return numberBlock.transform;
+
+    VectorBlock vectorBlock = port.GetComponentInParent<VectorBlock>();
+    if (vectorBlock != null) return vectorBlock.transform;
+
+    TwoInputFunction twoInputFunction = port.GetComponentInParent<TwoInputFunction>();
+    if (twoInputFunction != null) return twoInputFunction.transform;
+
+    FunctionOneInput oneInputFunction = port.GetComponentInParent<FunctionOneInput>();
+    if (oneInputFunction != null) return oneInputFunction.transform;
+
+    OneInputNumberFunction oneInputNumberFunction = port.GetComponentInParent<OneInputNumberFunction>();
+    if (oneInputNumberFunction != null) return oneInputNumberFunction.transform;
+
+    return port.parent;
+}
+
+Vector3 GetOutwardDirection(Transform port)
+{
+    Transform root = GetNodeRoot(port);
+
+    if (root == null)
+    {
+        return port.right;
+    }
+
+    Vector3 localPortPosition = root.InverseTransformPoint(port.position);
+    float side = localPortPosition.x >= 0f ? 1f : -1f;
+
+    return root.TransformDirection(Vector3.right * side).normalized;
+}
 
     private void EventsMeta(PointerEvent evento)
     {

@@ -58,7 +58,7 @@ Transform:
   m_GameObject: {fileID: 1098920369905751410}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.579, y: 0, z: 0}
+  m_LocalPosition: {x: -0.667, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -908,14 +908,14 @@ RectTransform:
   m_GameObject: {fileID: 4922972594901389060}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.09}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.63415, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5728048385330260784}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.9, y: -75.9}
+  m_AnchoredPosition: {x: 0.8, y: -75.9}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4657567943182109409
@@ -1361,6 +1361,7 @@ MonoBehaviour:
   InPut: Input
   colorDisconnected: {r: 1, g: 0, b: 0, a: 1}
   colorConnected: {r: 0, g: 1, b: 0, a: 1}
+  emissionIntensity: 4
   blockOriginal: {fileID: 3308571308384321213}
   audioSource: {fileID: 4042412354308039510}
   connectSound: {fileID: 8300000, guid: bd055752f18a4e64ba43445d5a68f5da, type: 3}
@@ -1526,14 +1527,14 @@ RectTransform:
   m_GameObject: {fileID: 7523553163162448030}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.04}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.63415, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5728048385330260784}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.5, y: -75.9}
+  m_AnchoredPosition: {x: -14.6, y: -75.9}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2942889674542886805
