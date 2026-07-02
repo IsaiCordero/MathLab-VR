@@ -1,57 +1,23 @@
 using UnityEngine;
-using Oculus.Interaction;
 
-public class KeyboardButton : MonoBehaviour
+public class KeyboardButton : FixedGrabbableButton
 {
     [Header("References")]
     public VectorKeyboardPanel keyboardPanel;
-    public Grabbable grabbableButton;
+    public NumberKeyboardPanel numberKeyboardPanel;
 
     [Header("Button Action")]
     public string buttonValue;
 
-    public NumberKeyboardPanel numberKeyboardPanel;
-
-    private Vector3 fixedLocalPosition;
-    private Quaternion fixedLocalRotation;
-
-    void Start()
+    protected override void OnButtonPressed()
     {
-        fixedLocalPosition = transform.localPosition;
-        fixedLocalRotation = transform.localRotation;
-
-        if (grabbableButton != null)
+        if (keyboardPanel != null)
         {
-            grabbableButton.WhenPointerEventRaised += HandlePointerEvent;
+            keyboardPanel.HandleButtonPress(buttonValue);
         }
-    }
-
-    void LateUpdate()
-    {
-        transform.localPosition = fixedLocalPosition;
-        transform.localRotation = fixedLocalRotation;
-    }
-
-    private void HandlePointerEvent(PointerEvent evt)
-    {
-        if (evt.Type == PointerEventType.Select)
+        else if (numberKeyboardPanel != null)
         {
-            if (keyboardPanel != null)
-            {
-                keyboardPanel.HandleButtonPress(buttonValue);
-            }
-            else if (numberKeyboardPanel != null)
-            {
-                numberKeyboardPanel.HandleButtonPress(buttonValue);
-            }
-        }
-    }
-
-    private void OnDestroy()
-    {
-        if (grabbableButton != null)
-        {
-            grabbableButton.WhenPointerEventRaised -= HandlePointerEvent;
+            numberKeyboardPanel.HandleButtonPress(buttonValue);
         }
     }
 }

@@ -69,7 +69,7 @@ public class SubtractTwoInputOperation : BasicTwoInputOperation
 
 public class MultiplyTwoInputOperation : BasicTwoInputOperation
 {
-    public override string Label => "MULTIPLICACION";
+    public override string Label => "MULTIPLICACIÓN";
 
     public override NodeValue Execute(NodeValue first, NodeValue second)
     {
@@ -88,7 +88,7 @@ public class MultiplyTwoInputOperation : BasicTwoInputOperation
 
 public class DivideTwoInputOperation : BasicTwoInputOperation
 {
-    public override string Label => "DIVISION";
+    public override string Label => "DIVISIÓN";
 
     public override NodeValue Execute(NodeValue first, NodeValue second)
     {
@@ -176,7 +176,7 @@ public class MidPointOperation : TwoInputOperation
 
 public class AngleOperation : TwoInputOperation
 {
-    public override string Label => "ANGULO";
+    public override string Label => "ÁNGULO";
     public override string FirstInputLabel => "V";
     public override string SecondInputLabel => "V";
 

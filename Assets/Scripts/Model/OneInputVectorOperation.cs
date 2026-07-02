@@ -38,7 +38,7 @@ public class MagnitudeOperation : OneInputVectorOperation
 
 public class NormalizeOperation : OneInputVectorOperation
 {
-    public override string Label => "NORMALIZACION";
+    public override string Label => "NORMALIZACIÓN";
     public override OperationOutputType OutputType => OperationOutputType.Vector;
 
     public override Vector3 ExecuteVector(Vector3 input)

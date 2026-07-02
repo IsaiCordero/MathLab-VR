@@ -1,37 +1,13 @@
 using UnityEngine;
-using Oculus.Interaction;
 
-public class OpenKeyboardButton : MonoBehaviour
+public class OpenKeyboardButton : FixedGrabbableButton
 {
     [Header("References")]
     public VectorBlock targetVectorBlock;
     public NumberBlock targetNumberBlock;
-    public Grabbable grabbableButton;
 
-    private Vector3 fixedLocalPosition;
-    private Quaternion fixedLocalRotation;
-
-    void Start()
+    protected override void OnButtonPressed()
     {
-        fixedLocalPosition = transform.localPosition;
-        fixedLocalRotation = transform.localRotation;
-
-        if (grabbableButton != null)
-        {
-            grabbableButton.WhenPointerEventRaised += HandlePointerEvent;
-        }
-    }
-
-    void LateUpdate()
-    {
-        transform.localPosition = fixedLocalPosition;
-        transform.localRotation = fixedLocalRotation;
-    }
-
-    private void HandlePointerEvent(PointerEvent evt)
-    {
-        if (evt.Type != PointerEventType.Select) return;
-
         if (targetVectorBlock != null)
         {
             targetVectorBlock.OpenKeyboard();
@@ -39,14 +15,6 @@ public class OpenKeyboardButton : MonoBehaviour
         else if (targetNumberBlock != null)
         {
             targetNumberBlock.OpenKeyboard();
-        }
-    }
-
-    private void OnDestroy()
-    {
-        if (grabbableButton != null)
-        {
-            grabbableButton.WhenPointerEventRaised -= HandlePointerEvent;
         }
     }
 }

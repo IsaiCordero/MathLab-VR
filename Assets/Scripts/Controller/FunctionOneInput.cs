@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FunctionOneInput : MonoBehaviour, INodeOutput, INodeInput
+public class FunctionOneInput : MonoBehaviour, INodeOutput, INodeInput, IFunctionBlock
 {
     [Header("View")]
     public FunctionBlockView view;
@@ -13,6 +13,11 @@ public class FunctionOneInput : MonoBehaviour, INodeOutput, INodeInput
     private List<OneInputVectorOperation> operations;
 
     void Awake()
+    {
+        InitializeOperations();
+    }
+
+    void InitializeOperations()
     {
         operations = new List<OneInputVectorOperation>
         {
@@ -123,7 +128,7 @@ public class FunctionOneInput : MonoBehaviour, INodeOutput, INodeInput
     {
         if (operations == null || operations.Count == 0)
         {
-            Awake();
+            InitializeOperations();
         }
 
         if (operations == null || operations.Count == 0) return;

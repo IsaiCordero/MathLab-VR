@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OneInputNumberFunction : MonoBehaviour, INodeOutput, INodeInput
+public class OneInputNumberFunction : MonoBehaviour, INodeOutput, INodeInput, IFunctionBlock
 {
     [Header("Data Input")]
     public DataCable input;
@@ -13,6 +13,11 @@ public class OneInputNumberFunction : MonoBehaviour, INodeOutput, INodeInput
     private List<OneInputNumberOperation> operations;
 
     void Awake()
+    {
+        InitializeOperations();
+    }
+
+    void InitializeOperations()
     {
         operations = new List<OneInputNumberOperation>
         {
@@ -72,7 +77,7 @@ public class OneInputNumberFunction : MonoBehaviour, INodeOutput, INodeInput
     {
         if (operations == null || operations.Count == 0)
         {
-            Awake();
+            InitializeOperations();
         }
 
         if (operations == null || operations.Count == 0) return;

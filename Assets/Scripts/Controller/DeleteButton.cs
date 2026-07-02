@@ -1,44 +1,13 @@
 using UnityEngine;
-using Oculus.Interaction;
 
-public class DeleteButton : MonoBehaviour
+public class DeleteButton : FixedGrabbableButton
 {
     [Header("References")]
-    public CableMeta plugConnection; 
-    public Grabbable grabbableButton;      
+    public CableMeta plugConnection;
 
-    private Vector3 fixedPosition;
-    private Quaternion fixedRotation;
-
-    void Start()
+    protected override void OnButtonPressed()
     {
-        fixedPosition = transform.localPosition;
-        fixedRotation = transform.localRotation;
-
-        if (grabbableButton != null)
-        {
-            grabbableButton.WhenPointerEventRaised += EventsButton;
-        }
-    }
-
-    private void OnDestroy()
-    {
-        if (grabbableButton != null)
-            grabbableButton.WhenPointerEventRaised -= EventsButton;
-    }
-
-    private void EventsButton(PointerEvent evento)
-    {
-        if (evento.Type == PointerEventType.Select)
-        {
-            DeleteSecurity();
-        }
-    }
-
-    void Update()
-    {
-        transform.localPosition = fixedPosition;
-        transform.localRotation = fixedRotation;
+        DeleteSecurity();
     }
 
     void DeleteSecurity()
@@ -48,6 +17,7 @@ public class DeleteButton : MonoBehaviour
         Transform rootBlock = plugConnection.blockOriginal;
 
         CableMeta[] allCables = FindObjectsOfType<CableMeta>();
+
         foreach (CableMeta c in allCables)
         {
             bool cableBelongsToDeletedBlock = c.transform.IsChildOf(rootBlock);
@@ -60,6 +30,11 @@ public class DeleteButton : MonoBehaviour
         }
 
         plugConnection.ResetPosition();
+
+        if (NodeManager.Instance != null)
+        {
+            NodeManager.Instance.UnregisterNode(rootBlock.gameObject);
+        }
 
         Destroy(rootBlock.gameObject);
     }

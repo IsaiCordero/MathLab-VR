@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TwoInputFunction : MonoBehaviour, INodeOutput, INodeInput
+public class TwoInputFunction : MonoBehaviour, INodeOutput, INodeInput, IFunctionBlock
 {
 
     [Header("Data Input")]
@@ -15,6 +15,11 @@ public class TwoInputFunction : MonoBehaviour, INodeOutput, INodeInput
     private List<TwoInputOperation> operations;
 
     void Awake()
+    {
+        InitializeOperations();
+    }
+
+    void InitializeOperations()
     {
         operations = new List<TwoInputOperation>
         {
@@ -147,7 +152,7 @@ public class TwoInputFunction : MonoBehaviour, INodeOutput, INodeInput
     {
         if (operations == null || operations.Count == 0)
         {
-            Awake();
+            InitializeOperations();
         }
 
         if (operations == null || operations.Count == 0) return;

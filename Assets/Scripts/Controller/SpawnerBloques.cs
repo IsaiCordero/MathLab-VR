@@ -1,7 +1,6 @@
 using UnityEngine;
-using Oculus.Interaction;
 
-public class SpawnerBloques : MonoBehaviour
+public class SpawnerBloques : FixedGrabbableButton
 {
     [Header("Spawn")]
     public GameObject functionBlockPrefab;
@@ -9,35 +8,9 @@ public class SpawnerBloques : MonoBehaviour
     public int defaultFunctionIndex = 0;
     public Vector3 spawnRotationOffset = Vector3.zero;
 
-    [Header("Interaction")]
-    public Grabbable grabbableBoton;
-
-    private Vector3 fixedLocalPosition;
-    private Quaternion fixedLocalRotation;
-
-    void Start()
+    protected override void OnButtonPressed()
     {
-        fixedLocalPosition = transform.localPosition;
-        fixedLocalRotation = transform.localRotation;
-
-        if (grabbableBoton != null)
-        {
-            grabbableBoton.WhenPointerEventRaised += HandlePointerEvent;
-        }
-    }
-
-    void LateUpdate()
-    {
-        transform.localPosition = fixedLocalPosition;
-        transform.localRotation = fixedLocalRotation;
-    }
-
-    private void HandlePointerEvent(PointerEvent evt)
-    {
-        if (evt.Type == PointerEventType.Select)
-        {
-            SpawnFunctionBlock();
-        }
+        SpawnFunctionBlock();
     }
 
     private void SpawnFunctionBlock()
@@ -55,31 +28,16 @@ public class SpawnerBloques : MonoBehaviour
 
         GameObject newBlock = Instantiate(functionBlockPrefab, spawnPosition, spawnRotation);
 
-        TwoInputFunction functionTwoInput = newBlock.GetComponent<TwoInputFunction>();
-        if (functionTwoInput != null)
+        if (NodeManager.Instance != null)
         {
-            functionTwoInput.SetFunctionByIndex(defaultFunctionIndex);
-            return;
+            NodeManager.Instance.RegisterNode(newBlock);
         }
 
-        FunctionOneInput oneInputFunction = newBlock.GetComponent<FunctionOneInput>();
-        if(oneInputFunction != null)
-        {
-            oneInputFunction.SetFunctionByIndex(defaultFunctionIndex);
-        }
+        IFunctionBlock functionBlock = newBlock.GetComponent<IFunctionBlock>();
 
-        OneInputNumberFunction oneInputNumberFunction = newBlock.GetComponent<OneInputNumberFunction>();
-        if (oneInputNumberFunction != null)
+        if (functionBlock != null)
         {
-            oneInputNumberFunction.SetFunctionByIndex(defaultFunctionIndex);
-        }
-    }
-
-    private void OnDestroy()
-    {
-        if (grabbableBoton != null)
-        {
-            grabbableBoton.WhenPointerEventRaised -= HandlePointerEvent;
+            functionBlock.SetFunctionByIndex(defaultFunctionIndex);
         }
     }
 }
