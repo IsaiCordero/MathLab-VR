@@ -26,7 +26,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1239669942989126476}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0.000000011920928}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.144434, y: 0.18422, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -250,7 +250,7 @@ GameObject:
   - component: {fileID: 5866197006771226047}
   - component: {fileID: 1579808689915437632}
   - component: {fileID: 709944333262124261}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: InputArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -347,6 +347,10 @@ GameObject:
   - component: {fileID: 4050698586083828171}
   - component: {fileID: 6988946114954637371}
   - component: {fileID: 8801503477499821619}
+  - component: {fileID: 6589278913072145364}
+  - component: {fileID: 7218803894122818877}
+  - component: {fileID: 8714587486707747649}
+  - component: {fileID: 7694730658889728171}
   m_Layer: 0
   m_Name: Number
   m_TagString: Untagged
@@ -406,8 +410,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 0.95068103, z: 0.12937605}
-  m_Center: {x: 0, y: -0.024659485, z: 0.4353121}
+  m_Size: {x: 0.96442753, y: 0.95068103, z: 0.12937605}
+  m_Center: {x: -0.017786287, y: -0.024659485, z: 0.4353121}
 --- !u!54 &-5447349507061167671
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -534,18 +538,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cae697d971ec10b4fb18c777bde16841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NumberBlock
-  valueText: {fileID: 2203743633640173688}
   currentValue: 0
   incomingCable: {fileID: 0}
-  keyboardPanelPrefab: {fileID: 4080338152072279090, guid: 6e03e33207f8fc744a2d34b003788374, type: 3}
-  keyboardSpawnPoint: {fileID: 7003634936568328195}
-  keyboardSpawnScale: {x: 1.5, y: 3, z: 1.5}
-  editButton: {fileID: 5386295310118235732}
-  Slider: {fileID: 6572516144082783036}
-  sliderHandle: {fileID: 7787058688161070924}
-  maxLocalX: 0.2
-  minLocalX: -0.2
-  sliderMoveThreshold: 0.001
+  inputModeController: {fileID: 7694730658889728171}
+  view: {fileID: 6589278913072145364}
+  sliderController: {fileID: 7218803894122818877}
+  keyboardController: {fileID: 8714587486707747649}
 --- !u!23 &8801503477499821619
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -595,6 +593,67 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6589278913072145364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2688589327440509510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f126cdd181cb1b48a37cf81eba1590f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NumberBlockView
+  valueText: {fileID: 2203743633640173688}
+--- !u!114 &7218803894122818877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2688589327440509510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6038caf760009440ad9be2fdcb28061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NumberSliderController
+  sliderRoot: {fileID: 6572516144082783036}
+  sliderHandle: {fileID: 7787058688161070924}
+  maxLocalX: 0.3
+  minLocalX: -0.3
+  sliderMoveThreshold: 0.001
+  maxSliderValue: 20
+  minSliderValue: -20
+--- !u!114 &8714587486707747649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2688589327440509510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a137ba6ca561994281f537f6ba6ac28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NumberKeyboardController
+  keyboardPanelPrefab: {fileID: 4080338152072279090, guid: 6e03e33207f8fc744a2d34b003788374, type: 3}
+  keyboardSpawnPoint: {fileID: 7003634936568328195}
+  keyboardSpawnScale: {x: 1.5, y: 3, z: 1.5}
+--- !u!114 &7694730658889728171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2688589327440509510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf4a1c8fd39112548a167303c87077e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BlockInputModeController
+  editButton: {fileID: 5386295310118235732}
+  grabbableTarget: {fileID: 0}
 --- !u!1 &2954020649769177008
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,9 +1200,9 @@ GameObject:
   - component: {fileID: 3301309683782876556}
   - component: {fileID: 826396810008515914}
   - component: {fileID: 3518437193635895087}
-  - component: {fileID: 3499689059622858008}
   - component: {fileID: 1841341441171811479}
   - component: {fileID: 8260007307717466486}
+  - component: {fileID: 792276628075483932}
   m_Layer: 0
   m_Name: EditButton
   m_TagString: Untagged
@@ -1359,20 +1418,6 @@ MonoBehaviour:
   _releaseDistance: 0
   _resetGrabOnGrabsUpdated: 1
   _physicsGrabbable: {fileID: 0}
---- !u!114 &3499689059622858008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5386295310118235732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 094e8e4bae919ea46bf472400ad5f0e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::OpenNumberKeyboardButton
-  targetNumberBlock: {fileID: 6988946114954637371}
-  grabbableButton: {fileID: 3301309683782876556}
 --- !u!114 &1841341441171811479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1492,6 +1537,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &792276628075483932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5386295310118235732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 138fd7423b9d2f2439b0439bf723ddb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OpenKeyboardButton
+  targetVectorBlock: {fileID: 0}
+  targetNumberBlock: {fileID: 6988946114954637371}
+  grabbableButton: {fileID: 3301309683782876556}
 --- !u!1 &6416511357967751251
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,7 +1722,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.9, z: 0.457}
-  m_LocalScale: {x: 0.23439008, y: 0.31137982, z: 0.24262476}
+  m_LocalScale: {x: 0.21273477, y: 0.283137, z: 0.18731116}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4752835896976161619}
@@ -1870,7 +1930,8 @@ GameObject:
   - component: {fileID: 1527149297457415254}
   - component: {fileID: 2061445084193223775}
   - component: {fileID: 5801282334870229731}
-  m_Layer: 0
+  - component: {fileID: 6982100542404267446}
+  m_Layer: 6
   m_Name: In
   m_TagString: Input
   m_Icon: {fileID: 0}
@@ -1910,7 +1971,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 1.9611179
   m_Center: {x: 0, y: 0, z: 0}
@@ -1933,6 +1994,33 @@ MonoBehaviour:
   connectedColor: {r: 0, g: 1, b: 0, a: 1}
   invalidColor: {r: 1, g: 0, b: 0, a: 1}
   invalidFeedbackTime: 0.5
+--- !u!54 &6982100542404267446
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6972021615312266208}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7264917055811242071
 GameObject:
   m_ObjectHideFlags: 0
@@ -1985,6 +2073,7 @@ GameObject:
   - component: {fileID: 2600321118280552629}
   - component: {fileID: 4216577797355477558}
   - component: {fileID: 2788651978772527874}
+  - component: {fileID: 4270320854397256687}
   m_Layer: 0
   m_Name: Plug
   m_TagString: Untagged
@@ -2321,25 +2410,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa3215153875d964fb79d7a59d8d4df2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CableMeta
-  lineRenderer: {fileID: 3919048198266461443}
   grabbableMeta: {fileID: 2047892880557148706}
-  outputArrowVisual: {fileID: 7264917055811242071}
+  cableVisual: {fileID: 4270320854397256687}
   blockOutPut: {fileID: 7953186081738311470}
   distConn: 0.1
   FirstInPut: First InPut
   SecondInPut: Second InPut
   InPut: Input
-  colorDisconnected: {r: 1, g: 0, b: 0, a: 1}
-  colorConnected: {r: 0, g: 1, b: 0, a: 1}
-  emissionIntensity: 4
   blockOriginal: {fileID: 4752835896976161619}
   audioSource: {fileID: 2788651978772527874}
   connectSound: {fileID: 8300000, guid: bd055752f18a4e64ba43445d5a68f5da, type: 3}
   failSound: {fileID: 8300000, guid: a67028109aa424d4882678bfd49fbd9c, type: 3}
-  curveResolution: 10
-  curveTangentStrength: 0.35
-  curveVerticalDrop: 0.15
-  controlPointDistance: 0.4
 --- !u!114 &4216577797355477558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2450,6 +2531,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4270320854397256687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7701587342125914068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 028900ae7cfafe14690df15039c4c2b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CableVisual
+  lineRenderer: {fileID: 3919048198266461443}
+  outputArrowVisual: {fileID: 3101544875821922036}
+  colorDisconnected: {r: 1, g: 0, b: 0, a: 1}
+  colorConnected: {r: 0, g: 1, b: 0, a: 1}
+  emissionIntensity: 4
+  curveResolution: 20
+  controlPointDistance: 0.4
 --- !u!1 &7998316625005806034
 GameObject:
   m_ObjectHideFlags: 0
@@ -2950,6 +3050,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jack
       objectReference: {fileID: 0}
+    - target: {fileID: 5923499649655900466, guid: c1b8b52ead1744447b50fff9f65ba2e6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6449065745645327240, guid: c1b8b52ead1744447b50fff9f65ba2e6, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5
@@ -3088,6 +3192,11 @@ PrefabInstance:
 --- !u!4 &2324198313655282766 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 26593779093803111, guid: ca3734f1399d1144a8fec202627ff5fc, type: 3}
+  m_PrefabInstance: {fileID: 2314653309667064873}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3101544875821922036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 798731744515672797, guid: ca3734f1399d1144a8fec202627ff5fc, type: 3}
   m_PrefabInstance: {fileID: 2314653309667064873}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6943001885269619352

@@ -570,6 +570,10 @@ GameObject:
   - component: {fileID: 4950933439224562850}
   - component: {fileID: 4050698586083828171}
   - component: {fileID: 1068383879414028302}
+  - component: {fileID: 4813530750831445437}
+  - component: {fileID: 2218706336390749050}
+  - component: {fileID: 8913101446512042858}
+  - component: {fileID: 1770888061127900997}
   m_Layer: 0
   m_Name: Vector
   m_TagString: VectorBlock
@@ -620,8 +624,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 0.96265286, z: 0.12937605}
-  m_Center: {x: 0, y: -0.018673588, z: 0.4353121}
+  m_Size: {x: 0.96523815, y: 0.96265286, z: 0.12937605}
+  m_Center: {x: -0.017380975, y: -0.018673588, z: 0.4353121}
 --- !u!54 &-5447349507061167671
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -748,21 +752,74 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46b35e274a0903641982126250161f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VectorBlock
-  valueText: {fileID: 2203743633640173688}
   currentVector: {x: 0, y: 0, z: 0}
   vectorCube: {fileID: 2888088675040097454}
   centerReference: {fileID: 338120111179256498}
+  arrowView: {fileID: 2218706336390749050}
+  lerpSpeed: 10
+  vectorScaleFactor: 10
+  incomingCable: {fileID: 0}
+  keyboardController: {fileID: 8913101446512042858}
+  inputModeController: {fileID: 1770888061127900997}
+  view: {fileID: 4813530750831445437}
+--- !u!114 &4813530750831445437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2688589327440509510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61e645f9cb7e6dd409211c52819a675b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VectorBlockView
+  valueText: {fileID: 2203743633640173688}
+--- !u!114 &2218706336390749050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2688589327440509510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a137000a088a0b4c92000e6c5331150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VectorArrowView
   dynamicArrowRoot: {fileID: 571511034397053957}
   dynamicArrowBody: {fileID: 2117039672783694685}
   dynamicArrowHead: {fileID: 4237517343017753574}
-  lerpSpeed: 10
-  vectorScaleFactor: 10
   arrowLengthMultiplier: 1
-  incomingCable: {fileID: 0}
+--- !u!114 &8913101446512042858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2688589327440509510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40033616aaeccb14dada752b828a1df7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VectorKeyboardController
   keyboardPanelPrefab: {fileID: 4080338152072279090, guid: 792f94b7b61e288449d8218a1720299d, type: 3}
   keyboardSpawnPoint: {fileID: 2286076789648054533}
   keyboardSpawnScale: {x: 1.5, y: 3, z: 1.5}
+--- !u!114 &1770888061127900997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2688589327440509510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf4a1c8fd39112548a167303c87077e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BlockInputModeController
   editButton: {fileID: 5022307367403261147}
+  grabbableTarget: {fileID: 3345567526786186449}
 --- !u!1 &3022225069077110370
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,7 +831,7 @@ GameObject:
   - component: {fileID: 6475287760072223934}
   - component: {fileID: 2600698107299299272}
   - component: {fileID: 8810741874395260711}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: InputArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1365,7 +1422,7 @@ GameObject:
   - component: {fileID: 1527149297457415254}
   - component: {fileID: 2061445084193223775}
   - component: {fileID: 179929375332324501}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: In
   m_TagString: Input
   m_Icon: {fileID: 0}
@@ -1405,7 +1462,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 1.9611179
   m_Center: {x: 0, y: 0, z: 0}
@@ -1479,6 +1536,7 @@ GameObject:
   - component: {fileID: 2600321118280552629}
   - component: {fileID: 4216577797355477558}
   - component: {fileID: 2843251315252704683}
+  - component: {fileID: 8458512207494489289}
   m_Layer: 0
   m_Name: Plug
   m_TagString: Untagged
@@ -1815,22 +1873,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa3215153875d964fb79d7a59d8d4df2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CableMeta
-  lineRenderer: {fileID: 3919048198266461443}
   grabbableMeta: {fileID: 2047892880557148706}
-  outputArrowVisual: {fileID: 1075432503430588719}
+  cableVisual: {fileID: 8458512207494489289}
   blockOutPut: {fileID: 7953186081738311470}
   distConn: 0.1
   FirstInPut: First InPut
   SecondInPut: Second InPut
   InPut: Input
-  colorDisconnected: {r: 1, g: 0, b: 0, a: 1}
-  colorConnected: {r: 0, g: 1, b: 0, a: 1}
-  emissionIntensity: 4
   blockOriginal: {fileID: 4752835896976161619}
   audioSource: {fileID: 2843251315252704683}
   connectSound: {fileID: 8300000, guid: bd055752f18a4e64ba43445d5a68f5da, type: 3}
   failSound: {fileID: 8300000, guid: a67028109aa424d4882678bfd49fbd9c, type: 3}
-  curveResolution: 10
 --- !u!114 &4216577797355477558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1941,6 +1994,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8458512207494489289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7701587342125914068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 028900ae7cfafe14690df15039c4c2b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CableVisual
+  lineRenderer: {fileID: 3919048198266461443}
+  outputArrowVisual: {fileID: 5110312210377712735}
+  colorDisconnected: {r: 1, g: 0, b: 0, a: 1}
+  colorConnected: {r: 0, g: 1, b: 0, a: 1}
+  emissionIntensity: 4
+  curveResolution: 20
+  controlPointDistance: 0.4
 --- !u!1 &7998316625005806034
 GameObject:
   m_ObjectHideFlags: 0
@@ -2074,6 +2146,10 @@ PrefabInstance:
     - target: {fileID: 5923499649655900466, guid: c1b8b52ead1744447b50fff9f65ba2e6, type: 3}
       propertyPath: m_Name
       value: Jack
+      objectReference: {fileID: 0}
+    - target: {fileID: 5923499649655900466, guid: c1b8b52ead1744447b50fff9f65ba2e6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6449065745645327240, guid: c1b8b52ead1744447b50fff9f65ba2e6, type: 3}
       propertyPath: m_LocalScale.x
@@ -2270,6 +2346,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1539392990616426337, guid: 2a9434d6bf963804fb544457fb8b58c7, type: 3}
   m_PrefabInstance: {fileID: 4416211121614939087}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3345567526786186449 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1379332309027708702, guid: 2a9434d6bf963804fb544457fb8b58c7, type: 3}
+  m_PrefabInstance: {fileID: 4416211121614939087}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.Grabbable
 --- !u!4 &4237517343017753574 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 542445227862767657, guid: 2a9434d6bf963804fb544457fb8b58c7, type: 3}
@@ -2429,6 +2516,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3734f1399d1144a8fec202627ff5fc, type: 3}
+--- !u!1 &5110312210377712735 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 798731744515672797, guid: ca3734f1399d1144a8fec202627ff5fc, type: 3}
+  m_PrefabInstance: {fileID: 5620162116805258882}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5593656888263180005 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 26593779093803111, guid: ca3734f1399d1144a8fec202627ff5fc, type: 3}

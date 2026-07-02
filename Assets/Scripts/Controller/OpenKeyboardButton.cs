@@ -1,9 +1,10 @@
 using UnityEngine;
 using Oculus.Interaction;
 
-public class OpenNumberKeyboardButton : MonoBehaviour
+public class OpenKeyboardButton : MonoBehaviour
 {
     [Header("References")]
+    public VectorBlock targetVectorBlock;
     public NumberBlock targetNumberBlock;
     public Grabbable grabbableButton;
 
@@ -29,7 +30,13 @@ public class OpenNumberKeyboardButton : MonoBehaviour
 
     private void HandlePointerEvent(PointerEvent evt)
     {
-        if (evt.Type == PointerEventType.Select && targetNumberBlock != null)
+        if (evt.Type != PointerEventType.Select) return;
+
+        if (targetVectorBlock != null)
+        {
+            targetVectorBlock.OpenKeyboard();
+        }
+        else if (targetNumberBlock != null)
         {
             targetNumberBlock.OpenKeyboard();
         }

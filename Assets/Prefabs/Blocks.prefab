@@ -173,7 +173,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 0.19803357
   m_Center: {x: 0, y: 0, z: 0}
@@ -1043,7 +1043,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 0.19803357
   m_Center: {x: 0, y: 0, z: 0}
@@ -1082,6 +1082,7 @@ GameObject:
   - component: {fileID: 3060815545600119426}
   - component: {fileID: 6965222532019281621}
   - component: {fileID: 5009397661818693423}
+  - component: {fileID: 5031424217486713306}
   m_Layer: 0
   m_Name: Blocks
   m_TagString: Block
@@ -1270,39 +1271,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e87a01119695a0c49ba84e5f9e32ac48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TwoInputFunction
+  firstInput: {fileID: 0}
+  secondInput: {fileID: 0}
+  view: {fileID: 5031424217486713306}
+--- !u!114 &5031424217486713306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4727693009523292905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4f2eef92f193b4d94133c392f0df75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FunctionBlockView
   visualText: {fileID: 5952539990937110445}
   firstInputText: {fileID: 7448542643142628560}
   secondInputText: {fileID: 5100365890501997365}
   outputText: {fileID: 5608955074716835653}
-  functionKeys:
-  - SUMA
-  - RESTA
-  - MULTIPLICACION
-  - DIVISION
-  - PRODUCTO_ESCALAR
-  - PRODUCTO_VECTORIAL
-  - PUNTO_MEDIO
-  - ANGULO
-  functionLabels:
-  - SUMA
-  - RESTA
-  - "MULTIPLICACI\xD3N"
-  - "DIVISI\xD3N"
-  - 'PRODUCTO
-
-    ESCALAR'
-  - 'PRODUCTO
-
-    VECTORIAL'
-  - 'PUNTO
-
-    MEDIO'
-  - "\xC1NGULO"
-  firstInput: {fileID: 0}
-  secondInput: {fileID: 0}
   blockRenderer: {fileID: 1680042516378611057}
-  vectorFunctionColor: {r: 0.18039216, g: 0.76862746, b: 1, a: 1}
-  numberFunctionColor: {r: 1, g: 0.6901961, b: 0, a: 1}
+  vectorFunctionColor: {r: 0.11, g: 0.65, b: 0.85, a: 1}
+  numberFunctionColor: {r: 0.85, g: 0.55, b: 0, a: 1}
 --- !u!1 &6054087855279590952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1323,6 +1313,7 @@ GameObject:
   - component: {fileID: 7321982935352318119}
   - component: {fileID: 7614285546484815332}
   - component: {fileID: 6038975051009220779}
+  - component: {fileID: 3428382703012626710}
   m_Layer: 0
   m_Name: Plug
   m_TagString: Untagged
@@ -1636,22 +1627,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa3215153875d964fb79d7a59d8d4df2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CableMeta
-  lineRenderer: {fileID: 6764171045797466973}
   grabbableMeta: {fileID: 4332202598215328259}
-  outputArrowVisual: {fileID: 6691051737269573020}
+  cableVisual: {fileID: 3428382703012626710}
   blockOutPut: {fileID: 7665296139011216014}
   distConn: 0.1
   FirstInPut: First InPut
   SecondInPut: Second InPut
   InPut: Input
-  colorDisconnected: {r: 1, g: 0, b: 0, a: 1}
-  colorConnected: {r: 0, g: 1, b: 0, a: 1}
-  emissionIntensity: 4
   blockOriginal: {fileID: 3308571308384321213}
   audioSource: {fileID: 6038975051009220779}
   connectSound: {fileID: 8300000, guid: bd055752f18a4e64ba43445d5a68f5da, type: 3}
   failSound: {fileID: 8300000, guid: a67028109aa424d4882678bfd49fbd9c, type: 3}
-  curveResolution: 20
 --- !u!114 &7321982935352318119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1785,6 +1771,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3428382703012626710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6054087855279590952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 028900ae7cfafe14690df15039c4c2b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CableVisual
+  lineRenderer: {fileID: 6764171045797466973}
+  outputArrowVisual: {fileID: 6691051737269573020}
+  colorDisconnected: {r: 1, g: 0, b: 0, a: 1}
+  colorConnected: {r: 0, g: 1, b: 0, a: 1}
+  emissionIntensity: 4
+  curveResolution: 20
+  controlPointDistance: 0.4
 --- !u!1 &7552933254612463346
 GameObject:
   m_ObjectHideFlags: 0

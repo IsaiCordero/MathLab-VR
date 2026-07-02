@@ -310,7 +310,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 0.19803357
   m_Center: {x: 0, y: 0, z: 0}
@@ -1006,6 +1006,7 @@ GameObject:
   - component: {fileID: 3060815545600119426}
   - component: {fileID: 6965222532019281621}
   - component: {fileID: 683669127664795087}
+  - component: {fileID: 3782646736622539314}
   m_Layer: 0
   m_Name: OneInputNumberBlock
   m_TagString: Block
@@ -1144,15 +1145,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34590235f0c6aa04fb7523fc062f8f6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OneInputNumberFunction
-  visualText: {fileID: 5952539990937110445}
-  functions:
-  - SENO
-  - COSENO
-  - TANGENTE
-  - ARCOSENO
-  - ARCOCOSENO
-  - ARCOTANGENTE
   input: {fileID: 0}
+  view: {fileID: 3782646736622539314}
+--- !u!114 &3782646736622539314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4727693009523292905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4f2eef92f193b4d94133c392f0df75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FunctionBlockView
+  visualText: {fileID: 5952539990937110445}
+  firstInputText: {fileID: 0}
+  secondInputText: {fileID: 0}
+  outputText: {fileID: 0}
+  blockRenderer: {fileID: 8309839240855287535}
+  vectorFunctionColor: {r: 0.11, g: 0.65, b: 0.85, a: 1}
+  numberFunctionColor: {r: 0.2901961, g: 0.87058824, b: 0.5019608, a: 1}
 --- !u!1 &6054087855279590952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,6 +1186,7 @@ GameObject:
   - component: {fileID: 7321982935352318119}
   - component: {fileID: 7614285546484815332}
   - component: {fileID: 3318766550352147086}
+  - component: {fileID: 4516023647710196128}
   m_Layer: 0
   m_Name: Plug
   m_TagString: Untagged
@@ -1486,22 +1500,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa3215153875d964fb79d7a59d8d4df2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CableMeta
-  lineRenderer: {fileID: 6764171045797466973}
   grabbableMeta: {fileID: 4332202598215328259}
-  outputArrowVisual: {fileID: 6691051737269573020}
+  cableVisual: {fileID: 4516023647710196128}
   blockOutPut: {fileID: 7665296139011216014}
   distConn: 0.1
   FirstInPut: First InPut
   SecondInPut: Second InPut
   InPut: Input
-  colorDisconnected: {r: 1, g: 0, b: 0, a: 1}
-  colorConnected: {r: 0, g: 1, b: 0, a: 1}
-  emissionIntensity: 4
   blockOriginal: {fileID: 3308571308384321213}
   audioSource: {fileID: 3318766550352147086}
   connectSound: {fileID: 8300000, guid: bd055752f18a4e64ba43445d5a68f5da, type: 3}
   failSound: {fileID: 8300000, guid: a67028109aa424d4882678bfd49fbd9c, type: 3}
-  curveResolution: 20
 --- !u!114 &7321982935352318119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1635,6 +1644,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4516023647710196128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6054087855279590952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 028900ae7cfafe14690df15039c4c2b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CableVisual
+  lineRenderer: {fileID: 6764171045797466973}
+  outputArrowVisual: {fileID: 6691051737269573020}
+  colorDisconnected: {r: 1, g: 0, b: 0, a: 1}
+  colorConnected: {r: 0, g: 1, b: 0, a: 1}
+  emissionIntensity: 4
+  curveResolution: 20
+  controlPointDistance: 0.4
 --- !u!1 &7552933254612463346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1728,12 +1756,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4
+  m_fontSize: 5
   m_fontSizeBase: 9
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 4
-  m_fontSizeMax: 12
+  m_fontSizeMin: 5
+  m_fontSizeMax: 14
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
@@ -1908,6 +1936,11 @@ PrefabInstance:
 --- !u!4 &5465259067204945867 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4638364596407485479, guid: a164a9eba2eab154a922edd517a4870d, type: 3}
+  m_PrefabInstance: {fileID: 830430535676724204}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &8309839240855287535 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8706639982672082179, guid: a164a9eba2eab154a922edd517a4870d, type: 3}
   m_PrefabInstance: {fileID: 830430535676724204}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3541511368125758866
