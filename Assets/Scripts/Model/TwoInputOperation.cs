@@ -9,6 +9,15 @@ public abstract class TwoInputOperation
     public abstract bool AcceptsInput(NodeValueType inputType);
     public abstract NodeValueType GetOutputType(NodeValueType firstType, NodeValueType secondType);
     public abstract NodeValue Execute(NodeValue first, NodeValue second);
+   
+    public virtual bool AreInputTypesCompatible(
+        NodeValueType firstType,
+        bool hasFirstInput,
+        NodeValueType secondType,
+        bool hasSecondInput)
+    {
+        return true;
+}
 }
 
 public abstract class BasicTwoInputOperation : TwoInputOperation
@@ -33,6 +42,20 @@ public class AddTwoInputOperation : BasicTwoInputOperation
 {
     public override string Label => "SUMA";
 
+    public override bool AreInputTypesCompatible(
+        NodeValueType firstType,
+        bool hasFirstInput,
+        NodeValueType secondType,
+        bool hasSecondInput)
+    {
+        if (!hasFirstInput || !hasSecondInput)
+        {
+            return true;
+        }
+
+        return firstType == secondType;
+    }
+
     public override NodeValue Execute(NodeValue first, NodeValue second)
     {
         if (first.IsNumber && second.IsNumber)
@@ -41,16 +64,27 @@ public class AddTwoInputOperation : BasicTwoInputOperation
         if (first.IsVector && second.IsVector)
             return NodeValue.FromVector(MathOperations.Add(first.Vector, second.Vector));
 
-        if (first.IsVector && second.IsNumber)
-            return NodeValue.FromVector(MathOperations.Add(first.Vector, second.Number));
-
-        return NodeValue.FromVector(MathOperations.Add(first.Number, second.Vector));
+        return NodeValue.FromNumber(0f);
     }
 }
 
 public class SubtractTwoInputOperation : BasicTwoInputOperation
 {
     public override string Label => "RESTA";
+
+    public override bool AreInputTypesCompatible(
+        NodeValueType firstType,
+        bool hasFirstInput,
+        NodeValueType secondType,
+        bool hasSecondInput)
+    {
+        if (!hasFirstInput || !hasSecondInput)
+        {
+            return true;
+        }
+
+        return firstType == secondType;
+    }
 
     public override NodeValue Execute(NodeValue first, NodeValue second)
     {
@@ -60,10 +94,7 @@ public class SubtractTwoInputOperation : BasicTwoInputOperation
         if (first.IsVector && second.IsVector)
             return NodeValue.FromVector(MathOperations.Subtract(first.Vector, second.Vector));
 
-        if (first.IsVector && second.IsNumber)
-            return NodeValue.FromVector(MathOperations.Subtract(first.Vector, second.Number));
-
-        return NodeValue.FromVector(MathOperations.Subtract(first.Number, second.Vector));
+        return NodeValue.FromNumber(0f);
     }
 }
 

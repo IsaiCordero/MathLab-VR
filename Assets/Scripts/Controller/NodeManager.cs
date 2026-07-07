@@ -39,6 +39,22 @@ public class NodeManager : MonoBehaviour
 
     public void DeleteAllNodes()
     {
+        CableMeta[] allCables = FindObjectsOfType<CableMeta>();
+
+        foreach (CableMeta cable in allCables)
+        {
+            if (cable == null) continue;
+
+            DataCable dataCable = cable.GetComponent<DataCable>();
+
+            if (dataCable != null)
+            {
+                dataCable.DisconnectFromPort();
+            }
+
+            Destroy(cable.gameObject);
+        }
+
         GameObject[] nodesToDelete = nodes.ToArray();
 
         foreach (GameObject node in nodesToDelete)

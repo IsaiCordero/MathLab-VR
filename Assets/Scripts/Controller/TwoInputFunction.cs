@@ -52,6 +52,7 @@ public class TwoInputFunction : MonoBehaviour, INodeOutput, INodeInput, IFunctio
         UpdateBlockColor();
     }
 
+
     TwoInputOperation CurrentOperation
     {
         get
@@ -252,14 +253,47 @@ public class TwoInputFunction : MonoBehaviour, INodeOutput, INodeInput, IFunctio
     {
         if (cable == null) return false;
 
-        bool isValidPort = port.CompareTag("First InPut") || port.CompareTag("Second InPut");
+        bool isFirstPort = port.CompareTag("First InPut");
+        bool isSecondPort = port.CompareTag("Second InPut");
 
-        if (!isValidPort)
+        if (!isFirstPort && !isSecondPort)
         {
             return false;
         }
 
-        return AcceptsInput(cable);
+        TwoInputOperation operation = CurrentOperation;
+
+        if (operation == null)
+        {
+            return false;
+        }
+
+        NodeValueType incomingType = cable.IsVectorSource()
+            ? NodeValueType.Vector
+            : NodeValueType.Number;
+
+        if (!operation.AcceptsInput(incomingType))
+        {
+            return false;
+        }
+
+        NodeValueType firstType = isFirstPort
+            ? incomingType
+            : GetCableValueType(firstInput);
+
+        NodeValueType secondType = isSecondPort
+            ? incomingType
+            : GetCableValueType(secondInput);
+
+        bool hasFirstInput = isFirstPort || firstInput != null;
+        bool hasSecondInput = isSecondPort || secondInput != null;
+
+        return operation.AreInputTypesCompatible(
+            firstType,
+            hasFirstInput,
+            secondType,
+            hasSecondInput
+        );
     }
 
     public bool IsPortOccupied(DataCable cable, Transform port)

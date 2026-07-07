@@ -875,8 +875,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43de5a18aee8017409ce8aafb6df0161, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeleteButton
-  plugConnection: {fileID: 12121670030642435}
   grabbableButton: {fileID: 3136273209863318022}
+  plugConnection: {fileID: 12121670030642435}
 --- !u!114 &3136273209863318022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1166,6 +1166,7 @@ MonoBehaviour:
   blockRenderer: {fileID: 8309839240855287535}
   vectorFunctionColor: {r: 0.11, g: 0.65, b: 0.85, a: 1}
   numberFunctionColor: {r: 0.2901961, g: 0.87058824, b: 0.5019608, a: 1}
+  neutralFunctionColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &6054087855279590952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1762,7 +1763,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 5
   m_fontSizeMax: 14
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
